@@ -1,5 +1,5 @@
 ---
-title: Technology that Creates Values
+title: Maximizing Value Through Technology  
 layout: layout/landing.njk
 
 pagination:
@@ -8,16 +8,21 @@ pagination:
   reverse: true
   alias: posts
 
-description: Fundamenty, Eleventy Starter kit with multilingual support and more.
-keywords: ["eleventy", "ssg", "JAMStack", "starter"]
+description: Digital Transformation, Organizational Agility and Technical Excellence, Sustainable Platform
+keywords: ["digital transformation", "agile", "technology", "consulting", "sustainability", ""]
+
+slogan: Resources are finite  but your potential doesn't have to be
+
 ---
 
 ## Sustainable Digital Transformation
 
 Power up your business, make it thrive
 
-## Organization Agility
+## Organization Agility and Technical Excellence
 
+When we increase the agility of an individual and strengthen the bond among your team, the overall organization performance goes up.
+The outcome is faster delivery, higher quality, resulting in happier customer.
 
+## Sustainability Platform
 
-## Technical Excellence

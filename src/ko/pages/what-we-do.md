@@ -8,5 +8,13 @@ The second arm is the sustainability platform which helps clients grow ethically
 ## Our Value Proposition
 
 ### Sustainable Digital Transformation
+
+Power up your business, make it thrive
+
 ### Organization Agility and Technical Excellence
+
+When we increase the agility of an individual and strengthen the bond among your team 
+
 ### Sustainability Platform
+
+

@@ -8,6 +8,10 @@
             "href": "/en/pages/what-we-do"
         },
         {
+            "title": "Careers",
+            "href": "/en/pages/careers"
+        },
+        {
             "icon": "fab fa-git",
             "href": "https://gitlab.com/hanaloop"
         },

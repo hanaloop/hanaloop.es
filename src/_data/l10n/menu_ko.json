@@ -4,8 +4,12 @@
             "href": "/ko/pages/who-we-are"
         },
         {
-            "title": "기사",
-            "href": "/en/pages/what-we-do"
+            "title": "솔루션",
+            "href": "/ko/pages/what-we-do"
+        },
+        {
+            "title": "Careers",
+            "href": "/ko/pages/careers"
         },
         {
             "icon": "fab fa-git",
