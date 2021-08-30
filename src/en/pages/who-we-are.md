@@ -21,7 +21,41 @@ Our mission is to lead the transformation of the society so that every generatio
 
 ## Leadership
 
-* **Young-Suk Ahn Park** / MSEng
+<div class="flex space-x-3">
+  <figure class="bg-gray-100 rounded-md my-4 p-4 w-80 shadow">
+    <img class="w-32 h-32 rounded-full mx-auto" src="{{'/images/who-we-are/ysahnpark-20210728.jpg' | url }}" alt="" width="384" height="512">
+    <div class="pt-6 space-y-4">
+      <figcaption class="font-medium text-center">
+        <div class="fond-semibold">
+          <a href="https://youngsukahn.com">Young-Suk Ahn Park</a>
+        </div>
+        <div class="text-primary-dark">
+          Principal Consultant
+        </div>
+      </figcaption>
+      <p class="text-xs">
+        Technology leader, educator, and software architect with experiences in leading teams to build large-scale software products.
+      </p>
+    </div>
+  </figure>
+
+  <figure class="bg-gray-100 rounded-md my-4 p-4 w-80 shadow">
+    <img class="w-32 h-32 rounded-full mx-auto" src="{{'/images/who-we-are/hykim-20210704.jpg' | url }}" alt="" width="384" height="512">
+    <div class="pt-6 space-y-4">
+      <figcaption class="font-medium text-center">
+        <div class="fond-semibold">
+          <a href="https://youngsukahn.com">Hyeyeon Kim</a>
+        </div>
+        <div class="text-primary-dark">
+          Sustainability Analyst
+        </div>
+      </figcaption>
+      <p class="text-xs">
+        LEED Green Associate exploring different ways of adopting sustainable practices.
+      </p>
+    </div>
+  </figure>
+</div>
 
 ## Meaning of HanaLoop
 
