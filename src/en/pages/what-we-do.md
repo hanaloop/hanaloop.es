@@ -20,6 +20,8 @@ The outcome is faster delivery, higher quality, resulting in happier customer.
 
 * Organization Agility and Technical Excellence
 
+[How we do](../how-we-do)
+
 ### Sustainability
 
 * Sustainability Platform
