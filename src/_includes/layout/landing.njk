@@ -35,7 +35,7 @@
     <div class="w-full flex mx-auto hero">
       <div id="hero" class="mt-24 container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <div id="hero-label" class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
-          <span class="text-4xl text-white">{{ slogan }}<span>
+          <span class="text-4xl text-white">{{ slogan | safe }}<span>
           <div class="block my-2 ">
             <a href="{{ "/en/pages/contact_us" | url}}" class="text-base text-white border-2 border-white hover:bg-primary p-2 rounded-lg no-underline hover:text-white">{{ site[locale]._t.contact_us }}</a>
           </div>
