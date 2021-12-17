@@ -27,7 +27,7 @@ slogan: 자원은 한계가 있지만<br /> 잠재력은 무한합니다
         <div class="text-xl" style="text-shadow: 1px 1px 5px black;">지속가능한 디지털 전환</div>
       </figcaption>
       <div class="px-6 py-4">
-        <div class="text-gray-600">기술로 사업의 탁월한 기술적 컨설팅으로 귀사의 놀라운 도약을 체험하십시오.
+        <div class="text-gray-600">탁월한 IT 컨설팅으로 귀사의 놀라운 도약을 체험하십시오.
         </div>
       </div>
     </a>
@@ -41,7 +41,7 @@ slogan: 자원은 한계가 있지만<br /> 잠재력은 무한합니다
         온실가스 관리 플랫폼</div>
       </figcaption>
       <div class="px-6 py-4">
-        <div class="text-gray-600">환경으로 인해 변화하는 시장에 효율적인  탄소관리로 대응하세요.
+        <div class="text-gray-600">기후변화 위기로 변화하는 시장에 효율적인 탄소관리로 대응하세요.
         </div>
       </div>
     </a>
