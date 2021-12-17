@@ -21,9 +21,9 @@ Our mission is to lead the transformation of the society so that every generatio
 
 ## Leadership
 
-<div class="flex space-x-3">
+<div class="my-5 grid lg:grid-cols-4 grid-cols-2 gap-2">
   {% for teamMember in teamMembers  %}
-  <figure class="bg-gray-100 rounded-md my-4 p-4 w-80 shadow">
+  <figure class="bg-gray-100 rounded-md my-4 p-4 shadow">
     <img class="w-32 h-32 rounded-full mx-auto" src="{{ teamMember.photo  | url }}" alt="" width="384" height="512">
     <div class="pt-6 space-y-4">
       <figcaption class="font-medium text-center">
