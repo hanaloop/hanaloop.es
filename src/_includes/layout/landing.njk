@@ -66,8 +66,7 @@
       var navMenuDiv = document.getElementById("nav-content");
       var navMenu = document.getElementById("nav-toggle");
 
-      var helpMenuDiv = document.getElementById("menu-content");
-      var helpMenu = document.getElementById("menu-toggle");
+      var header = document.getElementById("header");
 
       document.onclick = check;
 
@@ -79,14 +78,10 @@
           // click NOT on the menu
           if (checkParent(target, navMenu)) {
             // click on the link
-            if (navMenuDiv.classList.contains("hidden")) {
-              navMenuDiv
-                .classList
-                .remove("hidden");
-            } else {
-              navMenuDiv
-                .classList
-                .add("hidden");
+            navMenuDiv.classList.toggle("hidden");
+            if (!navMenuDiv.classList.contains("hidden")) {
+              header.classList.remove("bg-opacity-0");
+              header.classList.remove("text-white");
             }
           } else {
             // click both outside link and outside menu, hide menu
@@ -95,29 +90,6 @@
               .add("hidden");
           }
         }
-
-        //Help Menu
-        if (!checkParent(target, helpMenuDiv)) {
-          // click NOT on the menu
-          if (checkParent(target, helpMenu)) {
-            // click on the link
-            if (helpMenuDiv.classList.contains("hidden")) {
-              helpMenuDiv
-                .classList
-                .remove("hidden");
-            } else {
-              helpMenuDiv
-                .classList
-                .add("hidden");
-            }
-          } else {
-            // click both outside link and outside menu, hide menu
-            helpMenuDiv
-              .classList
-              .add("hidden");
-          }
-        }
-
       }
 
       function checkParent(t, elm) {
@@ -132,7 +104,6 @@
 
 // https://github.com/tailwindtoolbox/Landing-Page/blob/master/index.html
 
-  var header = document.getElementById("header");
   header.classList.add("bg-opacity-0");
   header.classList.add("text-white");
 
