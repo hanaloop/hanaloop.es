@@ -37,10 +37,10 @@ Stay in the loop of continuous improvement.
     <a class="no-underline hover:no-underline" href="{{'/en/pages/what-we-do/' | url }}">
       <img class="full" src="{{'/images/ecoloop-banner.jpg' | url }}">
       <figcaption class="absolute -mt-20 text-white px-4 w-2/5 ">
-        <div class="text-xl" style="text-shadow: 1px 1px 5px black;">Sustainability Platform</div>
+        <div class="text-xl" style="text-shadow: 1px 1px 5px black;">Sustainability Solution</div>
       </figcaption>
       <div class="px-6 py-4">
-        <div class="text-gray-600">Efficiently and effectively manage climate risks based on timely data.
+        <div class="text-gray-600">Efficiently and effectively manage climate risks based on timely insight.
         </div>
       </div>
     </a>

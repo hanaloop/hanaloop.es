@@ -12,16 +12,21 @@ The second arm is the sustainability platform which helps clients grow ethically
 
 ### Consulting Services
 
-When we increase the agility of an individual and strengthen the bond among your team, the overall organization performance goes up.
+When you increase the agility of an individual and strengthen the bond among your team, the overall organization performance goes up.
 The outcome is faster delivery, higher quality, resulting in happier customer.
 
+We will help you guide your team and organization throught the journey of digital transofrmation. 
 
-* ESG-Aligned Digital Transformation
-
-* Organization Agility and Technical Excellence
+* ESG-aligned sustainable transformation
+* Focus on organization agility and technical excellence
 
 [How we do](../how-we-do)
 
 ### Sustainability
 
-* Sustainability Platform
+Climate risk is no longer a distant threat. It affects every industry.
+
+Properly maanaging greehouse gas not only makes your company more performant and competitive, but also improves branding and employee satisfaction.
+
+* Digitalization of greenhouse gas inventory
+* Energy consumption data minining
