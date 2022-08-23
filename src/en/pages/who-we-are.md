@@ -8,7 +8,7 @@ We believe humans are capable of working together to create a better world by co
 
 ## Our Mission
 
-Our mission is to lead the transformation of the society so that every generation is proud of their legacy, tackling together head-on the most challenging problems.  
+Our mission is to lead the transformation of society so that every generation is proud of their legacy, tackling together head-on the most challenging problems.  
 
 
 ## Our Values
