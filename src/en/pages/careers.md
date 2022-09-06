@@ -5,7 +5,7 @@ title: Careers
 ## Are you ready to take on the challenge?
 
 Are you looking to grow personally and professionally engaging projects that make positive impacts in people's life and planet? 
-If you are, then we are in the same page.
+If you are, then we are on the same page.
 
 Let's walk together on this journey.
 

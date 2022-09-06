@@ -48,4 +48,4 @@ Stay in the loop of continuous improvement.
 
 </div>
 
-## Grow without compromising the nature!
+## Grow without compromising nature!
