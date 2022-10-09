@@ -2,7 +2,7 @@
  * Inspired by Docusaurus' config
  */
 const config = {
-    title: 'HanaLoop',
+    title: '하나루프',
     tagline: '자원은 유한하지만 잠재력은 무한합니다',
     url: 'https://your-portal-site.com',
     baseUrl: '/',
@@ -52,7 +52,7 @@ const config = {
           // },
           {
             to: 'https://www.ecoloop.io',
-            label: 'EcoLoop 이동',
+            label: 'EcoLoop.io',
             style: 'button',
             style: 'px-1 rounded border-2 border-lime-700',
           },
@@ -111,7 +111,7 @@ const config = {
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 주식화사 하나루프. `,
+        copyright: `Copyright © ${new Date().getFullYear()} 주식화사 하나루프 `,
       }
     }),
 }

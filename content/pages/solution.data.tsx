@@ -13,10 +13,10 @@ const benefits: DisplayItems[] = [
       </>
   },
   {
-    title: "가치사슬망 (스코프 3) 산정",
+    title: "가치사슬망 스코프 3 산정",
     description: <>
       <ul>
-      <li>가치사슬 산정 </li>
+      <li>가치사슬 배출량 산정 </li>
       <li>맞춤형 보고서</li>
       <li>다국어 지원</li>
       </ul>
@@ -37,9 +37,9 @@ const benefits: DisplayItems[] = [
     title: "OpenAPI - 플랫폼",
     description: <>
       <ul>
-      <li>신속하게 창의적인 솔루션 구축 가능케함</li>
-      <li>신사업 모델을 창출할 수 있게 될 것임</li>
-      <li>온실가스 관리 문화 </li>
+      <li>창의적인 솔루션 구축시간 단축</li>
+      <li>신사업 모델 창출 가능</li>
+      <li>온실가스 관리문화 형성 </li>
       </ul>
     </>
   }

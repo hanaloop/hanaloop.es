@@ -15,7 +15,7 @@ hero:
 import SectionBlock from "../components/theme/SectionBlock";
 import data from "../content/pages/solution.data";
 
-<SectionBlock title='데이터가 보이면 감축이 보인다!' containerStyle='bg-gray-100'>
+<SectionBlock title='데이터가 보이면 전략이 보입니다.' containerStyle='bg-gray-100'>
   <div className="my-5 grid xl:grid-cols-4 grid-cols-2 gap-2">
     {data.benefits.map(benefit => 
     <div className="text-center "> 

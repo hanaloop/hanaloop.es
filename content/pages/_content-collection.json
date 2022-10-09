@@ -13,7 +13,7 @@
       },
       "hero": {
         "header": "회사소개",
-        "tagline": "듬직하고 민첩한 파트너 하나루프"
+        "tagline": "든든하고 민첩한 파트너 하나루프"
       },
       "readingTime": {
         "text": "6 min read",
@@ -28,9 +28,9 @@
     "_type": "item",
     "slug": "/pages/platform",
     "meta": {
-      "title": "에코르프 플랫폼",
-      "description": "온시라스 관리 플랫폼 에코르프",
-      "keywords": "온시라스 관리, 탄소 관리",
+      "title": "SaaS형 지속가능성 플랫폼 에코루프",
+      "description": "SaaS형 지속가능성 플랫폼, 온실가스 관리 플랫폼 에코루프",
+      "keywords": "온실가스 관리, 탄소 관리, 에코루프, EcoLoop",
       "publishedAt": "2022-10-06",
       "headerBackground": {
         "imageUrl": "/images/bg-hero_platform.jpeg"
@@ -74,7 +74,7 @@
       },
       "hero": {
         "header": "채용",
-        "tagline": "지속가능한 생태계 형성을 힘께!"
+        "tagline": "지속가능한 생태계 형성을 함께!"
       },
       "readingTime": {
         "text": "5 min read",

@@ -1,7 +1,7 @@
 ---
-title: "하나루프"
-description: "주식회사 하나루프란"
-keywords: "하나루프란"
+title: "(주)하나루프 소개"
+description: "주식회사 하나루프 설립 이유, 하나루프의 비전, 하나루프의 미션, 하나루프의 고객과의 약속, 하나루프의 문화, 하나루프의 리더십, 하나루프 이름의 배경, 하나루프의 의미, 에코루프의 의미 소개"
+keywords: "하나루프, (주)하나루프, 하나루프 설립 이유, 하나루프 비전, 하나루프 미션, 하나루프의 고객과의 약속, 하나루프의 문화, 하나루프의 리더십, 하나루프 이름의 배경, 하나루프의 의미, 에코루프 이름의 배경, 에코루프의 의미"
 
 publishedAt: "2022-10-06"
 
@@ -10,7 +10,7 @@ headerBackground:
   imageDescription: "사진: Pando, Wikipedia"
 hero:
   header: "회사소개"
-  tagline: "듬직하고 민첩한 파트너 하나루프"
+  tagline: "든든하고 민첩한 파트너 하나루프"
 ---
 import SectionBlock from "../components/theme/SectionBlock";
 import members from "../content/members";
@@ -18,7 +18,7 @@ export const memberList = Object.values(members);
 
 <div className=""> 
 
-  <SectionBlock title='문제점과 우리가 해결하겠다는 결의 표현' >
+  <SectionBlock title='지속가능성을 위한 도전에 하나루프가 함께 합니다' >
     <div className="p-4">
     기후 변화의 주요 원인인 온실가스 배출로 무너져내린 지구 환경을 되살리기 위해 전세계, 국가, 사회가 필수불가결한 합의를 도출하는 등 우리 모두가 전방위적으로 힘을 모으고 있습니다. 그러나 구체적인 대안이나 해결 방법을 찾기란 쉽지 않습니다.
 
@@ -46,7 +46,7 @@ export const memberList = Object.values(members);
 
   <SectionBlock title='고객과의 약속' containerStyle='bg-gray-100'>
     <div className="p-4">
-      <span className="text-lg">건강한 지구로 환경을 회복시키며 인류의 번영에 기여하겠습니다.</span>
+      <span className="text-lg">하나루프는 건강한 지구로 환경을 회복시키며 인류의 번영에 기여하겠습니다.</span>
     </div>
   </SectionBlock>
 
@@ -61,10 +61,10 @@ export const memberList = Object.values(members);
     </div>
   </SectionBlock>
 
-  <SectionBlock title='하나루프의 문화' containerStyle='bg-gray-100'>
+  <SectionBlock title='문화' containerStyle='bg-gray-100'>
     <div className="p-4">
       <span className="text-lg">
-      하나루프는 모든 세대가 건강한 지구와 공생하기 위해, 현세의 가장 어려운 문제를 기술로 해결하기 위해 모인 사람들의 유기체입니다. 문제를 파악하고 해결 방법을 연구하며 최고의 기술로 최고의 효과를 내는 솔루션을 제공하기 위해 끊임없이 성장합니다. 우리 조직이 속한 사회의 건강한 변화를 주도합니다. 
+      하나루프는 모든 세대가 건강한 지구와 공생하기 위해, 현세의 가장 어려운 문제를 기술로 해결하기 위해 모인 사람들의 유기체입니다. 문제를 파악하고 해결 방법을 연구하며 최고의 기술로 최고의 효과를 내는 솔루션을 제공하기 위해 끊임없이 성장합니다. 우리가 속한 사회의 건강한 변화를 주도합니다. 
       </span>
     </div>
   </SectionBlock>

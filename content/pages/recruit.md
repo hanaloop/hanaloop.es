@@ -15,19 +15,16 @@ import SectionBlock from "../components/theme/SectionBlock";
 
 <div className="p-4 [word-break:keep-all]">
 
-지속가능한 세상, 다음 세대가 지금까지의 세대가 누렸던 모든 것들을 타협없이 누릴 수 있는 세상의 디딤돌이 될 지속가능성 플랫폼을 개발합니다. 
-인류의 삶과 지구 환경을 위한 임팩트 프로젝트에 참여하며 함께 성장하고 싶으신가요? 그렇다면 하나루프로 오세요!
+지속가능한 세상의 디딤돌이 될 지속가능성 플랫폼을 개발합니다. 
+다음 세대가 지금까지의 세대가 누렸던 모든 것들을 타협없이 누릴 수 있는 세상을 위한 임팩트 프로젝트! 
+인류의 삶과 지구 환경을 위한 임팩트 프로젝트에 참여하며 함께 성장하고 싶으신가요? 
+그렇다면 하나루프로 오세요!
 
 “빨리 걷고 싶다면 혼자 걸으세요. 그러나 멀리 걷고 싶다면 함께걸어가세요.” - 아프리카 속담
 
-<div className="my-2 ">
-  <div className="p-2 border text-xl text-center border-secondary rounded-md bg-amber-50 bg-opacity-50">
-  지구를 위히, 매리를 위해 세계 일류 인력과 함께하세요! 
-  </div>
-</div>
 
-## 하나루프의 복지
-
+<SectionBlock title='복지' >
+<div className="text-left">
 - 매월 유급 반차 제공
 - 식대 지원
 - 오전 7시~ 오전 10시 사이 자율 출근 후 자율 퇴근
@@ -36,22 +33,31 @@ import SectionBlock from "../components/theme/SectionBlock";
 - 각종 세미나, 포럼, 교육 참석 지원
 - 업무 관련 도서구매 지원
 - 3년 이상 함께하는 멤버에게 스톡옵션 지급
+</div>
+</SectionBlock>
+
+<div className="my-2 ">
+  <div className="p-2 border text-xl text-center border-secondary rounded-md bg-amber-50 bg-opacity-50">
+  지구환경을 위해, 미래를 위해 세계의 일류 인재들과 함께하세요! 
+  </div>
+</div>
 
 <SectionBlock title='오픈 포지션' >
+
 <div className="text-left">
-  ## 클라우드 기반 플랫폼 웹 백엔드/프론트 & 시스템 SW 엔지니어
+  ### 클라우드 기반 플랫폼 웹 백엔드/프론트 & 시스템 SW 엔지니어
   ▶ 하나루프의 Full-stack 개발자는 전지구적 기후위기 대응 가속화에 비전을 품은 사람들과 함께, 공동의 목표로 함께 문제를 해결하고 솔루션을 구현합니다.
 
-  ### 주 역할 및 책임
+  #### 주 역할 및 책임
   환경 플랫폼 프론트엔드/백엔드 개발 소프트웨어 프로덕트 개발 라이프사이클 세레모니 참여 프로덕트 매니저 및 CTO와 함께 프로덕트 개선에 참여
 
-  ### 핵심 자격요건
+  #### 핵심 자격요건
   - 컴퓨터학과 졸업 혹은 2년 이상 웹 어플리케이션 개발 경험 있으신 분 
   - 빠르게 배우고 실천하는 마인드셋을 가지고 계신 분 
   - 프로덕트 구축에 대한 오너십과 책임감이 있으신 분 
   - 코드 품질에 기준이 높으신 분
 
-  ### 우대 사항
+  #### 우대 사항
   - 외국어로의 소통 및 프레임워크 경험 있으신 분
   - 원활한 의사소통 능력을 겸비한 팀플레이어 대환영
   - DevSecOps 실무 지식: gitops, docker, kubernetes 등에 익숙하신 분
@@ -59,16 +65,16 @@ import SectionBlock from "../components/theme/SectionBlock";
   - SQL 및 NoSQL 경험이 있으신 분
   - 클라우드 배포 및 플랫폼 경험이 있으신 분
 
-  ### 기술 스택
+  #### 기술 스택
   - TypeScript, Python
   - Nextjs, Nestjs
   - React
   - Postgres, Redis, Elasticsearch
 
-  ### 근무 형태
+  #### 근무 형태
   계약기간 3개월 후 정규직 전환
 
-  ### 채용 절차
+  #### 채용 절차
   - 접수 기간 : 상시
   - 제출 서류 : 이력서, 경력기술서
   - 지원 방법 : 이메일 지원(joinus@hanaloop.com)
@@ -77,7 +83,7 @@ import SectionBlock from "../components/theme/SectionBlock";
   - 진행 일정은 확정되는대로 지원자분들께 개별 안내 예정입니다.
   - 이메일 제목에 지원 포지션 명/ 지원자 명 꼭 넣어주세요.
 
-  ### 복리후생
+  #### 복리후생
   - 오전 7시~ 오전 10시 사이 자율 출근 후 자율 퇴근
   - 업무 성격, 효율과 능력에 따라 원격업무 가능
   - 식대 지원
