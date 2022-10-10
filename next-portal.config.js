@@ -5,7 +5,7 @@ const config = {
     title: '하나루프',
     tagline: '자원은 유한하지만 잠재력은 무한합니다',
     url: 'https://your-portal-site.com',
-    baseUrl: '/',
+    basePath: process.env.WEB_PATH_PREFIX || '',
     favicon: '/ecoloop-ico.png',
     organizationName: 'hanaloop', // Usually your GitHub org/user name.
     projectName: 'hanaloop.com', // Usually your repo name.

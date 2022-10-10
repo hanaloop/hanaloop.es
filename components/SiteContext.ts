@@ -12,7 +12,7 @@ export type SiteContextType = {
   tagline?: string,
   keywords?: string,
   url?: string,
-  baseUrl?: string,
+  basePath?: string,
   favicon?: string,
   organizationName?: string, // Usually your GitHub org/user name.
   projectName?: string,

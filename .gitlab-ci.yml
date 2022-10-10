@@ -1,17 +1,20 @@
-image: node:16.14.0
-
+# The Docker image that will be used to build your app
+image: "node:16.14.0"
+# Functions that should be executed before the build script is run
+before_script:
+  - yarn install
 pages:
   script:
-  - yarn install
-  - yarn build
-  # The build directory is created based on the value set for projectName in
-  # website/siteConfig.js. If you change it there, you need to change it here
-  # as well.
-  - mv ./out ./public
-
+    - yarn build
+    # removing the existing public directory prior mv
+    - rm -r ./public
+    - mv ./out ./public
+    - cat ./public/index.html
   artifacts:
     paths:
-    - public
-
-  only:
-  - main
+      # The folder that contains the files to be exposed at the Page URL
+      - public
+  rules:
+    # This ensures that only pushes to the default branch will trigger
+    # a pages deploy
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH

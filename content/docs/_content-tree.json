@@ -63,8 +63,8 @@
           "meta": {
             "title": "환경소식",
             "publishedAt": "2022-01-11",
-            "summary": "First document for demo purpose!",
-            "image": "/images/pexels-photo-414798.jpeg",
+            "summary": "환경소식 입니다",
+            "image": "https://images.pexels.com/photos/60013/desert-drought-dehydrated-clay-soil-60013.jpeg",
             "author": "ysahnpark",
             "tags": [
               "Document",
@@ -72,9 +72,9 @@
             ],
             "readingTime": {
               "text": "1 min read",
-              "minutes": 0.185,
-              "time": 11100,
-              "words": 37
+              "minutes": 0.195,
+              "time": 11700,
+              "words": 39
             }
           }
         }

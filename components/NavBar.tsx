@@ -82,7 +82,7 @@ export default function NavBar({pageYOffset}: NavBarProps) {
         </div>
     </div>
 
-    {/* v2.1 */}
+    {/* v2.1: Mobile menu */}
     <Transition
       show={mobileMenuOpen}
       enter="transition ease-out duration-100 transform"
@@ -96,7 +96,7 @@ export default function NavBar({pageYOffset}: NavBarProps) {
         <div className="md:hidden bg-gray-100" id="mobile-menu">
           <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3 ">
           {
-            siteContext.themeConfig.navbar.items.map((item: any, idx: number) =>{
+            siteContext.themeConfig.navbar.items.map((item: any, idx: number) => {
               return (
                 <div className="block text-gray-700" key={idx} >
                   <NavLink item={item} />

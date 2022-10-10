@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 
 import { getMDXComponent } from "mdx-bundler/client";
+import Image from "../../components/theme/Image";
 import SidebarLayout from "../../components/SidebarLayout";
 import { AttributeType } from "../../libs/content.types";
 import { ContentPageProp, ContentStaticPropsParams, getStaticPathsForContentPage, getStaticPropsForContentPage } from "../../libs/contentpage.utils";
@@ -15,7 +16,7 @@ function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter:
 
   return (
     <>
-    <img className="object-cover h-40 w-full bg-center " src={frontMatter.image}></img>
+    {frontMatter.image && <Image className="object-cover h-40 w-full bg-center" src={frontMatter.image} alt={""} />}
     <div className="p-4 max-w-4xl">
       <div className="">
         <div className="flex flex-col space-y-2">

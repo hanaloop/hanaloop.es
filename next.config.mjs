@@ -40,9 +40,11 @@ const nextConfig = {
 };
 
 // To deploy the portal under a sub-path, e.g. GitLab pages, set the WEB_PATH_PREFIX
-if (process.WEB_PATH_PREFIX) {
-  console.log(`[NextPortal] Using '${process.WEB_PATH_PREFIX}' as pathPrefix (basePath)`);
-  nextConfig.basePath = process.WEB_PATH_PREFIX;
+if (process.env.WEB_PATH_PREFIX) {
+  console.log(`[NextPortal] Using WEB_PATH_PREFIX='${process.env.WEB_PATH_PREFIX}' as pathPrefix (basePath)`);
+  nextConfig.basePath = process.env.WEB_PATH_PREFIX;
+} else {
+  console.log(`[NextPortal] No WEB_PATH_PREFIX env provided`);
 }
 
 const withMdx = withMDX(nextConfig);

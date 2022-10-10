@@ -1,13 +1,16 @@
 import { useContext } from 'react';
 import type { NextPage } from 'next'
+import Link from 'next/link';
 import SiteContext from '../components/SiteContext';
 import Hero from '../components/Hero';
 import SectionBlock from '../components/theme/SectionBlock';
+import Image from "../components/theme/Image";
 import { DisplayItem } from '../libs/types';
 
 import docsCollection from '../content/docs/_content-collection.json'
 
-const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt)).slice(0, 4);
+const MAX_DOCS = 4;
+const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt)).slice(0, MAX_DOCS);
 
 // https://icons.getbootstrap.com/
 const features: DisplayItem[] = [
@@ -129,20 +132,27 @@ const Home: NextPage = () => {
 
       {/* Resources */}
       <SectionBlock title='자료' >
-      <div className="px-10  my-5 grid lg:grid-cols-2 grid-cols-1 gap-4  ">
+        <>
+        <div className="px-10  my-5 grid lg:grid-cols-2 grid-cols-1 gap-4  ">
           {
             docsSorted.map(item => 
               <div className="border rounded text-gray-700 drop-shadow-md" key={item.slug}>
-                <a href={item.slug}>
+                <Link href={item.slug} passHref><a >
                 <div className="text-left items-center">
                   <h3 className="px-4 py-2 hover:text-primary">{item.meta.title}</h3>
-                  <img className="object-cover h-40 w-full bg-center " src={item.meta.image}></img>
-                  <div className="px-4 py-2 text-sm text-gray-500">{item.meta.summary}</div>
+                  {item.meta.image && <Image className="object-cover h-40 w-full bg-center " src={item.meta.image} alt={item.meta.title} />}
+                  
+                  <div className="px-4 py-2 text-sm text-gray-500">
+                    <div className="text-xs">{item.meta.publishedAt}</div>
+                    <div>{item.meta.summary}</div>
+                  </div>
                 </div>
-                </a>
+                </a></Link>
               </div>)
-          }
+          }  
         </div>
+        <Link href="/docs" passHref><a >자료 더 보기</a></Link>
+        </>
       </SectionBlock>
 
       <SectionBlock title='고객 및 파트너 ' containerStyle="bg-gray-100" >
