@@ -1,9 +1,10 @@
+import { useContext, useState } from "react";
 import { Transition } from "@headlessui/react";
 import Link from "next/link"
 import { useRouter } from "next/router";
-import { useContext, useState } from "react";
 import { classNames } from "../libs/type.utils";
 import NavLink from "./NavLink";
+import Image from '../components/theme/Image';
 import QuickSearch from "./QuickSearch"
 import SiteContext from "./SiteContext";
 
@@ -41,7 +42,7 @@ export default function NavBar({pageYOffset}: NavBarProps) {
               <a className="flex  px-3">
                 {
                   siteContext.themeConfig.navbar.logo.component || 
-                  <img className="h-6 mr-2" src={siteContext.themeConfig.navbar.logo.src} />
+                  <Image className="h-6 mr-2" src={siteContext.themeConfig.navbar.logo.src} alt="Logo"/>
                 }
                 <span className="font-bold whitespace-nowrap">{siteContext.title}</span>
               </a>

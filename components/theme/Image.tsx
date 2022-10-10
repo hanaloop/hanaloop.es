@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { contextualPath } from "../../libs/content.util";
 import SiteContext from "../SiteContext";
 
 type ImageProps = {
@@ -16,7 +17,7 @@ export default function Image({src, className, alt}: ImageProps)  {
   
   const siteContext = useContext(SiteContext);
 
-  const srcLink = src.startsWith('http') || !src.startsWith('/') ? src : siteContext.basePath + src; 
+  const srcLink = contextualPath(siteContext, src); 
 
   return (
     <img className={className} src={srcLink} alt={alt} />

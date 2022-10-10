@@ -1,4 +1,7 @@
-import Link from "next/link";
+import { useContext } from "react"
+import Link from "next/link"
+import { contextualPath } from "../libs/content.util"
+import SiteContext from "./SiteContext"
 
 export type BackgroundProps = {
   imageUrl?: string
@@ -19,18 +22,18 @@ export type HeroProps = {
 
 export default function Hero({header, tagline, button, background}: HeroProps & {background: BackgroundProps}) {
 
+  const siteContext = useContext(SiteContext);
+  
   const containerClass = background.imageUrl ? "h-64 bg-cover bg-center text-gray-100" :
     (background.solidColor ? `p-4 h-64 ${background.solidColor} justify-center items-center ` : 
     `p-4 h-64 bg-gradient-to-r ${background.gradientFrom} ${background.gradientTo} justify-center items-center `);
+  
   /* v2.1 */
-  const containerStyle = background.imageUrl ? `linear-gradient(to top, transparent, #00000030 90%), url(${background.imageUrl})`: '';
+  const containerStyle = background.imageUrl ? `linear-gradient(to top, transparent, #00000030 90%), url(${contextualPath(siteContext, background.imageUrl)})`: '';
 
   return (
     <div id="hero" className="relative [word-break:keep-all]">
       <div className={containerClass} style={{backgroundImage: containerStyle}}>
-      {/* <div className="p-4 h-64 bg-lime-600 justify-center items-center  "> */}
-      {/* <div className="p-4 h-64 bg-gradient-to-r from-sky-500 to-lime-500 justify-center items-center text-gray-50 "> */}
-        
         <div className="px-8 w-full flex mx-auto" >
           <div id="hero-label" className="pt-16 space-y-2  w-full justify-center items-start text-center md:w-4/5 md:text-left">
             <h1 className="text-3xl md:text-4xl font-bold drop-shadow">{header}</h1>
@@ -38,7 +41,6 @@ export default function Hero({header, tagline, button, background}: HeroProps & 
             {
               button && <div className="pt-5 flex justify-center md:justify-start"><Link href={button.href} passHref><button className="p-2 rounded-md border-2 text-gray-200 font-bold">{button.label}</button></Link></div>
             }
-            {/* </div> */}
           </div>
         </div>
       </div>

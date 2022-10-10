@@ -162,7 +162,7 @@ const Home: NextPage = () => {
               partners.map(item => 
                 <div className="group" key={item.title}>
                   <div className="mt-10">
-                    <img className="h-8 grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl}  />
+                    <Image className="h-8 grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl!} alt={item.title} />
                     <span className="p-3 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">{item.description}</span>
                   </div>
                 </div>

@@ -1,9 +1,10 @@
 import {useContext} from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import SiteContext from './SiteContext';
 import NavBar from './NavBar';
+import Image from '../components/theme/Image';
 import { useScrollPosition } from '../libs/hooks';
-import Link from 'next/link';
 
 type LayoutProps = {
     meta?: any,
@@ -42,7 +43,7 @@ export default function Layout({ children, meta }: LayoutProps) {
               <a className="flex ">
                 {
                   siteContext.themeConfig.navbar.logo.component || 
-                  <img className="h-6 mr-2" src={siteContext.themeConfig.navbar.logo.src} />
+                  <Image className="h-6 mr-2" src={siteContext.themeConfig.navbar.logo.src} alt="Logo" />
                 }
                 <span className="font-bold whitespace-nowrap">{siteContext.title}</span>
               </a>

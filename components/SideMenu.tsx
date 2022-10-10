@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useContext } from "react";
 import MenuItem from "../libs/MenuItem"
 import SiteContext from "./SiteContext";
-
+import Image from '../components/theme/Image';
 
 type SideMenuProps = {
     level?: number
@@ -72,7 +72,7 @@ export default function SideMenu({ menu }:  SideMenuProps) {
       {/* <!-- Org Heading --> */}
       <div className="relative bg-gray-500"> 
           {/* <!-- background for tinting --> */}
-          {siteContext.projectImage && <img className="h-24 w-full object-cover mix-blend-overlay"  src={siteContext.projectImage} />}
+          {siteContext.projectImage && <Image className="h-24 w-full object-cover mix-blend-overlay"  src={siteContext.projectImage}  alt="Banner"/>}
           <div className="absolute bottom-0 left-0 w-full flex justify-center ">
           <div className="text-xl font-bold text-white drop-shadow-sm"><Link href="/" >{siteContext.projectName}</Link> </div>
           </div>
