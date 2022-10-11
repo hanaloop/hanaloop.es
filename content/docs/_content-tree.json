@@ -92,16 +92,17 @@
             "title": "탄소중립, 선택이 아닌 필수",
             "publishedAt": "2022-10-11",
             "summary": "2050년까지 1.5℃로 억제해야 하는 이유",
-            "image": "https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "image": "https://images.unsplash.com/photo-1568994105591-922d787135dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1791&q=80",
+            "imageCredits": "https://unsplash.com/s/photos/climate-change",
             "authors": "hykim",
             "tags": [
               "Development"
             ],
             "readingTime": {
-              "text": "20 min read",
-              "minutes": 19.25,
-              "time": 1155000,
-              "words": 3850
+              "text": "18 min read",
+              "minutes": 17.785,
+              "time": 1067100,
+              "words": 3557
             }
           }
         }
