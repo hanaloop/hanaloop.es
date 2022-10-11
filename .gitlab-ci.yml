@@ -1,8 +1,16 @@
 image: node:16.14.0
 
+before_script:
+  - yarn install
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+    - .next/cache/
+
 pages:
   script:
-  - yarn install
   - yarn build
   # The build directory is created based on the value set for projectName in
   # website/siteConfig.js. If you change it there, you need to change it here
