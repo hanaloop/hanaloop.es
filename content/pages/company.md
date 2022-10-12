@@ -101,13 +101,12 @@ export const memberList = Object.values(members);
     </div>
   </SectionBlock>
 
-  <SectionBlock title='하나루프 이름의 배경' >
+  <SectionBlock title='하나루프 이름의 배경' containerStyle="flex justify-center" >
     <div className="px-4">
       <span className="text-xl">
       하나루프 (Hana+Loop)
       </span>
-
-    <pre>
+    <div className="max-w-3xl">
       우주가 생긴 이래,
       우리를 둘러싼 자연환경은 끊임없이 서로 순환하며 조화를 이루고 있습니다.
       그런데 이 길고 긴 역사에서 뒤늦게 출현한 인류가 ‘문명과 개발’이라는 명목하에
@@ -118,19 +117,21 @@ export const memberList = Object.values(members);
       사람도 그 무한의 루프 속으로 되돌아가서
       자연과 조화를 이루며 하나가 되자는 의미를 담고 있습니다. 
 
-      Hana is,
-      “하나와 일치” in Korean
-      “Grace” in French, Jewish and Christian
-      “Flower, 花 はな ” in Persian and Japanese
-      “Happiness” in Arabic 
-      “Craft” in Hawaiian 
-      “give out love” in Maori
-      “Hope” in Kurdish
+      Hana is,<br/>
+      “하나와 일치” in Korean<br/>
+      “Grace” in French, Jewish and Christian<br/>
+      “Flower, 花 はな ” in Persian and Japanese<br/>
+      “Happiness” in Arabic <br/>
+      “Craft” in Hawaiian <br/>
+      “give out love” in Maori<br/>
+      “Hope” in Kurdish<br/>
 
-      **에코루프 (Eco+Loop)**
+      <span className="text-xl">
+      에코루프 (Eco+Loop)
+      </span>
       영어 에콜로지(Ecology)에서 유래한 '환경', '생태'의 뜻을 가진 접두사 ‘에코(Eco)’와
       자연의 진화 속성인 무한 루프의 ‘루프(Loop)’가 만났습니다.
-    </pre>
+    </div>
     </div>
   </SectionBlock>
 

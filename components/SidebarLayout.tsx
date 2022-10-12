@@ -17,7 +17,7 @@ export default function SidebarLayout({ children, meta, menu, padding = true }: 
       {/* From : https://bjornlindholm.com/snippets/fixed-sidebar-scrollable-content/ */}
       <div className="">
         <div className="flex">
-          <aside className="h-screen sticky shrink-0 w-52">
+          <aside className="hidden sm:flex h-screen sticky shrink-0 w-52">
             <SideMenu menu={menu}/>
           </aside>
 

@@ -62,8 +62,8 @@ import data from "../content/pages/platform.data";
   <div className="flex justify-center">
   <div className="text-left max-w-4xl space-y-6">
     {data.features.map(feature => 
-    <div className="md:flex rounded-lg border border-slate-200" key={feature.title}>
-      <img className="h-64 w-64 rounded-full drop-shadow mx-auto md:rounded-none md:drop-shadow-none" src={feature.imageUrl} />
+    <div className="md:flex pt-2 rounded-lg border border-slate-200" key={feature.title}>
+      <img className="h-64 w-64 rounded-lg drop-shadow mx-auto md:rounded-none md:drop-shadow-none" src={feature.imageUrl} />
       <div className="p-6 border-primary" >
         <h3 className="text-3xl font-bold inline">{feature.title}</h3>
         <span className="ml-1 inline text-gray-600 text-sm">{feature.subtitle}</span>
@@ -84,14 +84,15 @@ import data from "../content/pages/platform.data";
 <div className="text-left flex justify-center">
   <div className="space-y-4 ">
   {data.benefits.map( (benefit, idx) => 
-  <div className="block relative w-[38rem] " key={idx}> 
+  <div className="block " key={idx}> 
     <div className="p-2 min-w-0 rounded-l-full rounded-r-lg bg-primary-600 flex items-center">
-      <div className="pl-20 text-2xl w-64 flex-none text-white ">{benefit.title}</div>
-      <div className="flex-1 rounded-md bg-white text-left">
+      <div className="ml-0 w-20 h-20 rounded-full bg-secondary text-4xl font-bold text-gray-50 items-center inline-block text-center"><div className="pt-2">{benefit.subtitle}</div></div>
+      <div className="pl-3 text-2xl w-40  flex-none text-white ">{benefit.title}</div>
+      <div className="flex-1 py-1 rounded-md bg-white text-left">
         {benefit.description}
       </div>
     </div>
-    <div className="py-5 absolute left-1 top-1 w-20 h-20 rounded-full bg-secondary text-4xl font-bold text-gray-50 items-center inline-block text-center"><div>{benefit.subtitle}</div></div>
+    
   </div>
   )}
   </div>
