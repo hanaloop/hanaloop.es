@@ -15,15 +15,15 @@ jobs:
           node-version: '14.17.x'
       
       - run: yarn install
-      - name: Build Eleventy
+      - name: Build Next.js SSG
         run: yarn build
         env:
-          REPO_URL: https://github.com/creasoft-dev/fundamenty
-          WEB_PATH_PREFIX: /fundamenty/
+          REPO_URL: https://github.com/creasoft-dev/next-dev-portal
+          WEB_PATH_PREFIX: /next-dev-portal/
           WEB_ROOT_URL: https://creasoft-dev.github.io/
       
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./_site
+          publish_dir: ./out

@@ -1,34 +1,40 @@
 module.exports = {
-    purge: {
-        enabled: (process.env.ELEVENTY_ENV === 'production'),
-        content: [
-            './src/**/*.njk',
-            './src/**/*.md'
-        ]
-    },
-    theme: {
-        fontSize: {
-            'xs': '.75rem',
-            'sm': '1rem',
-            'base': '1.2rem',
-            'lg': '1.25rem',
-            'xl': '1.4rem',
-            '2xl': '1.5rem',
-            '3xl': '1.75rem',
-            '4xl': '2.25rem',
-            '5xl': '4rem',
-            '6xl': '5rem',
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./content/**/*.{md,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: { // Same as lime
+          DEFAULT: '#65a30d',
+          dark: '#3f6212',
+          100: '#ecfccb',
+          200: '#d9f99d',
+          300: '#bef264',
+          400: '#a3e635',
+          500: '#84cc16',
+          600: '#65a30d',
+          700: '#4d7c0f',
+          800: '#3f6212',
+          900: '#365314'
         },
-        extend: {
-            colors: {
-                primary: {
-                    light: '#00c9b6ff',
-                    DEFAULT: '#009688',
-                    dark: '#006d63',
-                }
-            }
-        },
+        secondary: { // same as sky
+          DEFAULT: '#0284c7',
+          dark: '#075985',
+          100: '#e0f2fe',
+          200: '#bae6fd',
+          300: '#7dd3fc',
+          400: '#38bdf8',
+          500: '#0ea5e9',
+          600: '#0284c7',
+          700: '#0369a1',
+          800: '#075985',
+          900: '#0c4a6e'
+        }
+      }
     },
-    variants: {},
-    plugins: [],
+  },
+  plugins: [],
 }

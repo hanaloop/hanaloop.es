@@ -1,0 +1,157 @@
+{
+  "_type": "folder",
+  "slug": "/docs",
+  "meta": {
+    "label": "Main documentation"
+  },
+  "contents": [
+    {
+      "_type": "item",
+      "slug": "/docs/_index",
+      "meta": {
+        "title": "하나루프 | 자료",
+        "description": "환경관련 자료, 환경이슈, 환경정보",
+        "publishedAt": "2022-01-11",
+        "summary": "환경관련 자료, 환경이슈, 환경정보 목차",
+        "image": "/images/pexels-photo-414798.jpeg",
+        "tags": [
+          "Document"
+        ],
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.535,
+          "time": 32100,
+          "words": 107
+        }
+      }
+    },
+    {
+      "_type": "item",
+      "slug": "/docs/glossary",
+      "meta": {
+        "title": "환경용어사전",
+        "description": "환경분야에서 사용되는 용어들 정의",
+        "publishedAt": "2022-10-11",
+        "summary": "환경분야에서 자주 사용되는 용어들을 설명합니다.",
+        "authors": [
+          "hykim"
+        ],
+        "tags": [
+          "환경용어사전"
+        ],
+        "image": "/images/bg-hero_book.jpeg",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.745,
+          "time": 44700,
+          "words": 149
+        }
+      }
+    },
+    {
+      "_type": "folder",
+      "slug": "/docs/x20_environment_general",
+      "meta": {
+        "label": "환경일반",
+        "tags": [
+          "환경일반"
+        ]
+      },
+      "contents": [
+        {
+          "_type": "item",
+          "slug": "/docs/x20_environment_general/2022-10-12-net_zero",
+          "meta": {
+            "title": "탄소중립, 선택이 아닌 필수",
+            "subtitle": "2050년까지 1.5℃로 억제해야 하는 이유",
+            "publishedAt": "2022-10-12",
+            "description": "과도한 탄소 배출에 기인한 기후위기 대응을 위해 IPCC가 정한 2050년까지 1.5℃로 억제해야 한다는 목표는 어떻게 정해지게 되었는지를 설명합니다. 기후전망 시나리오와 그에 따른 기후변화 전망도 알아봅니다.",
+            "summary": "2050년까지 1.5℃로 억제해야 한다는 목표는 어떻게 정해지게 되었는지를 설명합니다.",
+            "image": "https://images.unsplash.com/photo-1568994105591-922d787135dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1791&q=80",
+            "imageHide": true,
+            "imageCredits": "https://unsplash.com/s/photos/climate-change",
+            "authors": "hykim",
+            "tags": [
+              "소식",
+              "탄소중립"
+            ],
+            "readingTime": {
+              "text": "19 min read",
+              "minutes": 18.48,
+              "time": 1108800,
+              "words": 3696
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_type": "folder",
+      "slug": "/docs/x30_ecoloop",
+      "meta": {
+        "label": "EcoLoop",
+        "tags": [
+          "환경일반"
+        ]
+      },
+      "contents": [
+        {
+          "_type": "item",
+          "slug": "/docs/x30_ecoloop/2022-10-12-kepco_data_share",
+          "meta": {
+            "title": "EcoLoop - 한전 전력사용량 정보제공 동의 절차",
+            "publishedAt": "2022-10-12",
+            "description": "EcoLoop 지속가능성 플랫폼은 고객의 한전 전력사용 데이터를 자동으로 수집하여 실시간으로 세밀하게 전력사용 추세를 분석해 드립니다.  그 첫 절차는 고객의 한전 전력사용량 정보제공 동의입니다. 한전 전력사용량 정보제공 동의 절차를 설명합니다.",
+            "image": "/images/posting/ecoloop/hero-ecoloop-kepco.jpeg",
+            "summary": "고객의 한전 전력사용량 데이터를 자동으로 수집하기 위한 첫 절차",
+            "authors": "hykim",
+            "tags": [
+              "EcoLoop",
+              "한전 전력사용량 데이터"
+            ],
+            "readingTime": {
+              "text": "5 min read",
+              "minutes": 4.615,
+              "time": 276900,
+              "words": 923
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_type": "folder",
+      "slug": "/docs/x40_engineering",
+      "meta": {
+        "label": "Engineering",
+        "tags": [
+          "engineering",
+          "development",
+          "programming"
+        ]
+      },
+      "contents": [
+        {
+          "_type": "item",
+          "slug": "/docs/x40_engineering/2022-10-11-homepage_v2",
+          "meta": {
+            "title": "HanaLoop website 2.0!",
+            "publishedAt": "2022-10-11",
+            "summary": "HanaLoop website 2.0 re-engineered and re-designed!",
+            "image": "https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "authors": "ysahnpark",
+            "tags": [
+              "Development"
+            ],
+            "readingTime": {
+              "text": "2 min read",
+              "minutes": 1.175,
+              "time": 70500,
+              "words": 235
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

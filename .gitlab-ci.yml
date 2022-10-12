@@ -1,19 +1,28 @@
-image: node:12.18.1
+# The Docker image that will be used to build your app
+image: "node:16.14.0"
+
+# Functions that should be executed before the build script is run
+before_script:
+  - yarn install
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+    - .next/cache/
 
 pages:
   script:
-  - yarn install
-  - echo $ALGOLIA_APP_ID
-  - echo $GOOGLE_TAG_ID
-  - ELEVENTY_ENV=production yarn build
-  # The build directory is created based on the value set for projectName in
-  # website/siteConfig.js. If you change it there, you need to change it here
-  # as well.
-  - mv ./_site ./public
-
+    - yarn contentprep
+    - yarn build && yarn export
+    # removing the existing public directory prior mv
+    - rm -r ./public
+    - mv ./out ./public
   artifacts:
     paths:
-    - public
-
-  only:
-  - main
+      # The folder that contains the files to be exposed at the Page URL
+      - public
+  rules:
+    # This ensures that only pushes to the default branch will trigger
+    # a pages deploy
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH

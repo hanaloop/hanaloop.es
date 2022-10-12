@@ -1,0 +1,16 @@
+[
+  {
+    "_type": "item",
+    "slug": "/products/_index",
+    "meta": {
+      "label": "제품",
+      "readingTime": {
+        "text": "1 min read",
+        "minutes": 0.025,
+        "time": 1500,
+        "words": 5
+      },
+      "contentFull": "\n## EcoLoop\n\n\n"
+    }
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "_type": "folder",
+  "slug": "/blog",
+  "meta": {
+    "title": "My Blog",
+    "data": [
+      "온실가스 관리"
+    ]
+  },
+  "contents": [
+    {
+      "_type": "item",
+      "slug": "/blog/20220101-blog",
+      "meta": {
+        "title": "Welcome",
+        "description": "First Blog",
+        "keywords": "blog, first",
+        "authors": [
+          "ysahnpark",
+          "ysahnpark"
+        ],
+        "tags": [
+          "hello",
+          "next-dev-portal"
+        ],
+        "publishedAt": "2021-01-14",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.425,
+          "time": 25500,
+          "words": 85
+        }
+      }
+    }
+  ]
+}
