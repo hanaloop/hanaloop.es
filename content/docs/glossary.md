@@ -1,17 +1,17 @@
 ---
-title: "용어"
-description: "환경 용어"
+title: "환경용어사전"
+description: "환경분야에서 사용되는 용어들 정의"
 publishedAt: "2022-10-10"
-summary: "환경 용어"
+summary: "환경분야에서 자주 사용되는 용어들을 설명합니다."
 authors: ['hykim']
 tags:
-  - 용어
+  - 환경용어사전
 image: /images/bg-hero_book.jpeg
 ---
 
 import data from "../content/docs/glossary.data";
 
-## 환경 관련 용어
+## 환경 용어
 
 <div className="[word-break:keep-all]">
 
