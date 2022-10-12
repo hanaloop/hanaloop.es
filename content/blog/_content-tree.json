@@ -1,6 +1,6 @@
 {
   "_type": "folder",
-  "slug": "/blog",
+  "slug": "\\blog",
   "meta": {
     "title": "My Blog",
     "data": [
@@ -10,7 +10,7 @@
   "contents": [
     {
       "_type": "item",
-      "slug": "/blog/20220101-blog",
+      "slug": "\\blog\\20220101-blog",
       "meta": {
         "title": "Welcome",
         "description": "First Blog",

@@ -1,7 +1,7 @@
 [
   {
     "_type": "item",
-    "slug": "/products/_index",
+    "slug": "\\products\\_index",
     "meta": {
       "label": "제품",
       "readingTime": {
@@ -10,7 +10,7 @@
         "time": 1500,
         "words": 5
       },
-      "contentFull": "\n## EcoLoop\n\n\n"
+      "contentFull": "\r\n## EcoLoop\r\n\r\n\r\n"
     }
   }
 ]

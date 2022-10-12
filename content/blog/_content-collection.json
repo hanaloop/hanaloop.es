@@ -1,7 +1,7 @@
 [
   {
     "_type": "item",
-    "slug": "/blog/20220101-blog",
+    "slug": "\\blog\\20220101-blog",
     "meta": {
       "title": "Welcome",
       "description": "First Blog",
@@ -21,7 +21,7 @@
         "time": 25500,
         "words": 85
       },
-      "contentTruncated": "\nNext Dev Portal has built-in blogging feature.\n\nJust create an `*.mdx` file under `/content/blog` directory. \nThen run the generator too `yarn gen:collections` and you are good to go!\n\nRegular blog authors can be added to `authors.yml`. (Thanks Docusaurus for the idea!)\n\n"
+      "contentTruncated": "\r\nNext Dev Portal has built-in blogging feature.\r\n\r\nJust create an `*.mdx` file under `/content/blog` directory. \r\nThen run the generator too `yarn gen:collections` and you are good to go!\r\n\r\nRegular blog authors can be added to `authors.yml`. (Thanks Docusaurus for the idea!)\r\n\r\n"
     }
   }
 ]
