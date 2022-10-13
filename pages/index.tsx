@@ -12,6 +12,8 @@ import siteConfig from '../next-portal.config';
 import docsCollection from '../content/docs/_content-collection.json'
 import { Tags } from '../components/Tags';
 
+
+
 const MAX_DOCS = 4;
 const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt)).slice(0, MAX_DOCS);
 
@@ -87,6 +89,8 @@ const partners: DisplayItem[] = [
 const Home: NextPage = () => {
 
   const siteContext = useContext(SiteContext);
+
+  // TODO: add meta description
   
   return (
     <>

@@ -7,16 +7,20 @@ import * as siteConfig from '../next-portal.config'
 
 // const members = require ('../content/members.json');
 import members from '../content/members';
+import GoogleAnalytics from '../components/plugins/GoogleAnalytics'
 const sitContext = { ...siteConfig, members };
 
 function MyApp({ Component, pageProps }: AppProps & { pageProps: any }) {
 
   return (
-    <SiteContext.Provider value={sitContext}>
-      <Layout meta={pageProps?.frontMatter}>
-        <Component {...pageProps} />  
-      </Layout>
-    </SiteContext.Provider>
+    <>
+      <GoogleAnalytics />
+      <SiteContext.Provider value={sitContext}>
+        <Layout meta={pageProps?.frontMatter}>
+          <Component {...pageProps} />  
+        </Layout>
+      </SiteContext.Provider>
+    </>
   )
 }
 
