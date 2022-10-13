@@ -7,7 +7,7 @@ publishedAt: "2022-10-06"
 
 headerBackground:
   imageUrl: "/images/bg-hero_pando.jpeg"
-  imageDescription: "사진: Pando, Wikipedia"
+  imageDescription: "Pando is believed to be the largest, most dense organism ever found. Photo from Wikipedia"
 hero:
   header: "하나루프"
   tagline: "든든하고 민첩한 파트너"

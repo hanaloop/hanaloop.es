@@ -47,7 +47,7 @@ import SectionBlock from "../components/theme/SectionBlock";
 <SectionBlock title='오픈 포지션' >
 
 <div className="text-left">
-  ### 클라우드 기반 플랫폼 웹 프론트엔드/프론트엔드 & 시스템 SW 엔지니어
+  ### 클라우드 기반 플랫폼 웹 프론트엔드/백엔드 & 시스템 SW 엔지니어
   ▶ 하나루프의 Full-stack 개발자는 전지구적 기후위기 대응 가속화에 비전을 품은 사람들과 함께, 공동의 목표로 함께 문제를 해결하고 솔루션을 구현합니다.
 
   #### 주 역할 및 책임
@@ -94,7 +94,8 @@ import SectionBlock from "../components/theme/SectionBlock";
   - 업무 관련 도서구매 지원
   - 3년 이상 함께하는 멤버의 공헌도에 따라 스톡옵션 지급
 
-  <div className="p-2 border border-primary rounded inline text-lg">[지원하기](recruit_apply)</div>
+  <br />
+  <div className="mt-4 p-2 border border-primary rounded inline text-lg">[지원하기](recruit_apply)</div>
 </div>
 </SectionBlock>
 
