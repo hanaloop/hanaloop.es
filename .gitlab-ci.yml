@@ -14,6 +14,7 @@ cache:
 pages:
   script:
     - yarn contentprep
+    - yarn gen:sitemap
     - yarn build && yarn export
     # removing the existing public directory prior mv
     - rm -r ./public

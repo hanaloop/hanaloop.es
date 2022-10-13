@@ -6,12 +6,15 @@ import { TreeNodeType } from "./gen-contenttree";
 import { MD_EXTENSION } from "../../../libs/constants";
 
 
-export function loadMdxFile(rootPath: string, filePath: string, includeContent = false) {
+export function loadMdxFile(rootPath: string, filePath: string, includeContent = false): TreeNodeType {
   const relativePath = filePath.substring(rootPath.length);
 
+  // HACK: remove '/pages' prefix as it is accessed from root context path
+  let slug = relativePath.startsWith('/pages') ? relativePath.substring(6).replace(MD_EXTENSION, "") : relativePath.replace(MD_EXTENSION, "");
   const node: TreeNodeType = {
       _type: "item",
-      slug: relativePath.replace(MD_EXTENSION, ""),
+      // slug: relativePath.replace(MD_EXTENSION, ""),
+      slug
   };
 
   // console.log("[loadMdxFile] Reading file: " + filePath);

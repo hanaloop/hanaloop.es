@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+       
+    <url>
+        <loc>https://hanaloop.com/company</loc>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://hanaloop.com/credits</loc>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://hanaloop.com/demo_request</loc>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://hanaloop.com/platform</loc>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://hanaloop.com/privacy</loc>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://hanaloop.com/recruit</loc>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://hanaloop.com/recruit_apply</loc>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://hanaloop.com/solution</loc>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://hanaloop.com/blog/20220101-blog</loc>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://hanaloop.com/docs/_index</loc>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://hanaloop.com/docs/glossary</loc>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://hanaloop.com/docs/x20_environment-general/2022-10-12-net-zero</loc>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://hanaloop.com/docs/x30_ecoloop/2022-10-12-kepco_data_share</loc>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://hanaloop.com/docs/x40_engineering/2022-10-11-homepage_v2</loc>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://hanaloop.com/products/_index</loc>
+        <changefreq>daily</changefreq>
+    </url>
+    </urlset>

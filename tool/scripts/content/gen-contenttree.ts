@@ -19,7 +19,7 @@ export type TreeNodeType = {
 * @param {string} dirPrefix remove this part 
 * @returns 
 */
-export function getContentTree(dirNode: any, dirPrefix: string) {
+export function getContentTree(dirNode: any, dirPrefix: string): TreeNodeType {
 
 //   console.log(JSON.stringify(dirNode, null, 2));
 
@@ -34,12 +34,13 @@ export function getContentTree(dirNode: any, dirPrefix: string) {
       join(dirNode.dir, "_meta.yml")
   ];
 
+  // Add metadata from _meta.* content (may be overridden by file's frontMatter)
   for(const metaFilename of metaFilenames) {
       if (fs.existsSync(metaFilename) && fs.lstatSync(metaFilename).isFile()) {
         if (metaFilename.endsWith(".json")) {
-            node.meta = { ...(node.meta || {}), ...readJson(metaFilename)};
+            node.meta = { ...readJson(metaFilename), ...(node.meta || {})};
         } else if (metaFilename.endsWith(".yaml") || metaFilename.endsWith(".yml")) {
-            node.meta = { ...node.meta, ...readYaml(metaFilename)};
+            node.meta = { ...readYaml(metaFilename), ...node.meta};
         }
       }
   }
@@ -54,7 +55,7 @@ export function getContentTree(dirNode: any, dirPrefix: string) {
         const childNode: TreeNodeType = loadOpenApiFile(dirPrefix, join(dirNode.dir, item));
         contents.push(childNode);
       } else if (typeof item === 'object' && item !== null) {
-        // It is a directory
+        // It is a directory, dive into it
         contents.push(getContentTree(item, dirPrefix));
       }
   }
@@ -66,7 +67,7 @@ export function getContentTree(dirNode: any, dirPrefix: string) {
 
 
 /**
- * Returns an array of objects that representes the front matter ofd all files
+ * Returns an array of objects that represents the front matter of all files
  * 
  * @param dirPath directory path relative to the process execution path to fetch the files
  * @returns 

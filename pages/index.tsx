@@ -12,7 +12,12 @@ import siteConfig from '../next-portal.config';
 import docsCollection from '../content/docs/_content-collection.json'
 import { Tags } from '../components/Tags';
 
-
+// For HTML meta & SEO 
+const frontMatter = {
+  title: `${siteConfig.title} | 탄소중립 플랫폼 및 솔루션`,
+  description: "지속가능한 디지털 전환 Sustainable Digital Transformation과 친환경 EcoLoop 플랫폼 기반 솔루션 제공",
+  keywords: "하나루프, 에코루프, 온실가스 관리, 탄소 관리, 환경 플랫폼, Platform, HanaLoop, EcoLoop, Sustainability, Digital Transformation"
+}
 
 const MAX_DOCS = 4;
 const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt)).slice(0, MAX_DOCS);
@@ -188,3 +193,10 @@ const Home: NextPage = () => {
 }
 
 export default Home;
+
+
+export async function getStaticProps() {
+  return { 
+    props: { frontMatter } 
+  };
+}

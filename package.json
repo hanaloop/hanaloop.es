@@ -15,6 +15,7 @@
     "genall:collections": "esr ./tool/ndp-cli.ts content/collections blog,docs,products,pages",
     "gen:trees": "esr ./tool/ndp-cli.ts content/trees",
     "genall:trees": "esr ./tool/ndp-cli.ts content/trees pages,blog,docs,products",
+    "gen:sitemap": "esr ./tool/ndp-cli.ts content/sitemap public/sitemap.xml",
     "genall": "npm-run-all --parallel genall:*",
     "search:fuse": "esr ./tool/ndp-cli.ts search/fuse pages,blog,docs,products ",
     "contentprep": "npm-run-all --parallel genall:* syncassetsall search:fuse",

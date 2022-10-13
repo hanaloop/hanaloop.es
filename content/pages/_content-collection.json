@@ -1,7 +1,7 @@
 [
   {
     "_type": "item",
-    "slug": "/pages/company",
+    "slug": "/company",
     "meta": {
       "title": "하나루프 | 지속가능한 세상으로의 전환 - 지속가능성 임팩트 프로젝트 EcoLoop 에코루프",
       "description": "주식회사 하나루프 설립 이유, 하나루프의 비전, 하나루프의 미션, 하나루프의 고객과의 약속, 하나루프의 문화, 하나루프의 리더십, 하나루프 이름의 배경, 하나루프의 의미, 에코루프의 의미 소개, 지속가능성 임팩트 프로젝트, 비전은 깨끗하고 지속가능한 세상으로의 전환으로 홍익인간 이념의 실현, 미션은 기술 융합을 통한 지속가능한 생태계 형성으로 고객의 가치를 높이고 산업의 탄력성을 향상시키는 것, 건강한 지구로 환경을 회복시키며 인류의 번영에 기여할 것을 약속",
@@ -16,17 +16,17 @@
         "tagline": "든든하고 민첩한 파트너"
       },
       "readingTime": {
-        "text": "7 min read",
-        "minutes": 7.005,
-        "time": 420300,
-        "words": 1401
+        "text": "8 min read",
+        "minutes": 7.03,
+        "time": 421800,
+        "words": 1406
       },
-      "contentFull": "import SectionBlock from \"../components/theme/SectionBlock\";\nimport members from \"../content/members\";\nimport { contextualPath } from \"../libs/content.util\"\nexport const memberList = Object.values(members);\n\n<div className=\"\"> \n\n  <SectionBlock title='지속가능성을 위한 도전에 하나루프가 함께 합니다' containerStyle=\"flex justify-center\" >\n    <div className=\"p-4 text-lg max-w-3xl\">\n    기후 변화의 주요 원인인 온실가스 배출로 무너져내린 지구 환경을 되살리기 위해 전세계, 국가, 사회가 필수불가결한 합의를 도출하는 등 우리 모두가 전방위적으로 힘을 모으고 있습니다. 그러나 구체적인 대안이나 해결 방법을 찾기란 쉽지 않습니다.\n\n특히 이윤의 창출과 지속적인 성장에 주요 가치를 두는 기업에게 정부, 투자자와 고객, 구성원 등 사회가 요구하는 환경 정책과 엄격한 규제는 이 시대에 피할 수 없는 중요 과제가 되었습니다.\n사회적 통념을 넘어 이제는 경제논리로도 환경을 대하는 태도가 진심으로 변화하고 있기 때문입니다.\n\n기업과 기관의 지속가능한 성장을 위해 하나루프가 함께 합니다.\n\n    </div>\n  </SectionBlock>\n\n\n  <SectionBlock title='비전' containerStyle='bg-gray-100'>\n    <div className=\"p-4\">\n      <span className=\"text-lg\">하나루프의 비전은 깨끗하고 지속가능한 세상으로의 전환으로 홍익인간의 이념을 실현하는 것입니다.</span>\n      \n    </div>\n  </SectionBlock>\n\n  <SectionBlock title='미션' >\n    <div className=\"p-4\">\n    <span className=\"text-lg\">하나루프의 미션은 기술 융합을 통한 지속가능한 생태계 형성으로 고객의 가치를 높이고 산업의 탄력성을 향상시키는 것입니다.</span>\n    </div>\n  </SectionBlock>\n\n  <SectionBlock title='고객과의 약속' containerStyle='bg-gray-100'>\n    <div className=\"p-4\">\n      <span className=\"text-lg\">하나루프는 건강한 지구로 환경을 회복시키며 인류의 번영에 기여하겠습니다.</span>\n    </div>\n  </SectionBlock>\n\n  <SectionBlock title='핵심가치' >\n    <div className=\"p-4 w-auto flex justify-center \">\n    <div className=\"w-60 text-left text-lg\">\n      - 탁월함 추구\n      - 진정한 가치 창출\n      - 오래 지속되는 신뢰 구축\n      - 지속 가능한 성장\n    </div>\n    </div>\n  </SectionBlock>\n\n  <SectionBlock title='문화' containerStyle='bg-gray-100'>\n    <div className=\"p-4\">\n      <span className=\"text-lg\">\n      하나루프는 모든 세대가 건강한 지구와 공생하기 위해, 현세의 가장 어려운 문제를 기술로 해결하기 위해 모인 사람들의 유기체입니다. 문제를 파악하고 해결 방법을 연구하며 최고의 기술로 최고의 효과를 내는 솔루션을 제공하기 위해 끊임없이 성장합니다. 우리가 속한 사회의 건강한 변화를 주도합니다. \n      </span>\n    </div>\n  </SectionBlock>\n\n  <SectionBlock title='리더십' >\n    <div className=\"p-4\">\n      <div className=\"my-5 grid lg:grid-cols-3 grid-cols-2 gap-4\">\n        {\n          memberList.map(m => (\n            <figure className=\"bg-gray-100 rounded-md my-4 p-4 shadow \" key={m.name}>\n              <div className=\"w-auto flex justify-center\">\n              <img className=\"w-32 h-32 rounded-full block\" src={ contextualPath(siteConfig, m.image_url) } alt=\"\" />\n              </div>\n              <div className=\"pt-6 space-y-4 block\">\n                <figcaption className=\"font-medium text-center\">\n                  <div className=\"fond-semibold\">\n                    <a className=\"no-underline  space-x-1\" href={ m.profile_url }><span className=\"whitespace-nowrap\">{ m.name }</span>\n                    <span className=\"whitespace-nowrap text-sm text-slate-700\">{ m.name_alt }</span></a>\n                  </div>\n                  <div className=\"text-sm text-primary-dark\">{ m.title }</div>\n                  <div className=\"mt-2 text-xs text-slate-500\">{ m.education }</div>\n                </figcaption>\n                <p className=\"text-sm\">\n                  { m.description }\n                </p>\n              </div>\n            </figure>\n            )\n          )\n        }\n      </div>\n    </div>\n  </SectionBlock>\n\n  <SectionBlock title='하나루프 이름의 배경' containerStyle=\"flex justify-center\" >\n    <div className=\"px-4\">\n      <span className=\"text-xl\">\n      하나루프 (Hana+Loop)\n      </span>\n    <div className=\"max-w-3xl\">\n      우주가 생긴 이래,\n      우리를 둘러싼 자연환경은 끊임없이 서로 순환하며 조화를 이루고 있습니다.\n      그런데 이 길고 긴 역사에서 뒤늦게 출현한 인류가 ‘문명과 개발’이라는 명목하에\n      이 아름답고 선한 순환의 고리, 즉 자연의 무한 루프를 끊으려 하고 있습니다.\n\n      **하나루프는**\n      자연의 지혜로운 선순환을 되살리고\n      사람도 그 무한의 루프 속으로 되돌아가서\n      자연과 조화를 이루며 하나가 되자는 의미를 담고 있습니다. \n\n      Hana is,<br/>\n      “하나와 일치” in Korean<br/>\n      “Grace” in French, Jewish and Christian<br/>\n      “Flower, 花 はな ” in Persian and Japanese<br/>\n      “Happiness” in Arabic <br/>\n      “Craft” in Hawaiian <br/>\n      “give out love” in Maori<br/>\n      “Hope” in Kurdish<br/>\n\n      <span className=\"text-xl\">\n      에코루프 (Eco+Loop)\n      </span>\n      영어 에콜로지(Ecology)에서 유래한 '환경', '생태'의 뜻을 가진 접두사 ‘에코(Eco)’와\n      자연의 진화 속성인 무한 루프의 ‘루프(Loop)’가 만났습니다.\n    </div>\n    </div>\n  </SectionBlock>\n\n</div>\n"
+      "contentFull": "import SectionBlock from \"../components/theme/SectionBlock\";\nimport members from \"../content/members\";\nimport { contextualPath } from \"../libs/content.util\"\nexport const memberList = Object.values(members).filter(m => m.type !== 'system');\n\n<div className=\"\"> \n\n  <SectionBlock title='지속가능성을 위한 도전에 하나루프가 함께 합니다' containerStyle=\"flex justify-center\" >\n    <div className=\"p-4 text-lg max-w-3xl\">\n    기후 변화의 주요 원인인 온실가스 배출로 무너져내린 지구 환경을 되살리기 위해 전세계, 국가, 사회가 필수불가결한 합의를 도출하는 등 우리 모두가 전방위적으로 힘을 모으고 있습니다. 그러나 구체적인 대안이나 해결 방법을 찾기란 쉽지 않습니다.\n\n특히 이윤의 창출과 지속적인 성장에 주요 가치를 두는 기업에게 정부, 투자자와 고객, 구성원 등 사회가 요구하는 환경 정책과 엄격한 규제는 이 시대에 피할 수 없는 중요 과제가 되었습니다.\n사회적 통념을 넘어 이제는 경제논리로도 환경을 대하는 태도가 진심으로 변화하고 있기 때문입니다.\n\n기업과 기관의 지속가능한 성장을 위해 하나루프가 함께 합니다.\n\n    </div>\n  </SectionBlock>\n\n\n  <SectionBlock title='비전' containerStyle='bg-gray-100'>\n    <div className=\"p-4\">\n      <span className=\"text-lg\">하나루프의 비전은 깨끗하고 지속가능한 세상으로의 전환으로 홍익인간의 이념을 실현하는 것입니다.</span>\n      \n    </div>\n  </SectionBlock>\n\n  <SectionBlock title='미션' >\n    <div className=\"p-4\">\n    <span className=\"text-lg\">하나루프의 미션은 기술 융합을 통한 지속가능한 생태계 형성으로 고객의 가치를 높이고 산업의 탄력성을 향상시키는 것입니다.</span>\n    </div>\n  </SectionBlock>\n\n  <SectionBlock title='고객과의 약속' containerStyle='bg-gray-100'>\n    <div className=\"p-4\">\n      <span className=\"text-lg\">하나루프는 건강한 지구로 환경을 회복시키며 인류의 번영에 기여하겠습니다.</span>\n    </div>\n  </SectionBlock>\n\n  <SectionBlock title='핵심가치' >\n    <div className=\"p-4 w-auto flex justify-center \">\n    <div className=\"w-60 text-left text-lg\">\n      - 탁월함 추구\n      - 진정한 가치 창출\n      - 오래 지속되는 신뢰 구축\n      - 지속 가능한 성장\n    </div>\n    </div>\n  </SectionBlock>\n\n  <SectionBlock title='문화' containerStyle='bg-gray-100'>\n    <div className=\"p-4\">\n      <span className=\"text-lg\">\n      하나루프는 모든 세대가 건강한 지구와 공생하기 위해, 현세의 가장 어려운 문제를 기술로 해결하기 위해 모인 사람들의 유기체입니다. 문제를 파악하고 해결 방법을 연구하며 최고의 기술로 최고의 효과를 내는 솔루션을 제공하기 위해 끊임없이 성장합니다. 우리가 속한 사회의 건강한 변화를 주도합니다. \n      </span>\n    </div>\n  </SectionBlock>\n\n  <SectionBlock title='리더십' >\n    <div className=\"p-4\">\n      <div className=\"my-5 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3\">\n        {\n          memberList.map(m => (\n            <figure className=\"bg-gray-100 rounded-md my-4 p-4 shadow \" key={m.name}>\n              <div className=\"w-auto flex justify-center\">\n              <img className=\"w-32 h-32 rounded-full block\" src={ contextualPath(siteConfig, m.image_url) } alt=\"\" />\n              </div>\n              <div className=\"pt-6 space-y-4 block\">\n                <figcaption className=\"font-medium text-center\">\n                  <div className=\"fond-semibold\">\n                    <a className=\"no-underline  space-x-1\" href={ m.profile_url }><span className=\"whitespace-nowrap\">{ m.name }</span>\n                    <span className=\"whitespace-nowrap text-sm text-slate-700\">{ m.name_alt }</span></a>\n                  </div>\n                  <div className=\"text-sm text-primary-dark\">{ m.title }</div>\n                  <div className=\"mt-2 text-xs text-slate-500\">{ m.education }</div>\n                </figcaption>\n                <p className=\"text-sm\">\n                  { m.description }\n                </p>\n              </div>\n            </figure>\n            )\n          )\n        }\n      </div>\n    </div>\n  </SectionBlock>\n\n  <SectionBlock title='하나루프 이름의 배경' containerStyle=\"flex justify-center\" >\n    <div className=\"px-4\">\n      <span className=\"text-xl\">\n      하나루프 (Hana+Loop)\n      </span>\n    <div className=\"max-w-3xl\">\n      우주가 생긴 이래,\n      우리를 둘러싼 자연환경은 끊임없이 서로 순환하며 조화를 이루고 있습니다.\n      그런데 이 길고 긴 역사에서 뒤늦게 출현한 인류가 ‘문명과 개발’이라는 명목하에\n      이 아름답고 선한 순환의 고리, 즉 자연의 무한 루프를 끊으려 하고 있습니다.\n\n      **하나루프는**\n      자연의 지혜로운 선순환을 되살리고\n      사람도 그 무한의 루프 속으로 되돌아가서\n      자연과 조화를 이루며 하나가 되자는 의미를 담고 있습니다. \n\n      Hana is,<br/>\n      “하나와 일치” in Korean<br/>\n      “Grace” in French, Jewish and Christian<br/>\n      “Flower, 花 はな ” in Persian and Japanese<br/>\n      “Happiness” in Arabic <br/>\n      “Craft” in Hawaiian <br/>\n      “give out love” in Maori<br/>\n      “Hope” in Kurdish<br/>\n\n      <span className=\"text-xl\">\n      에코루프 (Eco+Loop)\n      </span>\n      영어 에콜로지(Ecology)에서 유래한 '환경', '생태'의 뜻을 가진 접두사 ‘에코(Eco)’와\n      자연의 진화 속성인 무한 루프의 ‘루프(Loop)’가 만났습니다.\n    </div>\n    </div>\n  </SectionBlock>\n\n</div>\n"
     }
   },
   {
     "_type": "item",
-    "slug": "/pages/credits",
+    "slug": "/credits",
     "meta": {
       "title": "Credits",
       "description": "Credits",
@@ -43,7 +43,7 @@
   },
   {
     "_type": "item",
-    "slug": "/pages/demo_request",
+    "slug": "/demo_request",
     "meta": {
       "title": "데모 요청",
       "description": "데모 요청",
@@ -60,7 +60,7 @@
   },
   {
     "_type": "item",
-    "slug": "/pages/platform",
+    "slug": "/platform",
     "meta": {
       "title": "EcoLoop by 하나루프 | SaaS형 데이터기반 지속가능성 플랫폼 | 공급망 탄소관리 플랫폼 | 에코루프",
       "description": "SaaS형 온실가스 관리 플랫폼, EcoLoop(에코루프)는 온실가스 배출활동을 관리하며, 배출량을 계산하고 분석합니다. EcoLoop (에코루프)를 통해 기관, 기업은 기후관련 규제에 대응하고, 기후 리스크를 줄이며, 에너지 소비를 줄이고, ESG 포트폴리오를 향상시킬 수 있습니다. 궁극적으로 기관, 기업은 탄소발자국을 줄이며, 기후위기 완화에 기여할 수 있습니다. 탄소 어카운팅, 환경 업무 협업, 탄소 전략, 전략적 시각화, 가치사슬 탄소관리, 스코프3 관리, 공급망 탄소 관리, 온실가스를 보여주는 지속가능성 플랫폼, 환경데이터 관리 비용 절감, 환경위험요소 감소, 기업 이미지 및 경쟁력 향상",
@@ -84,7 +84,7 @@
   },
   {
     "_type": "item",
-    "slug": "/pages/privacy",
+    "slug": "/privacy",
     "meta": {
       "readingTime": {
         "text": "21 min read",
@@ -97,7 +97,7 @@
   },
   {
     "_type": "item",
-    "slug": "/pages/recruit",
+    "slug": "/recruit",
     "meta": {
       "title": "하나루프 | 채용 - 지속가능성 임팩트 프로젝트 최적 글로벌 일류 인재 채용",
       "description": ",  임팩트 프로젝트 최적 글로벌 일류 인재 채용지속가능성 임팩트 프로젝트 합류, 하나루프는 지속가능한 세상의 디딤돌이 될 지속가능성 플랫폼 개발에 참여할 인재 채용. 다음 세대가 지금까지의 세대가 누렸던 모든 것들을 타협없이 누릴 수 있는 세상을 위한 임팩트 프로젝트 합류. 인류의 삶과 지구 환경을 위한 임팩트 프로젝트에 참여하며 함께 성장할 인재 채용. 글로벌 일류 인재로 합류",
@@ -121,7 +121,7 @@
   },
   {
     "_type": "item",
-    "slug": "/pages/recruit_apply",
+    "slug": "/recruit_apply",
     "meta": {
       "title": "지원",
       "description": "지원",
@@ -138,7 +138,7 @@
   },
   {
     "_type": "item",
-    "slug": "/pages/solution",
+    "slug": "/solution",
     "meta": {
       "title": "EcoLoop by 하나루프 | 데이터기반 지속가능성 솔루션 | 에코루프",
       "description": "EcoLoop 데이터기반 지속가능성 솔루션, 데이터를 통해 전략적 인사이트를 제공하는 솔루션, 온실가스 관리 플랫폼 EcoLoop, 데이터 수집 자동화 및 분석, 가치사슬망 관리, 공급망 관리, 스코프3 관리, 중소기업을 위한 지속가능성 솔루션, OpenAPI 제공으로 지속가능성 생태계 가속화",

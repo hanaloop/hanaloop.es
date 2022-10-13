@@ -27,7 +27,6 @@ export async function getAllFilesFrontMatter(contentRoot: string, contentType: s
   const result: TreeNodeType[] = [];
   
   for (const filePath of mdxFiles) {
-    // console.log("Reading file of: " + join(filePath));
     const node: TreeNodeType = loadMdxFile(rootPath, filePath, true);
 
     result.push(node);

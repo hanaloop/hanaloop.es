@@ -4,7 +4,7 @@
 const config = {
     title: 'HanaLoop',
     tagline: undefined,
-    url: 'https://your-portal-site.com',
+    url: 'https://hanaloop.com',
     basePath: process.env.WEB_PATH_PREFIX || '',
     favicon: '/ecoloop-ico.png',
     organizationName: 'hanaloop', // Usually your GitHub org/user name.
