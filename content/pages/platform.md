@@ -78,9 +78,43 @@ import data from "../content/pages/platform.data";
 </SectionBlock>
 
 
+<SectionBlock title='EcoLoop이 지원하는 표준 보고 항목' containerStyle='bg-gray-100 flex justify-center'>
+
+<div className="p-4 max-w-3xl text-left">
+
+<img src="/images/standards/tcfd-logo.png" className="h-8" alt="TCFD logo"/>
+
+### Metrics and Targets
+
+- a) Disclose the metrics used by the company to assess climate-related risks and opportunities in line with its strategy and risk management process.
+- b) Disclose Scope 1, Scope 2, and, if appropriate, Scope 3 greenhouse gas (GHG) emissions, and the related risks.
+- c) Describe the targets used by the company to manage climate-related risks and opportunities and performance against targets.
+
+<hr />
+
+<img src="/images/standards/gri-logo.png" className="mt-4 h-16" alt="GRI logo"/>
+
+### GRI 302: Energy 2016 
+
+- Disclosure 302-1 Energy consumption within the organization 
+- Disclosure 302-2 Energy consumption outside of the organization <span className="p-1 text-xs rounded bg-slate-400 text-gray-100">(2022-Q4)</span>
+- Disclosure 302-3 Energy intensity 
+- Disclosure 302-4 Reduction of energy consumption 
+
+### GRI 305: Emissions
+
+- Disclosure 305-1 Direct (Scope 1) GHG emissions
+- Disclosure 305-2 Energy indirect (Scope 2) GHG emissions
+- Disclosure 305-3 Other indirect (Scope 3) GHG emissions <span className="p-1 text-xs rounded bg-slate-400 text-gray-100">(2023-Q1)</span>
+- Disclosure 305-4 GHG emissions intensity
+- Disclosure 305-5 Reduction of GHG emissions
+- Disclosure 305-6 Emissions of ozone-depleting substances (ODS)
+- Disclosure 305-7 Nitrogen oxides (NOx), sulfur oxides (SOx), and other significant air emissions
+</div>
+</SectionBlock>
 
 
-<SectionBlock title='기대 효과' containerStyle='bg-gray-100'>
+<SectionBlock title='기대 효과'>
 <div className="text-left flex justify-center">
   <div className="space-y-4 ">
   {data.benefits.map( (benefit, idx) => 

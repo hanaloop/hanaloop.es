@@ -11,7 +11,7 @@
       "meta": {
         "title": "하나루프 | 자료",
         "description": "환경관련 자료, 환경이슈, 환경정보",
-        "publishedAt": "2022-01-11",
+        "publishedAt": "2022-01-10",
         "summary": "환경관련 자료, 환경이슈, 환경정보 목차",
         "image": "/images/pexels-photo-414798.jpeg",
         "tags": [
@@ -45,6 +45,23 @@
           "minutes": 0.745,
           "time": 44700,
           "words": 149
+        }
+      }
+    },
+    {
+      "_type": "item",
+      "slug": "/docs/links_environment",
+      "meta": {
+        "title": "환경 기후 관련 사이트",
+        "description": "환경 기후 관련 사이트",
+        "keywords": "환경, 기후, ESG, TCFD, CDP, SASB, GRI, RE100, ",
+        "publishedAt": "2022-10-11",
+        "image": "https://images.unsplash.com/photo-1528545657093-2928f2e17013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1142&q=80",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.585,
+          "time": 35100,
+          "words": 117
         }
       }
     },
@@ -133,10 +150,10 @@
       "contents": [
         {
           "_type": "item",
-          "slug": "/docs/x40_engineering/2022-10-11-homepage_v2",
+          "slug": "/docs/x40_engineering/2022-10-10-homepage_v2",
           "meta": {
             "title": "HanaLoop website 2.0!",
-            "publishedAt": "2022-10-11",
+            "publishedAt": "2022-10-10",
             "summary": "HanaLoop website 2.0 re-engineered and re-designed!",
             "image": "https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
             "authors": "ysahnpark",

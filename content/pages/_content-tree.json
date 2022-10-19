@@ -12,7 +12,7 @@
         "publishedAt": "2022-10-06",
         "headerBackground": {
           "imageUrl": "/images/bg-hero_pando.jpeg",
-          "imageDescription": "사진: Pando, Wikipedia"
+          "imageDescription": "Pando is believed to be the largest, most dense organism ever found. Photo from Wikipedia"
         },
         "hero": {
           "header": "하나루프",
@@ -20,9 +20,9 @@
         },
         "readingTime": {
           "text": "8 min read",
-          "minutes": 7.03,
-          "time": 421800,
-          "words": 1406
+          "minutes": 7.08,
+          "time": 424800,
+          "words": 1416
         }
       }
     },
@@ -74,10 +74,10 @@
           "tagline": "온실가스 오염물질 환경데이터 관리"
         },
         "readingTime": {
-          "text": "5 min read",
-          "minutes": 4.245,
-          "time": 254700,
-          "words": 849
+          "text": "6 min read",
+          "minutes": 5.305,
+          "time": 318300,
+          "words": 1061
         }
       }
     },
@@ -110,9 +110,9 @@
         },
         "readingTime": {
           "text": "7 min read",
-          "minutes": 6.36,
-          "time": 381600,
-          "words": 1272
+          "minutes": 6.365,
+          "time": 381900,
+          "words": 1273
         }
       }
     },
