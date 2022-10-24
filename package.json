@@ -19,6 +19,7 @@
     "genall": "npm-run-all --parallel genall:*",
     "search:fuse": "esr ./tool/ndp-cli.ts search/fuse pages,blog,docs,products ",
     "contentprep": "npm-run-all --parallel genall:* syncassetsall search:fuse",
+    "contentprep2": "yarn genall:collections && yarn genall:trees syncassetsall search:fuse",
     "test:utils": "yarn test -t utils"
   },
   "dependencies": {

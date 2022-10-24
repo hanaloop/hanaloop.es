@@ -33,12 +33,13 @@ function MenuItem ({menu, level}: SideMenuProps) {
   const currentPath = (questionMarkPos > 0) ? router.asPath.substring(0, questionMarkPos): router.asPath;
   const activeClass = (currentPath === menu?.link) ? "bg-gray-200" : "";
 
+  const textClass = (level && level > 0) ? ' text-xs ' : '';
   const margin = `${level! * 0.5}rem`;
   return (
     <>
     {
       (menu?.subItems === null) 
-          ? <Link key={menu?.label} href={menu?.link} passHref><a style={ { marginLeft: margin } } className={activeClass + " block py-2 px-4 hover:bg-primary hover:text-gray-50 transition duration-200"}>{menu?.label}</a></Link>
+          ? <Link key={menu?.label} href={menu?.link} passHref><a style={ { marginLeft: margin } } className={activeClass + ` ${textClass} block py-2 px-4 hover:bg-primary hover:text-gray-50 transition duration-200`}>{menu?.label}</a></Link>
           : (menu?.subItems?.length && menu?.subItems?.length > 0) 
               ? <MenuNode menu={menu} level={level}/> : ""
     }

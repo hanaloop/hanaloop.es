@@ -94,9 +94,86 @@
             ],
             "readingTime": {
               "text": "19 min read",
-              "minutes": 18.49,
-              "time": 1109400,
-              "words": 3698
+              "minutes": 18.595,
+              "time": 1115700,
+              "words": 3719
+            }
+          }
+        },
+        {
+          "_type": "item",
+          "slug": "/docs/x20_environment-general/2022-10-22-tcfd-2022-framework",
+          "meta": {
+            "title": "TCFD란?",
+            "subtitle": "TCFD와 TCFD의 권고안",
+            "publishedAt": "2022-10-22",
+            "description": "TCFD가 무엇인지, 목적과 설립 경위를 알아봅니다. TCFD 권고안 4가지 틀과 세부 항목들을 살펴봅니다. TCFD 권고안은 어떻게 공개하는지, 2022년 현재 TCFD 지지 규모와 지역적 분포를 살펴봅니다. ",
+            "summary": "",
+            "image": "/images/posting/environment-general/EcoLoop_tcfd.jpeg",
+            "imageHide": true,
+            "imageCredits": null,
+            "authors": "hykim",
+            "tags": [
+              "표준",
+              "TCFD"
+            ],
+            "readingTime": {
+              "text": "5 min read",
+              "minutes": 4.495,
+              "time": 269700,
+              "words": 899
+            }
+          }
+        },
+        {
+          "_type": "item",
+          "slug": "/docs/x20_environment-general/2022-10-24-tcfd-2022-status-report-review",
+          "meta": {
+            "title": "TCFD 2022 현황 보고서 리뷰",
+            "subtitle": "기업,기관에게 실행이 쉽지 않은 지침은?",
+            "publishedAt": "2022-10-24",
+            "description": "TCFD 2022 현황 보고서를 통해 지난 5년간의 기후 관련 공개 현황, TCFD 시행에 대한 전망, 추가 진전 기회를 포함한 지난 5년간의 평가 결과를 살펴보도록 하겠습니다.",
+            "summary": "",
+            "image": "/images/posting/environment-general/EcoLoop_tcfd_pexels.jpeg",
+            "imageHide": true,
+            "imageCredits": null,
+            "authors": "hykim",
+            "tags": [
+              "표준",
+              "TCFD",
+              "2022 현황 보고서 리뷰"
+            ],
+            "readingTime": {
+              "text": "13 min read",
+              "minutes": 12.42,
+              "time": 745200,
+              "words": 2484
+            }
+          }
+        },
+        {
+          "_type": "item",
+          "slug": "/docs/x20_environment-general/2022-10-25-tcfd-2022-case-study",
+          "meta": {
+            "title": "TCFD 2022 현황 보고서 사례 연구",
+            "subtitle": "TCFD의 사례 연구(Case Studies)에서 얻은 인사이트",
+            "publishedAt": "2022-10-25",
+            "description": "TCFD의 사례 연구에서 얻은 인사이트 ",
+            "summary": "TCFD의 사례 연구에서 얻은 인사이트 ",
+            "image": "/images/posting/environment-general/EcoLoop_tcfd_case_studies.jpeg",
+            "imageHide": true,
+            "imageCredits": null,
+            "authors": "ysahnpark",
+            "tags": [
+              "표준",
+              "TCFD",
+              "사례 연구"
+            ],
+            "readingTime": {
+              "text": "8 min read",
+              "minutes": 7.96,
+              "time": 477600,
+              "words": 1592
             }
           }
         }
@@ -128,9 +205,9 @@
             ],
             "readingTime": {
               "text": "5 min read",
-              "minutes": 4.74,
-              "time": 284400,
-              "words": 948
+              "minutes": 4.895,
+              "time": 293700,
+              "words": 979
             }
           }
         }
