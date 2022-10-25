@@ -28,11 +28,11 @@ export default function Layout({ children, meta }: LayoutProps) {
         <link rel="icon" href={siteContext.favicon} />
       </Head>
 
-      <div className="">
+      <div className=" [word-break:keep-all]">
         <NavBar pageYOffset={pageYOffset}/>
 
         {/* <!-- Content | SideLayout --> */}
-        <div className="content ">
+        <div className="content">
             {children}
         </div>
 
