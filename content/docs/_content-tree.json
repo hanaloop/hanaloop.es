@@ -19,9 +19,9 @@
         ],
         "readingTime": {
           "text": "1 min read",
-          "minutes": 0.535,
-          "time": 32100,
-          "words": 107
+          "minutes": 0.57,
+          "time": 34200,
+          "words": 114
         }
       }
     },
@@ -107,8 +107,8 @@
             "title": "TCFD란?",
             "subtitle": "TCFD와 TCFD의 권고안",
             "publishedAt": "2022-10-22",
-            "description": "TCFD가 무엇인지, 목적과 설립 경위를 알아봅니다. TCFD 권고안 4가지 틀과 세부 항목들을 살펴봅니다. TCFD 권고안은 어떻게 공개하는지, 2022년 현재 TCFD 지지 규모와 지역적 분포를 살펴봅니다. ",
-            "summary": "",
+            "description": "TCFD가 무엇인지, 목적과 설립 경위를 알아봅니다. TCFD 권고안 4가지 틀과 세부 항목들을 살펴봅니다. TCFD 권고안은 어떻게 공개하는지, 2022년 현재 TCFD 지지 규모와 지역적 분포를 살펴봅니다.",
+            "summary": "TCFD가 무엇인지, 목적과 설립 경위를 알아봅니다. TCFD 권고안 4가지 틀과 세부 항목들을 살펴봅니다.",
             "image": "/images/posting/environment-general/EcoLoop_tcfd.jpeg",
             "imageHide": true,
             "imageCredits": null,
@@ -119,9 +119,9 @@
             ],
             "readingTime": {
               "text": "5 min read",
-              "minutes": 4.495,
-              "time": 269700,
-              "words": 899
+              "minutes": 4.685,
+              "time": 281100,
+              "words": 937
             }
           }
         },
@@ -133,7 +133,7 @@
             "subtitle": "기업,기관에게 실행이 쉽지 않은 지침은?",
             "publishedAt": "2022-10-24",
             "description": "TCFD 2022 현황 보고서를 통해 지난 5년간의 기후 관련 공개 현황, TCFD 시행에 대한 전망, 추가 진전 기회를 포함한 지난 5년간의 평가 결과를 살펴보도록 하겠습니다.",
-            "summary": "",
+            "summary": "TCFD 2022 현황 보고서를 통해 지난 5년간의 기후 관련 공개 현황, TCFD 시행에 대한 전망을 살펴보도록 하겠습니다.",
             "image": "/images/posting/environment-general/EcoLoop_tcfd_pexels.jpeg",
             "imageHide": true,
             "imageCredits": null,
@@ -145,9 +145,9 @@
             ],
             "readingTime": {
               "text": "13 min read",
-              "minutes": 12.42,
-              "time": 745200,
-              "words": 2484
+              "minutes": 12.63,
+              "time": 757800,
+              "words": 2526
             }
           }
         },
@@ -171,9 +171,9 @@
             ],
             "readingTime": {
               "text": "8 min read",
-              "minutes": 7.96,
-              "time": 477600,
-              "words": 1592
+              "minutes": 7.955,
+              "time": 477300,
+              "words": 1591
             }
           }
         }

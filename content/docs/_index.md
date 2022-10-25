@@ -7,6 +7,7 @@ image: "/images/pexels-photo-414798.jpeg"
 tags:
   - Document
 ---
+import {Tags} from "../components/Tags";
 import docsCollection from "../content/docs/_content-collection.json";
 
 export const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt));
@@ -24,6 +25,7 @@ export const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.local
           <div className="text-sm text-gray-500">
             <div className="text-xs">{item.meta.publishedAt}</div>
             <div>{item.meta.summary}</div>
+            <Tags tags={item.meta.tags} />
           </div>
         </div>
         </a>

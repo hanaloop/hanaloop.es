@@ -15,7 +15,7 @@ function MenuNode({menu, level}: SideMenuProps) {
   return (
     <>
       <div className="flex justify-between">
-        <div style={ { marginLeft: margin } } className="w-full py-2 px-4 text-gray-600">{menu?.label}</div>
+        <div style={ { marginLeft: margin } } className="w-full py-2 px-4 text-gray-600 [word-break:keep-all]">{menu?.label}</div>
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
@@ -39,7 +39,7 @@ function MenuItem ({menu, level}: SideMenuProps) {
     <>
     {
       (menu?.subItems === null) 
-          ? <Link key={menu?.label} href={menu?.link} passHref><a style={ { marginLeft: margin } } className={activeClass + ` ${textClass} block py-2 px-4 hover:bg-primary hover:text-gray-50 transition duration-200`}>{menu?.label}</a></Link>
+          ? <Link key={menu?.label} href={menu?.link} passHref><a style={ { marginLeft: margin } } className={activeClass + ` ${textClass} block py-2 px-4 hover:bg-primary hover:text-gray-50 transition duration-200 [word-break:keep-all]`}>{menu?.label}</a></Link>
           : (menu?.subItems?.length && menu?.subItems?.length > 0) 
               ? <MenuNode menu={menu} level={level}/> : ""
     }

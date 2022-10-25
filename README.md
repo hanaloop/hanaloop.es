@@ -121,7 +121,7 @@ hero:
 
 Build docker with the following command:
 ```sh
-$ docker build . -t hanaloop/next-dev-portal:0.1
+$ docker build . -t hanaloop/hanaloopcom:2.0
 ```
 
 Once build is completed, you can run with:

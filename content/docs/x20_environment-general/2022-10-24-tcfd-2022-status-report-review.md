@@ -3,7 +3,7 @@ title: "TCFD 2022 현황 보고서 리뷰"
 subtitle: "기업,기관에게 실행이 쉽지 않은 지침은?"
 publishedAt: "2022-10-24"
 description: "TCFD 2022 현황 보고서를 통해 지난 5년간의 기후 관련 공개 현황, TCFD 시행에 대한 전망, 추가 진전 기회를 포함한 지난 5년간의 평가 결과를 살펴보도록 하겠습니다." 
-summary: ""
+summary: "TCFD 2022 현황 보고서를 통해 지난 5년간의 기후 관련 공개 현황, TCFD 시행에 대한 전망을 살펴보도록 하겠습니다."
 image: "/images/posting/environment-general/EcoLoop_tcfd_pexels.jpeg"
 imageHide: true 
 imageCredits: 
@@ -16,7 +16,7 @@ tags:
 ---
 import CaptionedImage from "../components/theme/CaptionedImage";
 
-'기후변화 관련 재무정보 공개 전담협의체(TCFD, Task force on Climate Related Financial Disclosures)'는 2022년 10월 13일 '2022 현황 보고서(2022 Status Report)'를 발표했습니다.  
+기후변화 관련 재무정보 공개 전담협의체(TCFD, Task force on Climate Related Financial Disclosures)는 2022년 10월 13일 '2022 현황 보고서(2022 Status Report)'를 발표했습니다.  
 
 
 **TCFD 2022 현황 보고서**를 통해 지난 5년간의 기후 관련 공개 현황, TCFD 시행에 대한 전망, 추가 진전 기회를 포함한 지난 5년간의 평가 결과를 살펴보도록 하겠습니다.
@@ -26,7 +26,7 @@ import CaptionedImage from "../components/theme/CaptionedImage";
 
 <br/>
 
-## TCFD 지지 규모와 지역적 분포 2022
+### TCFD 지지 규모와 지역적 분포 2022
 
 <br/>
 
@@ -51,8 +51,8 @@ import CaptionedImage from "../components/theme/CaptionedImage";
 
 <br/>
 
-## 주요 시사점 및 발견 사항
-### AI 리뷰
+### 주요 시사점 및 발견 사항
+#### AI 리뷰
 
 <CaptionedImage 
   imageSrc="/images/posting/environment-general/2022-10-24-ecoloop_tcfd_percent_of_companies_disclosing.png"
@@ -67,7 +67,7 @@ import CaptionedImage from "../components/theme/CaptionedImage";
 지난 3년간 모든 지역에서 공개 수준이 상당한 수준으로 증가했습니다. 특히 지난 2021년 유럽 기업의 경우 11개 권장 공개에 관한 평균 공개 수준은 60%였습니다. 이는 2019년 이후 23% 증가한 수치입니다. 아시아 태평양 기업의 경우 36%로 11% 증가했고, 북미 기업의 경우 29%로 12% 증가한 수치입니다.
 
 
-### 보고 관행 설문조사
+#### 보고 관행 설문조사
 3,000개 금융기관의 229명의 펀드매니저, 자산보유자가 응답했으며 그 지역적 분포는 다음과 같습니다.
 
 대다수의 펀드매니저, 자산보유자가 클라이언트와 수혜자에게 보고했습니다. 조사 응답자의  60% 이상의, 75% 이상의 자산보유자가 현재 자신들의 클라이언트와 수혜자에게 기후 관련 정보를 보고하고 있다고 밝혔습니다. 
@@ -76,26 +76,26 @@ import CaptionedImage from "../components/theme/CaptionedImage";
   imageSrc="/images/posting/environment-general/2022-10-24-esocloop_tcfd_survey_status_of_reporting.png"
   caption="응답자 별 보고 현황, 출처: TCFD Status Report 2022"
   containerClassName="" 
-  imageClassName="h-40" isHero={true}
+  imageClassName="h-40" isHero={false}
 />
 
 대다수의 **펀드매니저**는 **지속가능성 보고서를 통해 보고하거나, 또는 직접 클라이언트에 보고**하고 있습니다. 반면 대다수의 **자산보유자**는 **연간 보고서, 지속가능성 보고서 또는 기후 전용 보고서로 보고**하고 있다고 합니다. 
 
 거의 50% 펀드매니저와 75%의 자산보유자는 11개 권장 공개사항 중 최소 5개 정보를 보고하고 있습니다. 설문조사에 따르면 60% 펀드매니저와 거의 80%의 자산보유자는 1개의 권장안을 공개하고 있는 반면, 펀드매니저 9%와 36%의 자산보유자는 10개의 공시 권장안에 대해 보고하고 있습니다. **아무도 11가지 모두를 보고하고 있지 않다**고 합니다.
 
-### TCFD 설문조사
+#### TCFD 설문조사
 **재무정보나 연간 보고서에 TCFD 권장안을 공개하는 회사 비율은 매년 증가**해왔습니다. TCFD 설문조사에 따르면, TCFD 권장사항을 이행하는 70% 이상의 기업이 재무정보나 연간 보고서(통합 보고서 포함)에 기후 관련 정보를 공개했습니다. 이는 2017년 회계연도 기준 45%에서 증가한 수치입니다. 
 
 기후 관련 재무 공개의 가능성(availability)와 품질은 2017년 이래 증가해왔습니다. 설문 응답자 95%가 가능성(availability)이 증가했고, 88%의 응답자가 공개의 질이 개선되었다고 응답했습니다.
 
 투자자 및 기타 응답자는 의사 결정 및 가격 책정에 공개 정보를 사용합니다. 설문조사에 따르면 투자자 및 기타 응답자의 90%는 재무적 의사 결정에 기후 관련 재무 공개정보를 포함합니다. 이 응답자의 66%는 금융자산 가격 책정에 이 공개 요소를 고려합니다. 또한 문헌 리뷰에 따르면, 기후 관련 위험이 특정 유형의 자산 가격에 영향을 미치기 시작했다는 증거가 있습니다.
 
-## TCFD 권고안 실행 시 용이한 점과 어려운 점
+### TCFD 권고안 실행 시 용이한 점과 어려운 점
 <CaptionedImage 
-  imageSrc="/images/posting/environment-general/2022-10-24-ecocloop_tcfd_survey_implementation_rating_by_TCFD_recommendation_2021.png"
+  imageSrc="/images/posting/environment-general/2022-10-24-ecoloop_tcfd_survey_implementation_rating_by_TCFD_recommendation_2021.png"
   caption="TCFD 권고안 구현의 난이도별 응답 비율, 출처: TCFD Status Report 2022"
   containerClassName="" 
-  imageClassName="h-full" isHero={true}
+  imageClassName="h-full " isHero={false}
 />
 
 위 조사 테이블을 살펴보면 응답자의 80% 이상이 **전략 권고안 사항의 이행**이 어렵다고 평가했습니다. 또한 **전략 권고안** 내에 **기후 관련 시나리오 분석 수행이 중요**하다는 점을 강조했습니다. 무엇보다 **지표・목표설정 부문의 스코프 3 배출량 관리**가 도전적인 항목으로 인식하고 있음을 보여주고 있습니다.
@@ -104,7 +104,7 @@ import CaptionedImage from "../components/theme/CaptionedImage";
 
 대부분 공통으로 언급된 이슈는 **기후 관련 리스크의 식별/평가/관리를 위한 프로세스 정립과 기후 관련 리스크를 기존의 리스크 관리 프로세스에 통합**하는 하는 것이 어렵다고 언급했습니다.
 
-## 보고서 리뷰 후기
+### 보고서 리뷰 후기
 2022년 보고서에서 확인했듯 TCFD에 따른 기후 관련 재무정보를 공개하는 기관의 수와 공개 지침 수가 늘어나고 있지만, 아직도 긴급한 개선이 필요해 보입니다. 
 
 
@@ -136,7 +136,7 @@ import CaptionedImage from "../components/theme/CaptionedImage";
 <br />
 <br />
 
-## 참고 & 발췌
+### 참고 & 발췌
 * [TCFD Status Report 2022](https://www.fsb.org/2022/10/2022-tcfd-status-report-task-force-on-climate-related-financial-disclosures/)
 
 <br />
