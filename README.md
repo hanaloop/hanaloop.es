@@ -175,3 +175,4 @@ For **Github Pages** modify `.github/workflows/deploy-gh-pages.yml` file replaci
 
 ## Limitations
 - When the number of content nodes are large, it will produce a large `_content-collection.json` 
+- When reloading `docs` it adds a trailing `/` and return 404
