@@ -118,10 +118,10 @@
               "TCFD"
             ],
             "readingTime": {
-              "text": "5 min read",
-              "minutes": 4.915,
-              "time": 294900,
-              "words": 983
+              "text": "6 min read",
+              "minutes": 5.01,
+              "time": 300600,
+              "words": 1002
             }
           }
         },
@@ -176,6 +176,32 @@
               "words": 1591
             }
           }
+        },
+        {
+          "_type": "item",
+          "slug": "/docs/x20_environment-general/2022-11-07-cop27-what-is-it",
+          "meta": {
+            "title": "COP27가 뭐에요? 왜 중요한가요?",
+            "subtitle": "COP27 이해하기",
+            "publishedAt": "2022-11-07",
+            "description": "COP27 이해하기",
+            "summary": "COP27 이해하기",
+            "image": "/images/posting/environment-general/2022-11-07-cop27-01.jpeg",
+            "imageHide": true,
+            "imageCredits": null,
+            "authors": "ysahnpark",
+            "tags": [
+              "표준",
+              "TCFD",
+              "사례 연구"
+            ],
+            "readingTime": {
+              "text": "12 min read",
+              "minutes": 11.095,
+              "time": 665700,
+              "words": 2219
+            }
+          }
         }
       ]
     },
@@ -205,9 +231,9 @@
             ],
             "readingTime": {
               "text": "6 min read",
-              "minutes": 5.095,
-              "time": 305700,
-              "words": 1019
+              "minutes": 5.555,
+              "time": 333300,
+              "words": 1111
             }
           }
         }
