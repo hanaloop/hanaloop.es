@@ -52,7 +52,7 @@ const benefits: DisplayItem[] = [
     subtitle: "1",
     description: <>
       <ul>
-      <li>환경관리 소요 인건비 절감 ~70%</li>
+      <li>환경관리 업무효율 향상 ~70%</li>
       <li>누출 에너지 발견 등 에너지 절감 ~5%</li>
       </ul>
     </>
