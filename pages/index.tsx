@@ -191,7 +191,7 @@ const Home: NextPage = () => {
               return (
                 
               <div className="group mt-3 pl-2 rounded-md border-l-4 hover:border-primary-700 lg:flex" key={ndx}>
-                <div className="w-96 flex-none mb-2">
+                <div className="lg:w-96 flex-none mb-2">
                   <div className="text-3xl font-bold">
                     <div className="flex mr-1 items-baseline text-gray-700 group-hover:text-primary-700">
                       
