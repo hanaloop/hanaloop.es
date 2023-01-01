@@ -29,24 +29,24 @@ const elements: DisplayItem[] = [
     subtitle: "Collect, Quantify and Analyze",
     imageUrl: "/images/platform/eco_accounting.png",
     description: [
-      <span><b>수집에서 분석까지 배출활동 데이터 처리 간소화</b> - 기업의 활동으로 인해 발생하는 온실가스 배출활동 데이터 수집을 간편하게 하고, 배출량을 산정하고 모니터링하며 배출량 추이를 분석합니다.</span>,
-      <span><b>기후 데이터에서 얻는 실행 가능한 통찰력</b> - 인공지능 기반 데이터 분석 및 예측을 통해 의사 결정을 위한 통찰력을 얻을 수 있습니다.</span>] 
+      <span key="1"><b>수집에서 분석까지 배출활동 데이터 처리 간소화</b> - 기업의 활동으로 인해 발생하는 온실가스 배출활동 데이터 수집을 간편하게 하고, 배출량을 산정하고 모니터링하며 배출량 추이를 분석합니다.</span>,
+      <span key="2"><b>기후 데이터에서 얻는 실행 가능한 통찰력</b> - 인공지능 기반 데이터 분석 및 예측을 통해 의사 결정을 위한 통찰력을 얻을 수 있습니다.</span>] 
   },
   {
     title: "전략",
     subtitle: "Devise strategies",
     imageUrl: "/images/platform/eco_strategy.png",
     description: [
-      <span><b>기후 탄력적인 전략을 수립하고 이행하기 위한 협력</b> - 에너지 효율 향상, 배출권거래제 대응, 공급망 포함 탄소감축 목표와 전략 수립 및 이행, 각종 공시요구 대응 등을 탄력적으로 실행할 수 있습니다.</span>,
-      <span><b>기후요소를 근거로 현명한 비즈니스 의사 결정이 가능해집니다.</b></span>] 
+      <span key="1"><b>기후 탄력적인 전략을 수립하고 이행하기 위한 협력</b> - 에너지 효율 향상, 배출권거래제 대응, 공급망 포함 탄소감축 목표와 전략 수립 및 이행, 각종 공시요구 대응 등을 탄력적으로 실행할 수 있습니다.</span>,
+      <span key="2"><b>기후요소를 근거로 현명한 비즈니스 의사 결정이 가능해집니다.</b></span>] 
   },
   {
     title: "임팩트",
     subtitle: "Make impact",
     imageUrl: "/images/platform/eco_impact.png",
     description: [
-      <span><b>탈탄소화 임팩트 네트워크 형성</b> - 산업별 탄소감축 방법과 결과를 분석하고, 그 임팩트를 공유함으로써 기업 간 탈탄소화 네트워크를 형성하며, 임팩트를 증대시킬 수 있습니다.</span>,
-      <span><b>친환경 사업 모델 개발</b> - 비즈니스 효율성을 높이는 동시에 기후 친화적인 비즈니스 모델 개발을 통해 친환경 산업으로의 전환을 이끌 수 있습니다.</span>] 
+      <span key="1"><b>탈탄소화 임팩트 네트워크 형성</b> - 산업별 탄소감축 방법과 결과를 분석하고, 그 임팩트를 공유함으로써 기업 간 탈탄소화 네트워크를 형성하며, 임팩트를 증대시킬 수 있습니다.</span>,
+      <span key="2"><b>친환경 사업 모델 개발</b> - 비즈니스 효율성을 높이는 동시에 기후 친화적인 비즈니스 모델 개발을 통해 친환경 산업으로의 전환을 이끌 수 있습니다.</span>] 
   },
 ]
 
@@ -102,8 +102,8 @@ const reasons: DisplayItem[] = [
   },
   {
     // https://uxwing.com/svg-icon-editor/
-    icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
+    icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
   </svg>,
     title: '비즈니스 위험 완화'
   }
@@ -241,7 +241,7 @@ const Home: NextPage = () => {
 
       {/* Climate strategy is essential */}
       <SectionBlock title='오늘날 기업에게 기후 전략은 필수입니다' containerStyle='bg-gray-100'>
-        <div className="px-10  my-5 grid md:grid-cols-4 grid-cols-1 gap-4  ">
+        <div className="px-10  my-5 grid lg:grid-cols-4 grid-cols-1 gap-4  ">
           {
             reasons.map(item => 
               <div className="border border-green-600 rounded-lg text-center text-gray-700" key={item.title}>
@@ -280,8 +280,6 @@ const Home: NextPage = () => {
         <Link href="/docs" passHref><a >자료 더 보기</a></Link>
         </>
       </SectionBlock>
-
-      
     </>
   )
 }
