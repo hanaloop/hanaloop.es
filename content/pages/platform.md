@@ -92,24 +92,51 @@ import data from "../content/pages/platform.data";
 
 <hr />
 
+<img src="/images/standards/cdp-logo.png" className="mt-4 h-16" alt="CDP logo"/>
+
+### C4	Targets and performance (목표 및 성과)
+- C4.1: 	Emissions targets
+- C4.3: 	Emissions reduction initiatives
+
+### C6		Emissions data (배출량 데이터)
+- C6.1: 	Scope 1 emissions data
+- C6.2: 	Scope 2 emissions reporting
+- C6.3: 	Scope 2 emissions data
+- C6.7: 	Biogenic carbon data
+- C6.7a: 	Biogenic carbon data
+- C6.10: 	Emissions intensities
+
+### C7	Emissions breakdown (배출 내역)
+- C7.1: 	Scope 1 breakdown: GHGs
+- C7.2: 	Scope 1 breakdown: country/area/region
+- C7.3: 	Scope 1 breakdown: business breakdown
+- C7.5: 	Scope 2 breakdown: country/area/region
+- C7.6: 	Scope 2 breakdown: business breakdowns
+- C7.9: 	Emissions performance
+
+### C8 		Energy (에너지)
+- C8.2:	Energy-related activities
+
+<hr />
+
 <img src="/images/standards/gri-logo.png" className="mt-4 h-16" alt="GRI logo"/>
 
-### GRI 302: Energy 2016 
+### GRI 302: Energy 2016 (에너지)
 
-- Disclosure 302-1 Energy consumption within the organization 
-- Disclosure 302-2 Energy consumption outside of the organization <span className="p-1 text-xs rounded bg-slate-400 text-gray-100">(2022-Q4)</span>
-- Disclosure 302-3 Energy intensity 
-- Disclosure 302-4 Reduction of energy consumption 
+- Disclosure 302-1: Energy consumption within the organization 
+- Disclosure 302-2: Energy consumption outside of the organization <span className="p:-1 text-xs rounded bg-slate-400 text-gray-100">(2022-Q4)</span>
+- Disclosure 302-3: Energy intensity 
+- Disclosure 302-4: Reduction of energy consumption 
 
-### GRI 305: Emissions
+### GRI 305: Emissions (배출 내역)
 
-- Disclosure 305-1 Direct (Scope 1) GHG emissions
-- Disclosure 305-2 Energy indirect (Scope 2) GHG emissions
-- Disclosure 305-3 Other indirect (Scope 3) GHG emissions <span className="p-1 text-xs rounded bg-slate-400 text-gray-100">(2023-Q1)</span>
-- Disclosure 305-4 GHG emissions intensity
-- Disclosure 305-5 Reduction of GHG emissions
-- Disclosure 305-6 Emissions of ozone-depleting substances (ODS)
-- Disclosure 305-7 Nitrogen oxides (NOx), sulfur oxides (SOx), and other significant air emissions
+- Disclosure 305-1: Direct (Scope 1) GHG emissions
+- Disclosure 305-2: Energy indirect (Scope 2) GHG emissions
+- Disclosure 305-3: Other indirect (Scope 3) GHG emissions <span className="p-1 text-xs rounded: bg-slate-400 text-gray-100">(2023-Q2)</span>
+- Disclosure 305-4: GHG emissions intensity
+- Disclosure 305-5: Reduction of GHG emissions
+- Disclosure 305-6: Emissions of ozone-depleting substances (ODS)
+- Disclosure 305-7: Nitrogen oxides (NOx), sulfur oxides (SOx), and other significant air emissions
 </div>
 </SectionBlock>
 
