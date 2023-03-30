@@ -16,7 +16,7 @@ import SectionBlock from "../components/theme/SectionBlock";
 import { contextualPath } from "../libs/content.util"
 import data from "../content/pages/solution.data";
 
-<SectionBlock title='친환경 디지털' >
+<SectionBlock title='친환경 디지털화' >
   <div className="my-5 border border-2 rounded-lg grid grid-cols-1  md:grid-cols-2 gap-2">
     <div className="p-4 group hover:bg-slate-100">
       <div className="text-lg font-bold group-hover:text-primary-700">지속가능한 디지털 전환 </div><span className="text-base">Sustainable Digital Transformation</span>
@@ -25,7 +25,7 @@ import data from "../content/pages/solution.data";
       </div>
     </div>
     <div className="p-4 group hover:bg-slate-100">
-      <div className="text-lg font-bold group-hover:text-primary-700">친환경 EcoLoop 플랫폼 기반 솔루션</div>
+      <div className="text-lg font-bold group-hover:text-primary-700">친환경 하나에코 플랫폼 기반 솔루션</div>
       <div>
       플랫폼은 환경 규제에 대한 지침과 시장에 대한 통찰력을 제공하고 신속한 친환경 기술 검색 및 거래를 가능하게 하여 더욱 깨끗한 가치사슬을 생성시킴으로써 고객이 지속가능한 방식으로 성장할 수 있도록 도와줍니다. 결과적으로 보다 책임있고 윤리적인 산업으로 발전하는데 기여합니다.
       </div>

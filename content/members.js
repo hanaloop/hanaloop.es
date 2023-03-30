@@ -26,7 +26,7 @@ module.exports = {
     "image_url": "/images/who-we-are/saeahn-2022.jpg",
     "title": "General Counsel",
     "tagline": "인간과 지구 간의 조화를 이루기 위해",
-    "education": "Tulane University Law school",
+    "education": "Tulane University Law School",
     "description": "삼성, LG, 마이크로소프트 등, 글로벌 IT 업계에서 일한 경험이 있는 법률 고문. 협상, 분쟁 해결, 법적 문서 작성 및 회사법에 능숙."
   },
   "hkroh": {

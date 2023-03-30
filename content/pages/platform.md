@@ -1,15 +1,15 @@
 ---
-title: "EcoLoop by 하나루프 | SaaS형 데이터기반 지속가능성 플랫폼 | 공급망 탄소관리 플랫폼 | 에코루프"
-description: "SaaS형 온실가스 관리 플랫폼, EcoLoop(에코루프)는 온실가스 배출활동을 관리하며, 배출량을 계산하고 분석합니다. EcoLoop (에코루프)를 통해 기관, 기업은 기후관련 규제에 대응하고, 기후 리스크를 줄이며, 에너지 소비를 줄이고, ESG 포트폴리오를 향상시킬 수 있습니다. 궁극적으로 기관, 기업은 탄소발자국을 줄이며, 기후위기 완화에 기여할 수 있습니다. 탄소 어카운팅, 환경 업무 협업, 탄소 전략, 전략적 시각화, 가치사슬 탄소관리, 스코프3 관리, 공급망 탄소 관리, 온실가스를 보여주는 지속가능성 플랫폼, 환경데이터 관리 비용 절감, 환경위험요소 감소, 기업 이미지 및 경쟁력 향상"
-keywords: "에코루프, EcoLoop, SaaS형 지속가능성 플랫폼, 공급망 탄소관리 플랫폼, 스코프3 관리 플랫폼, 가치사슬 탄소관리 플랫폼, 온실가스 관리, 탄소 관리, 탄소중립 플랫폼, 넷제로 플랫폼, ESG 향상 플랫폼, 환경데이터 관리 비용 절감, 환경위험요소 감소, 기업이미지 향상, 기업 경쟁력 향상"
+title: "HanaEco by 하나루프 | SaaS형 데이터기반 지속가능성 플랫폼 | 공급망 탄소관리 플랫폼 | 에코루프"
+description: "SaaS형 온실가스 관리 플랫폼, HanaEco(하나에코)는 온실가스 배출활동을 관리하며, 배출량을 계산하고 분석합니다. EcoLoop (에코루프)를 통해 기관, 기업은 기후관련 규제에 대응하고, 기후 리스크를 줄이며, 에너지 소비를 줄이고, ESG 포트폴리오를 향상시킬 수 있습니다. 궁극적으로 기관, 기업은 탄소발자국을 줄이며, 기후위기 완화에 기여할 수 있습니다. 탄소 어카운팅, 환경 업무 협업, 탄소 전략, 전략적 시각화, 가치사슬 탄소관리, 스코프3 관리, 공급망 탄소 관리, 온실가스를 보여주는 지속가능성 플랫폼, 환경데이터 관리 비용 절감, 환경위험요소 감소, 기업 이미지 및 경쟁력 향상"
+keywords: "에코루프, HanaEco, EcoLoop, SaaS형 지속가능성 플랫폼, 공급망 탄소관리 플랫폼, 스코프3 관리 플랫폼, 가치사슬 탄소관리 플랫폼, 온실가스 관리, 탄소 관리, 탄소중립 플랫폼, 넷제로 플랫폼, ESG 향상 플랫폼, 환경데이터 관리 비용 절감, 환경위험요소 감소, 기업이미지 향상, 기업 경쟁력 향상"
 
 publishedAt: "2022-10-06"
 
 headerBackground:
   imageUrl: "/images/bg-hero_platform.jpeg"
 hero:
-  header: "데이터기반 지속가능성 플랫폼 EcoLoop"
-  tagline: "온실가스 오염물질 환경데이터 관리"
+  header: "데이터기반 지속가능성 플랫폼 Hana.eco"
+  tagline: "온실가스 및 오염물질 환경데이터 관리"
 ---
 import SectionBlock from "../components/theme/SectionBlock";
 import data from "../content/pages/platform.data";
@@ -20,7 +20,7 @@ import data from "../content/pages/platform.data";
   인류가 대면하고 있는 가장 큰 위기, 기후변화 <br/> 
   그의 주범인 온실가스 <br/>
   하지만 눈에 보이지 않는 온실가스를 <br/> 
-  하나루프의 **SaaS형 지속가능성 플랫폼 EcoLoop**가 보여드리겠습니다.
+  하나루프의 **SaaS형 지속가능성 플랫폼 하나에코**가 보여드리겠습니다.
 <br/>
 <br/>
   <div className="flex justify-center">
@@ -37,10 +37,10 @@ import data from "../content/pages/platform.data";
     <div className="p-6 rounded border border-secondary md:flex items-center">
       <div className="flex-1">
         <div className="p-6">
-        <span className="font-bold text-lg">SaaS형 지속가능성 플랫폼 EcoLoop</span>는<br /> 
+        <span className="font-bold text-lg">SaaS형 지속가능성 플랫폼 하나에코</span>는<br /> 
         온실가스 배출활동을 관리하며, 배출량을 계산하고 분석합니다. <br/>  
         <ul>
-        EcoLoop를 통해 기관/기업은 <br/>
+        하나에코를 통해 기관/기업은 <br/>
         기후관련 규제에 대응하고, <br/>
         기후 리스크를 줄이며,<br/> 
         에너지 소비를 줄이고, <br/>
@@ -58,7 +58,7 @@ import data from "../content/pages/platform.data";
 </div>
 </SectionBlock>
 
-<SectionBlock title='EcoLoop Features' >
+<SectionBlock title='Hana.eco Features' >
   <div className="flex justify-center">
   <div className="text-left max-w-4xl space-y-6">
     {data.features.map(feature => 
@@ -78,7 +78,7 @@ import data from "../content/pages/platform.data";
 </SectionBlock>
 
 
-<SectionBlock title='EcoLoop이 지원하는 표준 보고 항목' containerStyle='bg-gray-100 flex justify-center'>
+<SectionBlock title='Hana.eco가 지원하는 표준 보고 항목' containerStyle='bg-gray-100 flex justify-center'>
 
 <div className="p-4 max-w-3xl text-left">
 
