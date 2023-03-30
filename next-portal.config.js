@@ -55,7 +55,7 @@ const config = {
           // },
           {
             to: 'https://www.ecoloop.io',
-            label: 'EcoLoop.io',
+            label: 'hana.eco',
             style: 'px-1 rounded border-2 border-lime-700',
           },
           // {
@@ -118,6 +118,7 @@ const config = {
           }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} 주식회사 하나루프 | HanaLoop Corp., Seoul Korea`,
+        address: `서울특별시 강남구 선릉로93길 40, 나라키움 역삼A빌딩 4층`,
         contact: `email: info@hanalooop.com  |  phone: +82 0507-1337-9251`
       }
     }),

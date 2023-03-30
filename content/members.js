@@ -19,6 +19,16 @@ module.exports = {
     "education": "Carnegie Mellon University 석사, 고려대 학사",
     "description": "Walt Disney, Pearson, Wayfair, Altenia 등. 프로젝트: 이마트 DT, 디즈니 미디어 플랫폼, LG 콜센터, 신공항고속도로 통합, 한국통신 MMS 등 20년 이상 IT 업계에서 팀과 조직을 성공적으로 이끌며 대규모 엔터프라이즈 어플리케이션 개발. 보안 및 생물정보학 논문 저자."
   },
+  "saeahn": {
+    "name": "안새해",
+    "name_alt": "Sae Ahn",
+    "profile_url": "https://youngsukahn.com/",
+    "image_url": "/images/who-we-are/saeahn-2022.jpg",
+    "title": "General Counsel",
+    "tagline": "인간과 지구 간의 조화를 이루기 위해",
+    "education": "Tulane University Law school",
+    "description": "삼성, LG, 마이크로소프트 등, 글로벌 IT 업계에서 일한 경험이 있는 법률 고문. 협상, 분쟁 해결, 법적 문서 작성 및 회사법에 능숙."
+  },
   "hkroh": {
     "name": "노형기",
     "name_alt": "Hyungki Roh",

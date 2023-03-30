@@ -73,12 +73,12 @@ export const memberList = Object.values(members).filter(m => m.type !== 'system'
 
   <SectionBlock title='리더십' >
     <div className="p-4">
-      <div className="my-5 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+      <div className="my-5 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {
           memberList.map(m => (
             <figure className="bg-gray-100 rounded-md my-4 p-4 shadow " key={m.name}>
               <div className="w-auto flex justify-center">
-              <img className="w-32 h-32 rounded-full block" src={ contextualPath(siteConfig, m.image_url) } alt="" />
+              <img className="h-40 lg:h-32 rounded-full block" src={ contextualPath(siteConfig, m.image_url) } alt="" />
               </div>
               <div className="pt-6 space-y-4 block">
                 <figcaption className="font-medium text-center">

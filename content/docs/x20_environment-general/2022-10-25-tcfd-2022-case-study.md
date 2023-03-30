@@ -3,7 +3,7 @@ title: "TCFD 2022 현황 보고서 사례 연구"
 subtitle: "TCFD의 사례 연구(Case Studies)에서 얻은 인사이트"
 publishedAt: "2022-10-25"
 description: "TCFD의 사례 연구에서 얻은 인사이트 " 
-summary: "TCFD의 사례 연구에서 얻은 인사이트는 기후 문제와 관련된 거버넌스를 규제에 닥칠 때까지 지연하는 것이 아니라 조기에 구현해야 한다는 것임."
+summary: "TCFD의 사례 연구에서 볼 수 있듯이, 기후규제와 관련된 거버넌스 구현은 규제에 대응해야할 시점까지 지연할 것이 아니라 미리 준비되어야 합니다."
 image: /images/posting/environment-general/EcoLoop_tcfd_case_studies.jpeg
 imageHide: true 
 imageCredits: 

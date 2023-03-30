@@ -28,7 +28,7 @@ export default function Hero({header, tagline, button, background}: HeroProps & 
     (background.solidColor ? `${background.solidColor} ` : 
     `bg-gradient-to-r ${background.gradientFrom} ${background.gradientTo} justify-center items-center `);
   
-  containerClass = 'h-80 py-6 text-gray-100 ' + containerClass;
+  containerClass = 'h-96 py-6 text-gray-100 ' + containerClass;
   
   /* v2.1 */
   const containerStyle = background.imageUrl ? `linear-gradient(to top, transparent, #00000030 90%), url(${contextualPath(siteContext, background.imageUrl)})`: '';
@@ -38,7 +38,7 @@ export default function Hero({header, tagline, button, background}: HeroProps & 
       <div className={containerClass} style={{backgroundImage: containerStyle}}>
         <div className="px-8 w-full flex mx-auto" >
           <div id="hero-label" className="pt-16 space-y-3  w-full justify-center text-center md:w-4/5 md:text-left">
-            <h1 className="text-3xl md:text-4xl font-bold drop-shadow">{header}</h1>
+            <h1 className="text-3xl md:text-5xl font-bold drop-shadow">{header}</h1>
             <div className="text-xl md:text-2xl drop-shadow ">{tagline}</div>
             {
               button && <div className="pt-5 flex justify-center md:justify-start"><Link href={button.href} passHref><button className="p-2 rounded-md border-2 text-gray-200 font-bold">{button.label}</button></Link></div>

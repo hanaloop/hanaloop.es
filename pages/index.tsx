@@ -98,7 +98,7 @@ const reasons: DisplayItem[] = [
     icon: <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
     <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" />
   </svg>,  
-    title: '환경규제'
+    title: '환경규제 대응'
   },
   {
     // https://uxwing.com/svg-icon-editor/
@@ -161,7 +161,7 @@ const Home: NextPage = () => {
         }
       />
       <SectionBlock title='Trusted by 고객 및 파트너' containerStyle="" >
-        <div>
+        <div className="space-y-10">
           <div className="flex justify-center" >
             <div className="flex mt-2 space-x-10" >
               {
@@ -176,9 +176,10 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="mt-4 text-center items-center space-y-2 ">
-            <div className="flex justify-center space-x-2 ">
+            <div className="flex justify-center space-x-4 ">
               <Image className="h-8 " src="/images/partners/korea-mss-gov.png" alt="중소벤처기업부" />
               <Image className="h-8 " src="/images/partners/korea-tipa-gov.gif" alt="중소기업기술정보진흥원" />
+              <Image className="h-8 " src="/images/partners/seoulsocialventurehub-logo.png" alt="서울소셜벤처허브" />
             </div>
             <div className='text-xs'>창업성장기술개발 R&D사업 선정 기업</div>
           </div>
@@ -192,7 +193,7 @@ const Home: NextPage = () => {
             협업형 온실가스 관리로 귀사와 공급망의 온실가스 배출을 효율적으로 관리, 분석하고 감축하고 공시하세요!
             </div>
             <div className="mt-10 border border-primary-500 rounded p-2 hover:bg-primary-600 hover:text-gray-100">
-              <Link href={'https://docs.google.com/presentation/d/1FBvBwSz998JR_S_CKMQOPVkr3QXXQEjGyqLADDncrS8/edit?usp=sharing'}><a className='text-sx '>협업형 스코프3 포함 탄소중립 플랫폼 하나루프.에코 소개</a></Link>
+              <Link href={'https://docs.google.com/presentation/d/1FBvBwSz998JR_S_CKMQOPVkr3QXXQEjGyqLADDncrS8/edit?usp=sharing'}><a className='text-sx '>협업형 스코프3 포함 탄소중립 플랫폼 <span className="font-bold">하나.에코</span> 소개</a></Link>
             </div>  
           </div>
           
@@ -269,7 +270,7 @@ const Home: NextPage = () => {
       {/* Resources */}
       <SectionBlock title='자료' >
         <>
-        <div className="px-10 my-5 grid md:grid-cols-2 grid-cols-1 gap-4  ">
+        <div className="px-10 my-6 grid md:grid-cols-2 grid-cols-1 gap-6  ">
           {
             docsSorted.map(item => 
               <div className="border rounded text-gray-700 drop-shadow-md" key={item.slug}>

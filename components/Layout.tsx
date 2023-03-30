@@ -69,6 +69,7 @@ export default function Layout({ children, meta }: LayoutProps) {
           <div className="py-2 flex justify-center text-gray-100">
             <div className="text-center">
               <div>{siteContext.themeConfig.footer.copyright}</div>
+              <div>{siteContext.themeConfig.footer.address}</div>
               <div>{siteContext.themeConfig.footer.contact}</div>
               <div className="text-xs text-gray-400">Site update: { (new Date()).toISOString().substring(0, 10) }</div>
             </div>
