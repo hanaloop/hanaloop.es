@@ -30,13 +30,13 @@ module.exports = {
     "description": "삼성, LG, 마이크로소프트 등, 글로벌 IT 업계에서 일한 경험이 있는 법률 고문. 협상, 분쟁 해결, 법적 문서 작성 및 회사법에 능숙."
   },
   "hkroh": {
-    "name": "노형기",
-    "name_alt": "Hyungki Roh",
-    "image_url": "/images/who-we-are/kay.jpeg",
-    "title": "수석엔지니어",
-    "tagline": "기술로 의미있는 일을 하고싶은",
-    "education": "고려대 석사, 학사",
-    "description": "아이큐브, 아프로텍, 지능정보기술연구원 등. 프로젝트: 다수의 상용 소프트웨어 개발 및 AI 프로젝트 수행. 멀티미디어, 모바일 앱, 웹 플랫폼, 머신 러닝 프로그램 다수 개발"
+    "name": "디오니시오스",
+    "name_alt": "Dionysios Tsouchlakis",
+    "image_url": "/images/who-we-are/dtsouchlakis-photo.jpg",
+    "title": "환경 전문가 / 개발자",
+    "tagline": "환경 문제를 기술로 풀기위해",
+    "education": "University of Western Macedonia, Greece",
+    "description": "Prior analyst at Aurora Energy Research (Germany), Vertis Environmental Finance (Hungary). Experienced energy economist with a passion for programming."
   },
   "hana": {
     "type": "system",

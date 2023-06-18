@@ -21,9 +21,15 @@ export default function Layout({ children, meta }: LayoutProps) {
   return (
     <>
       <Head>
-        <title>{meta && meta.title || siteContext.title}</title>
+        <title>{meta && `${siteContext.name} | ${meta.title}` || siteContext.title}</title>
         <meta name="description" content={meta && meta.description || siteContext.tagline} />
         <meta name="keywords" content={meta && meta.keywords || siteContext.keywords} />
+
+        <meta property="og:title" content={meta && meta.title || siteContext.title} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="HanaLoop" />
+        <meta property="og:description" content={meta && meta.description || siteContext.tagline} />
+
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <link rel="icon" href={siteContext.favicon} />
       </Head>

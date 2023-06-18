@@ -14,6 +14,7 @@ export type AuthorType = {
 }
 
 export type SiteContextType = {
+  name: string,
   title?: string,
   tagline?: string,
   keywords?: string,
@@ -32,6 +33,6 @@ export type SiteContextType = {
   themeConfig?: any
 }
 
-const SiteContext = createContext<SiteContextType>({contentRoot: 'content'});
+const SiteContext = createContext<SiteContextType>({name: 'HanaLoop', contentRoot: 'content'});
 
 export default SiteContext;
