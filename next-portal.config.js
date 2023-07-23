@@ -55,7 +55,7 @@ const config = {
         //   type: 'separator',
         // },
         {
-          to: 'https://www.ecoloop.io',
+          to: 'https://www.hana.eco',
           label: 'hana.eco',
           style: 'px-1 rounded border-2 border-lime-700',
         },
