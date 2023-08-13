@@ -39,7 +39,7 @@ export default function NavBar({pageYOffset}: NavBarProps) {
           <div className="flex space-x-4 items-center">
             {/* <!-- Logo --> */}
             <Link href="/" passHref>
-              <a className="flex  px-3">
+              <a className="flex px-3">
                 {
                   siteContext.themeConfig.navbar.logo.component || 
                   <Image className="h-6 mr-2" src={siteContext.themeConfig.navbar.logo.src} alt="Logo"/>
@@ -53,7 +53,7 @@ export default function NavBar({pageYOffset}: NavBarProps) {
 
           <div>
             {/* <!-- Primary Nav --> */}
-            <div className="hidden md:flex space-x-4">
+            <div className="hidden md:flex space-x-4 text-base">
               {
                 siteContext.themeConfig.navbar.items.map((item: any, idx: number) =>{
                   return (

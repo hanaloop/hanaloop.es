@@ -44,6 +44,7 @@ function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter:
           <MdxContainer padding={false}>
             <MdxComponent />
           </MdxContainer>
+          <hr />
           <AuthorsPane authors={frontMatter.authors} />
           <EditPageLink filePath={filePath} label="[Edit this page]"/>
         </div>

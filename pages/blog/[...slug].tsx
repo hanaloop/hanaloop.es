@@ -29,7 +29,7 @@ function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter:
           <h2 className="text-4xl font-bold text-gray-800">
             {frontMatter.title}
           </h2>
-          <AuthorsPane authors={frontMatter.authors} />
+          
           <div className="flex items-center space-x-3">
             <p className="px-3 py-1 text-sm text-purple-500 bg-gray-100 rounded-full">
               {frontMatter.readingTime.text}
@@ -53,6 +53,8 @@ function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter:
           <MdxContainer padding={false}>
             <MdxComponent />
           </MdxContainer>
+          <hr />
+          <AuthorsPane authors={frontMatter.authors} />
           <EditPageLink filePath={filePath} label="[Edit this page]"/>
         </div>
       </div>
