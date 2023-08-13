@@ -109,6 +109,32 @@ article a:hover {
   @apply underline text-blue-500;
 }
 
+/* EcoLoop: Default Table */
+table.el-table {
+  @apply min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-600 border border-gray-300
+}
+
+table.el-table thead {
+  @apply bg-blue-600 text-white dark:bg-gray-700 border border-gray-300
+}
+
+table.el-table thead th {
+  @apply px-4 py-3 text-base font-medium text-gray-100 uppercase dark:text-gray-400  
+}
+
+table.el-table tbody {
+  @apply bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700
+}
+
+table.el-table tbody tr {
+  @apply hover:bg-gray-100 dark:hover:bg-gray-700
+}
+
+table.el-table tbody td {
+  @apply px-4 p-2 text-sm font-normal text-gray-500  dark:text-gray-400
+}
+
+
 /* To prevent collision with prism syntax-highlighting */
 /* .code-highlight is from prism syntax highlighter,  
  * .language-json is from swagger

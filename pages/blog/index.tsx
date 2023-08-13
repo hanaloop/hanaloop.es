@@ -33,7 +33,7 @@ function BlogExcerpt({ code, slug, frontMatter }: BlogExcerptProps) {
       <div className="flex space-x-2">
       {
         frontMatter.tags && frontMatter.tags.map( (tag: string, idx: number) => {
-          return <span key={idx} className="border-2 bg-lime-100 rounded-md px-2">{tag}</span>
+          return <span key={idx} className="p-1 border border-gray-300 text-xs bg-gray-100 rounded-md">{tag}</span>
         })
       }
       </div>

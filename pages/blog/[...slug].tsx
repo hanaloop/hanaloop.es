@@ -26,7 +26,7 @@ function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter:
     <div className="max-w-4xl">
       <div className="">
         <div className="flex flex-col space-y-2">
-          <h2 className="text-5xl font-black text-gray-800">
+          <h2 className="text-4xl font-bold text-gray-800">
             {frontMatter.title}
           </h2>
           <AuthorsPane authors={frontMatter.authors} />

@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import type { NextPage } from 'next'
 import Link from 'next/link';
 import SiteContext from '../components/SiteContext';
@@ -22,6 +22,11 @@ const frontMatter = {
 const MAX_DOCS = 4;
 const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt)).slice(0, MAX_DOCS);
 
+const announcement = {
+  title: "8월 31 '탄소 규제대응 세미나' 내용 보기",
+  link: "/blog/20230813-hanaloop-seminar",
+  image: "/images/events/20230831-climateregulation-seminar.jpg"
+}
 
 const elements: DisplayItem[] = [
   {
@@ -150,10 +155,10 @@ const partners: DisplayItem[] = [
   }
 ]
 
-
 const Home: NextPage = () => {
 
   const siteContext = useContext(SiteContext);
+  const [fabActive, setFabActive] = useState<Boolean>(false);
 
   // TODO: add meta description
   
@@ -307,6 +312,17 @@ const Home: NextPage = () => {
         <Link href="/docs" passHref><a >자료 더 보기</a></Link>
         </>
       </SectionBlock>
+
+      {announcement && <div className="fixed bottom-4 right-4">
+        <div className={`${fabActive ? 'h-[760px]' : 'h-[180px]' } p-2 rounded-sm bg-white border border-gray-200 shadow-lg transition-all ease-in-out delay-150`}>
+          <div className='flex justify-between'>
+            <div onClick={() => {setFabActive(!fabActive)}}>{announcement.title}</div>
+          </div>
+          <a href={announcement.link}>
+          <img className={`w-[500px] border-2 border-white`} src={announcement.image} />
+          </a>
+        </div>
+      </div>}
     </div>
   )
 }

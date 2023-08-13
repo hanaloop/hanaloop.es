@@ -60,6 +60,31 @@
     },
     {
       "_type": "item",
+      "slug": "/partnership",
+      "meta": {
+        "title": "하나루프 파트너십 프로스램 - Partnership Program",
+        "description": "HanaLoop Partner Program은 함께 더 큰 성공을 목표로 하는 상호 신뢰를 기반으로 하는 신뢰할 수 있는 파트너십 프로스램을 제공합니다.",
+        "keywords": "파트너십 프로스램을",
+        "publishedAt": "2023-08-10",
+        "headerBackground": {
+          "imageUrl": "/images/bg-hero_partnership.jpeg"
+        },
+        "hero": {
+          "header": "파트너십",
+          "tagline": [
+            "연결의 시너지로 함께 성장합니다"
+          ]
+        },
+        "readingTime": {
+          "text": "2 min read",
+          "minutes": 1.4,
+          "time": 84000,
+          "words": 280
+        }
+      }
+    },
+    {
+      "_type": "item",
       "slug": "/platform",
       "meta": {
         "title": "HanaEco by 하나루프 | SaaS형 데이터기반 지속가능성 플랫폼 | 공급망 탄소관리 플랫폼",
@@ -110,9 +135,9 @@
         },
         "readingTime": {
           "text": "7 min read",
-          "minutes": 6.315,
-          "time": 378900,
-          "words": 1263
+          "minutes": 6.295,
+          "time": 377700,
+          "words": 1259
         }
       }
     },
