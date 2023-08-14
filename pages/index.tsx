@@ -23,9 +23,10 @@ const MAX_DOCS = 4;
 const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt)).slice(0, MAX_DOCS);
 
 const announcement = {
+  initialOpen: true,
   title: "8월 31 '탄소 규제대응 세미나' 내용 보기",
-  link: "/blog/20230813-hanaloop-seminar",
-  image: "/images/events/20230831-climateregulation-seminar.jpg"
+  link: "/blog/2023/20230813-climateregulation-seminar",
+  image: "/images/blog/20230831-climateregulation-seminar-thumb.jpg"
 }
 
 const elements: DisplayItem[] = [
@@ -158,7 +159,7 @@ const partners: DisplayItem[] = [
 const Home: NextPage = () => {
 
   const siteContext = useContext(SiteContext);
-  const [fabActive, setFabActive] = useState<Boolean>(false);
+  const [fabActive, setFabActive] = useState<Boolean>(announcement.initialOpen);
 
   // TODO: add meta description
   
@@ -314,9 +315,12 @@ const Home: NextPage = () => {
       </SectionBlock>
 
       {announcement && <div className="fixed bottom-4 right-4">
-        <div className={`${fabActive ? 'h-[600px] md:h-[750px]' : 'h-[180px]' } p-2 rounded-sm bg-white border border-gray-200 shadow-lg transition-all ease-in-out delay-150`}>
-          <div className='flex justify-between'>
-            <div onClick={() => {setFabActive(!fabActive)}}>{announcement.title}</div>
+        <div className={`${fabActive ? 'h-[610px] md:h-[680px]' : 'h-[180px]' } p-2 rounded-sm bg-white border border-gray-200 shadow-lg transition-all ease-in-out delay-150`}>
+          <div className='flex justify-between' >
+            <div><a href={announcement.link} className='hover:underline'>{announcement.title}</a></div>
+            <div onClick={() => {setFabActive(!fabActive)}}>
+              <ChevronDown className={`rounded-full bg-yellow-300 h-5 ${!fabActive ? 'rotate-180' : '' }`} />
+            </div>
           </div>
           <a href={announcement.link}>
             <img className={`w-[450px] md:w-[500px] border-2 border-white`} src={announcement.image} />
@@ -334,4 +338,12 @@ export async function getStaticProps() {
   return { 
     props: { frontMatter } 
   };
+}
+
+function ChevronDown(props: {className: string}) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={props.className}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </svg>
+  )
 }

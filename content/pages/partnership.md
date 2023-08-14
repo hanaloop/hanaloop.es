@@ -13,7 +13,7 @@ hero:
 ---
 import SectionBlock from "../components/theme/SectionBlock";
 import { contextualPath } from "../libs/content.util"
-import data from "../content/pages/solution.data";
+import data from "../content/pages/partnership.data";
 
 <SectionBlock title='Partnership' >
   <>
@@ -49,6 +49,7 @@ Solution providers with IT product that want to incorporate hana.eco to their so
   - [International Centre for Hydropower (ICH)](https://ich.no/)
   </div>
 </SectionBlock>
+
 
 <div className="flex justify-center" >
 <img src={contextualPath(siteConfig,"/images/banners/pyeongchanggun-windfarm.jpeg")} />
