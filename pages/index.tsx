@@ -22,7 +22,7 @@ const frontMatter = {
 const MAX_DOCS = 4;
 const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt)).slice(0, MAX_DOCS);
 
-const announcement: any = {};
+let announcement: any | undefined;
 // const announcement = {
 //   initialOpen: true,
 //   title: "8월 31 '탄소 규제대응 세미나' 내용 보기",
