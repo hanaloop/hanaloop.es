@@ -53,9 +53,9 @@
             "publishedAt": "2023-06-07",
             "readingTime": {
               "text": "2 min read",
-              "minutes": 1.17,
-              "time": 70200,
-              "words": 234
+              "minutes": 1.26,
+              "time": 75600,
+              "words": 252
             }
           }
         },
@@ -95,7 +95,7 @@
               "hana"
             ],
             "tags": [
-              "하나루프",
+              "파트너십",
               "넷제로 2050"
             ],
             "publishedAt": "2023-08-02",
@@ -124,9 +124,32 @@
             "publishedAt": "2023-08-13",
             "readingTime": {
               "text": "2 min read",
-              "minutes": 1.965,
-              "time": 117900,
-              "words": 393
+              "minutes": 2.005,
+              "time": 120300,
+              "words": 401
+            }
+          }
+        },
+        {
+          "_type": "item",
+          "slug": "/blog/2023/20230831-climateregulation-seminar",
+          "meta": {
+            "title": "하나루프, 기후규제 대응 역량 강화 세미나 성료",
+            "description": "기후규제대응 역량 강화세미나.",
+            "keywords": "하나루프, 기후규제대응, 역량 강화세미나",
+            "authors": [
+              "hana"
+            ],
+            "tags": [
+              "세미나",
+              "기후규제대응"
+            ],
+            "publishedAt": "2023-08-31",
+            "readingTime": {
+              "text": "6 min read",
+              "minutes": 5.02,
+              "time": 301200,
+              "words": 1004
             }
           }
         }
