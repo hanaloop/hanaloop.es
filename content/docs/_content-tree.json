@@ -290,7 +290,7 @@
             "publishedAt": "2023-09-28",
             "description": "2023년 10월부터 CBAM 적용, 보고서 내용",
             "summary": "올해 10월 1일부터 유럽연합(EU) 탄소국경조정 메커니즘(CBAM)시행에 따라 시멘트, 전기, 비료, 철 및 철강 제품, 알루미늄, 수소 등 6대 품목의 수출기업들은 탄소 배출량을 의무적으로 보고해야 합니다. 보고서에 포함할 내용을 간략히 짚어보겠습니다.",
-            "image": "/images/posting/environment-general/2022-12-14-cbam.jpg",
+            "image": "/images/posting/environment-general/2023-09-28-CBAM_reporting_banner.jpg",
             "imageHide": true,
             "imageCredits": null,
             "authors": "ysahnpark",
@@ -301,9 +301,9 @@
             ],
             "readingTime": {
               "text": "9 min read",
-              "minutes": 8.24,
-              "time": 494400,
-              "words": 1648
+              "minutes": 8.225,
+              "time": 493500,
+              "words": 1645
             }
           }
         }
