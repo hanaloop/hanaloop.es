@@ -36,3 +36,12 @@ export function contentTreeToMenu(contentRoot: ContentTreeItem): MenuItem {
 
   return menuItem;
 }
+
+export function reverseMenuItemOrder(menuItem: MenuItem) {
+  if (menuItem.subItems) {
+    for (let subMenuItem of menuItem.subItems) {
+      reverseMenuItemOrder(subMenuItem);
+    }
+    menuItem.subItems.reverse();
+  }
+}

@@ -1,5 +1,5 @@
 import SidebarLayout from "../../components/SidebarLayout";
-import { contentTreeToMenu } from "../../libs/content.util";
+import { contentTreeToMenu, reverseMenuItemOrder } from "../../libs/content.util";
 import { useContext, useMemo } from "react";
 import { getMDXComponent } from "mdx-bundler/client";
 import MenuItem from "../../libs/MenuItem";
@@ -49,6 +49,9 @@ type IndexPageProps = {
   docs: any[], menu: MenuItem
 }
 export default function IndexPage({ docs, menu }: IndexPageProps) {
+
+  const _docs = docs.reverse();
+  reverseMenuItemOrder(menu);
   
   return (
     <DefaultContentContainer>
