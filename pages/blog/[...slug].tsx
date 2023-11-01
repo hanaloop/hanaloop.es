@@ -14,10 +14,11 @@ import DefaultContentContainer from "../../components/DefaultContentContainer";
 import SiteContext from "../../components/SiteContext";
 
 import siteConfig from '../../next-portal.config';
+import { reverseMenuItemOrder } from "../../libs/content.util";
 
 const C_TYPE = "blog";
 
-function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter: AttributeType, filePath?: string}) {
+export function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter: AttributeType, filePath?: string}) {
 
   const siteContext = useContext(SiteContext);
   const MdxComponent = useMemo(() => getMDXComponent(code, {siteConfig}), [code, siteConfig]);
@@ -63,7 +64,8 @@ function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter:
 }
 
 export default function DocPage({ code, frontMatter, menu, filePath }: ContentPageProp) {
-  
+  reverseMenuItemOrder(menu);
+
   return (
     <DefaultContentContainer>
       <SidebarLayout menu={menu} >

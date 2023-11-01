@@ -1,3 +1,7 @@
+/**
+ * NOTE: This file is named _index.tsx as it is overridden by [...slug].tsx and index is not generated
+ * IT IS DIFFERENT FROM docs, which loads from _index.mdx
+ */
 import SidebarLayout from "../../components/SidebarLayout";
 import { contentTreeToMenu, reverseMenuItemOrder } from "../../libs/content.util";
 import { useContext, useMemo } from "react";

@@ -47,7 +47,7 @@ const config = {
           position: 'left',
         },
         {
-          to: '/blog',
+          to: '/blog/_index',
           label: '블로그',
           position: 'left',
         },
@@ -110,7 +110,7 @@ const config = {
             },
             {
               label: '자료',
-              to: '/docs',
+              to: '/docs/_index',
             },
           ],
         },
