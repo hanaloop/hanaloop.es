@@ -24,6 +24,8 @@ import CaptionedImage from "../components/theme/CaptionedImage";
 
 **지원대상: CBAM 대응 대상 철강, 알루미늄, 시멘트, 비료, 수소 업종 기업**
 
+<span className="font-bold text-blue-800">신청하기</span>: [참여 신청서 링크](https://docs.google.com/forms/d/e/1FAIpQLSd6wyqcwO6d2w2d2CHi4qfgNPy4g16N_pXWtDO9GgNv5eUdkg/viewform)
+
 <!--truncate-->
 
 ### 참여 기업 혜택
@@ -34,14 +36,14 @@ import CaptionedImage from "../components/theme/CaptionedImage";
 
 ### 사업기간: 2023년 11월 2일 ~ 2024년 2월 말
 
-- 모집방법: [공고 링크](https://docs.google.com/forms/d/e/1FAIpQLSd6wyqcwO6d2w2d2CHi4qfgNPy4g16N_pXWtDO9GgNv5eUdkg/viewform)
+- **모집방법**: [프로그램 참여 신청](https://docs.google.com/forms/d/e/1FAIpQLSd6wyqcwO6d2w2d2CHi4qfgNPy4g16N_pXWtDO9GgNv5eUdkg/viewform)
 - 지원대상: CBAM 대응 대상 - 철강, 알루미늄, 시멘트, 비료, 수소 업종 기업 
 - 참여기업 선정 기준: 시급성, 기업의 참여 의지 
 
 
 ### 참여기업 모집 단계별 선발과정
 
-- 모집 공고  
+- 모집 공고 
 - (1차) 서면심사 - 신청서 제출 기업 검토
 - (2차) 원격 인터뷰
 - 선정 및 발표 > 모집 대상기업 기준에 충족하는 기업 선발 후 최종 발표 (5개 기업)
