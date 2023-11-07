@@ -322,7 +322,7 @@ const Home: NextPage = () => {
       </SectionBlock>
 
       {announcement && <div className="fixed bottom-4 right-4">
-        <div className={`${fabActive ? 'h-[610px] md:h-[680px]' : 'h-[180px]' } p-2 rounded-sm bg-white border border-gray-200 shadow-lg transition-all ease-in-out delay-150`}>
+        <div className={`${fabActive ? 'h-[570px] md:h-[650px]' : 'h-[180px]' } p-2 rounded-sm bg-white border border-gray-200 shadow-lg transition-all ease-in-out delay-150`}>
           <div className='flex justify-between' >
             <div><a href={announcement.link} className='hover:underline'>{announcement.title}</a></div>
             <div onClick={() => {setFabActive(!fabActive)}}>
@@ -330,7 +330,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <a href={announcement.link}>
-            <img className={`w-[450px] md:w-[500px] border-2 border-white`} src={announcement.image} />
+            <img className={`w-[360px] md:w-[420px] border-2 border-white`} src={announcement.image} />
           </a>
         </div>
       </div>}

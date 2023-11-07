@@ -20,7 +20,7 @@ import CaptionedImage from "../components/theme/CaptionedImage";
 
 선정 기준은 기업의 대응 시급성과 참여의 적극성으로 정하고자 하오니 필요하신 기업에서는 문 두드려주시기 바랍니다.
 
-**모집기간: 2023년 11월 1일(수) ~ 2023년 11월 10일(금) 까지**
+**모집기간: 2023년 11월 1일(수) ~ 2023년 11월 17일(금) 까지**
 
 **지원대상: CBAM 대응 대상 철강, 알루미늄, 시멘트, 비료, 수소 업종 기업**
 
@@ -63,5 +63,5 @@ import CaptionedImage from "../components/theme/CaptionedImage";
 
 문의사항 있으시면 sales@hanaloop.com 이나 507-1337-9251로 연락주십시오.
 
-<img src="/images/blog/20231101-HanaLoop-CBAM-program.jpg" />
+<img src="/images/blog/20231101-HanaLoop-CBAM-program.png" />
 
