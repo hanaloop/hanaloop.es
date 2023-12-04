@@ -22,13 +22,14 @@ const frontMatter = {
 const MAX_DOCS = 4;
 const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt)).slice(0, MAX_DOCS);
 
-let announcement: any | undefined;
-// const announcement = {
-//   initialOpen: true,
-//   title: "2023년 11월 'CBAM 진단 지원' 내용 보기",
-//   link: "/blog/2023/20231102-cbam-assessment_program",
-//   image: "/images/blog/20231101-HanaLoop-CBAM-program-thumb.jpg"
-// };
+// let announcement: any | undefined;
+const announcement = {
+  initialOpen: true,
+  title: "2023년 12월 '하나루프와 기 인사이트 수일' 등록하기",
+  link: "https://docs.google.com/forms/d/e/1FAIpQLSev-ubKKT32aD-gqLHy0k56xyv-iBwiA5Z6jnMtqekdYmIcdA/viewform",
+  image: "/images/blog/HanaLoop_climate_insight_wednesdays.jpg",
+  dimensions: `w-[500px] md:w-[600px]`,
+};
 
 const elements: DisplayItem[] = [
   {
@@ -322,7 +323,7 @@ const Home: NextPage = () => {
       </SectionBlock>
 
       {announcement && <div className="fixed bottom-4 right-4">
-        <div className={`${fabActive ? 'h-[570px] md:h-[650px]' : 'h-[180px]' } p-2 rounded-sm bg-white border border-gray-200 shadow-lg transition-all ease-in-out delay-150`}>
+        <div className={`${fabActive ?  `` : ` h-[150px]` } p-2 rounded-sm bg-white border border-gray-200 shadow-lg transition-all ease-in-out delay-150`}>
           <div className='flex justify-between' >
             <div><a href={announcement.link} className='hover:underline'>{announcement.title}</a></div>
             <div onClick={() => {setFabActive(!fabActive)}}>
@@ -330,7 +331,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <a href={announcement.link}>
-            <img className={`w-[360px] md:w-[420px] border-2 border-white`} src={announcement.image} />
+            <img className={`${announcement.dimensions} border-2 border-white`} src={announcement.image} />
           </a>
         </div>
       </div>}
