@@ -1,10 +1,4 @@
 {
-  "title": {
-    "message": "기후규제 대응 탄소관리 솔루션"
-  },
-  "tagline": {
-    "message": "CBAM 보고서 함께 작성해드립니다"
-  },
   "theme.ErrorPageContent.title": {
     "message": "페이지에 오류가 발생하였습니다.",
     "description": "The title of the fallback page when the page crashed"
@@ -291,5 +285,21 @@
   "theme.unlistedContent.message": {
     "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
     "description": "The unlisted content banner message"
+  },
+
+  "meta_title": {
+    "message": "탄소중립 플랫폼 및 솔루션"
+  },
+  "meta_description": {
+    "message": "기후규제 대응 탄소관리 온실가스관리 플랫폼. EU 탄소국경조정제도(CBAM, Carbon Border Adjustment Mechanism) 1차 보고서 작성"
+  },
+  "index.hero_header": {
+    "message": "기후규제 대응 탄소관리 솔루션"
+  },
+  "index.hero_tagline": {
+    "message": "CBAM 보고서 함께 작성해드립니다."
+  },
+  "request_demo": {
+    "message": "데모 요청"
   }
 }

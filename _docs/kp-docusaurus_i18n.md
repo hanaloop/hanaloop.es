@@ -11,7 +11,7 @@ It uses `i18n/{locale}` directories  to maintain the localization codes as well 
 docusaurus comes with a mod tool `write-translations` which does a static analysis and generates the codes files.
 
 ```sh
-$ yarn write-translations [--locale {locale}]
+$ yarn write-translations [--locale {locale}]
 ```
 
 ## Initial steps

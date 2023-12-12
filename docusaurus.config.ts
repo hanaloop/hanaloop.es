@@ -62,6 +62,9 @@ const config: Config = {
         src: 'images/hanaloop-logo.png',
       },
       items: [
+        {to: '/platform', label: 'Platform', position: 'left'},
+        {to: '/solution', label: 'Solution', position: 'left'},
+        {to: '/partnership', label: 'Partnership', position: 'left'},
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
@@ -69,6 +72,7 @@ const config: Config = {
           label: 'Resources',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/recruit', label: 'Recruit', position: 'left'},
         // {
         //   href: 'https://github.com/facebook/docusaurus',
         //   label: 'GitHub',
@@ -84,23 +88,27 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Company',
           items: [
             {
-              label: 'Resources',
+              label: 'Company',
+              to: '/docs/intro',
+            },
+            {
+              label: 'Recruit',
               to: '/docs/intro',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Resources',
           items: [
             {
-              label: 'Stack Overflow',
+              label: 'Resource',
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'Discord',
+              label: 'Blog',
               href: 'https://discordapp.com/invite/docusaurus',
             },
             {
@@ -113,12 +121,12 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Docs',
+              to: '/docs',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Blog',
+              to: '/blog',
             },
           ],
         },

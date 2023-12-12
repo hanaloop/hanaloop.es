@@ -1,10 +1,4 @@
 {
-  "title": {
-    "message": "Carbon management solution in response to climate regulations"
-  },
-  "tagline": {
-    "message": "We will prepare a CBAM report together with you."
-  },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
@@ -291,5 +285,21 @@
   "theme.unlistedContent.message": {
     "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
     "description": "The unlisted content banner message"
+  },
+
+  "meta_title": {
+    "message": "Carbon Management and Climate Compliance"
+  },
+  "meta_description": {
+    "message": "Carbon management platform for climate regulations. CBAM, IFRS, CDP, SBTi"
+  },
+  "index.hero_header": {
+    "message": "Carbon Management Made Easy"
+  },
+  "index.hero_tagline": {
+    "message": "Strategic Decarbonization: Navigating Regulatory Compliance for Your Organization"
+  },
+  "request_demo": {
+    "message": "Request Demo"
   }
 }
