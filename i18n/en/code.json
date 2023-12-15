@@ -286,12 +286,11 @@
     "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
     "description": "The unlisted content banner message"
   },
-
-  "meta_title": {
-    "message": "Carbon Management and Climate Compliance"
+  "index.meta_title": {
+    "message": "index.meta_title"
   },
-  "meta_description": {
-    "message": "Carbon management platform for climate regulations. CBAM, IFRS, CDP, SBTi"
+  "index.meta_description": {
+    "message": "index.meta_description"
   },
   "index.hero_header": {
     "message": "Carbon Management Made Easy"
@@ -301,5 +300,17 @@
   },
   "request_demo": {
     "message": "Request Demo"
+  },
+  "partnership.meta_title": {
+    "message": "partnership.meta_title"
+  },
+  "partnership.meta_description": {
+    "message": "partnership.meta_description"
+  },
+  "partnership.hero_header": {
+    "message": "Partnership"
+  },
+  "partnership.hero_tagline": {
+    "message": "We grow together through the synergy of connection"
   }
 }

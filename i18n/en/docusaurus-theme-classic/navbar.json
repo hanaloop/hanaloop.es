@@ -22,5 +22,17 @@
   "item.label.Resources": {
     "message": "Resources",
     "description": "Navbar item with label Resources"
+  },
+  "item.label.Platform": {
+    "message": "Platform",
+    "description": "Navbar item with label Platform"
+  },
+  "item.label.Partnership": {
+    "message": "Partnership",
+    "description": "Navbar item with label Partnership"
+  },
+  "item.label.Recruit": {
+    "message": "Recruit",
+    "description": "Navbar item with label Recruit"
   }
 }

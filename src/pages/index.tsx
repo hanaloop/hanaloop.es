@@ -12,12 +12,6 @@ import SectionBlock from '../components/theme/SectionBlock';
 
 
 
-const frontMatter = {
-  title: `탄소중립 플랫폼 및 솔루션`,
-  description: "기후규제 대응 탄소관리 온실가스관리 플랫폼. EU 탄소국경조정제도(CBAM, Carbon Border Adjustment Mechanism) 1차 보고서 작성",
-  keywords: "CBAM, 공급망 탄소 관리, 스코프3 관리, 온실가스 관리, 탄소 관리, 오염물질 관리, 탄소중립 플랫폼, GRI, SASB, TCFD, SBTi, IFRS, 기후 디지털 변환, 환경규제 대응, 환경규제대응 DT, 환경규제대응 디지털 전환, 온실가스 관리 솔루션, 탄소관리 솔루션, 탄소중립 전략, 넷제로 전략, 공급망 내 기업들 간 탄소데이터 교환, 공급망 내 기업들 간 탄소발자국 교환, 환경 플랫폼, 원스톱 탄소관리 플랫폼, 탄소 회계, Platform, HanaLoop, Sustainability, Digital Transformation, EcoLoop, hana.eco"
-};
-
 // let announcement: any | undefined;
 const announcement = {
   initialOpen: true,
@@ -30,13 +24,12 @@ const announcement = {
 export default function Home(): JSX.Element {
   const {siteConfig, i18n} = useDocusaurusContext();
 
-  const filename = `../data/ko_index.data` // `../data/${i18n.currentLocale}_index.data`
   const data = require(`../data/${i18n.currentLocale}_index.data`);
 
   return (
     <Layout
-      title={`${siteConfig.title} | ${translate({message: "meta_title"})}`}
-      description={translate({message: "meta_description"})}>
+      title={`${siteConfig.title} | ${translate({message: "index.meta_title"})}`}
+      description={translate({message: "index.meta_description"})}>
       <Hero background={{
           imageUrl: useBaseUrl('/images/bg-hero_jungle_coast.jpg'),
         }} 
@@ -118,7 +111,7 @@ export default function Home(): JSX.Element {
                       <div className="flex mr-1 items-baseline text-gray-700 group-hover:text-primary-700">
                         
                         <span className="pr-4">{ndx + 1}.</span>
-                          <h4 className=" py-2 inline">{item.title}</h4>
+                        <h4 className=" py-2 inline">{item.title}</h4>
                       </div>
                     </div>
                     <div className="text-xs text-gray-700 [word-break:keep-all] ml-10" >

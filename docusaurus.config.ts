@@ -63,7 +63,7 @@ const config: Config = {
       },
       items: [
         {to: '/platform', label: 'Platform', position: 'left'},
-        // {to: '/solution', label: 'Solution', position: 'left'},
+        {to: '/solution', label: 'Solution', position: 'left'},
         {to: '/partnership', label: 'Partnership', position: 'left'},
         {
           type: 'docSidebar',
