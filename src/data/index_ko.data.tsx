@@ -4,8 +4,8 @@ export const content = {
   section1_title: "오늘날 기업에게 탄소관리는 필수입니다!",
   section2_title: "Trusted by 고객 및 파트너",
   section2_subtitle: "창업성장기술개발 R&D사업 선정 기업",
-  section3_title: "협업형 온실가스 관리로 귀사와 공급망의 온실가스 배출을 효율적으로 관리, 분석하고 감축하고 공시하세요!",
-  section3_link: <div>협업형 스코프3 포함 탄소중립 플랫폼 <span className="font-bold">하나.에코</span> 소개</div>
+  section3_title: "귀사의 탄소관리 수준에 맞춘 탄소관리 솔루션을 통해 귀사와 공급망의 온실가스 배출을 효율적으로 관리하며 탄소감축 전략을 수립하실 수 있습니다.",
+  section3_link: <div>기후규제 대응, 협업형 스코프3 포함 탄소중립 플랫폼 <span className="font-bold">하나.에코</span> 소개</div>
 }
 
 export const elements: DisplayItem[] = [

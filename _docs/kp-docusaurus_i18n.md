@@ -80,3 +80,10 @@ cp -r src/pages/**.mdx i18n/en/docusaurus-plugin-content-pages
 ```
 
 > We only copy .md and .mdx files, as React pages are translated through JSON translation files already. Unless you want to override the .jsx/tsx page altogether.
+
+## Changing the logo
+
+See [Swizzling](https://docusaurus.io/docs/swizzling), and [how to remove locale dropdown icon](https://stackoverflow.com/questions/69824479/how-to-remove-locale-dropdown-iconicon-before-english-word)
+
+
+yarn swizzle @docusaurus/theme-classic IconLanguage -- --danger
