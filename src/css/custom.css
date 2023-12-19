@@ -6,6 +6,10 @@
 
 @tailwind base;
 
+svg {
+  @apply inline
+}
+
 /**
  * For HTML generated from MDX. MDX must be enclosed in <article>
  * Referenced from: https://github.com/iandinwoodie/github-markdown-tailwindcss/blob/master/markdown.css

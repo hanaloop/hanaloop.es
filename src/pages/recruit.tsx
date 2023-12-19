@@ -40,12 +40,17 @@ export default function Home(): JSX.Element {
 
       <article className="p-4 [word-break:keep-all]">
 
-      We are developing a <b>sustainability platform</b> that will become a stepping stone to a sustainable world.
-      An impact project for a world where the next generation can enjoy everything that the previous generations have enjoyed without compromise!
-      <b>Do you want to grow together partaking in impact projects for human life and the global environment</b>?
-      Come to <b>HanaLoop</b>!
+      We are forging a sustainability platform poised to serve as a cornerstone for a sustainable world —
+      an impactful initiative aimed at ensuring that the next generation can relish all the benefits enjoyed by previous generations without any compromises!
+      <br />
+      
+      <b>Are you eager to grow collaboratively through impactful projects that contribute to both human life and the global environment?</b> 
+      <br />
+      Join us at <b>HanaLoop</b>!
 
+      <div className="my-2 p-2 border text-center border-primary rounded-md ">
       "If you want to walk fast, walk alone. But if you want to walk far, walk together” - Ratan Tata
+      </div>
 
       <SectionBlock title='복지' >
       <div className="text-left">
@@ -108,16 +113,6 @@ export default function Home(): JSX.Element {
           <li>전형 절차는 일정 및 상황에 따라 변동될 수 있습니다.</li>
           <li>진행 일정은 확정되는대로 지원자분들께 개별 안내 예정입니다.</li>
           <li>이메일 제목에 지원 포지션 명/ 지원자 명 꼭 넣어주세요.</li>
-        </ul>
-        <h4 id="복리후생">복리후생</h4>
-        <ul>
-          <li>오전 7시~ 오전 10시 사이 자율 출근 후 자율 퇴근</li>
-          <li>업무 성격, 효율과 능력에 따라 원격업무 가능</li>
-          <li>식대 지원</li>
-          <li>건강검진 지원</li>
-          <li>각종 세미나, 포럼, 교육 참석 지원</li>
-          <li>업무 관련 도서구매 지원</li>
-          <li>3년 이상 함께하는 멤버의 공헌도에 따라 스톡옵션 지급</li>
         </ul>
 
         <br />
