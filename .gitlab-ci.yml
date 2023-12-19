@@ -1,5 +1,5 @@
 # The Docker image that will be used to build your app
-image: "node:16.14.0"
+image: "node:18"
 
 # Functions that should be executed before the build script is run
 before_script:
@@ -13,12 +13,10 @@ cache:
 
 pages:
   script:
-    - yarn contentprep
-    - yarn gen:sitemap
-    - yarn build && yarn export
+    - yarn build
     # removing the existing public directory prior mv
     - rm -r ./public
-    - mv ./out ./public
+    - mv ./build ./public
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL

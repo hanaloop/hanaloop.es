@@ -51,7 +51,7 @@ const elements: DisplayItem[] = [
       <span key="1"><b>표준 보고서에서 요구되는 리포팅</b> - 사업장 별, Scope 1, 2, 3별 에너지 사용량 등 데이터를 체계적으로 관리합니다.</span>,
       <span key="2"><b>리스크 관리</b> - IFRS/TCFD에서 권장하는 리스크 관리가 용이합니다.</span>,
       <span key="3"><b>시나리오 분석</b> - 배출원의 변경에 대해 What-if 시나리오 분석으로 전략적으로 기후리스크를 관리하고 준비할 수 있습니다.</span>
-    ] 
+    ]
   },
   {
     title: "ESG & 스코프 3 관리",
@@ -62,7 +62,7 @@ const elements: DisplayItem[] = [
       <span key="2"><b>협력사 관리</b> - Scope 3에 해당되는 공급자들의 탄소 배출 현황을 안전하게 관리할 수 있습니다.</span>,
       <span key="3"><b>제품 관리</b> - 제품의 원단위를 파악하여 고객사와의 커뮤니케이션에 능동적으로 참여할 수 있습니다.</span>,
       <span key="4"><b>Scope 3용 산업 표준 배출계수</b> - 실 데이터가 없을 경우에도 배출량 산정이 가능합니다.</span>,
-    ] 
+    ]
   },
 ]
 
@@ -71,7 +71,7 @@ const features: DisplayItem[] = [
   {
     icon: <svg className="h-8 text-secondary " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 5H7V7H17V5Z" fill="currentColor" /><path d="M7 9H9V11H7V9Z" fill="currentColor" /><path d="M9 13H7V15H9V13Z" fill="currentColor" /><path d="M7 17H9V19H7V17Z" fill="currentColor" /><path d="M13 9H11V11H13V9Z" fill="currentColor" /><path d="M11 13H13V15H11V13Z" fill="currentColor" /><path d="M13 17H11V19H13V17Z" fill="currentColor" /><path d="M15 9H17V11H15V9Z" fill="currentColor" /><path d="M17 13H15V19H17V13Z" fill="currentColor" /><path fillRule="evenodd" clipRule="evenodd" d="M3 3C3 1.89543 3.89543 1 5 1H19C20.1046 1 21 1.89543 21 3V21C21 22.1046 20.1046 23 19 23H5C3.89543 23 3 22.1046 3 21V3ZM5 3H19V21H5V3Z" fill="currentColor" /></svg>,
     title: "탄소 어카운팅",
-    description: "기업의 활동으로 인해 발생하는 온실가스 배출량과 감축량을 탄소로 환산합니다. 데이터 수집은 가능한 자동화, 휴먼에러 방지 등 실무자 편의를 제공합니다." 
+    description: "기업의 활동으로 인해 발생하는 온실가스 배출량과 감축량을 탄소로 환산합니다. 데이터 수집은 가능한 자동화, 휴먼에러 방지 등 실무자 편의를 제공합니다."
   },
   {
     // https://fonts.google.com/icons?icon.query=diversity&icon.set=Material+Icons
@@ -99,10 +99,10 @@ const reasons: DisplayItem[] = [
     // Heroicon
     icon: <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
     <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" />
-  </svg>,  
+  </svg>,
     title: '환경규제 대응'
   },
-  { 
+  {
     // Material icon
     icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
@@ -116,7 +116,7 @@ const reasons: DisplayItem[] = [
   </svg>,
     title: '비즈니스 위험 완화'
   },
-  { 
+  {
     // Material icon
     icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" ><g><rect fill="none" height="24" width="24"/></g><g><g><circle cx="12" cy="6" r="2"/><path d="M21,16v-2c-2.24,0-4.16-0.96-5.6-2.68l-1.34-1.6C13.68,9.26,13.12,9,12.53,9h-1.05c-0.59,0-1.15,0.26-1.53,0.72l-1.34,1.6 C7.16,13.04,5.24,14,3,14v2c2.77,0,5.19-1.17,7-3.25V15l-3.88,1.55C5.45,16.82,5,17.48,5,18.21C5,19.2,5.8,20,6.79,20H9v-0.5 c0-1.38,1.12-2.5,2.5-2.5h3c0.28,0,0.5,0.22,0.5,0.5S14.78,18,14.5,18h-3c-0.83,0-1.5,0.67-1.5,1.5V20h7.21 C18.2,20,19,19.2,19,18.21c0-0.73-0.45-1.39-1.12-1.66L14,15v-2.25C15.81,14.83,18.23,16,21,16z"/></g></g></svg>,
     title: '고객사와 소비자의 요구'
@@ -148,7 +148,7 @@ const customers: DisplayItem[] = [
   //   imageUrl: "/images/partners/plandocs-logo.png",
   //   description: "고객사 | 플랜닥스는 의료기기 및 의약품, 의료기구, 의료용품 등 다양한 미용성형 전문 제품 및 서비스를 제공하는 플랫폼 기업."
   // },
-  
+
 ];
 
 const partners: DisplayItem[] = [
@@ -178,12 +178,12 @@ const Home: NextPage = () => {
   const [fabActive, setFabActive] = useState<Boolean>(announcement?.initialOpen ?? false);
 
   // TODO: add meta description
-  
+
   return (
     <div className="">
       <Hero background={{
           imageUrl: contextualPath(siteConfig, '/images/bg-hero_jungle_coast.jpg'),
-        }} 
+        }}
         header="기후규제 대응 탄소관리 솔루션"
         tagline="CBAM 보고서 함께 작성해드립니다."
         button={
@@ -194,7 +194,7 @@ const Home: NextPage = () => {
       <SectionBlock title='오늘날 기업에게 탄소관리는 필수입니다' containerStyle='bg-gray-100'>
         <div className="px-10  my-5 grid lg:grid-cols-4 grid-cols-1 gap-4  ">
           {
-            reasons.map(item => 
+            reasons.map(item =>
               <div className="border border-green-600 rounded-lg text-center text-gray-700" key={item.title}>
                 <div className="flex justify-center items-center text-sm">
                   <div className="flex mr-1">{item.icon}</div>
@@ -209,7 +209,7 @@ const Home: NextPage = () => {
           <div className="mt-4 text-center items-center space-y-8 ">
             <div className="flex justify-center space-x-6 ">
               {
-                customers.map(item => 
+                customers.map(item =>
                   <div className="group" key={item.title}>
                     <Link href={item.sourceUrl!} passHref><a target="_blank" ><Image className="h-8 grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl!} alt={item.title} /></a></Link>
                     <span className="p-2 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">{item.description}</span>
@@ -218,7 +218,7 @@ const Home: NextPage = () => {
             </div>
             <div className="flex justify-center space-x-6 ">
               {
-                partners.map(item => 
+                partners.map(item =>
                   <div className="group" key={item.title}>
                     <Link href={item.sourceUrl!} passHref><a target="_blank" ><Image className="h-8 rounded-md grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl!} alt={item.title} /></a></Link>
                     <span className="p-2 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-60 border-lime-700 hidden group-hover:block absolute tooltip-text">{item.description}</span>
@@ -245,20 +245,20 @@ const Home: NextPage = () => {
             </div>
             <div className="mt-10 border border-primary-500 rounded p-2 hover:bg-primary-600 hover:text-gray-100">
               <Link href={'https://docs.google.com/presentation/d/1FBvBwSz998JR_S_CKMQOPVkr3QXXQEjGyqLADDncrS8/edit?usp=sharing'}><a className='text-sx '>협업형 스코프3 포함 탄소중립 플랫폼 <span className="font-bold">하나.에코</span> 소개</a></Link>
-            </div>  
+            </div>
           </div>
-          
+
           <div className='text-left space-y-7 '>
           {
             elements.map((item, ndx) => {
               const lines = item.description as string[];
               return (
-                
+
               <div className="group mt-3 pl-2 rounded-md border-l-4 hover:border-primary-700 lg:flex" key={ndx}>
                 <div className="lg:w-[500px] flex-none mb-2">
                   <div className="text-3xl font-bold">
                     <div className="flex mr-1 items-baseline text-gray-700 group-hover:text-primary-700">
-                      
+
                       <span className="pr-4">{ndx + 1}.</span>
                         <h4 className=" py-2 inline">{item.title}</h4>
                     </div>
@@ -266,7 +266,7 @@ const Home: NextPage = () => {
                   <div className="text-xs text-gray-700 [word-break:keep-all] ml-10" >
                     <div className="pb-2 text-base font-bold  text-gray-400">{item.subtitle}</div>
                     <ul className="ml-3 list-disc space-y-2">
-                      {lines.map((line, ndx: number) => 
+                      {lines.map((line, ndx: number) =>
                         <li key={ndx}>{line}</li>
                       )}
                     </ul>
@@ -290,7 +290,7 @@ const Home: NextPage = () => {
         </h2>
         <div className="p-6 border-2 border-secondary rounded-lg grid md:grid-cols-4 grid-cols-1 gap-4  ">
           {
-            features.map(item => 
+            features.map(item =>
               <div className="text-center" key={item.title}>
                 <div className="flex justify-center items-center">
                   <div className="flex mr-1">{item.icon}</div>
@@ -308,23 +308,23 @@ const Home: NextPage = () => {
         <>
         <div className="px-10 my-6 grid md:grid-cols-2 grid-cols-1 gap-6  ">
           {
-            docsSorted.map(item => 
+            docsSorted.map(item =>
               <div className="border rounded text-gray-700 drop-shadow-md" key={item.slug}>
                 <Link href={item.slug} passHref><a >
                 <div className="text-left items-center">
                   <h3 className="px-4 py-2 hover:text-primary">{item.meta.title}</h3>
                   {item.meta.image && <Image className="object-cover h-40 w-full bg-center " src={item.meta.image} alt={item.meta.title} />}
-                  
+
                   <div className="px-4 py-2 text-sm text-gray-500">
                     <div className="text-xs">{item.meta.publishedAt}</div>
                     <div>{item.meta.summary}</div>
                     <Tags tags={item.meta.tags} />
                   </div>
-                  
+
                 </div>
                 </a></Link>
               </div>)
-          }  
+          }
         </div>
         <Link href="/docs" passHref><a >자료 더 보기</a></Link>
         </>
