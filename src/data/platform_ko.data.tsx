@@ -16,7 +16,11 @@ export const content = {
     에너지 소비를 줄이고, <br/>
     ESG 포트폴리오를 향상시킬 수 있습니다. <br/>
     궁극적으로 탄소발자국을 줄이며, 기후위기 완화에 기여할 수 있습니다.
-    </ul></>
+    </ul></>,
+
+section2_title: "Hana.eco Features",
+section3_title: "Hana.eco가 지원하는 표준 보고 항목",
+section4_title: "기대 효과",
 }
 
 export const features: DisplayItem[] = [

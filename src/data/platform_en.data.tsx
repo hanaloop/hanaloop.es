@@ -1,11 +1,11 @@
 import { DisplayItem } from "../libs/types"
 
 export const content = {
-  section1_title: "데이터가 보이면 전략이 보입니다",
-  section1_body: <>인류가 대면하고 있는 가장 큰 위기, 기후변화 <br/> 
-    그의 주범인 온실가스 <br/>
-    하지만 눈에 보이지 않는 온실가스를 <br/> 
-    하나루프의 <b>SaaS형 지속가능성 플랫폼 하나에코</b>가 보여드리겠습니다.</>,
+  section1_title: "Data-driven decision-making is essential for success",
+  section1_body: <>Climate change is the greatest crisis facing humanity. <br />
+  Greenhouse gases are the culprit, but they are invisible. <br />
+  Hana Eco can help us to visualize them and take action.<br />
+  </>,
   section1_quote: <>“측정할 수 없으면 관리할 수 없고, 관리할 수 없으면 개선시킬 수도 없다”</>,
   section1_highlight: <><span className="font-bold text-lg">SaaS형 지속가능성 플랫폼 하나에코</span>는<br /> 
     온실가스 배출활동을 관리하며, 배출량을 계산하고 분석합니다. <br/>  
@@ -16,7 +16,10 @@ export const content = {
     에너지 소비를 줄이고, <br/>
     ESG 포트폴리오를 향상시킬 수 있습니다. <br/>
     궁극적으로 탄소발자국을 줄이며, 기후위기 완화에 기여할 수 있습니다.
-    </ul></>
+    </ul></>,
+  section2_title: "Hana.eco Features",
+  section3_title: "Standard supported by Hana.eco",
+  section4_title: "Benefits",
 }
 
 export const features: DisplayItem[] = [

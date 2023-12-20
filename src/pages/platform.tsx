@@ -45,7 +45,7 @@ export default function Home(): JSX.Element {
       <br/>
         <div className="flex justify-center">
           <div className="w-4/5 ">
-            <div className="text-center text-2xl italic">section1_quote</div>
+            <div className="text-center text-2xl italic">{data.content.section1_quote}</div>
             <div className="text-right text-sm text-gray-600  whitespace-nowrap">- 피터 드러커 (Peter Drucker)</div>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function Home(): JSX.Element {
       </div>
       </SectionBlock>
 
-      <SectionBlock title='Hana.eco Features' >
+      <SectionBlock title={data.content.section2_title} >
         <div className="flex justify-center">
         <div className="text-left max-w-4xl space-y-6">
           {data.features.map(feature => 
@@ -87,7 +87,7 @@ export default function Home(): JSX.Element {
         </div>
       </SectionBlock>
 
-      <SectionBlock title='Hana.eco가 지원하는 표준 보고 항목' containerStyle='bg-gray-100 flex justify-center'>
+      <SectionBlock title={data.content.section3_title} containerStyle='bg-gray-100 flex justify-center'>
 
       <article className="p-4 max-w-3xl text-left">
 
@@ -165,19 +165,20 @@ export default function Home(): JSX.Element {
       </SectionBlock>
 
 
-      <SectionBlock title='기대 효과'>
+      <SectionBlock title={data.content.section4_title}>
       <div className="text-left flex justify-center">
         <div className="space-y-4 ">
         {data.benefits.map( (benefit, idx) => 
         <div className="block " key={idx}> 
-          <div className="p-2 min-w-0 rounded-l-full rounded-r-lg bg-primary-600 flex items-center">
-            <div className="ml-0 w-20 h-20 rounded-full bg-secondary text-4xl font-bold text-gray-50 items-center inline-block text-center"><div className="pt-2">{benefit.subtitle}</div></div>
+          <div className="p-2 min-w-0 rounded-l-full rounded-r-lg bg-sky-600 flex items-center">
+            <div className="ml-0 w-20 h-20 rounded-full bg-gray-100 text-4xl font-bold text-gray-600 dark:text-gray-200  dark:bg-gray-600  items-center inline-block text-center">
+              <div className="pt-3 ">{benefit.subtitle}</div>
+            </div>
             <div className="pl-3 text-2xl w-40  flex-none text-white ">{benefit.title}</div>
-            <div className="flex-1 py-1 rounded-md bg-white text-left">
+            <div className="flex-1 p-3 rounded-md text-left bg-white  dark:bg-gray-600">
               {benefit.description}
             </div>
           </div>
-          
         </div>
         )}
         </div>
