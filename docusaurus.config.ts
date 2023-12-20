@@ -49,6 +49,11 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        gtag: {
+          trackingID: 'G-3JWGP2SKMR', // process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS,
+          anonymizeIP: true,
+        },
+
       } satisfies Preset.Options,
     ],
   ],
