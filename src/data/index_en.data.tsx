@@ -3,8 +3,10 @@ import { DisplayItem } from "../libs/types";
 export const content = {
   section1_title: "Effective carbon management is indispensable for contemporary businesses!",
   section2_title: "Trusted by Customers and Partners",
+
   section3_title: "Optimize the management, analysis, reduction, and disclosure of greenhouse gas emissions for your company and supply chain through collaborative greenhouse gas management!",
-  section3_link: <div>Presentation deck introducing the <span className="font-bold">Hana.eco</span> platform</div>
+  section3_link: <div>Presentation deck introducing the <span className="font-bold">Hana.eco</span> platform</div>,
+  section3_href: "https://docs.google.com/presentation/d/1LH1iQZ1qcFr0r3jBCtDZ1NFmrwd7OWzWDEAqQay75jY/edit?usp=sharing"
 }
 
 export const elements: DisplayItem[] = [

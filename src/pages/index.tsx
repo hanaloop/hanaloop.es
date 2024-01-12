@@ -100,7 +100,7 @@ export default function Home(): JSX.Element {
               {data.content.section3_title}
               </div>
               <div className="mt-10 border border-primary-500 rounded p-2 hover:bg-primary-600 hover:text-gray-100">
-                <Link href={'https://docs.google.com/presentation/d/1FBvBwSz998JR_S_CKMQOPVkr3QXXQEjGyqLADDncrS8/edit?usp=sharing'}>
+                <Link href={data.content.section3_href}>
                   <a className='text-sx '>{data.content.section3_link}</a>
                 </Link>
               </div>  
