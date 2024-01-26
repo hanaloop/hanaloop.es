@@ -118,7 +118,7 @@ caption="Hana.eco의 전력 분석" />
   <div className="pl-4">
   “예” 버튼 클릭
 
-  <CaptionedImage imageSrc="/images/posting/platform/HanaEco-kepco_connect-6.jpeg" caption="한전 https://en-ter.co.kr" />
+  <CaptionedImage imageSrc="/images/posting/platform/HanaEco-kepco_connect-6.png" caption="한전 https://en-ter.co.kr" />
   </div>
 </div>
 <br/>
