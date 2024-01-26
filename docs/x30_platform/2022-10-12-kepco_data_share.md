@@ -1,5 +1,5 @@
 ---
-title: "EcoLoop - 한전 전력사용량 정보제공 동의 절차"
+title: "Hana.eco - 한전 전력사용량 정보제공 동의 절차"
 date: "2022-10-12"
 description: "EcoLoop 지속가능성 플랫폼은 고객의 한전 전력사용 데이터를 자동으로 수집하여 실시간으로 세밀하게 전력사용 추세를 분석해 드립니다. 
 그 첫 절차는 고객의 한전 전력사용량 정보제공 동의입니다. 한전 전력사용량 정보제공 동의 절차를 설명합니다."
@@ -62,40 +62,40 @@ caption="EcoLoop의 전력 분석" />
   <div className="pl-4">
   “전력데이터서비스” > “전력데이터서비스(EDS)마켓” 선택 => 한전 전력데이터 서비스마켓 ( https://edsm.kepco.co.kr/ )로 이동됨
 
-  <CaptionedImage imageSrc="/images/posting/ecoloop/ecoloop-kepco-connect_1.jpeg" caption="한전 https://en-ter.co.kr" />
+  <CaptionedImage imageSrc="/images/posting/platform/HanaEco-kepco_connect-1.png" caption="한전 https://en-ter.co.kr" />
   </div>
 </div>
 
 <br/>
 <div className="py-4 hover:bg-slate-100">
-  ### 3 단계 "전력데이터서비스마켓"의 "전체서비스" 검색으로 이동
+  ### 3 단계 "전력데이터서비스마켓"의 **"전체서비스"** 검색으로 이동
 
   <div className="pl-4">
   전력데이터서비스(EDS)마켓( https://edsm.kepco.co.kr/ )에서 “전체서비스” 메뉴 선택
 
-  <CaptionedImage imageSrc="/images/posting/ecoloop/ecoloop-kepco-connect_2.jpeg" caption="한전 https://en-ter.co.kr" />
+  <CaptionedImage imageSrc="/images/posting/platform/HanaEco-kepco_connect-2.png" caption="한전 https://en-ter.co.kr" />
   </div>
 </div>
 
 <br/>
 <div className="py-4 hover:bg-slate-100">
-  ### 4 단계 '에코루프' 검색
+  ### 4 단계 '하나에코' 검색
 
   <div className="pl-4">
-  “서비스 검색”창에 에코루프 입력하고 “조회”버튼 누름
+  “서비스 검색”창에 **"하나에코"** 입력하고 “조회”버튼 누름
 
-  <CaptionedImage imageSrc="/images/posting/ecoloop/ecoloop-kepco-connect_3.jpeg" caption="한전 https://en-ter.co.kr" />
+  <CaptionedImage imageSrc="/images/posting/platform/HanaEco-kepco_connect-3.png" caption="한전 https://en-ter.co.kr" />
   </div>
 </div>
 
 <br/>
 <div className="py-4 hover:bg-slate-100">
-  ### 5 단계 '에코루프' 선택
+  ### 5 단계 '하나에코' 선택
 
   <div className="pl-4">
-  검색된 “에코루프 - 온실가스 통합 관리 플랫폼” 선택
+  검색된 하나에코 - 온실가스 통합 관리 플랫폼” 선택
 
-  <CaptionedImage imageSrc="/images/posting/ecoloop/ecoloop-kepco-connect_4.jpeg" caption="한전 https://en-ter.co.kr" />
+  <CaptionedImage imageSrc="/images/posting/platform/HanaEco-kepco_connect-4.png" caption="한전 https://en-ter.co.kr" />
   </div>
 </div>
 
@@ -106,7 +106,8 @@ caption="EcoLoop의 전력 분석" />
   <div className="pl-4">
   스크롤다운 하여 “정보제공동의” 버튼 클릭 
 
-  <CaptionedImage imageSrc="/images/posting/ecoloop/ecoloop-kepco-connect_5.jpeg" caption="한전 https://en-ter.co.kr" />
+  <CaptionedImage imageSrc="/images/posting/platform/HanaEco-kepco_connect-5.png" 
+     caption="한전 https://en-ter.co.kr" />
   </div>
 </div>
 
