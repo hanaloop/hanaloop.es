@@ -4,7 +4,7 @@ export const content = {
   section1_title: "오늘날 기업에게 탄소관리는 필수입니다!",
   section2_title: "Trusted by 고객 및 파트너",
   section2_subtitle: "창업성장기술개발 R&D사업 선정 기업",
-  section3_title: "귀사의 탄소관리 수준에 맞춘 탄소관리 솔루션을 통해 귀사와 공급망의 온실가스 배출을 효율적으로 관리하며 탄소감축 전략을 수립하실 수 있습니다.",
+  section3_title: "기업활동 중에 발생하는 온실가스, 제품의 탄소관리를 AI 기반 탄소 관리 플랫폼 하나에코로 손쉽고 간편하게 관리하세요!",
   section3_link: <div>기후규제 대응, 협업형 스코프3 포함 탄소중립 플랫폼 <span className="font-bold">하나.에코</span> 소개</div>,
   section3_href: "https://docs.google.com/presentation/d/1c0EbuKa5Nk5cx06la44rjQFo7i5urNylCfij3ZQ5ukE/edit?usp=sharing"
 }
@@ -23,7 +23,7 @@ export const elements: DisplayItem[] = [
   },
   {
     title: "IFRS(TCFD) / CDP / GRI",
-    subtitle: "Climate normatives, frameworks and standards",
+    subtitle: "Climate Normatives, Frameworks and Standards",
     imageUrl: "/images/platform/card-standards_pic.jpeg",
     description: [
       <span key="1"><b>표준 보고서에서 요구되는 리포팅</b> - 사업장 별, Scope 1, 2, 3별 에너지 사용량 등 데이터를 체계적으로 관리합니다.</span>,
@@ -33,13 +33,23 @@ export const elements: DisplayItem[] = [
   },
   {
     title: "ESG & 스코프 3 관리",
-    subtitle: "Make impact",
+    subtitle: "ESG Data Encompassing the Supply Shain",
     imageUrl: "/images/platform/card-scope3_pic.jpeg",
     description: [
       <span key="1"><b>정성적인 데이터 관리</b> - 질문에 응답하는 형태의 정성적인 데이터 관리가 가능해집니다.</span>,
       <span key="2"><b>협력사 관리</b> - Scope 3에 해당되는 공급자들의 탄소 배출 현황을 안전하게 관리할 수 있습니다.</span>,
-      <span key="3"><b>제품 관리</b> - 제품의 원단위를 파악하여 고객사와의 커뮤니케이션에 능동적으로 참여할 수 있습니다.</span>,
-      <span key="4"><b>Scope 3용 산업 표준 배출계수</b> - 실 데이터가 없을 경우에도 배출량 산정이 가능합니다.</span>,
+      <span key="3"><b>Scope 3용 산업 표준 배출계수</b> - 실 데이터가 없을 경우에도 배출량 산정이 가능합니다.</span>,
+    ] 
+  },
+  {
+    title: "제품 탄소 발자국 관리",
+    subtitle: "Product Carbon Footprint",
+    imageUrl: "/images/platform/card-products.jpeg",
+    description: [
+      <span key="0"><b>지구 온난화 카테고리의 LCA 산정</b> - 제품의 지구 온난화(Global Warming) 카테고리의 과정별 온실가스 배출량 산정</span>,
+      <span key="1"><b>공정과정 탄소 내재배출 측정</b> - 제품에 연관된 공정과정을 설정하여 제훔의 고유내재배출을 쉽고 정확하게 측정할 수 있습니다</span>,
+      <span key="2"><b>원부자제 내재배출 관리</b> - 일부 산업의 내재배출을 포함한 원부자제(전구물질)의 카탈로그를 포함합니다.</span>,
+      <span key="3"><b>비용 효율성 분석</b> - 제품의 생산과정에서 탄소 배출 효율성 분석 및 핫스팟 파악이 가능합니다.</span>,
     ] 
   },
 ]
@@ -76,22 +86,22 @@ export const reasons: DisplayItem[] = [
   {
     // Heroicon
     icon: <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" />
-  </svg>,  
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" />
+    </svg>,  
     title: '환경규제 대응'
   },
   { 
     // Material icon
     icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
-  </svg>,
+      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+    </svg>,
     title: '투자자 요청'
   },
   {
     // https://uxwing.com/svg-icon-editor/
     icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
-  </svg>,
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
+    </svg>,
     title: '비즈니스 위험 완화'
   },
   { 
@@ -119,6 +129,18 @@ export const customers: DisplayItem[] = [
     sourceUrl: "https://naver.me/FKKMDLip",
     imageUrl: "/images/partners/seokyungbuildng-logo.png",
     description: "고객사 | 고객의 윤택(潤澤)함을 책임지는 산업 건물"
+  },
+  {
+    title: "삼아알미늄",
+    sourceUrl: "https://naver.me/FKKMDLip",
+    imageUrl: "/images/partners/samaalminum-logo.png",
+    description: "Customer | 고품질의 알루미늄 호일 및 포장재 생산 기술"
+  },
+  {
+    title: "대호에이엘",
+    sourceUrl: "https://naver.me/FKKMDLip",
+    imageUrl: "/images/partners/daehoal-logo.png",
+    description: "Customer | 알루미늄, 철도자량, 청정환기시스템"
   },
   // {
   //   title: "플랜닥스",
@@ -154,4 +176,25 @@ export const partners: DisplayItem[] = [
     imageUrl: "/images/partners/partner-hanconsulting_logo.png",
     description: "파트너사 | ESG 경영 성공파트너 | 차별화된 ESG경영 컨설팅과 탄소중립 컨설팅"
   }
+]
+
+export const programs: DisplayItem[] = [
+  {
+    title: "중소벤처기업부",
+    sourceUrl: "https://www.mss.go.kr/site/smba/main.do",
+    imageUrl: "/images/partners/korea-mss-gov.png",
+    description: "지원 기관 | 활력 중소기업, 함께 잘사는 나라"
+  },
+  {
+    title: "중소기업기술정보진흥원",
+    sourceUrl: "https://www.tipa.or.kr/",
+    imageUrl: "/images/partners/korea-tipa-gov.gif",
+    description: "지원 기관 | 중소기업의 R&D 파트너"
+  },
+  {
+    title: "하이서울 기업협회",
+    sourceUrl: "https://www.hiseoulbiz.org/",
+    imageUrl: "/images/partners/hiseoulbizassoc-logo.png",
+    description: "협력 기관 | 기업 성장"
+  },
 ]

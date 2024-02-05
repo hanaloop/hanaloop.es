@@ -66,10 +66,10 @@ export default function Home(): JSX.Element {
               <div className="flex justify-center space-x-6 ">
                 {
                   data.customers.map(item => 
-                    <div className="group" key={item.title}>
+                    <span className="group" key={item.title}>
                       <Link href={item.sourceUrl!} ><a target="_blank" ><img className="h-8 grayscale group-hover:grayscale-0 duration-200" src={useBaseUrl(item.imageUrl!)} alt={item.title} /></a></Link>
                       <span className="p-2 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">{item.description}</span>
-                    </div>)
+                    </span>)
                 }
               </div>
               <div className="flex justify-center space-x-6 ">
@@ -81,11 +81,15 @@ export default function Home(): JSX.Element {
                     </div>)
                 }
               </div>
-              <div className="space-y-2">
+              <div>
                 <div className="flex justify-center space-x-6 ">
-                  <img className="h-8 " src={useBaseUrl("/images/partners/korea-mss-gov.png")} alt="중소벤처기업부" />
-                  <img className="h-8 " src={useBaseUrl("/images/partners/korea-tipa-gov.gif")} alt="중소기업기술정보진흥원" />
-                  <Link href={`https://svhc.or.kr/`}><a><img className="h-8 " src={useBaseUrl("/images/partners/seoulsocialventurehub-logo2.png")} alt="서울소셜벤처허브" /></a></Link>
+                  {
+                    data.programs.map(item => 
+                      <div className="group" key={item.title}>
+                        <Link href={item.sourceUrl!}><a target="_blank" ><img className="h-8 rounded-md grayscale group-hover:grayscale-0 duration-200" src={useBaseUrl(item.imageUrl!)} alt={item.title} /></a></Link>
+                        <span className="p-2 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-60 border-lime-700 hidden group-hover:block absolute tooltip-text">{item.description}</span>
+                      </div>)
+                  }
                 </div>
                 <div className='text-xs'>{data.content.section2_subtitle}</div>
               </div>
@@ -121,8 +125,8 @@ export default function Home(): JSX.Element {
                         <h4 className=" py-2 inline">{item.title}</h4>
                       </div>
                     </div>
-                    <div className="text-xs text-gray-700 [word-break:keep-all] ml-10" >
-                      <div className="pb-2 text-base font-bold  text-gray-400">{item.subtitle}</div>
+                    <div className="text-gray-700 [word-break:keep-all] ml-10" >
+                      <h5 className="pb-2 text-lg font-bold  text-gray-400">{item.subtitle}</h5>
                       <ul className="ml-3 list-disc space-y-2">
                         {lines.map((line, ndx: number) => 
                           <li key={ndx}>{line}</li>

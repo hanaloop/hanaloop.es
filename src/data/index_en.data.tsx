@@ -4,7 +4,7 @@ export const content = {
   section1_title: "Effective carbon management is indispensable for contemporary businesses!",
   section2_title: "Trusted by Customers and Partners",
 
-  section3_title: "Optimize the management, analysis, reduction, and disclosure of greenhouse gas emissions for your company and supply chain through collaborative greenhouse gas management!",
+  section3_title: "Streamline your company and product carbon emissions management effortlessly through our AI-powered carbon management platform",
   section3_link: <div>Presentation deck introducing the <span className="font-bold">Hana.eco</span> platform</div>,
   section3_href: "https://docs.google.com/presentation/d/1LH1iQZ1qcFr0r3jBCtDZ1NFmrwd7OWzWDEAqQay75jY/edit?usp=sharing"
 }
@@ -120,7 +120,18 @@ export const customers: DisplayItem[] = [
     imageUrl: "/images/partners/seokyungbuildng-logo.png",
     description: "Customer | Building that Nurtures Customer Prosperity"
   },
-  
+  {
+    title: "SAMA",
+    sourceUrl: "https://naver.me/FKKMDLip",
+    imageUrl: "/images/partners/samaalminum-logo.png",
+    description: "Customer | High quality aluminum"
+  },
+  {
+    title: "Daeho AL",
+    sourceUrl: "https://naver.me/FKKMDLip",
+    imageUrl: "/images/partners/daehoal-logo.png",
+    description: "Customer | Aluminum, Railroad"
+  },
 ];
 
 export const partners: DisplayItem[] = [
@@ -147,5 +158,26 @@ export const partners: DisplayItem[] = [
     sourceUrl: "https://hcg.kr",
     imageUrl: "/images/partners/partner-hanconsulting_logo.png",
     description: "Partner | ESG Consulting"
+  },
+]
+
+export const programs: DisplayItem[] = [
+  {
+    title: "중소벤처기업부",
+    sourceUrl: "https://www.mss.go.kr/site/smba/main.do",
+    imageUrl: "/images/partners/korea-mss-gov.png",
+    description: "지원 기관 | 활력 중소기업, 함께 잘사는 나라"
+  },
+  {
+    title: "중소기업기술정보진흥원",
+    sourceUrl: "https://www.tipa.or.kr/",
+    imageUrl: "/images/partners/korea-tipa-gov.gif",
+    description: "지원 기관 | 중소기업의 R&D 파트너"
+  },
+  {
+    title: "하이서울 기업협회",
+    sourceUrl: "https://www.hiseoulbiz.org/",
+    imageUrl: "/images/partners/hiseoulbizassoc-logo.png",
+    description: "협력 기관 | 기업 성장"
   },
 ]
