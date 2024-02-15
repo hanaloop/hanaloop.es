@@ -15,7 +15,7 @@ pages:
   script:
     - yarn build
     # removing the existing public directory prior mv
-    - rm -r ./public
+    - rm -rf ./public
     - mv ./build ./public
   artifacts:
     paths:
