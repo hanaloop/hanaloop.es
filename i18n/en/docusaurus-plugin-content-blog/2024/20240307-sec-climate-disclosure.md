@@ -8,7 +8,7 @@ date: 2024-03-07
 import CaptionedImage from "../../../../src/components/theme/CaptionedImage";
 
 <CaptionedImage 
-  imageSrc="/images/blog/20240306-sec-climate-disclosure.jpeg"
+  imageSrc="/images/blog/20240306-sec-climate-disclosure.jpg"
   caption=""
   containerClassName="w-full " 
   imageClassName="shadow-md border-8 border-gray-100"
