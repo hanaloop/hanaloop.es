@@ -56,7 +56,6 @@ export default function Home(): JSX.Element {
       <div className="text-left">
       <ul>
         <li>매월 유급 반차 제공</li>
-        <li>오전 7시~ 오전 10시 사이 자율 출근 후 자율 퇴근</li>
         <li>업무 성격, 효율과 능력에 따라 원격업무 가능</li>
         <li>건강검진 지원</li>
         <li>각종 세미나, 포럼, 교육 참석 지원</li>
