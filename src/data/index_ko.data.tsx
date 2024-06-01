@@ -1,6 +1,7 @@
 import { DisplayItem } from "../libs/types";
 
 export const content = {
+  section0_title: "고객애대한 보답",
   section1_title: "오늘날 기업에게 탄소관리는 필수입니다!",
   section2_title: "Trusted by 고객과 파트너",
   section2_subtitle: "창업성장기술개발 R&D사업 선정 기업",

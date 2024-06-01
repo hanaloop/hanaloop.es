@@ -8,7 +8,7 @@ type SectionBlockProp ={
 
 export default function SectionBlock({title, containerStyle, children}: SectionBlockProp) {
   return (
-    <div className={`py-20 text-center [word-break:keep-all] dark:bg-slate-800 ${containerStyle} `}>
+    <div className={`py-16 text-center [word-break:keep-all] dark:bg-slate-800 ${containerStyle} `}>
       <div className="">
         { title && <div className="flex items-center justify-center hover:text-lime-700 transition delay-150">
           {/* https://ionic.io/ionicons */}
