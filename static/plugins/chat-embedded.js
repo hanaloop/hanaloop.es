@@ -36,7 +36,7 @@ function init() {
   iframeContainer.classList.add("iframe-container");
   iframeContainer.id = "iframe-container";
   const iframe = document.createElement("iframe");
-  iframe.src = "https://ggeea.hanademo.eco/tools/chat_plugin";
+  iframe.src = "https://ggeea.hanademo.eco/knoa/chat_plugin";
   // iframe.src = "http://localhost:3000/knoa/chat_plugin";
   iframeContainer.appendChild(iframe);
   iframe.frameBorder = 0;
