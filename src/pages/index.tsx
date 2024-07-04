@@ -85,9 +85,9 @@ export default function Home(): JSX.Element {
                     </span>
                     로 간편하게 관리하세요!
                   </p>
-                  <p className="text-white ">
-                    우리는 산업과 기업 환경에 필요한 맞춤형 제안과 안정적인 탄소 중립 매니지먼트 핵심 기술로 지속 가능한 생태계 구축을 위해 디지털
-                    환경을 구현합니다.
+                  <p className="text-white whitespace-normal break-keep">
+                    오늘날 탄소 관리는 기업의 경쟁력입니다. <br/>
+                    CBAM, IFRS ISSB S1 S2, ESG, EU 배터리 규제를 신속히 준수하면 에너지 비용 감축과 기후 리스크를 완화할 수 있습니다.
                   </p>
                 </div>
                 <div className="flex gap-3 justify-center my-8 w-full lg:justify-start">
@@ -203,24 +203,23 @@ export default function Home(): JSX.Element {
                   <div className="flex flex-col items-center w-full justify-center gap-10">
                     <div className="flex w-[75%] text-left gap-5 flex-col lg:flex-row">
                       <div className="lg:w-[40%] h-full flex-shrink-0 w-full">
-                        <h1 className="lg:text-5xl text-4xl font-semibold lg:leading-12 leading-8 ">The climate platform you in charge</h1>
+                        <h1 className="lg:text-4xl text-3xl font-semibold lg:leading-12 leading-8 ">기업의 지속 가능성<br/>다양한 규제에 효과적 대응</h1>
                       </div>
                       <p className="text-xl sm:text-lg">
-                        Are you ready for rising carbon costs and disclosure requests? The economy is rewiring for a net-zero future, and your
-                        competitors are tapping into low-carbon demand. Get ahead with CarbonChain’s bulletproof carbon accounting software.
+                      하나에코 서비스는 기업의 탄소 배출을 체계적으로 관리하고, 규제 준수를 통한 지속 가능성을 보장합니다. 산업과 기업 환경에 필요한 맞춤형 제안과 안정적인 탄소 중립 매니지먼트 핵심 기술로 지속 가능한 생태계 구축을 위해 디지털 환경을 구현합니다.
                       </p>
                     </div>
                     <div className="w-[75%] grid lg:grid-cols-3 gap-5 md:grid-cols-2">
                       {directory.map((item, ndx) => {
                         return (
-                          <div className="bg-gray-100 p-5 rounded-lg flex flex-col gap-6 " key={ndx}>
-                            <div className="flex items-center justify-around">
-                              <div className="text-left w-[80%]">
-                                <h2 className="text-2xl font-semibold">{item.title}</h2>
+                          <div className="bg-gray-100 p-5 rounded-lg flex flex-col justify-between gap-5" key={ndx}>
+                            <div className="flex items-center justify-around flex-1">
+                              <div className="text-left w-[80%] h-full">
+                                <div className="text-2xl font-semibold text-start mb-1">{item.title}</div>
                                 <p className="text-md text-gray-500">{item.subtitle}</p>
                               </div>
-                              <div className="w-10 h-10 rounded-full bg-gray-400 flex justify-center items-center hover:bg-red-400 hover:cursor-pointer transition duration-300 ease-in-out">
-                                <ArrowIcon width={15} height={15} />
+                              <div className="w-10 h-10 rounded-full bg-gray-400 flex justify-center items-center hover:bg-[#0094ff] hover:cursor-pointer transition duration-500 ease-in-out">
+                                <Link href={item.link}><ArrowIcon width={15} height={15} /></Link>
                               </div>
                             </div>
                             <div className="w-full h-[200px] bg-white rounded-lg">
@@ -306,21 +305,23 @@ export default function Home(): JSX.Element {
           }}
         >
           <SectionBlock title={data.content.section5_title} containerStyle="bg-whie">
-            <div className="w-full justify-center flex">
-              <div className="flex flex-col my-10 text-left shadow-lg rounded-xl p-10 w-[350px] gap-5">
-                <div className="lg:flex-none">
-                  <img className="w-40 mx-auto" src="/images/partners/lrqa-logo.png" />
-                </div>
-                <div className="w-full space-y-2 text-center">
-                  <h2 className="text-xl font-bold text-center">로이드인증원(LRQA)</h2>
-                  <p className="font-semibold text-gray-400 text-md">
-                    배출권거래제 및 EU 탄소국경조정제도 플랫폼 적합성
-                    <br />
-                    국내 첫 검증의견서 획득
-                  </p>
-                </div>
+              <div className="w-full justify-center flex">
+                <Link href={'https://www.startupdaily.kr/news/articleView.html?idxno=4965'}>
+                  <div className="flex flex-col my-10 text-left shadow-lg rounded-xl p-10 w-[350px] gap-5">
+                    <div className="lg:flex-none">
+                      <img className="w-40 mx-auto" src="/images/partners/lrqa-logo.png" />
+                    </div>
+                    <div className="w-full space-y-2 text-center">
+                      <h2 className="text-xl font-bold text-center">로이드인증원(LRQA)</h2>
+                      <p className="font-semibold text-gray-400 text-md">
+                        배출권거래제 및 EU 탄소국경조정제도 플랫폼 적합성
+                        <br />
+                        국내 첫 검증의견서 획득
+                      </p>
+                    </div>
+                  </div>
+                </Link>
               </div>
-            </div>
           </SectionBlock>
         </motion.div>
 

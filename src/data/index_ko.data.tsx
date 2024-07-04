@@ -27,21 +27,21 @@ export const content = {
 
 export const directory = [
   {
-    title: "Directory_1",
-    subtitle: "Lorem ipsum dolor sit amet consectetur",
-    link: "https://www.hanademo.eco/organization/search",
+    title: "IFRS",
+    subtitle: "IFRS S1,S2 공시기준에 따라 지속가능성 관련 위험을 관리하고 감축 목표를 달성하기 위한 전략 수립이 필요합니다. ",
+    link: "https://www.hanaloop.com/docs/x20_environment-general/2023-07-31-IFRS-ISSB-sustainability-disclosure-standards",
     img: "/images/directory_1.jpg",
   },
   {
-    title: "Directory_2",
-    subtitle: "Lorem ipsum dolor sit amet consectetur",
-    link: "https://www.hanademo.eco/organization/search",
+    title: "CBAM",
+    subtitle: "탄소 배출량(Scope1,2,3)의 분석과 관리 및 파악은 EU 시장 거래에 필수입니다.",
+    link: "https://www.hanaloop.com/docs/x20_environment-general/2024-01-20-cbam-compliance",
     img: "/images/directory_2.jpg",
   },
   {
-    title: "Directory_3",
-    subtitle: "Lorem ipsum dolor sit amet consectetur",
-    link: "https://www.hanademo.eco/organization/search",
+    title: "Scope 3",
+    subtitle: "ESG, PCAF, CBAM, IFRS[S2] 등 다양한 탄소감축을 목표로하는 규제에 Scope 3 배출량 산정은 선택이 아닌 필수 과제입니다.",
+    link: "https://brunch.co.kr/@hanaloop/3",
     img: "/images/directory_3.jpg",
   },
 ];
