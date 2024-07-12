@@ -8,7 +8,6 @@ import useGlobalData from "@docusaurus/useGlobalData";
 import { motion } from "framer-motion";
 import styles from "./index.module.css";
 import ArrowIcon from "../../static/svg/Arrow.svg";
-import { directory } from "../data/index_ko.data";
 import StrategyIcon from "../../static/svg/Strategy.svg";
 import ChartIcon from "../../static/svg/Chart.svg";
 import Chain from "../../static/svg/Chain.svg";
@@ -74,7 +73,7 @@ export default function Home(): JSX.Element {
         <div className={styles.mainBanner}>
           <img src="/images/bg-hero-main.jpg" className="w-full h-full " />
         </div>
-        <div className="w-screen h-[1500px] absolute top-0 left-0  -z-50"></div>
+        <div className="w-screen h-[1200px] absolute top-0 left-0  -z-50 bg-gray-50"></div>
         {/* 1. Hero Section */}
         <motion.div
           viewport={{ once: true }}
@@ -85,34 +84,40 @@ export default function Home(): JSX.Element {
             transition: { duration: 1 },
           }}
         >
-          <div className="w-screen h-screen flex justify-center items-center ">
+          <div className="w-screen h-screen flex justify-center items-center">
             <div className="lg:w-[80%] flex gap-10 lg:flex-row flex-col w-[70%]">
               <div className="px-1 flex flex-col items-start ">
                 <div className="font-bold flex flex-col gap-3 lg:text-left text-center">
-                  <p className="text-2xl md:text-3xl font-bold lg:text-4xl text-white">
-                    기업활동 중 발생하는 온실가스
+                  <p className="text-3xl lg:text-4xl font-bold text-white">
+                    {data.hero.title_1}
                     <br />{" "}
                     <span className="text-[#0094ff] font-bold">
-                      <a href="https://www.hana.eco/">하나에코</a>
+                      <a href="https://www.hana.eco/">{data.hero.title_link}</a>
                     </span>
-                    로 간편하게 관리하세요!
+                    {data.hero.title_2}
                   </p>
                   <p className="text-white whitespace-normal break-keep">
-                    오늘날 체계적인 탄소 관리는 기업의 경쟁력입니다.<br/>
-                    EU CBAM, IFRS ISSB S1 S2 규제, EU 배터리 규제, ESG 공시 의무 등
-                    지속적으로 강화되고 있는 국내외 기후 규제와 공시 의무를 신속히 준수하며
-                    에너지 비용을 감축하고 기후 리스크를 완화시킬 수 있습니다.
+                    {data.hero.subtitle_1}<br/>
+                    {data.hero.subtitle_2}
                   </p>
                 </div>
                 <div className="flex gap-3 justify-center my-8 w-full lg:justify-start">
-                  <button className="hover:no-underline  rounded-lg px-3 py-3 bg-[#0094ff] ">
-                    <Link href={data.content.section1_href}>
-                      <a>{data.content.section1_link1}</a>
+                  <button className="hover:no-underline  rounded-lg py-3 w-[120px] bg-[#0094ff] ">
+                    <Link href={data.hero.link_1}>
+                      <a>
+                        <div>
+                          <span className="font-bold text-white ">{data.hero.button_1}</span>{" "}
+                        </div>
+                      </a>
                     </Link>
                   </button>
-                  <button className=" rounded-lg px-3 py-3 bg-[#0094ff] ">
-                    <Link href={data.content.section1_href}>
-                      <a>{data.content.section1_link2}</a>
+                  <button className=" rounded-lg py-3 w-[120px] bg-[#0094ff] ">
+                    <Link href={data.hero.link_2}>
+                      <a>
+                        <div>
+                          <span className="font-bold text-white ">{data.hero.button_2}</span>{" "}
+                        </div>
+                      </a>
                     </Link>
                   </button>
                 </div>
@@ -129,74 +134,44 @@ export default function Home(): JSX.Element {
         </motion.div>
 
         {/* 2. PARTNERS Section */}
-        <motion.div
-          className="modal"
-          initial={{ opacity: 0, y: 80 }}
-          viewport={{ once: true }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: { duration: 1 },
-          }}
-        >
-          <SectionBlock title={data.content.section6_title}>
-            <div className="">
-              <div className="text-center items-center w-full flex flex-col gap-4 justify-center">
-                {/* CUSTOMERS */}
-                <div className="flex justify-center gap-6 flex-wrap">
-                  {data.customers.map((item) => (
-                    <span className="group flex justify-center" key={item.title}>
-                      <div className=" flex justify-center items-center border border-gray-200 p-3 rounded-lg shadow-sm md:w-[100px] md:h-[70px] w-[80px] h-[45px]">
-                        <Link href={item.sourceUrl!}>
-                          <a target="_blank">
-                            <img className="lg:h-7 duration-200 h-5" src={useBaseUrl(item.imageUrl!)} alt={item.title} />
-                          </a>
-                        </Link>
-                      </div>
-                      <span className="p-2 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">
-                        {item.description}
+        <div className="w-screen bg-gray-50 justify-center flex">
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            viewport={{ once: true }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1 },
+            }}
+            className="flex justify-center"
+          >
+            <SectionBlock title={data.content.title_1}>
+              <div className="w-full justify-center flex">
+                <div className="text-center items-center w-full md:w-[75%] flex flex-col gap-3 justify-center">
+                  {/* CUSTOMERS */}
+                  <div className="flex justify-center gap-3 flex-wrap">
+                    {data.customers.map((item) => (
+                      <span className="group flex justify-center" key={item.title}>
+                        <div className=" flex justify-center items-center border border-gray-200 p-1 rounded-lg shadow-sm w-[150px] h-[70px]">
+                          <Link href={item.sourceUrl!}>
+                            <a target="_blank">
+                              <img className="h-7 duration-200" src={useBaseUrl(item.imageUrl!)} alt={item.title} />
+                            </a>
+                          </Link>
+                        </div>
+                        <span className="p-2 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">
+                          {item.description}
+                        </span>
                       </span>
-                    </span>
-                  ))}
+                    ))}
+                  </div>
+                  <div className="text-xs">{data.content.section2_subtitle}</div>
                 </div>
-                <div className="flex justify-center gap-6 flex-wrap">
-                  {data.partners.map((item) => (
-                    <div className="group" key={item.title}>
-                      <div className=" flex justify-center items-center border border-gray-200 p-3 rounded-lg shadow-sm md:w-[100px] md:h-[70px] w-[80px] h-[45px]">
-                        <Link href={item.sourceUrl!}>
-                          <a target="_blank">
-                            <img className="h-8 rounded-md duration-200" src={useBaseUrl(item.imageUrl!)} alt={item.title} />
-                          </a>
-                        </Link>
-                      </div>
-                      <span className="p-2 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-60 border-lime-700 hidden group-hover:block absolute tooltip-text">
-                        {item.description}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-                <div className="flex justify-center gap-6 flex-wrap">
-                  {data.programs.map((item) => (
-                    <div className="group" key={item.title}>
-                      <div className=" flex justify-center items-center border border-gray-200 p-3 rounded-lg shadow-sm md:w-[100px] md:h-[70px] w-[80px] h-[45px]">
-                        <Link href={item.sourceUrl!}>
-                          <a target="_blank">
-                            <img className="h-8 rounded-md duration-200" src={useBaseUrl(item.imageUrl!)} alt={item.title} />
-                          </a>
-                        </Link>
-                      </div>
-                      <span className="p-2 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-60 border-lime-700 hidden group-hover:block absolute tooltip-text">
-                        {item.description}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-                <div className="text-xs">{data.content.section2_subtitle}</div>
               </div>
-            </div>
-          </SectionBlock>
-        </motion.div>
-        {/* 2 */}
+            </SectionBlock>
+          </motion.div>
+        </div>
+        {/* 3. 우리 회사도 탄소관리 필요할까요? */}
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, y: 60 }}
@@ -207,9 +182,9 @@ export default function Home(): JSX.Element {
           }}
         >
           <div className="w-screen flex justify-center">
-            <SectionBlock title={data.content.section2_title}>
+            <SectionBlock title={data.content.title_2}>
               <div className="px-10 ">
-                <div className="lg:grid lg:grid-cols-2 gap-10 ">
+                <div className="lg:grid lg:grid-cols-2 gap-10">
                   {data.elements.map((item, ndx) => {
                     const svgKey = `section3_svg_${ndx + 1}`;
                     const SvgComponent = section3_svgs[svgKey];
@@ -244,41 +219,24 @@ export default function Home(): JSX.Element {
             </SectionBlock>
           </div>
         </motion.div>
-
+        {/* 4. 하나에코가 지원합니다. */}
         <div className="w-screen bg-gray-50 justify-center flex">
-          <SectionBlock title={data.content.section3_title}>
-            <div className="px-10">
-              <div>
-                <motion.div
-                  viewport={{ once: true }}
-                  initial={{ opacity: 0, y: 60 }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                    transition: { duration: 1 },
-                  }}
-                >
-                  {/* <h3 className="text-5xl font-bold text-black mb-8">
-                  Feature Heading
-                </h3> */}
-                </motion.div>
-              </div>
-              <motion.div
-                viewport={{ once: true }}
-                initial={{ opacity: 0, y: 80 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  transition: { duration: 1 },
-                }}
-                className="flex justify-center"
-              >
-                {/* <div className="lg:grid lg:grid-cols-2 gap-10 "> */}
-                <div className="flex flex-wrap gap-10 justify-center w-[85%]">
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1 },
+            }}
+            className="w-[85%] flex justify-center"
+          >
+            <SectionBlock title={data.content.title_3}>
+              <div className="flex justify-center">
+                <div className="flex flex-wrap gap-10 justify-center md:w-[90%] w-[80%]">
                   {data.elements_2.map((item, ndx) => {
                     const svgKey = `section2_svg_${ndx + 1}`;
                     const SvgComponent = section2_svgs[svgKey];
-
                     const lines = item.description as string[];
                     return (
                       <div
@@ -305,12 +263,13 @@ export default function Home(): JSX.Element {
                     );
                   })}
                 </div>
-              </motion.div>
-            </div>
-          </SectionBlock>
+              </div>
+            </SectionBlock>
+          </motion.div>
         </div>
+        
 
-        {/* 3 */}
+        {/* 5. 하나루프가 함께합니다. */}
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, y: 60 }}
@@ -323,84 +282,57 @@ export default function Home(): JSX.Element {
           <SectionBlock title={""}>
             <div className="px-1">
               <div className="w-full flex flex-col items-center justify-center">
-                <motion.div
-                  viewport={{ once: true }}
-                  initial={{ opacity: 0, y: 80 }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                    transition: { duration: 1 },
-                  }}
-                >
-                  <div className="flex flex-col items-center w-full justify-center gap-10">
-                    <div className="flex w-[80%] text-left gap-5 flex-col lg:flex-row">
-                      <div className="lg:w-[40%] h-full flex-shrink-0 w-full">
-                        <h1 className="lg:text-3xl text-2xl font-semibold lg:leading-12 leading-8 ">차근차근 준비해가는 탄소중립 여정에 <br/> 하나루프가 함께 합니다.</h1>
-                      </div>
-                      <p className="text-lg sm:text-lg">
-                        지속적으로 강화되고 있는 기후환경규제와 공시 요구. 겁내지 마세요!  <br/>
-                        하나루프의 산업 디지털 전환 전문팀과 환경 전문가 네트워크가 함께 기업의 형편에 맞게 <br/> 
-                        지속가능성을 내재화하실 수 있도록 힘을 실어드리겠습니다.
-                      </p>
+                <div className="flex flex-col items-center w-full justify-center gap-10">
+                  <div className="flex w-[80%] text-left gap-5 flex-col lg:flex-row">
+                    <div className="lg:w-[40%] h-full flex-shrink-0 w-full">
+                      <h1 className="lg:text-3xl text-2xl font-semibold lg:leading-12 leading-8 ">{data.directory.title}</h1>
                     </div>
-                    <div className="w-[80%] grid lg:grid-cols-3 gap-5 md:grid-cols-2">
-                      {directory.map((item, ndx) => {
-                        return (
-                          <div className="bg-gray-50 p-5 rounded-lg flex flex-col justify-between gap-5" key={ndx}>
-                            <div className="flex items-center justify-around flex-1">
-                              <div className="text-left w-[80%] h-full">
-                                <div className="text-2xl font-semibold text-start mb-1">{item.title}</div>
-                                <p className="text-md text-gray-500">{item.subtitle}</p>
-                              </div>
-                              <div className="w-10 h-10 rounded-full bg-gray-300 flex justify-center items-center hover:bg-[#0094ff] hover:cursor-pointer transition duration-500 ease-in-out">
-                                <Link href={item.link}><ArrowIcon width={15} height={15} /></Link>
-                              </div>
+                    <p className="text-lg sm:text-lg">
+                      {data.directory.subtitle}
+                    </p>
+                  </div>
+                  <div className="w-[80%] grid lg:grid-cols-3 gap-5 md:grid-cols-2">
+                    {data.directory.contents.map((item, ndx) => {
+                      return (
+                        <div className="bg-gray-50 p-5 rounded-lg flex flex-col justify-between gap-5" key={ndx}>
+                          <div className="flex items-center justify-around flex-1">
+                            <div className="text-left w-[80%] h-full">
+                              <div className="text-2xl font-semibold text-start mb-1">{item.title}</div>
+                              <p className="text-md text-gray-500">{item.subtitle}</p>
                             </div>
-                            <div className="w-full h-[200px] bg-white rounded-lg">
-                              <img src={item.img} className="w-full h-full rounded-lg" />
+                            <div className="w-10 h-10 rounded-full bg-gray-300 flex justify-center items-center hover:bg-[#0094ff] hover:cursor-pointer transition duration-500 ease-in-out">
+                              <Link href={item.link}><ArrowIcon width={15} height={15} /></Link>
                             </div>
                           </div>
-                        );
-                      })}
-                    </div>
+                          <div className="w-full h-[200px] bg-white rounded-lg">
+                            <img src={item.img} className="w-full h-full rounded-lg" />
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
-                </motion.div>
+                </div>
               </div>
             </div>
           </SectionBlock>
         </motion.div>
 
-        {/* 4. Features */}
+        {/* 6. 하나에코와 함께하세요 */}
 
         <div className="w-screen bg-gray-50">
-          <SectionBlock title={data.content.section4_title}>
-            <div className="px-10">
-              <div>
-                <motion.div
-                  viewport={{ once: true }}
-                  initial={{ opacity: 0, y: 60 }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                    transition: { duration: 1 },
-                  }}
-                >
-                  {/* <h3 className="text-5xl font-bold text-black mb-8">
-                  Feature Heading
-                </h3> */}
-                </motion.div>
-              </div>
-              <motion.div
-                viewport={{ once: true }}
-                initial={{ opacity: 0, y: 80 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  transition: { duration: 1 },
-                }}
-                className="w-full justify-center flex"
-              >
-                <div className="lg:grid lg:grid-cols-2 gap-10">
+          <motion.div
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1 },
+              }}
+              className="w-full justify-center flex"
+            >
+            <SectionBlock title={data.content.title_4}>
+              <div className="px-10 w-full justify-center flex">
+                <div className="lg:grid lg:grid-cols-2 gap-16 md:w-[75%]">
                   {data.features.map((item, ndx) => {
                     const svgKey = `section5_svg_${ndx + 1}`;
                     const SvgComponent = section5_svgs[svgKey];
@@ -408,7 +340,7 @@ export default function Home(): JSX.Element {
                     const lines = item.description as string[];
                     return (
                       <div
-                        className="group rounded-xl hover:border-primary-700 mb-4 py-8 bg-white shadow-sm flex w-[350px] h-[300px] justify-center items-start"
+                        className="group rounded-xl hover:border-primary-700 mb-4 py-8 bg-white shadow-sm flex h-[300px] justify-center items-start"
                         key={ndx}
                       >
                         <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full w-[80%]">
@@ -422,9 +354,34 @@ export default function Home(): JSX.Element {
                     );
                   })}
                 </div>
-              </motion.div>
+              </div>
+            </SectionBlock>
+          </motion.div>
+        </div>
+        <div className="w-full h-[300px] bg-blue-50 flex flex-col gap-4 justify-center items-center">
+          <div className="flex flex-col w-[80%] justify-center items-center">
+            <span className="text-2xl md:text-3xl lg:text-4xl font-semibold  whitespace-normal break-keep">{data.request.title}</span>
+            <div className="flex gap-3 justify-center my-8 lg:justify-start">
+              <button className="hover:no-underline  rounded-lg py-3 w-[120px] bg-[#0094ff] ">
+                <Link href={data.request.link_1}>
+                    <a>
+                      <div>
+                        <span className="font-bold text-white">{data.hero.button_1}</span>{" "}
+                      </div>
+                    </a>
+                  </Link>
+                </button>
+                <button className=" rounded-lg py-3 w-[120px] bg-[#0094ff] ">
+                  <Link href={data.request.link_2}>
+                    <a>
+                      <div>
+                        <span className="font-bold text-white ">{data.hero.button_2}</span>{" "}
+                      </div>
+                    </a>
+                  </Link>
+              </button>
             </div>
-          </SectionBlock>
+          </div>
         </div>
       </main>
     </Layout>
