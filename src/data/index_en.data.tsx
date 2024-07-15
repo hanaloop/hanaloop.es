@@ -314,13 +314,13 @@ export const customers: DisplayItem[] = [
   {
     title: "지속가능발전경영센터",
     sourceUrl: "http://k-sdmi.co.kr/",
-    imageUrl: "http://k-sdmi.co.kr/images/logo.png",
+    imageUrl: "/images/partners/SDMI.jpeg",
     description: "파트너사 | 지속가능발전에 관한 정책과 기업의 지속가능성장에 필요한 컨설팅 제공",
   },
   {
     title: "미래이앤아이",
     sourceUrl: "http://www.fa119.com/main",
-    imageUrl: "http://www.fa119.com/html/_skin/seil/img/common/logo.png",
+    imageUrl: "/images/partners/FA119.png",
     description: "파트너사 | 공장자동제어 센서신호처리 분야의 전문 제조업체",
   },
   {
@@ -332,7 +332,7 @@ export const customers: DisplayItem[] = [
   {
     title: "슬록",
     sourceUrl: "http://www.sloc.or.kr/",
-    imageUrl: "http://www.sloc.or.kr/data/file/logo_1.png",
+    imageUrl: "/images/partners/SLOC.png",
     description: "파트너사 | 뷰티기업 지속가능성 검증 및 컨설팅 제공",
   },
   {
