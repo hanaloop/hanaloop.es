@@ -234,7 +234,7 @@ export const features: DisplayItem[] = [
 export const customers: DisplayItem[] = [
   {
     title: "이마트",
-    sourceUrl: "https://emartdt.ai/",
+    sourceUrl: "https://store.emart.com/main/main.do",
     imageUrl: "/images/partners/partner-emart_logo.png",
     description: "고객사 | ESG경영 선도기업 이마트",
   },
