@@ -4,6 +4,7 @@ export const content = {
   title_1 : "디지털 파트너 하나루프는 귀사의 탄소중립 여정에 힘을 실어드립니다.",
   title_2 : "우리 회사도 탄소관리 필요할까요?",
   title_3 : <h1>적합성을 인정받은 하나에코가 지원합니다.</h1>,
+  subtitle_3: "로이드인증원(LRQA)으로부터 배출권거래제와 EU 탄소국경조정제도 적합성 국내 첫 검증의견서 획득",
   title_4: "탄소관리 하나에코와 함께하세요.",
 };
 
@@ -83,7 +84,7 @@ export const elements: DisplayItem[] = [
       </span>,
       <span key="3">
         <b>공급망 실사 CSDDD</b>{" "}
-      </span>,
+      </span>
     ],
   },
   {

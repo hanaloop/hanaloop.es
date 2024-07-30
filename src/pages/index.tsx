@@ -269,7 +269,7 @@ export default function Home(): JSX.Element {
               <div className="px-10 mb-10 text-left">
                 <div className='mb-4' ><img className="w-48 mx-auto" src="/images/partners/lrqa-logo.png" /></div>
                 <div className='w-full space-y-2'>
-                  <h2 className='text-xl text-center'>로이드인증원(LRQA)으로부터 <span className="font-bold">하나에코</span>의 배출권거래제와 EU 탄소국경조정제도 적합성 국내 첫 검증의견서 획득</h2>
+                  <h2 className='text-xl text-center'>{data.content.subtitle_3}</h2>
                 </div>
               </div>
 
