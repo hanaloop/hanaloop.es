@@ -19,6 +19,24 @@ export const hero = {
   link_2: "/demo_request",
 }
 
+export const carbon_buddy = {
+  title : "Hana.eco Leverages AI for Intuitive Carbon Management.",
+  contents : [
+    {
+      sub_title : "Rapid Regulatory Insight and Response",
+      sub_description : "Generative AI enables swift comprehension and reaction to the latest regulations.",
+    },
+    {
+      sub_title : "User-Friendly Data Analysis",
+      sub_description : "Deep learning-based methods simplify data understanding and utilization.",
+    },
+    {
+      sub_title : "Effortless Report Generation",
+      sub_description : "Instantly create necessary reports with ease in real time.",
+    },
+  ]
+}
+
 export const directory = {
   title : "HanaLoop supports you on your journey to carbon neutrality.",
   subtitle : "Navigate the evolving landscape of climate regulations and disclosure requirements with ease. HanaLoop's sustainability digital transformation solution together with specialist network will support you in streamlining compliance, future-proofing your business, and unlocking opportunities in the sustainable marketplace – all tailored to your company's unique needs.",
