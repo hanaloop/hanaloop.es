@@ -10,7 +10,7 @@ export const content = {
 
 export const hero = {
   title_1 : "",
-  title_2 : "Simplify Business Carbon Footprint Management ",
+  title_2 : "Optimize Carbon Footprint Management with AI-Powered ",
   title_link : "Hana.eco",
   subtitle_1 : "Proactive carbon management positions businesses for success.",
   subtitle_2 : "It streamlines compliance with tightening regulations like EU CBAM, IFRS ISSB, and ESG reporting, while reducing energy costs and mitigating climate risks.",
