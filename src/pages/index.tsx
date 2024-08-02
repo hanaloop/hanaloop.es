@@ -148,7 +148,7 @@ export default function Home(): JSX.Element {
                             </a>
                           </Link>
                         </div>
-                        <span className="p-2 -mt-10 -ml-3 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">
+                        <span className="p-2 -mt-3 -ml-3 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">
                           {item.description}
                         </span>
                       </span>
@@ -178,7 +178,7 @@ export default function Home(): JSX.Element {
                         className="w-[85%] group rounded-xl hover:border-primary-700 mb-4 py-7 flex justify-between items-center"
                       >
                         <div className="mb-2 flex flex-col gap-5 justify-around sm:flex-row items-center text-left h-full w-full">
-                          <img className="h-[450px] duration-200" src="/images/chat.png" alt="carbon buddy" />
+                          <img className="h-[450px] duration-200" src="/images/chatbot.png" alt="carbon buddy" />
                           <div className="flex flex-col gap-5">
                             {
                               data.carbon_buddy.contents.map((content, ndx) => {
@@ -399,7 +399,7 @@ export default function Home(): JSX.Element {
               </div>
             </SectionBlock>
           </motion.div>
-        </div>
+        </div>s
         <div className="w-full h-[300px] text-center bg-blue-50 flex flex-col gap-4 justify-center items-center">
           <div className="flex flex-col w-[80%] justify-center items-center">
             <span className="text-2xl md:text-3xl xl:text-4xl font-semibold  whitespace-normal break-keep">{data.request.title}</span>
@@ -421,3 +421,6 @@ export default function Home(): JSX.Element {
     </Layout>
   );
 }
+
+
+// file ID : 1tXsGFdsumpS7bB7SPkwSGpS4-9GcVWlGzMjRTCZRvNw
