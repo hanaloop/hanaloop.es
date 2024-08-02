@@ -17,7 +17,7 @@ export const hero = {
   subtitle_2 : "EU CBAM, IFRS ISSB S1 S2 규제, EU 배터리 규제, ESG 공시 의무 등 지속적으로 강화되고 있는 국내외 기후 규제와 공시 의무를 신속히 준수하며 에너지 비용을 감축하고 기후 리스크를 완화시킬 수 있습니다.",
   button_1 : "솔루션 소개",
   button_2 : "문의하기",
-  link_1: "https://drive.google.com/file/d/1i9ygnqL38AJ_A3w9m4fEOyQUpT4VmpM6/view",
+  link_1: "/company_profile_request",
   link_2: "/demo_request",
 }
 
