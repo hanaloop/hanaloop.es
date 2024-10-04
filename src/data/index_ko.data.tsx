@@ -1,10 +1,7 @@
-import { DisplayItem } from "../libs/types";
+import { DisplayItem, PageSection } from "../libs/types";
 
 export const content = {
   title_1 : "디지털 파트너 하나루프는 귀사의 탄소중립 여정에 힘을 실어드립니다.",
-  title_2 : "우리 회사도 탄소관리 필요할까요?",
-  title_3 : <h1>적합성을 인정받은 하나에코가 지원합니다.</h1>,
-  subtitle_3: "로이드인증원(LRQA)으로부터 배출권거래제와 EU 탄소국경조정제도 적합성 국내 첫 검증의견서 획득",
   title_4: "탄소관리 하나에코와 함께하세요.",
 };
 
@@ -21,45 +18,151 @@ export const hero = {
   link_2: "/demo_request",
 }
 
-export const carbon_buddy = {
+export const carbon_buddy: PageSection = {
   title : "AI 기술을 활용하여 탄소 관리를 보다 직관적으로 할 수 있도록 돕습니다.",
-  contents : [
+  items : [
     {
-      sub_title : "빠른 규제 이해와 대응",
-      sub_description : "생성형 AI를 통해 최신 규제를 신속하게 파악하고 대응할 수 있습니다.",
+      title : "빠른 규제 이해와 대응",
+      description : "생성형 AI를 통해 최신 규제를 신속하게 파악하고 대응할 수 있습니다.",
     },
     {
-      sub_title : "직관적인 데이터 분석",
-      sub_description : "딥러닝 기반의 분석으로 데이터를 쉽게 이해하고 활용할 수 있습니다.",
+      title : "직관적인 데이터 분석",
+      description : "딥러닝 기반의 분석으로 데이터를 쉽게 이해하고 활용할 수 있습니다.",
     },
     {
-      sub_title : "간편한 리포트 생성",
-      sub_description : "실시간으로 필요한 리포트를 간편하게 생성할 수 있습니다.",
+      title : "간편한 리포트 생성",
+      description : "실시간으로 필요한 리포트를 간편하게 생성할 수 있습니다.",
     },
   ]
 }
 
-export const directory = {
+
+export const why_need: PageSection = {
+  title: "우리 회사도 탄소관리 필요할까요?",
+  items: [{
+      title: "글로벌 기후환경 규제권 안에 있다면",
+      subtitle: "지속적으로 강력해지고 있는 국내외 규제를 준수하기 위해 필요합니다.",
+      imageUrl: "/images/platform/card-cbam_pic.jpeg",
+      description: [
+          <b>배출권거래제, 목표관리제</b>,
+          <b>EU 탄소국경조정제도, 배터리 규제</b>,
+          <b>공급망 실사 CSDDD</b>
+      ],
+    },
+    {
+      title: "고객사가 ESG, 탄소중립에 선도적인 기업이라면",
+      subtitle: "고객사가 협력사를 관리하고 있다면 원활한 사업 관계를 위해 필요합니다.",
+      imageUrl: "/images/platform/card-standards_pic.jpeg",
+      description: [
+          <b>Scope 1, Scope 2</b>,
+          <b>Scope 3와 가치사슬 데이터</b>,
+          <b>제품 탄소발자국</b>,
+      ],
+    },
+    {
+      title: "투자자로부터  탄소 공시 요구를 받고 있다면",
+      subtitle: "회사의 리스크를 관리하며 지속가능성 관련 정보 공시 요구에 응하기 위해 필요합니다.",
+      imageUrl: "/images/platform/card-scope3_pic.jpeg",
+      description: [
+          <b>CDP</b>,
+          <b>IFRS S1, S2</b>,
+          <b>지속가능성보고서, GRI</b>,
+      ],
+    },
+    {
+      title: "친환경, 지속가능성을 선도하는 기업이라면",
+      subtitle: "지구환경에 의식 있는 소비자와 지구의 외침에 응답하기 위해 필요합니다.",
+      imageUrl: "/images/platform/card-products.jpeg",
+      description: [
+          <b>투명한 환경영향 공시</b>,
+          <b>지속가능성 지표 공시</b>,
+          <b>지속가능성 보고서</b>,
+      ],
+    },
+  ]
+};
+
+
+export const reliable: PageSection = {
+  title: "적합성을 인정받은 하나에코가 지원합니다",
+  subtitle: "로이드인증원(LRQA)으로부터 배출권거래제와 EU 탄소국경조정제도 적합성 국내 첫 검증의견서 획득",
+  items: [{
+      title: "EU 탄소국경조정제도 (CBAM) 준수",
+      subtitle: "Carbon Border Adjustment Mechanism",
+      imageUrl: "/images/platform/card-cbam_pic.jpeg",
+      description: [
+          <b>제품 관리</b>,
+          <b>원부자재 공급 관리</b>,
+          <b>CBAM 보고서 출력</b>,
+          <b>배출계수 제공</b>,
+      ],
+    },
+    {
+      title: "배출권거래제, 목표관리제 준수",
+      subtitle: "Korea Emissions Trading System",
+      imageUrl: "/images/platform/card-standards_pic.jpeg",
+      description: [
+          <b>검증 수준의 데이터 관리</b>,
+          <b>배출권 장부 관리</b>,
+          <b>배출량 목표 설정과 배출 시나리오 분석</b>,
+      ],
+    },
+    {
+      title: "IFRS(TCFD) / CDP / GRI 준수",
+      subtitle: "Climate Normatives, Frameworks and Standards",
+      imageUrl: "/images/platform/card-scope3_pic.jpeg",
+      description: [
+          <b>표준 보고서에서 요구되는 리포팅</b>,
+          <b>리스크 관리</b>,
+          <b>배출 시나리오 분석</b>,
+      ],
+    },
+    {
+      title: "ESG & 스코프 3 관리",
+      subtitle: "ESG Data Encompassing the Supply Chain",
+      imageUrl: "/images/platform/card-products.jpeg",
+      description: [
+          <b>정성적인 데이터 관리</b>,
+          <b>협력사, 공급망 관리</b>,
+          <b>Scope 3용 산업 표준 배출계수 제공</b>,
+      ],
+    },
+    {
+      title: "제품 탄소발자국 관리",
+      subtitle: "Product Carbon Footprint",
+      imageUrl: "/images/platform/card-products.jpeg",
+      description: [
+          <b>지구 온난화 카테고리의 LCA 산정</b>,
+          <b>공정 과정 탄소 내재 배출 산정</b>,
+          <b>원부자재 내재 배출 관리</b>,
+          <b>비용 효율성 분석</b>,
+      ],
+    },
+  ]
+}
+
+
+export const journey: PageSection = {
   title : <p>차근차근 준비해 가는 탄소중립 여정에 <br/>하나루프가 함께합니다.</p>,
   subtitle : <p>지속적으로 강화되고 있는 기후환경규제와 공시 요구. 겁내지 마세요! <br/> 하나루프의 산업 디지털 전환 전문팀과 환경 전문가 네트워크가 함께 기업의 형편에 맞게 <br/> 지속가능성을 내재화하실 수 있도록 힘을 실어드리겠습니다.</p>,
-  contents : [
+  items : [
       {
         title: "IFRS S1, S2",
         subtitle: "국제재무보고기준재단(IFRS) 산하 ISSB는 IFRS S1(일반)과 S2(기후)를 통해 글로벌 지속가능성 공시 규제를 확정했습니다. 기업은 공시기준에 따라 지속가능성 관련 위험을 관리하고 감축 목표를 달성하기 위한 전략 수립과 이행이 필요합니다.",
         link: "https://www.hanaloop.com/docs/x20_environment-general/2023-07-31-IFRS-ISSB-sustainability-disclosure-standards",
-        img: "/images/directory_1.jpg",
+        imageUrl: "/images/directory_1.jpg",
       },
       {
         title: "CBAM",
         subtitle: "유럽연합(EU)은 2050년 탄소중립 실현을 목표로 탄소 누출 방지를 위해 탄소국경조정제도(CBAM)를 발효했습니다. EU를 필두로 미국, 영국, 일본 등 다수 국가에서 유사한 제도 도입을 고려하고 있어, 탄소 배출량의 분석과 감축은 국제시장 거래에 필수가 되었습니다.",
         link: "https://www.hanaloop.com/docs/x20_environment-general/2024-01-20-cbam-compliance",
-        img: "/images/directory_2.jpg",
+        imageUrl: "/images/directory_2.jpg",
       },
       {
         title: "Scope 3",
         subtitle: "기업 활동의 탄소배출관리 범위가 가치사슬망으로 확대되었습니다. 이제는 협력사와 공급망, 고객의 탄소 배출까지 고려해야 합니다. ESG, PCAF, IFRS, CDP, CSDDD 등 탄소 감축을 목표로 하는 다양한 규제와 공시 요구에 응하기 위해 Scope 3 배출량 산정은 선택이 아닌 필수 과제입니다.",
         link: "https://brunch.co.kr/@hanaloop/3",
-        img: "/images/directory_3.jpg",
+        imageUrl: "/images/directory_3.jpg",
       },
     ],
 }
@@ -69,162 +172,6 @@ export const request = {
   button_1 : "솔루션 소개",
   button_2 : "문의하기",
 }
-
-export const elements: DisplayItem[] = [
-  {
-    title: "글로벌 기후환경 규제권 안에 있다면",
-    subtitle: "지속적으로 강력해지고 있는 국내외 규제를 준수하기 위해 필요합니다.",
-    imageUrl: "/images/platform/card-cbam_pic.jpeg",
-    description: [
-      <span key="1">
-        <b>배출권거래제, 목표관리제</b>
-      </span>,
-      <span key="2">
-        <b>EU 탄소국경조정제도, 배터리 규제</b>
-      </span>,
-      <span key="3">
-        <b>공급망 실사 CSDDD</b>{" "}
-      </span>
-    ],
-  },
-  {
-    title: "고객사가 ESG, 탄소중립에 선도적인 기업이라면",
-    subtitle: "고객사가 협력사를 관리하고 있다면 원활한 사업 관계를 위해 필요합니다.",
-    imageUrl: "/images/platform/card-standards_pic.jpeg",
-    description: [
-      <span key="1">
-        <b>Scope 1, Scope 2</b>{" "}
-      </span>,
-      <span key="2">
-        <b>Scope 3</b>
-      </span>,
-      <span key="3">
-        <b>제품 탄소발자국</b>{" "}
-      </span>,
-    ],
-  },
-  {
-    title: "투자자로부터  탄소 공시 요구를 받고 있다면",
-    subtitle: "회사의 리스크를 관리하며 지속가능성 관련 정보 공시 요구에 응하기 위해 필요합니다.",
-    imageUrl: "/images/platform/card-scope3_pic.jpeg",
-    description: [
-      <span key="1">
-        <b>CDP</b>
-      </span>,
-      <span key="2">
-        <b>IFRS S1, S2</b>{" "}
-      </span>,
-      <span key="3">
-        <b>지속가능성보고서, GRI</b>
-      </span>,
-    ],
-  },
-  {
-    title: "친환경, 지속가능성을 선도하는 기업이라면",
-    subtitle: "지구환경에 의식 있는 소비자와 지구의 외침에 응답하기 위해 필요합니다.",
-    imageUrl: "/images/platform/card-products.jpeg",
-    description: [
-      <span key="0">
-        <b>투명한 환경영향 공시</b>
-      </span>,
-      <span key="1">
-        <b>지속가능성 지표 공시</b>{" "}
-      </span>,
-      <span key="2">
-        <b>지속가능성 보고서</b>{" "}
-      </span>,
-    ],
-  },
-];
-
-export const elements_2: DisplayItem[] = [
-  {
-    title: "EU 탄소국경조정제도 (CBAM) 준수",
-    subtitle: "Carbon Border Adjustment Mechanism",
-    imageUrl: "/images/platform/card-cbam_pic.jpeg",
-    description: [
-      <span key="1">
-        <b>제품 관리</b>
-      </span>,
-      <span key="2">
-        <b>원부자재 공급 관리</b>
-      </span>,
-      <span key="3">
-        <b>CBAM 보고서 출력</b>{" "}
-      </span>,
-      <span key="3">
-        <b>배출계수 제공</b>{" "}
-      </span>,
-    ],
-  },
-  {
-    title: "배출권거래제, 목표관리제 준수",
-    subtitle: "Korea Emissions Trading System",
-    imageUrl: "/images/platform/card-standards_pic.jpeg",
-    description: [
-      <span key="1">
-        <b>검증 수준의 데이터 관리</b>{" "}
-      </span>,
-      <span key="2">
-        <b>배출권 장부 관리</b>
-      </span>,
-      <span key="3">
-        <b>배출량 목표 설정과 배출 시나리오 분석</b>{" "}
-      </span>,
-    ],
-  },
-  {
-    title: "IFRS(TCFD) / CDP / GRI 준수",
-    subtitle: "Climate Normatives, Frameworks and Standards",
-    imageUrl: "/images/platform/card-scope3_pic.jpeg",
-    description: [
-      <span key="1">
-        <b>표준 보고서에서 요구되는 리포팅</b>
-      </span>,
-      <span key="2">
-        <b>리스크 관리</b>{" "}
-      </span>,
-      <span key="3">
-        <b>배출 시나리오 분석</b>
-      </span>,
-    ],
-  },
-  {
-    title: "ESG & 스코프 3 관리",
-    subtitle: "ESG Data Encompassing the Supply Chain",
-    imageUrl: "/images/platform/card-products.jpeg",
-    description: [
-      <span key="0">
-        <b>정성적인 데이터 관리</b>
-      </span>,
-      <span key="1">
-        <b>협력사, 공급망 관리</b>{" "}
-      </span>,
-      <span key="2">
-        <b>Scope 3용 산업 표준 배출계수 제공</b>{" "}
-      </span>,
-    ],
-  },
-  {
-    title: "제품 탄소발자국 관리",
-    subtitle: "Product Carbon Footprint",
-    imageUrl: "/images/platform/card-products.jpeg",
-    description: [
-      <span key="0">
-        <b>지구 온난화 카테고리의 LCA 산정</b>
-      </span>,
-      <span key="1">
-        <b>공정 과정 탄소 내재 배출 산정</b>{" "}
-      </span>,
-      <span key="2">
-        <b>원부자재 내재 배출 관리</b>{" "}
-      </span>,
-      <span key="3">
-        <b>비용 효율성 분석</b>{" "}
-      </span>,
-    ],
-  },
-];
 
 export const features: DisplayItem[] = [
   {

@@ -181,15 +181,15 @@ export default function Home(): JSX.Element {
                           <img className="h-[450px] duration-200" src="/images/chatbot.png" alt="carbon buddy" />
                           <div className="flex flex-col gap-5">
                             {
-                              data.carbon_buddy.contents.map((content, ndx) => {
+                              data.carbon_buddy.items.map((item, ndx) => {
                                 const svgKey = `section2_svg_${ndx + 2}`;
                                 const SvgComponent = section2_svgs[svgKey];
                                 return (
                                   <div className="border border-gray-200 p-7 rounded-lg flex gap-2 items-start flex-col"> 
                                     <div className="w-6 rounded-md">{SvgComponent}</div>
                                     <div className="flex flex-col items-start justify-center">
-                                      <span className="inline xl:text-xl text-lg font-bold">{content.sub_title}</span>
-                                      <div>{content.sub_description}</div>
+                                      <span className="inline xl:text-xl text-lg font-bold">{item.title}</span>
+                                      <div>{item.description}</div>
                                     </div>
                                   </div>
                               )})
@@ -214,10 +214,10 @@ export default function Home(): JSX.Element {
             transition: { duration: 1 },
           }}
         >
-              <SectionBlock title={data.content.title_2}>
+              <SectionBlock title={data.why_need.title}>
                 <div className="px-10 ">
                   <div className="xl:grid xl:grid-cols-2 gap-10">
-                    {data.elements.map((item, ndx) => {
+                    {data.why_need.items.map((item, ndx) => {
                       const svgKey = `section3_svg_${ndx + 1}`;
                       const SvgComponent = section3_svgs[svgKey];
 
@@ -264,18 +264,18 @@ export default function Home(): JSX.Element {
               transition: { duration: 1 },
             }}
           >
-            <SectionBlock title={data.content.title_3}>
+            <SectionBlock title={data.reliable.title}>
               <>
               <div className="px-10 mb-10 text-left">
                 <div className='mb-4' ><img className="w-48 mx-auto" src="/images/partners/lrqa-logo.png" /></div>
                 <div className='w-full space-y-2'>
-                  <h2 className='text-xl text-center'>{data.content.subtitle_3}</h2>
+                  <h2 className='text-xl text-center'>{data.reliable.subtitle}</h2>
                 </div>
               </div>
 
               <div className="flex justify-center">
                 <div className="flex flex-wrap gap-10 justify-center w-[85%]">
-                  {data.elements_2.map((item, ndx) => {
+                  {data.reliable.items.map((item, ndx) => {
                     const svgKey = `section2_svg_${ndx + 1}`;
                     const SvgComponent = section2_svgs[svgKey];
                     const lines = item.description as string[];
@@ -327,14 +327,14 @@ export default function Home(): JSX.Element {
                   <div className="flex flex-col items-center w-full justify-center gap-10">
                     <div className="flex w-[80%] text-left gap-5 flex-col xl:flex-row">
                       <div className="xl:w-[40%] h-full flex-shrink-0 w-full">
-                        <h1 className="xl:text-3xl text-2xl font-semibold xl:leading-12 leading-8 ">{data.directory.title}</h1>
+                        <h1 className="xl:text-3xl text-2xl font-semibold xl:leading-12 leading-8 ">{data.journey.title}</h1>
                       </div>
                       <p className="text-lg sm:text-lg">
-                        {data.directory.subtitle}
+                        {data.journey.subtitle}
                       </p>
                     </div>
                     <div className="w-[80%] grid xl:grid-cols-3 gap-5 md:grid-cols-2">
-                      {data.directory.contents.map((item, ndx) => {
+                      {data.journey.items.map((item, ndx) => {
                         return (
                           <div className="bg-white p-5 rounded-lg flex flex-col justify-between gap-5" key={ndx}>
                             <div className="flex items-center justify-around flex-1">
@@ -347,7 +347,7 @@ export default function Home(): JSX.Element {
                               </div>
                             </div>
                             <div className="w-full h-[200px] bg-white rounded-lg">
-                              <img src={item.img} className="w-full h-full rounded-lg" alt={`${item.title} logo image`}/>
+                              <img src={item.imageUrl} className="w-full h-full rounded-lg" alt={`${item.title} logo image`}/>
                             </div>
                           </div>
                         );
