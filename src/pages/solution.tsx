@@ -40,9 +40,9 @@ export default function Home(): JSX.Element {
       />
 
 
-      <SectionBlock title={data.content.section1_title} >
+      <SectionBlock title={data.intro.title} >
         <div className="my-5 border border-2 rounded-lg grid grid-cols-1  md:grid-cols-2 gap-2">
-          {data.intro.map((item,idx) =>
+          {data.intro.items.map((item,idx) =>
             <div className="p-4 group hover:bg-slate-100">
               <div className="text-lg font-bold group-hover:text-primary-700">{item.title}</div>
                 <span className="text-base">{item.subtitle}</span>
@@ -53,9 +53,9 @@ export default function Home(): JSX.Element {
       </SectionBlock>
 
 
-      <SectionBlock title={data.content.section2_title} containerStyle='bg-gray-100'>
+      <SectionBlock title={data.benefits.title} containerStyle='bg-gray-100'>
         <div className="my-5 p-2 grid grid-cols-1  md:grid-cols-2 xl:grid-cols-4 gap-2">
-          {data.benefits.map(benefit => 
+          {data.benefits.items.map(benefit => 
           <div className="text-center" key={benefit.title}> 
             <div className="font-extrabold text-lg text-secondary text-left">{benefit.title}</div>
             <article className="h-40 text-gray-600 bg-white text-left border border-secondary-100 rounded-b-md">

@@ -1,4 +1,4 @@
-import { DisplayItem } from "../libs/types"
+import { DisplayItem, PageSection } from "../libs/types"
 
 export const content = {
   section1_title: "Data-driven decision-making is crucial for achieving success. ",
@@ -10,15 +10,13 @@ export const content = {
     efficiently manages carbon emission activities, performs comprehensive calculations, and analyzes emissions data. 
     This platform enables corporations to comply with climate-related regulations, mitigate climate risks, reduce energy consumption, and enhance their ESG portfolios. <br />
     Ultimately, it plays a crucial role in lowering carbon footprints and supporting global efforts to tackle the climate crisis.
-
-</>,
-  section2_title: "Hana.eco Features",
+  </>,
   section3_title: "Standards supported by Hana.eco",
-  section4_title: "Benefits",
 }
 
-export const features: DisplayItem[] = [
-  {
+export const features: PageSection = {
+  title: "Hana.eco Features",
+  items: [{
     title: "Carbon Accounting",
     subtitle: "Flexible, Easy, Accurate",
     imageUrl: "/images/platform/ecoloop_accounting_scrn.png",
@@ -68,11 +66,12 @@ export const features: DisplayItem[] = [
       <li>Product Carbon Footprint Management</li>
       </ul>
     </>
-  }
-]
+  }]
+}
 
-export const benefits: DisplayItem[] = [
-  {
+export const benefits: PageSection = {
+  title: "Benefits",
+  items: [{
     title: "Cost Reduction",
     subtitle: "1",
     description: <>
@@ -101,11 +100,16 @@ export const benefits: DisplayItem[] = [
       <li>Better partner management</li>
       </ul>
     </>
-  },
-]
+  }]
+}
 
-export const tcfd_topics: DisplayItem[] = [
-  {
+export const standards_title = "Standards supported by Hana.eco";
+
+export let standards: PageSection[] = []; 
+standards.push({
+  title: "TCFD",
+  imageUrl: "/images/standards/tcfd-logo.png",
+  items: [{
     title: "Strategy",
     description: [
       "A) Describe the climate-related risks and opportunities the organization has identified over the short, medium, and long term.",
@@ -119,10 +123,13 @@ export const tcfd_topics: DisplayItem[] = [
       "b) Disclose Scope 1, Scope 2, and, if appropriate, Scope 3 greenhouse gas (GHG) emissions, and the related risks.",
       "c) Describe the targets used by the company to manage climate-related risks and opportunities and performance against targets."
     ]
-  }
-]
+  }]
+});
 
-export const cdp_topics: DisplayItem[] = [
+standards.push({
+  title: "CDP",
+  imageUrl: "/images/standards/cdp-logo.png",
+  items: [
   {
     title: "C4 Targets and performance",
     description: [
@@ -157,11 +164,13 @@ export const cdp_topics: DisplayItem[] = [
     description: [
       "C8.2: Energy-related activities"
     ]
-  }
-]
+  }]
+});
 
-export const gri_topics: DisplayItem[] = [
-  {
+standards.push({
+  title: "GRI",
+  imageUrl: "/images/standards/gri-logo.png",
+  items: [{
     title: "GRI 302: Energy 2016",
     description: [
       "Disclosure 302-1: Energy consumption within the organization",
@@ -181,5 +190,5 @@ export const gri_topics: DisplayItem[] = [
       "Disclosure 305-6: Emissions of ozone-depleting substances (ODS)",
       "Disclosure 305-7: Nitrogen oxides (NOx), sulfur oxides (SOx), and other significant air emissions",
     ]
-  }
-]
+  }]
+});

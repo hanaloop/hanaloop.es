@@ -134,12 +134,12 @@ export default function Home(): JSX.Element {
             }}
             className="flex justify-center"
           >
-            <SectionBlock title={data.content.title_1}>
+            <SectionBlock title={data.customers.title}>
               <div className="w-full justify-center flex">
                 <div className="text-center items-center w-full md:w-[75%] flex flex-col gap-3 justify-center">
                   {/* CUSTOMERS */}
                   <div className="flex justify-center gap-3 flex-wrap">
-                    {data.customers.map((item) => (
+                    {data.customers.items.map((item) => (
                       <span className="group flex justify-center" key={item.title}>
                         <div className="flex justify-center items-center border border-gray-200 p-1 rounded-lg shadow-sm w-[150px] h-[70px]">
                           <Link href={item.sourceUrl!}>
@@ -154,7 +154,7 @@ export default function Home(): JSX.Element {
                       </span>
                     ))}
                   </div>
-                  <div className="text-xs">{data.content.section2_subtitle}</div>
+                  <div className="text-xs">{data.customers.subtitle}</div>
                 </div>
               </div>
             </SectionBlock>
@@ -372,10 +372,10 @@ export default function Home(): JSX.Element {
               }}
               className="w-full justify-center flex"
             >
-            <SectionBlock title={data.content.title_4}>
+            <SectionBlock title={data.features.title}>
               <div className="px-10 w-full justify-center flex">
                 <div className="xl:grid xl:grid-cols-2 gap-16 md:w-[75%]">
-                  {data.features.map((item, ndx) => {
+                  {data.features.items.map((item, ndx) => {
                     const svgKey = `section5_svg_${ndx + 1}`;
                     const SvgComponent = section5_svgs[svgKey];
 
