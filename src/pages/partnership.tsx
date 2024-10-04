@@ -28,31 +28,21 @@ export default function Home(): JSX.Element {
         }
       />
 
-      <SectionBlock title={data.content.section1_title} >
-        <>
-        <div className="my-5 border rounded-lg grid grid-cols-1  md:grid-cols-2 gap-2">
-          <div className="p-4 group hover:bg-slate-100">
-            <div className="text-lg font-bold group-hover:text-primary-700">SaaS Solution Partner Program</div>
-            <article>
-            {data.content.saas_partner}
-            </article>
+      <SectionBlock title={data.content.title} >
+        <div className="m-5 border rounded-lg grid grid-cols-1  md:grid-cols-2 gap-2">
+        { data.content.items.map((item, ndx) =>
+          <div key={ndx} className="p-4 group hover:bg-slate-100">
+            <div className="text-lg font-bold group-hover:text-primary-700">{item.title}</div>
+            <article>{item.description}</article>
           </div>
-          <div className="p-4 group hover:bg-slate-100">
-            <div className="text-lg font-bold group-hover:text-primary-700">Technology Partner Program</div>
-            <article>
-            {data.content.technology_partner}
-            </article>
-          </div>
+        )}
         </div>
-        <div>
-        </div>
-        </>
       </SectionBlock>
 
-      <SectionBlock title={data.content.section2_title} containerStyle='bg-gray-100 flex justify-center'>
+      <SectionBlock title={data.alliances.title} containerStyle='bg-gray-100 flex justify-center'>
         <article className="text-left">
         <ul>
-          {data.alliances.map((item, idx) => 
+          {data.alliances.items.map((item, idx) => 
             <li key={idx}>
               {item.sourceUrl ? <a href={item.sourceUrl}>{item.title}</a> : item.title}
             </li>

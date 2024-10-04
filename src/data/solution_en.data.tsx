@@ -1,12 +1,9 @@
-import { DisplayItem } from "../libs/types"
+import { PageSection } from "../libs/types"
 
-export const content = {
-  section1_title: "Digital Transformation of Sustainability",
-  section2_title: "When data is transparent, strategy becomes evident!"
-}
 
-export const intro: DisplayItem[] = [
-  {
+export const intro: PageSection = { 
+  title: "Digital Transformation of Sustainability",
+  items: [{
     title: "Sustainable Digital Transformation",
     // subtitle: "Sustainable Digital Transformation",
     description: "Aligned with the rapidly changing business landscape and market demands, we leverage digital technology to maximize our customers' potential and enhance their business value. Beyond technology, we foster a positive corporate culture that elevates customer satisfaction and boosts productivity within their organizations."
@@ -15,11 +12,12 @@ export const intro: DisplayItem[] = [
     title: "Comprehensive Sustainability Solution",
     // subtitle: "Comprehensive Sustainability Solution",
     description: "By providing guidance on environmental regulations and market insights, our platform accelerates the exploration and adoption of eco-friendly technologies. This fosters the development of cleaner value chains, helping our customers achieve sustainable growth. Ultimately, our goal is to promote the evolution of a more responsible and ethical industry."
-  }
-]
+  }]
+}
 
-export const benefits: DisplayItem[] = [
-  {
+export const benefits: PageSection = { 
+  title:"When data is transparent, strategy becomes evident!",
+  items: [{
     title: "Data integration, and automation",
     description: <>
         <ul>
@@ -60,5 +58,5 @@ export const benefits: DisplayItem[] = [
       <li>Cultivating a corporate culture focused on greenhouse gas management </li>
       </ul>
     </>
-  }
-]
+  }]
+}

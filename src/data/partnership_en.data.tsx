@@ -1,20 +1,23 @@
-import { DisplayItem } from "../libs/types"
+import { DisplayItem, PageSection } from "../libs/types"
 
-export const content = {
-  section1_title: "Partnership",
-  saas_partner: <><b>WHAT IS IT</b> &nbsp;
-      Program that enables companies to offer Hana.eco SaaS solution to their customers and receive commission on sales.<br />
-        <b>FOR WHOM</b> &nbsp;
-        Consulting service providers such as Business & Environment consulting firms, and Accounting and Law Firms.
-      </>,
-  technology_partner: <><b>WHAT IS IT</b> &nbsp;
+export const content: PageSection = {
+  title: "Partnership",
+  items: [{
+      title: "SaaS Solution Partner Program",
+      description: <><b>WHAT IS IT</b> &nbsp;
+        Program that enables companies to offer Hana.eco SaaS solution to their customers and receive commission on sales.<br />
+          <b>FOR WHOM</b> &nbsp;
+          Consulting service providers such as Business & Environment consulting firms, and Accounting and Law Firms.
+        </>,
+    },  {
+      title: "Technology Partner Program",
+      description: <><b>WHAT IS IT</b> &nbsp;
       Program that enables companies to offer Hana.eco OnPrem system to their customers as standalone or part of their solution suite.<br />
         <b>FOR WHOM</b> &nbsp;
         Solution providers with IT product that want to incorporate hana.eco to their solution suite.
       </>,
-  section2_title: "Strategic Alliances"
+    }]
 }
-
 export const partners: DisplayItem[] = [
   {
     title: "Roen Consulting",
@@ -30,8 +33,9 @@ export const partners: DisplayItem[] = [
   }
 ]
 
-export const alliances: DisplayItem[] = [
-  {
+export const alliances: PageSection = {
+  title: "Strategic Alliances",
+  items: [{
     title: "Korea Carbon Project (Project organized by SNU and sponsored by KEITI)",
     sourceUrl: "http://www.roenconsulting.com/main/index.html",
     description: "Korea's nation-wide GHG Inventory Project"
@@ -46,5 +50,5 @@ export const alliances: DisplayItem[] = [
     title: "International Centre for Hydropower (ICH)",
     sourceUrl: "https://ich.no/",
     description: "The purpose of ICH is to raise the standards of competence of the industry personnel and promote the sustainable development of hydropower"
-  },
-]
+  }]
+}

@@ -68,10 +68,10 @@ export default function Home(): JSX.Element {
       </div>
       </SectionBlock>
 
-      <SectionBlock title={data.content.section2_title} >
+      <SectionBlock title={data.features.title} >
         <div className="flex justify-center">
         <div className="text-left max-w-4xl space-y-6">
-          {data.features.map(feature => 
+          {data.features.items.map(feature => 
           <div className="md:flex pt-2 rounded-lg border border-slate-200" key={feature.title}>
             <img className="h-64 w-64 rounded-lg drop-shadow mx-auto md:rounded-none md:drop-shadow-none" src={useBaseUrl(feature.imageUrl)} />
             <div className="p-6 border-primary" >
@@ -87,61 +87,33 @@ export default function Home(): JSX.Element {
         </div>
       </SectionBlock>
 
-      <SectionBlock title={data.content.section3_title} containerStyle='bg-gray-100 flex justify-center'>
-
+      <SectionBlock title={data.standards_title} containerStyle='bg-gray-100 flex justify-center'>
       <article className="p-4 max-w-3xl text-left">
+        { data.standards.map((standard, idx) => 
+        <>
+        <img src={useBaseUrl(standard.imageUrl)} className="mt-4 h-16" alt={`${standard.title} logo`}/>
 
-        <img src={useBaseUrl("/images/standards/tcfd-logo.png")} className="h-8" alt="TCFD logo"/>
-
-        {data.tcfd_topics.map(topic=>
+        {standard.items.map(item=>
           <>
-          <h3>{topic.title}</h3>
+          <h3>{item.title}</h3>
           <ul>
-          {topic.description.map(d=>
+          {item.description.map(d=>
             <li>{d}</li>
           )}
           </ul>
           </>
         )}
-
         <hr />
-
-        <img src={useBaseUrl("/images/standards/cdp-logo.png")} className="mt-4 h-16" alt="CDP logo"/>
-
-        {data.cdp_topics.map(topic=>
-          <>
-          <h3>{topic.title}</h3>
-          <ul>
-          {topic.description.map(d=>
-            <li>{d}</li>
-          )}
-          </ul>
-          </>
+        </>
         )}
-
-        <hr />
-
-        <img src={useBaseUrl("/images/standards/gri-logo.png")} className="mt-4 h-16" alt="GRI logo"/>
-
-        {data.gri_topics.map(topic=>
-          <>
-          <h3>{topic.title}</h3>
-          <ul>
-          {topic.description.map(d=>
-            <li>{d}</li>
-          )}
-          </ul>
-          </>
-        )}
-
       </article>
       </SectionBlock>
 
 
-      <SectionBlock title={data.content.section4_title}>
+      <SectionBlock title={data.benefits.title}>
       <div className="text-left flex justify-center">
         <div className="space-y-4 ">
-        {data.benefits.map( (benefit, idx) => 
+        {data.benefits.items.map( (benefit, idx) => 
         <div className="block " key={idx}> 
           <div className="p-2 min-w-0 rounded-l-full rounded-r-lg bg-sky-600 flex items-center">
             <div className="ml-0 w-20 h-20 rounded-full bg-gray-100 text-4xl font-bold text-gray-600 dark:text-gray-200  dark:bg-gray-600  items-center inline-block text-center">

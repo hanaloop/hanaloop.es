@@ -1,12 +1,8 @@
-import { DisplayItem } from "../libs/types"
+import { PageSection } from "../libs/types"
 
-export const content = {
-  section1_title: "디지털 솔루션으로 환경적, 경제적, 사회적 이익을 동시에 실현!",
-  section2_title: "데이터가 보이면 탄소중립 전략이 보입니다!"
-}
-
-export const intro: DisplayItem[] = [
-  {
+export const intro: PageSection = { 
+  title: "디지털 솔루션으로 환경적, 경제적, 사회적 이익을 동시에 실현!",
+  items: [{
     title: "지속가능한 디지털 전환",
     subtitle: "Sustainable Digital Transformation",
     description: "급변하는 비즈니스 환경과 시장 요구에 맞추어 디지털 기술로 고객의 잠재력과 비즈니스 가치를 극대화합니다. 기술뿐만 아니라 기업 문화를 향상시켜 고객 조직의 만족도와 생산력을 높입니다."
@@ -15,11 +11,12 @@ export const intro: DisplayItem[] = [
     title: "친환경 하나에코 플랫폼 기반 솔루션",
     subtitle: "Comprehensive Sustainability Solution",
     description: "플랫폼은 환경 규제에 대한 지침과 시장에 대한 통찰력을 제공하고 신속한 친환경 기술 검색 및 거래를 가능하게 하여 더욱 깨끗한 가치사슬을 생성시킴으로써 고객이 지속가능한 방식으로 성장할 수 있도록 도와줍니다. 결과적으로 보다 책임있고 윤리적인 산업으로 발전하는데 기여합니다."
-  }
-]
+  }]
+}
 
-export const benefits: DisplayItem[] = [
-  {
+export const benefits: PageSection = { 
+  title: "데이터가 보이면 탄소중립 전략이 보입니다!",
+  items: [{
     title: "데이터 연동, 생성형AI기반 분석",
     description: <>
         <ul>
@@ -60,5 +57,5 @@ export const benefits: DisplayItem[] = [
       <li>저탄소 생태계 형성</li>
       </ul>
     </>
-  }
-]
+  }]
+}
