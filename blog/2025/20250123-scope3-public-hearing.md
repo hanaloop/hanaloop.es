@@ -9,7 +9,7 @@ date: 2025-01-23
 import CaptionedImage from "../../src/components/theme/CaptionedImage";
 
 <CaptionedImage 
-  imageSrc="/images/blog/2025/20250124-scope3-public-hearing.png"
+  imageSrc="/images/blog/2025/20250124-scope3-public-hearing.jpg"
   caption=""
   containerClassName="w-[400px]" 
   imageClassName="shadow-md border-8 border-gray-100"
