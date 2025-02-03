@@ -69,7 +69,7 @@ export default function Home(): JSX.Element {
     >
       <main className="break-keep">
         {/* 1. Hero Section */}
-        <div className="w-screen py-5 flex xs:h-screen justify-center items-center relative">
+        <div className="w-screen py-5 flex min-h-screen justify-center items-center relative">
             <div className="-z-30 w-full h-full absolute left-0 top-0 bg-[url('/images/bg-hero-main.jpg')] bg-center bg-cover"></div>
             <div className=" -z-20 w-full h-full absolute left-0 top-0 bg-[#193233] opacity-70"></div>
             <motion.div
