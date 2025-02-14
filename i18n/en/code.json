@@ -325,6 +325,18 @@
   "platform.hero_tagline": {
     "message": "Advanced Climate Data and Strategy Platform"
   },
+  "hanaAI.meta_title": {
+    "message": "AI-based Carbon Management Platform Hana.eco"
+  },
+  "hanaAI.meta_description": {
+    "message": "Hana.eco utilizes AI-powered data analysis to accurately manage and predict carbon emissions. With AI-driven anomaly detection, emission forecasting, and regulatory compliance support, your company can effectively achieve carbon neutrality."
+  },
+  "hanaAI.hero_header": {
+    "message": "AI-based Carbon Management Platform | Hana.eco"
+  },
+  "hanaAI.hero_tagline": {
+    "message": "Hana.eco AI assists your company in carbon management."
+  },
   "recruit.meta_title": {
     "message": "Join Us, Hanaloop, carbon management and sustainability company"
   },

@@ -72,7 +72,21 @@ const config: Config = {
         src: 'images/hanaloop-logo.png',
       },
       items: [
-        {to: '/platform', label: 'Platform', position: 'left'},
+        {
+          type: 'dropdown',
+          label: 'Platform', 
+          position: 'left',
+          items: [
+            {
+              to: '/platform',
+              label: '탄소회계',
+            },
+            {
+              to: '/hanaAI',
+              label: 'Hanaeco.AI',
+            }
+          ]
+        },
         {to: '/solution', label: 'Solution', position: 'left'},
         {to: '/partnership', label: 'Partnership', position: 'left'},
         {to: '/company', label: 'Company', position: 'left'},

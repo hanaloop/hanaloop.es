@@ -23,7 +23,7 @@ export default function Hero({header, tagline, button, background}: HeroProps & 
     (background.solidColor ? `${background.solidColor} ` : 
     `bg-gradient-to-r ${background.gradientFrom} ${background.gradientTo} justify-center items-center `);
   
-  containerClass = 'h-[36rem] py-16 text-gray-100 ' + containerClass;
+  containerClass = 'h-[30rem] py-16 text-gray-100 ' + containerClass;
   
   /* v2.1 */
   const containerStyle = background.imageUrl ? `linear-gradient(to top, transparent, #00000030 90%), url(${useBaseUrl(background.imageUrl)})`: '';
