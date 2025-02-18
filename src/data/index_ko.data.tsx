@@ -10,9 +10,9 @@ export const hero = {
   subtitle_2 : "EU CBAM, IFRS ISSB S1·S2, EU 배터리 규제, EU CSDDD, ESG 공시 의무 등 지속적으로 강화되는 국내외 기후 규제와 CDP, GRI 등 공시 요구 사항을 신속히 준수하고 효과적으로 대응하며, 동시에 에너지 비용을 절감하고 기후 리스크를 완화하세요.",
   button_1 : "솔루션 소개",
   button_2 : "문의하기",
-  news : "CBAM 컨설팅 및 CBAM 보고서 작성 문의하기",
-  news_link : "https://docs.google.com/forms/d/e/1FAIpQLSeShKOnjx2W9z_Ni1LFqyP4blewa4quyM22ARBnLvzvXhpmZQ/viewform",
-  link_1: "/company_profile_request",
+  news : "CBAM 보고서 진단하기",
+  news_link : "https://docs.google.com/forms/d/e/1FAIpQLSct04RcNKwwkGC1DKiqhXgzLG77tXjetV1NJL9prE4pJ-vpnw/viewform",
+  link_1: "https://docs.google.com/presentation/d/1fNDHGk5kAEI_JigpLZ5yKbHd9uBvoRg4d-S7Nb5YyYo/present",
   link_2: "/demo_request",
 }
 

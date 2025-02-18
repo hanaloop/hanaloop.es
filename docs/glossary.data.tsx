@@ -8,7 +8,7 @@ const termsKo_: DisplayItem[] = [
     sourceUrl: "http://www.me.go.kr/home/web/dictionary/read.do?pagerOffset=340&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10448&orgCd=&boardMasterId=&dicSeq=347&decorator="
   },
   {
-    title: "탄소 어카운팅(Carbon Accounting)",
+    title: "탄소 회계(Carbon Accounting)",
     description: "탄소 회계. 기업의 사업활동으로 인해 발생하는 온실가스 배출량과 감축량을 탄소로 환산하는 과정을 지칭합니다.",
     source: "요다위키",
     sourceUrl: "https://yoda.wiki/wiki/Carbon_accounting"
@@ -31,10 +31,23 @@ const termsKo_: DisplayItem[] = [
     source: "탄소중립 녹생성장위원회",
     sourceUrl: "https://www.2050cnc.go.kr/base/contents/view?contentsNo=9&menuLevel=2&menuNo=11"
   },
+  {
+    title: "제품 탄소발자국 (Product Carbon Footprint, PCF)",
+    description: "제품의 수명 주기 동안 발생하는 온실가스 배출 및 제거를 의미하며, 원자재 채취, 생산, 운송, 사용 단계 및 폐기 처리 과정을 포함합니다",
+    source: "GHG Protocol Product Life Cycle Standard",
+    sourceUrl: "https://ghgprotocol.org/sites/default/files/standards/Product-Life-Cycle-Accounting-Reporting-Standard_041613.pdf"
+  },
+  
 ];
 
 const termsEn_: DisplayItem[] = [
-    {
+  {
+    title: "CBAM (Carbon Border Adjustment Mechanism)",
+    description: "EU가 탄소 집약적 제품이 EU로 수입될 때 발생하는 탄소 배출에 대해 공정한 가격을 책정하고, 비EU 국가에서 보다 친환경적인 산업 생산을 장려하기 위한 도구입니다",
+    source: "European Comission",
+    sourceUrl: "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en"
+  },
+  {
     title: "CCUS, Carbon Capture, Utilization, Storage",
     description: "이산화탄소 포집, 저장, 활용 기술. CCUS기술은 이산화탄소가 생산되는 근원지에서부터 공기 중으로 방출되는 것을 막고(Carbon Capture) 필요한 곳에서 사용(Utilization)하거나 지하에 저장(Storage) 하는 기술입니다.",
     source: "대한민국 정책브리핑",
