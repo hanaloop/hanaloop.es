@@ -64,6 +64,6 @@ export const features_2 = [
 
 export const request = {
     title : "Start systematic carbon management with Hana.eco",
-    button_1 : "Solution Overview",
+    button_1 : "Learn More",
     button_2 : "Contact Us",
 }

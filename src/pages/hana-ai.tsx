@@ -35,7 +35,7 @@ export default function HanaAI(): JSX.Element {
       <main className="break-keep w-screen">
         <div className="w-full flex justify-center">
             <div className='w-screen'>
-              <SectionBlock title={'AI 기반 Hana.eco '}>
+              <SectionBlock title={data.hero.second_title}>
                 <motion.div
                     viewport={{ once: true }}
                     initial={{ opacity: 0, y: 60 }}

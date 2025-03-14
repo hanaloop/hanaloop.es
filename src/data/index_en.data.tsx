@@ -192,6 +192,18 @@ export const features: PageSection = {
 
 export const partner = [
   {
+    title: "MarinaChain",
+    sourceUrl: "https://www.marinachain.io/ko",
+    imageUrl: "/images/partners/MarinaChain.png",
+    imgHeight: 'h-[55px]'
+  },
+  {
+    title: "서울대학교 환경대학원",
+    sourceUrl: "https://gses.snu.ac.kr/",
+    imageUrl: "/images/partners/SNU.png",
+    imgHeight: 'h-[55px]'
+  },
+  {
     title: "carbonaccountingalliance",
     sourceUrl: "https://www.carbonaccountingalliance.com/",
     imageUrl: "/images/partners/CAA.jpeg",
@@ -341,7 +353,7 @@ export const partner = [
 ]
 
 export const customers: PageSection = {
-  title: "디지털 파트너 하나루프는 귀사의 탄소중립 여정에 힘을 실어드립니다",
+  title: "Digital Partner HanaLoop empowers your temporary travel",
   subtitle:"",
   items: [{
       title: "이마트",

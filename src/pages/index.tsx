@@ -143,6 +143,7 @@ export default function Home(): JSX.Element {
                 <div className="text-center items-center w-full md:w-[75%] flex flex-col gap-3 justify-center">
                   {/* CUSTOMERS */}
                   <Marquee
+                    pauseOnHover={true}
                     gradient={true}
                     gradientColor="rgb(248 251 253)"
                     gradientWidth={200}
@@ -150,7 +151,7 @@ export default function Home(): JSX.Element {
                     <div className="flex justify-center gap-3 flex-wrap">
                       {data.customers.items.map((item) => (
                         <span className="group flex justify-center" key={item.title}>
-                          <div className="flex justify-center items-center border border-gray-200 p-1 rounded-lg shadow-sm w-[150px] h-[70px]">
+                          <div className="flex justify-center items-center border border-gray-200 p-1 rounded-lg shadow-sm w-[150px] ">
                             <Link href={item.sourceUrl!}>
                               <a target="_blank">
                                 <img className={`${item.imgHeight} duration-200`} src={useBaseUrl(item.imageUrl!)} alt={item.title} />
@@ -166,11 +167,12 @@ export default function Home(): JSX.Element {
                     gradientColor="rgb(248 251 253)"
                     gradientWidth={200}
                     delay={1.5}
+                    pauseOnHover={true}
                   >
                     <div className="flex justify-center gap-3 flex-wrap">
                       {data.partner.map((item) => (
                         <span className="group flex justify-center" key={item.title}>
-                          <div className="flex justify-center items-center border border-gray-200 p-1 rounded-lg shadow-sm w-[150px] h-[70px]">
+                          <div className="flex justify-center items-center border border-gray-200 p-1 rounded-lg shadow-sm w-[150px]">
                             <Link href={item.sourceUrl!}>
                               <a target="_blank">
                                 <img className={`${item.imgHeight} duration-200`} src={useBaseUrl(item.imageUrl!)} alt={item.title} />

@@ -113,7 +113,7 @@ const config: Config = {
           items: [
             {
               to: '/platform',
-              label: '탄소회계',
+              label: 'Carbon Accounting',
             },
             {
               to: '/hana-ai',

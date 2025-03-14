@@ -153,7 +153,7 @@ export const cdp_topics: DisplayItem[] = [
     ]
   },
   {
-    title: "C8 Energy (에너지)",
+    title: "C8 Energy",
     description: [
       "C8.2: Energy-related activities"
     ]
@@ -182,4 +182,8 @@ export const gri_topics: DisplayItem[] = [
       "Disclosure 305-7: Nitrogen oxides (NOx), sulfur oxides (SOx), and other significant air emissions",
     ]
   }
+]
+
+export const topics: DisplayItem[][] = [
+  tcfd_topics, gri_topics, cdp_topics
 ]

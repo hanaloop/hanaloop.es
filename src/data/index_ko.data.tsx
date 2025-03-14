@@ -194,6 +194,18 @@ export const features: PageSection = {
 
 export const partner = [
   {
+    title: "MarinaChain",
+    sourceUrl: "https://www.marinachain.io/ko",
+    imageUrl: "/images/partners/MarinaChain.png",
+    imgHeight: 'h-[55px]'
+  },
+  {
+    title: "서울대학교 환경대학원",
+    sourceUrl: "https://gses.snu.ac.kr/",
+    imageUrl: "/images/partners/SNU.png",
+    imgHeight: 'h-[55px]'
+  },
+  {
     title: "carbonaccountingalliance",
     sourceUrl: "https://www.carbonaccountingalliance.com/",
     imageUrl: "/images/partners/CAA.jpeg",

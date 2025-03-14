@@ -52,3 +52,89 @@ export const alliances: PageSection = {
     description: "The purpose of ICH is to raise the standards of competence of the industry personnel and promote the sustainable development of hydropower"
   }]
 }
+
+
+
+export const tcfd_topics: DisplayItem[] = [
+  {
+    title: "Strategy",
+    description: [
+      "A) Describe the climate-related risks and opportunities the organization has identified over the short, medium, and long term.",
+      "B) Describe the impact of climate-related risks and opportunities on the organization’s businesses, strategy, and financial planning."
+    ]
+  },
+  {
+    title: "Metrics and Targets",
+    description: [
+      "a) Disclose the metrics used by the company to assess climate-related risks and opportunities in line with its strategy and risk management process.",
+      "b) Disclose Scope 1, Scope 2, and, if appropriate, Scope 3 greenhouse gas (GHG) emissions, and the related risks.",
+      "c) Describe the targets used by the company to manage climate-related risks and opportunities and performance against targets."
+    ]
+  }
+]
+
+export const cdp_topics: DisplayItem[] = [
+  {
+    title: "C4 Targets and performance",
+    description: [
+      "C4.1: Emissions targets", 
+      "C4.3: Emissions reduction initiatives"
+    ]
+  },
+  {
+    title: "C6 Emissions data",
+    description: [
+      "C6.1: Scope 1 emissions data",
+      "C6.2: Scope 2 emissions reporting",
+      "C6.3: Scope 2 emissions data",
+      "C6.7: Biogenic carbon data",
+      "C6.7a: Biogenic carbon data",
+      "C6.10: Emissions intensities",
+    ]
+  },
+  {
+    title: "C7 Emissions breakdown",
+    description: [
+      "C7.1: Scope 1 breakdown: GHGs",
+      "C7.2: Scope 1 breakdown: country/area/region",
+      "C7.3: Scope 1 breakdown: business breakdown",
+      "C7.5: Scope 2 breakdown: country/area/region",
+      "C7.6: Scope 2 breakdown: business breakdowns",
+      "C7.9: Emissions performance"
+    ]
+  },
+  {
+    title: "C8 Energy",
+    description: [
+      "C8.2: Energy-related activities"
+    ]
+  }
+]
+
+export const gri_topics: DisplayItem[] = [
+  {
+    title: "GRI 302: Energy 2016",
+    description: [
+      "Disclosure 302-1: Energy consumption within the organization",
+      "Disclosure 302-2: Energy consumption outside of the organization (2022-Q4)",
+      "Disclosure 302-3: Energy intensity",
+      "Disclosure 302-4: Reduction of energy consumption"
+    ]
+  },
+  {
+    title: "GRI 305: Emissions",
+    description: [
+      "Disclosure 305-1: Direct (Scope 1) GHG emissions",
+      "Disclosure 305-2: Energy indirect (Scope 2) GHG emissions",
+      "Disclosure 305-3: Other indirect (Scope 3) GHG emissions (2023-Q2)",
+      "Disclosure 305-4: GHG emissions intensity",
+      "Disclosure 305-5: Reduction of GHG emissions",
+      "Disclosure 305-6: Emissions of ozone-depleting substances (ODS)",
+      "Disclosure 305-7: Nitrogen oxides (NOx), sulfur oxides (SOx), and other significant air emissions",
+    ]
+  }
+]
+
+export const topics: DisplayItem[][] = [
+  tcfd_topics, gri_topics, cdp_topics
+]
