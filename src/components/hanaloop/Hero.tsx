@@ -23,7 +23,7 @@ export default function Hero({header, tagline, button, background}: HeroProps & 
     (background.solidColor ? `${background.solidColor} ` : 
     `bg-gradient-to-r ${background.gradientFrom} ${background.gradientTo} justify-center items-center `);
   
-  containerClass = 'h-[30rem] py-16 text-gray-100 ' + containerClass;
+  containerClass = 'h-[22rem] py-16 text-gray-100 flex items-center ' + containerClass;
   
   /* v2.1 */
   const containerStyle = background.imageUrl ? `linear-gradient(to top, transparent, #00000030 90%), url(${useBaseUrl(background.imageUrl)})`: '';
@@ -32,11 +32,11 @@ export default function Hero({header, tagline, button, background}: HeroProps & 
     <div id="hero" className="relative [word-break:keep-all]">
       <div className={containerClass} style={{backgroundImage: containerStyle}}>
         <div className="px-8 w-full flex mx-auto" >
-          <div id="hero-label" className="pt-20 space-y-3  w-full justify-center text-center md:w-4/5 md:text-left">
-            <h1 className="text-3xl md:text-5xl font-bold drop-shadow animation-fadeInUp">{header}</h1>
-            <div className="text-xl md:text-3xl drop-shadow animation-fadeInUp">{tagline}</div>
+          <div id="hero-label" className="w-full flex-col gap-6 flex justify-center text-center md:w-4/5 md:text-left">
+            <h1 className="text-2xl md:text-3xl font-bold drop-shadow animation-fadeInUp">{header}</h1>
+            <div className="text-lg md:text-xl drop-shadow animation-fadeInUp">{tagline}</div>
             {
-              button && <div className="pt-7 flex justify-center md:justify-start text-xl"><a href={button.href}><button className="p-2 rounded-md border-2 text-gray-200 font-bold hover:bg-lime-800 hover:bg-opacity-50">{button.label}</button></a></div>
+              button && <div className="flex justify-center md:justify-start text-base"><a href={button.href}><button className="px-6 py-2 rounded-md bg-blue-500 text-gray-200 font-bold hover:bg-blue-600 ">{button.label}</button></a></div>
             }
           </div>
         </div>
