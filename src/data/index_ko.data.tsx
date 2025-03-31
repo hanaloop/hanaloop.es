@@ -154,7 +154,7 @@ export const journey: PageSection = {
         title: "CBAM",
         subtitle: "유럽연합(EU)은 2050년 탄소중립 실현을 목표로 탄소 누출 방지를 위해 탄소국경조정제도(CBAM)를 발효했습니다. EU를 필두로 미국, 영국, 일본 등 다수 국가에서 유사한 제도 도입을 고려하고 있어, 탄소 배출량의 분석과 감축은 국제시장 거래에 필수가 되었습니다.",
         link: "https://www.hanaloop.com/docs/x20_environment-general/2024-01-20-cbam-compliance",
-        imageUrl: "/images/directory_2.jpg",
+        imageUrl: "/images/directory_2.png",
       },
       {
         title: "Scope 3",

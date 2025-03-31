@@ -1,4 +1,7 @@
 // Used by 
+import SynergyIcon from "../../static/svg/Synergy.svg";
+import BoldIcon from "../../static/svg/Bold.svg";
+import ReliableIcon from "../../static/svg/Reliable.svg";
 
 export const content = {
   meta_title: "HanaLoop",
@@ -23,11 +26,19 @@ export const content = {
   commitment_body:  "HanaLoop is committed to supporting our customers in restoring the environment, promoting a healthy planet, and contributing to the prosperity of humanity.",
   
   corevalues_title: "Core Values",
-  corevalues_body: <><ul>
-  <li><b>SYNERGISTIC</b> - Maximize value through collaboration</li>
-  <li><b>BOLD</b> - Decisive and courageous actions</li>
-  <li><b>RELIABLE</b> - Trusted to consistently deliver on commitments</li>
-  </ul></>,
+  corevalues_body: [{ 
+    icon: <SynergyIcon />,
+    title: "SYNERGISTIC",
+    description: "We go beyond collaboration to create synergy. <br/> By combining our individual expertise and capabilities, we generate greater value together."
+  }, {
+    icon: <BoldIcon />,
+    title: "BOLD",
+    description: "We take bold actions without fear. <br/>With forward-thinking initiatives and strong execution, we drive meaningful change."
+  }, {
+    icon: <ReliableIcon />,
+    title: "RELIABLE",
+    description: "We strive to be a trusted partner.<br/>Through consistency and responsibility, we build trust with our customers and keep our promises."
+  }],
 
   culture_title: "Culture",
   culture_body: <>We are dedicated to continuous growth, seeking out challenges, exploring innovative solutions, and delivering effective results through cutting-edge technologies. <br/> 
@@ -63,7 +74,8 @@ export const members = {
     "title": "CEO / co-founder",
     "tagline": "Creating a network of human resources to restore the global environment",
     "education": "Korea University Masters, Ewha Univ. Undergrad",
-    "description": "Samsung Electronics, Altenia, Arteplus, KOWORC 등. Projects: Voice recognition, Research on Global trends. GHG Management Certificate. LEED Green Associate. NPO organization management. Industry and policy research.  Author of AI papers."
+    "description": "Samsung Electronics, Altenia, Arteplus, KOWORC 등. Projects: Voice recognition, Research on Global trends. GHG Management Certificate. LEED Green Associate. NPO organization management. Industry and policy research.  Author of AI papers.",
+    "linkedin": "https://www.linkedin.com/in/hyeyeon-kim-49534b1b/",
   },
   "ysahnpark": {
     "name": "Young-Suk Ahn Park",
@@ -73,7 +85,8 @@ export const members = {
     "title": "CTO / co-founder",
     "tagline": "Aspiring to leave the beauty of Earth as a lasting legacy to my daughter.",
     "education": "Carnegie Mellon University MSEng, Korea Univ. Undergrad",
-    "description": "Walt Disney, Pearson, Wayfair, Altenia. Projects: Emart DT, Disney Digital Media Distribution Platform, LG Call-center system, Incheon Airport Integration, Over 20 years in the IT industry, successfully leading teams and organizations to develop large-scale enterprise applications. Author of Security and bioinformatics papers."
+    "description": "Walt Disney, Pearson, Wayfair, Altenia. Projects: Emart DT, Disney Digital Media Distribution Platform, LG Call-center system, Incheon Airport Integration, Over 20 years in the IT industry, successfully leading teams and organizations to develop large-scale enterprise applications. Author of Security and bioinformatics papers.",
+    "linkedin": "https://www.linkedin.com/in/ysahn/",
   },
   "saeahn": {
     "name": "Sae Ahn",
@@ -83,7 +96,8 @@ export const members = {
     "title": "General Counsel",
     "tagline": "To attain a harmonious relationship between humanity and the Earth",
     "education": "Tulane University Law School",
-    "description": "Samsung, LG, Microsoft. Legal advisor with experience working in the global IT industry. Proficient in negotiation, dispute resolution, legal documentation and corporate law."
+    "description": "Samsung, LG, Microsoft. Legal advisor with experience working in the global IT industry. Proficient in negotiation, dispute resolution, legal documentation and corporate law.",
+    "linkedin": "https://www.linkedin.com/in/sae-ahn-4954795/",
   },
   "phlee": {
     "name": "PyoungHwe Lee",
@@ -92,7 +106,8 @@ export const members = {
     "title": "Expert in metal business",
     "tagline": "Applying domain knowledge to climate crisis",
     "education": "Inha Univ., Masters and Undergraduate",
-    "description": "KPCM, Dongbu Metal, Samsung Electronics"
+    "description": "KPCM, Dongbu Metal, Samsung Electronics",
+    "linkedin": "https://www.linkedin.com/in/%ED%8F%89%ED%9C%98-%EC%9D%B4-836314201/",
   },
   "dionysios": {
     "name": "Dionysios Tsouchlakis",
@@ -101,22 +116,18 @@ export const members = {
     "title": "Environment data analyst / Developer",
     "tagline": "To solve environmental problems with technology",
     "education": "University of Western Macedonia, Greece",
-    "description": "Prior analyst at Aurora Energy Research (Germany), Vertis Environmental Finance (Hungary). Experienced energy economist with a passion for programming."
+    "description": "Prior analyst at Aurora Energy Research (Germany), Vertis Environmental Finance (Hungary). Experienced energy economist with a passion for programming.",
+    "linkedin": "https://www.linkedin.com/in/dionysios-tsouchlakis/",
   },
   "jdpark": {
-    "name": "JD Park",
+    "name": "Jeongdo Park",
     "name_alt": "박정도",
-    "image_url": "/images/hanaloop-logo.png",
+    "image_url": "/images/who-we-are/jdpark.jpg",
     "title": "Developer",
     "tagline": "Addressing climate issue one at a time",
-    "education": "Incheon University"
+    "education": "Incheon University",
+    "description": "Calculate Scope3 and System develope",
+    "linkedin": "https://www.linkedin.com/in/%EC%A0%95%EB%8F%84-%EB%B0%95-1a177a289/",
   },
-  "hana": {
-    "type": "system",
-    "name": "하나",
-    "name_alt": "Hana",
-    "image_url": "/images/hanaloop-logo.png",
-    "title": "환경친구"
-  }
 }
 

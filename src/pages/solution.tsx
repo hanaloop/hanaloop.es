@@ -30,7 +30,7 @@ export default function Home(): JSX.Element {
       description={translate({message: "solution.meta_description"})}>
 
       <Hero background={{
-          imageUrl: useBaseUrl('/images/bg-hero_mangrove.jpeg'),
+          imageUrl: useBaseUrl('/images/bg-hero-solution.jpg'),
         }} 
         header={translate({message: "solution.hero_header"})}
         tagline={translate({message: "solution.hero_tagline"})}
