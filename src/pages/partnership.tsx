@@ -19,7 +19,7 @@ export default function Home(): JSX.Element {
       description={translate({message: "partnership.meta_description"})}>
 
       <Hero background={{
-          imageUrl: useBaseUrl('/images/bg-hero_partnership.jpeg'),
+          imageUrl: useBaseUrl('/images/bg-hero-partnership.jpg'),
         }} 
         header={translate({message: "partnership.hero_header"})}
         tagline={translate({message: "partnership.hero_tagline"})}
