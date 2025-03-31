@@ -81,7 +81,7 @@ export default function Home(): JSX.Element {
                 transition: { duration: 1 },
               }}
               className="flex justify-center"
-            >
+          >
                 <div className="xl:w-[85%] flex gap-10 xl:flex-row items-center flex-col w-[90%]">
                   <div className="px-1 flex flex-col items-start">
                     <div className="flex flex-col gap-3 xl:text-left text-center">
@@ -375,8 +375,8 @@ export default function Home(): JSX.Element {
                                 <Link href={item.link}><ArrowIcon width={15} height={15} /></Link>
                               </div>
                             </div>
-                            <div className="w-full h-[200px] bg-white rounded-lg">
-                              <img src={item.imageUrl} className="w-full h-full rounded-lg" alt={`${item.title} logo image`}/>
+                            <div className="w-full h-[150px] bg-white rounded-lg flex justify-center items-center">
+                              <img src={item.imageUrl} className="rounded-lg max-w-full max-h-full object-contain" alt={`${item.title} logo image`}/>
                             </div>
                           </div>
                         );
