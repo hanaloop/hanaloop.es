@@ -18,7 +18,7 @@ export const section_title = {
 export const features_1 = [
     {
         title: '대량의 활동데이터 간편한 관리',
-        imageUrl: '/images/scope3_feature_1.png',
+        imageUrl: '/images/scope3-feature-1.png',
         descriptions: [
             {
                 subTitle: "활동데이터 일괄 업데이트",
@@ -32,7 +32,7 @@ export const features_1 = [
     },
     {
         title: '다양한 기준의 배출량 추이 시각화',
-        imageUrl: '/images/scope3_feature_2.png',
+        imageUrl: '/images/scope3-feature-2.png',
         descriptions: [
             {
                 subTitle: "직관적인 탄소배출 흐름 파악",

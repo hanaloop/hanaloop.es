@@ -18,7 +18,7 @@ export const section_title = {
 export const features_1 = [
     {
         title: 'Streamlined Management of Large-Scale Activity Data',
-        imageUrl: '/images/scope3_feature_1.png',
+        imageUrl: '/images/scope3-feature-1.png',
         descriptions: [
             {
                 subTitle: "Bulk Update of Activity Data",
@@ -32,7 +32,7 @@ export const features_1 = [
     },
     {
         title: 'Visualization of Emissions Trends by Multiple Criteria',
-        imageUrl: '/images/scope3_feature_2.png',
+        imageUrl: '/images/scope3-feature-2.png',
         descriptions: [
             {
                 subTitle: "Intuitive Visualization of Carbon Emissions",
