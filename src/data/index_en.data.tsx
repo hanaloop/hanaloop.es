@@ -153,7 +153,7 @@ export const journey: PageSection = {
         title: "CBAM",
         subtitle: "The EU’s Carbon Border Adjustment Mechanism (CBAM) came into effect in late 2023, initially targeting steel, aluminum, and four other key sectors. Other regions, including the US, UK, and Japan, are considering similar systems. As a result, analyzing and reducing carbon emissions has become essential for businesses engaged in international trade.",
         link: "https://www.hanaloop.com/docs/x20_environment-general/2024-01-20-cbam-compliance",
-        imageUrl: "/images/directory_2.jpg",
+        imageUrl: "/images/directory_2.png", 
       },
       {
         title: "Scope 3",
