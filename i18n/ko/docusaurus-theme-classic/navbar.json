@@ -27,9 +27,25 @@
     "message": "플랫폼",
     "description": "Navbar item with label Platform"
   },
+  "item.label.CarbonAccounting": {
+    "message": "탄소회계",
+    "description": "Navbar item with label CarbonAccounting"
+  },
+  "item.label.HanaecoAI": {
+    "message": "Hanaeco.AI",
+    "description": "Navbar item with label HanaecoAI"
+  },
+  "item.label.ClimateManagement": {
+    "message": "기후 경영",
+    "description": "Navbar item with label ClimateManagement"
+  },
   "item.label.Solution": {
     "message": "솔루션",
     "description": "Navbar item with label Solution"
+  },
+  "item.label.Scope3": {
+    "message": "Scope3",
+    "description": "Navbar item with label Scope3"
   },
   "item.label.Partnership": {
     "message": "파트너십",

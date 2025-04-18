@@ -356,9 +356,21 @@
     "message": "Carbon Management: Climate Regulations. CBAM Consulting and compliance, IFRS COnsulting, CDP Consulting"
   },
   "solution.hero_header": {
-    "message": "Solution"
+    "message": "Climate Management"
   },
   "solution.hero_tagline": {
     "message": "Access Climate Insights at Your Fingertips"
+  },
+  "scope3.meta_title": {
+    "message": "Scope 3 Emissions Calculation | Supply Chain Carbon Management Solution - Hana.eco"
+  },
+  "scope3.meta_description": {
+    "message": "Hana.eco accurately calculates Scope 3 carbon emissions based on activity data across the entire supply chain. Discover our integrated carbon management solution, supporting Scope 3 consulting, emissions source analysis, regulatory compliance, and supplier engagement."
+  },
+  "scope3.hero_header": {
+    "message": "Scope 3 Emissions Calculation Solution"
+  },
+  "scope3.hero_tagline": {
+    "message": "Systematically manage your Scope 3 emissions with Hana.eco’s calculation solution."
   }
 }

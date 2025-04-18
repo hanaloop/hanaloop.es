@@ -31,6 +31,22 @@
     "message": "Solution",
     "description": "Navbar item with label Solution"
   },
+  "item.label.CarbonAccounting": {
+    "message": "Carbon Accounting",
+    "description": "Navbar item with label CarbonAccounting"
+  },
+  "item.label.HanaecoAI": {
+    "message": "Hanaeco.AI",
+    "description": "Navbar item with label HanaecoAI"
+  },
+  "item.label.ClimateManagement": {
+    "message": "Climate Management",
+    "description": "Navbar item with label ClimateManagement"
+  },
+  "item.label.Scope3": {
+    "message": "Scope3",
+    "description": "Navbar item with label Scope3"
+  },
   "item.label.Partnership": {
     "message": "Partnership",
     "description": "Navbar item with label Partnership"

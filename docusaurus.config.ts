@@ -113,15 +113,29 @@ const config: Config = {
           items: [
             {
               to: '/platform',
-              label: 'Carbon Accounting',
+              label: 'CarbonAccounting',
             },
             {
               to: '/hana-ai',
-              label: 'Hanaeco.AI',
+              label: 'HanaecoAI',
             }
           ]
         },
-        {to: '/solution', label: 'Solution', position: 'left'},
+        {
+          type: 'dropdown',
+          label: 'Solution', 
+          position: 'left',
+          items: [
+            {
+              to: '/solution',
+              label: 'ClimateManagement',
+            },
+            {
+              to: '/Scope3',
+              label: 'Scope3',
+            }
+          ]
+        },
         {to: '/partnership', label: 'Partnership', position: 'left'},
         {to: '/company', label: 'Company', position: 'left'},
         {

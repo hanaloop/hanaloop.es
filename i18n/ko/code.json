@@ -308,7 +308,7 @@
     "message": "CBAM 컨설팅과 보고서 작성. 재품 탄소 원단위와 고유내재배출 산정, LCA. 기업과 기업의 공급망 (scope 3) 배출 관리"
   },
   "solution.hero_header": {
-    "message": "솔루션"
+    "message": "기후 경영"
   },
   "solution.hero_tagline": {
     "message": "자원은 유한하지만 잠재력은 무한합니다."
@@ -348,6 +348,19 @@
   },
   "hana-ai.hero_tagline": {
     "message": "귀사의 탄소관리 Hana.eco AI가 도와드립니다"
+  },
+  
+  "scope3.meta_title": {
+    "message": "Scope 3 배출량 산정 | 공급망 탄소배출 관리 솔루션 - Hana.eco"
+  },
+  "scope3.meta_description": {
+    "message": "Hana.eco는 공급망 전반의 활동 데이터를 기반으로 Scope 3 탄소배출량을 정교하게 산정합니다. Scope3 컨설팅, 배출원 분석, 규제 대응, 협력사 관리까지 통합 지원하는 탄소관리 솔루션을 만나보세요."
+  },
+  "scope3.hero_header": {
+    "message": "Scope3 배출량 산정 솔루션"
+  },
+  "scope3.hero_tagline": {
+    "message": "Hana.eco의 Scope3 배출량 산정 솔루션을 통해 체계적으로 관리해보세요."
   },
   "recruit.meta_title": {
     "message": "채용"
