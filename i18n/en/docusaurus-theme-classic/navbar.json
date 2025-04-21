@@ -47,6 +47,10 @@
     "message": "Scope3",
     "description": "Navbar item with label Scope3"
   },
+  "item.label.CBAM": {
+    "message": "CBAM",
+    "description": "Navbar item with label CBAM"
+  },
   "item.label.Partnership": {
     "message": "Partnership",
     "description": "Navbar item with label Partnership"

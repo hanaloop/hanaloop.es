@@ -55,13 +55,13 @@ export default function Scope3(): JSX.Element {
                   >
                     <div className='w-screen'>
                       <div className='flex w-full justify-center'>
-                        <div className="sm:w-[70%] w-[90%] gap-10 flex xl:flex-row flex-col md:justify-center items-center">
+                        <div className="sm:w-[70%] w-[90%] gap-10 flex xl:flex-row flex-col md:justify-center">
                             {data.features_2.map((item, ndx) => {
                               const svgKey = `svg_${ndx + 1}`;
                               const SvgComponent = svgs[svgKey];
                               return (
                                 <div
-                                  className="group rounded-xl hover:border-primary-700 mb-4 py-8 bg-gray-100 shadow-sm flex h-[320px] justify-center items-start w-full"
+                                  className="group rounded-xl hover:border-primary-700 mb-4 py-8 bg-gray-100 shadow-sm flex justify-center items-start w-full"
                                   key={ndx}
                                 >
                                   <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full sm:w-[80%] w-[90%]">
@@ -100,24 +100,22 @@ export default function Scope3(): JSX.Element {
                         }}
                         className="w-full flex justify-center"
                     >
-                      <div className='sm:w-[70%] w-[90%] flex justify-center'>
-                        <div className='grid lg:gap-10 sm:grid-cols-2 grid-cols-1 gap-4'>
-                          {
-                            data.management_process.map((process, idx) => (
-                                  <div className='lg:w-[400px] w-full h-[200px] rounded-md p-2 flex flex-col bg-white justify-between px-4'>
-                                      <span className='font-bold text-lg  h-[50px] break-keep flex items-center text-start'>{process.title}</span>
-                                      <div className="h-[0.5px] w-full bg-blue-500 my-2"></div>
-                                      <div className="h-[100px] xs:text-sm break-keep text-start">{
-                                        process.descriptions.map((description, idx) => (
-                                          <li className="flex gap-2 items-center" key={idx}><div className="w-1 h-1 rounded-full bg-blue-500"></div><div>{description}</div></li>
-                                        ))
-                                        }
-                                      </div>
-                                  </div>
-                              
-                            ))                        
-                          }
-                        </div>
+                      <div className='grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 lg:w-[70%] w-[90%]'>
+                        {
+                          data.management_process.map((process, idx) => (
+                                <div className='w-full rounded-md p-2 flex flex-col bg-white justify-between px-4'>
+                                    <span className='font-bold text-lg  h-[50px] break-keep flex items-center text-start'>{process.title}</span>
+                                    <div className="h-[0.5px] w-full bg-blue-500 my-2"></div>
+                                    <div className="h-[100px] xs:text-sm break-keep text-start">{
+                                      process.descriptions.map((description, idx) => (
+                                        <li className="flex gap-2 items-center" key={idx}><div className="w-1 h-1 rounded-full bg-blue-500"></div><div>{description}</div></li>
+                                      ))
+                                      }
+                                    </div>
+                                </div>
+                            
+                          ))                        
+                        }
                       </div>
                     </motion.div>
                 </SectionBlock>
@@ -139,11 +137,11 @@ export default function Scope3(): JSX.Element {
                         }}
                         className="w-full flex justify-center"
                     >
-                      <div className=' grid lg:grid-cols-3 lg:gap-10 sm:grid-cols-2 grid-cols-1 gap-4'>
+                      <div className=' grid lg:grid-cols-3 lg:gap-10 sm:grid-cols-2 grid-cols-1 gap-4 justify-items-center sm:w-[80%] w-[90%]'>
                       {
                         data.articles.map((article, idx) => (
                           
-                              <div className='xs:w-[350px] w-full h-[250px] rounded-md p-2 flex flex-col bg-white justify-between px-4'>
+                              <div className='xs:w-full w-[90%] h-[250px] rounded-md p-2 flex flex-col bg-white justify-between px-4'>
                                   <span className='font-bold h-[50px] break-keep flex items-center text-start'>{article.title}</span>
                                   <div className="h-[0.5px] w-full bg-black my-2"></div>
                                   <div className="h-[100px] xs:text-sm break-keep text-start">{truncate(article.description, 120)}</div>

@@ -351,7 +351,7 @@
   },
   
   "scope3.meta_title": {
-    "message": "Scope 3 배출량 산정 | 공급망 탄소배출 관리 솔루션 - Hana.eco"
+    "message": "Scope 3 배출량 산정 | 공급망 탄소배출 관리 솔루션 Hana.eco"
   },
   "scope3.meta_description": {
     "message": "Hana.eco는 공급망 전반의 활동 데이터를 기반으로 Scope 3 탄소배출량을 정교하게 산정합니다. Scope3 컨설팅, 배출원 분석, 규제 대응, 협력사 관리까지 통합 지원하는 탄소관리 솔루션을 만나보세요."
@@ -362,6 +362,20 @@
   "scope3.hero_tagline": {
     "message": "Hana.eco의 Scope3 배출량 산정 솔루션을 통해 체계적으로 관리해보세요."
   },
+
+  "cbam.meta_title": {
+    "message": "HanaLoop의 CBAM 솔루션"
+  },
+  "cbam.meta_description": {
+    "message": "HanaLoop는 CBAM 전문 컨설팅과 Hana.eco를 통해 기업의 효율적인 CBAM 대응을 지원합니다.Hana.eco의 CBAM 솔루션은 복잡한 데이터를 자동화하여, 보고서 작성과 규제 대응을 간편하게 만들어 드립니다."
+  },
+  "cbam.hero_header": {
+    "message": "Hana.eco CBAM 솔루션"
+  },
+  "cbam.hero_tagline": {
+    "message": "HanaLoop는 CBAM 전문 컨설팅과 Hana.eco를 통해 기업의 효율적인 CBAM 대응을 지원합니다."
+  },
+
   "recruit.meta_title": {
     "message": "채용"
   },

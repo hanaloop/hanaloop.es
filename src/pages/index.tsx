@@ -324,7 +324,7 @@ export default function Home(): JSX.Element {
                             <h4 className="pb-2 text-md font-semibold text-gray-500 text-left">{item.subtitle}</h4>
                             <ul className="list-none xl:text-md text-sm text-left">
                               {lines.map((line, ndx: number) => (
-                                <li className="flex items-center gap-2" key={ndx}><div className="w-1 h-1 rounded-full bg-[#10B981]"></div><div>{line}</div></li>
+                                <li className="flex items-center gap-2" key={ndx}><div className="w-1 h-1 rounded-full bg-[#3B82F6]"></div><div>{line}</div></li>
                               ))}
                             </ul>
                           </div>

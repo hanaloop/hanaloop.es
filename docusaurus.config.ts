@@ -133,6 +133,10 @@ const config: Config = {
             {
               to: '/Scope3',
               label: 'Scope3',
+            },
+            {
+              to: '/CBAM',
+              label: 'CBAM',
             }
           ]
         },

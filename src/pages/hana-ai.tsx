@@ -54,7 +54,7 @@ export default function HanaAI(): JSX.Element {
                               const SvgComponent = svgs[svgKey];
                               return (
                                 <div
-                                  className="group rounded-xl hover:border-primary-700 mb-4 py-8 bg-gray-100 shadow-sm flex h-[300px] justify-center items-start md:w-[50%] w-full"
+                                  className="group rounded-xl hover:border-primary-700 mb-4 py-8 bg-gray-100 shadow-sm flex justify-center  md:w-[50%] w-full h-full"
                                   key={ndx}
                                 >
                                   <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full sm:w-[80%] w-[90%]">
