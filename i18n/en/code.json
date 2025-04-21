@@ -372,5 +372,17 @@
   },
   "scope3.hero_tagline": {
     "message": "Systematically manage your Scope 3 emissions with Hana.eco’s calculation solution."
+  },
+  "cbam.meta_title": {
+  "message": "Hanaloop’s CBAM Solution"
+  },
+  "cbam.meta_description": {
+    "message": "Hanaloop supports effective CBAM compliance through expert consulting and the Hana.eco solution. The Hana.eco CBAM solution automates complex data processes, making reporting and regulatory response easier and more efficient."
+  },
+  "cbam.hero_header": {
+    "message": "Hana.eco CBAM Solution"
+  },
+  "cbam.hero_tagline": {
+    "message": "Hanaloop helps your business respond efficiently to CBAM requirements through expert consulting and the Hana.eco solution."
   }
 }
