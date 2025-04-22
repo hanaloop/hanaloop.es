@@ -105,8 +105,8 @@ export default function CBAM(): JSX.Element {
                                       }
                                     </div>
                                   </div>
-                                  <div className='lg:h-full lg:w-[70%] w-full lg:rounded-r-md '>
-                                    <img src={item.img_url} className='lg:lg:rounded-r-md object-cover w-full xl:h-[200px] lg:h-full h-[150px]' />
+                                  <div className='lg:h-full lg:w-[55%] w-full lg:rounded-r-md '>
+                                    <img src={item.img_url} className='lg:lg:rounded-r-md object-cover w-full lg:h-full h-[180px]' />
                                   </div>
                                 </div>
                               );
