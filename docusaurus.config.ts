@@ -131,11 +131,11 @@ const config: Config = {
               label: 'ClimateManagement',
             },
             {
-              to: '/Scope3',
+              to: '/scope3',
               label: 'Scope3',
             },
             {
-              to: '/CBAM',
+              to: '/cbam',
               label: 'CBAM',
             }
           ]
