@@ -62,7 +62,7 @@ export default function Home(): JSX.Element {
         >
           <SectionBlock title={data.intro.title}>
             <div className="px-10 w-full flex justify-center">
-              <div className="w-[55%] flex flex-col gap-10 items-center">
+              <div className="md:w-[55%] w-full flex flex-col gap-10 items-center">
                 {data.intro.items.map((item, ndx) => {
                   const svgKey = `section3_svg_${ndx + 1}`;
                   const SvgComponent = section3_svgs[svgKey];
@@ -70,7 +70,7 @@ export default function Home(): JSX.Element {
                   // const lines = item.description as string[];
                   return (
                     <div
-                      className="group min-w-[400px] rounded-xl hover:border-primary-700 mb-4 py-5 bg-white shadow-sm flex justify-center"
+                      className="group rounded-xl hover:border-primary-700 mb-4 py-5 bg-white shadow-sm flex justify-center"
                       key={ndx}
                     >
                       <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[90%]">
@@ -118,7 +118,7 @@ export default function Home(): JSX.Element {
                   // const lines = item.description as string[];
                   return (
                     <div
-                      className="group min-w-[400px] rounded-xl hover:border-primary-700 mb-4 py-7 bg-white shadow-sm xl:h-[300px] flex justify-center"
+                      className="group w-full rounded-xl hover:border-primary-700 mb-4 py-7 bg-white shadow-sm flex justify-center"
                       key={ndx}
                     >
                       <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[80%]">

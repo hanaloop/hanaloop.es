@@ -141,10 +141,10 @@ export default function Scope3(): JSX.Element {
                       {
                         data.articles.map((article, idx) => (
                           
-                              <div className='xs:w-full w-[90%] h-[250px] rounded-md p-2 flex flex-col bg-white justify-between px-4'>
+                              <div className='xs:w-full w-[90%] rounded-md p-2 flex flex-col bg-white justify-between px-4'>
                                   <span className='font-bold h-[50px] break-keep flex items-center text-start'>{article.title}</span>
                                   <div className="h-[0.5px] w-full bg-black my-2"></div>
-                                  <div className="h-[100px] xs:text-sm break-keep text-start">{truncate(article.description, 120)}</div>
+                                  <div className="xs:text-sm break-keep text-start">{truncate(article.description, 100)}</div>
                                   <div className='w-full flex justify-end'>
                                       <Link to={article.link} aria-label={`Go to TEST posting`}>
                                           <button aria-label={`Go to TEST posting`} className=' border-none w-[80px] h-[40px] rounded-md cursor-pointer hover:bg-blue-400 transition-all ease-linear duration-100 bg-gray-50'><ArrowIcon width={20} height={20}/></button>

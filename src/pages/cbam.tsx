@@ -63,7 +63,7 @@ export default function CBAM(): JSX.Element {
           {href: '/demo_request', label: translate({message: "request_demo"})}
         }
       />
-      <main className="break-keep w-screen">
+      <main className="break-keep">
         <div className="w-full flex justify-center">
             <div className='w-screen'>
               <SectionBlock title={data.hero.second_title}>
@@ -93,7 +93,7 @@ export default function CBAM(): JSX.Element {
                                       <div className="w-12 h-12 rounded-md p-2">{SvgComponent} </div>
                                       <h3 className="py-2 inline font-bold text-lg">{item.title}</h3>
                                     </div>
-                                    <div className="flex flex-col mr-1 items-baseline group-hover:text-primary-700 ">
+                                    <div className="flex flex-col mr-1 items-baseline group-hover:text-primary-700">
                                       {
                                         item.descriptions.map((description) => {
                                           return (
@@ -105,8 +105,8 @@ export default function CBAM(): JSX.Element {
                                       }
                                     </div>
                                   </div>
-                                  <div className='min-h-[200px] lg:h-full lg:w-[70%] w-full lg:rounded-r-md '>
-                                    <img src={item.img_url} className=' lg:lg:rounded-r-md object-cover w-full h-[200px]' />
+                                  <div className='lg:h-full lg:w-[70%] w-full lg:rounded-r-md '>
+                                    <img src={item.img_url} className='lg:lg:rounded-r-md object-cover w-full xl:h-[200px] lg:h-full h-[150px]' />
                                   </div>
                                 </div>
                               );
@@ -169,7 +169,7 @@ export default function CBAM(): JSX.Element {
                                     // const lines = item.description as string[];
                                     return (
                                       <div
-                                        className="group min-w-[400px] rounded-xl hover:border-primary-700 mb-4 py-7 bg-gray-50 shadow-sm flex justify-center"
+                                        className="group rounded-xl hover:border-primary-700 mb-4 py-7 bg-gray-50 shadow-sm flex justify-center"
                                         key={ndx}
                                       >
                                         <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[80%]">
@@ -242,10 +242,10 @@ export default function CBAM(): JSX.Element {
                       {
                         data.articles.map((article, idx) => (
                           
-                              <div className='xs:w-full w-[90%] h-[250px] rounded-md p-2 flex flex-col bg-gray-50 justify-between px-4'>
+                              <div className='xs:w-full w-[90%] rounded-md p-2 flex flex-col bg-gray-50 justify-between px-4'>
                                   <span className='font-bold h-[50px] break-keep flex items-center text-start'>{article.title}</span>
                                   <div className="h-[0.5px] w-full bg-black my-2"></div>
-                                  <div className="h-[100px] xs:text-sm break-keep text-start">{truncate(article.description, 120)}</div>
+                                  <div className="xs:text-sm break-keep text-start">{truncate(article.description, 100)}</div>
                                   <div className='w-full flex justify-end'>
                                       <Link to={article.link} aria-label={`Go to TEST posting`}>
                                           <button aria-label={`Go to TEST posting`} className=' border-none w-[80px] h-[40px] rounded-md cursor-pointer hover:bg-blue-400 transition-all ease-linear duration-100 bg-white'><ArrowIcon width={20} height={20}/></button>

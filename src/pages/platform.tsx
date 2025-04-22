@@ -59,7 +59,7 @@ export default function Home(): JSX.Element {
                   // const lines = item.description as string[];
                   return (
                     <div
-                      className="group min-w-[400px] rounded-xl hover:border-primary-700 mb-4 py-7 bg-white shadow-sm xl:h-[300px] flex justify-center"
+                      className="group rounded-xl hover:border-primary-700 mb-4 py-7 bg-white shadow-sm flex justify-center"
                       key={ndx}
                     >
                       <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[80%]">
