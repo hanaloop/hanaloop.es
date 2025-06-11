@@ -131,6 +131,10 @@ const config: Config = {
               label: 'ClimateManagement',
             },
             {
+              to: '/pcf',
+              label: 'ProductCarbonFootprint',
+            },
+            {
               to: '/scope3',
               label: 'Scope3',
             },

@@ -119,7 +119,7 @@ export default function Scope3(): JSX.Element {
                       </div>
                     </motion.div>
                 </SectionBlock>
-                <SectionBlock title={data.section_title.features} subtitle={'하나에코 Sopce3 솔루션을 통해 활동데이터와 배출계수 매핑 및 Scope3 카테고리 별 배출량 산정을 간편하게 관리하세요. '}>
+                <SectionBlock title={data.section_title.features} subtitle={data.section_title.features_subtitle}>
                   {
                     data.features_1.map((feature, idx) => (
                         <div key={idx}><CardMediaImage size="m" title={feature.title} descriptions={feature.descriptions} imageUrl={feature.imageUrl}/></div>

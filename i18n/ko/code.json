@@ -387,5 +387,17 @@
   },
   "recruit.hero_tagline": {
     "message": "지구를 위한 임팩트 프로젝트에 열정을 발휘하실 분들을 초대합니다!"
+  },
+  "pcf.meta_title": {
+    "message": "제품탄소발자국 관리 솔루션 | Hana.eco"
+  },
+  "pcf.meta_description": {
+    "message": "제품탄소발자국(PCF) 산정 및 관리 솔루션. ISO 14067, PAS 2050 국제 표준 준수, 지속가능한 제품 개발을 지원합니다."
+  },
+  "pcf.hero_header": {
+    "message": "제품탄소발자국 관리"
+  },
+  "pcf.hero_tagline": {
+    "message": "지속가능한 제품 개발을 위한 체계적인 탄소발자국 관리"
   }
 }

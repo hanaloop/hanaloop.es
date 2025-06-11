@@ -62,5 +62,9 @@
   "item.label.Recruit": {
     "message": "채용",
     "description": "Navbar item with label Recruit"
+  },
+  "item.label.ProductCarbonFootprint": {
+    "message": "제품탄소발자국",
+    "description": "Navbar item with label ProductCarbonFootprint"
   }
 }

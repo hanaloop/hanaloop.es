@@ -371,10 +371,10 @@
     "message": "Scope 3 Emissions Calculation Solution"
   },
   "scope3.hero_tagline": {
-    "message": "Systematically manage your Scope 3 emissions with Hana.eco’s calculation solution."
+    "message": "Systematically manage your Scope 3 emissions with Hana.eco's calculation solution."
   },
   "cbam.meta_title": {
-  "message": "Hanaloop’s CBAM Solution"
+    "message": "Hanaloop's CBAM Solution"
   },
   "cbam.meta_description": {
     "message": "Hanaloop supports effective CBAM compliance through expert consulting and the Hana.eco solution. The Hana.eco CBAM solution automates complex data processes, making reporting and regulatory response easier and more efficient."
@@ -384,5 +384,17 @@
   },
   "cbam.hero_tagline": {
     "message": "Hanaloop helps your business respond efficiently to CBAM requirements through expert consulting and the Hana.eco solution."
+  },
+  "pcf.meta_title": {
+    "message": "Product Carbon Footprint Management Solution | LCA-based Carbon Footprint Calculation | Hana.eco"
+  },
+  "pcf.meta_description": {
+    "message": "LCA-based product carbon footprint calculation and management solution. Supporting sustainable product development with compliance to international standards such as ISO 14067 and PAS 2050, automated data collection, and certification and labeling support."
+  },
+  "pcf.hero_header": {
+    "message": "Product Carbon Footprint Management"
+  },
+  "pcf.hero_tagline": {
+    "message": "Systematic carbon footprint management for sustainable product development"
   }
 }
