@@ -288,10 +288,10 @@
   },
 
   "index.meta_title": {
-    "message": "Plataforma de gestión de carbono para cumplir regulaciones climáticas, gestión climática, neutralidad de carbono, contabilidad de carbono, huella de carbono, gestión Scope 3, cumplimiento CBAM, LCA"
+    "message": "Plataforma de gestión de carbono y de gases de efecto invernadero para cumplir regulaciones climáticas, gestión climática: Neutralidad de carbono, contabilidad de carbono, huella de carbono, gestión Alcance 3, cumplimiento CBAM, LCA, PCF"
   },
   "index.meta_description": {
-    "message": "Plataforma de gestión de carbono para cumplir regulaciones climáticas, gestión de gases de efecto invernadero, consultoría CBAM, informes CBAM, solución de cumplimiento CBAM, soporte IFRS S1, S2, consultoría CDP, chatbot generativo de IA para neutralidad de carbono, CarbonBuddy, LCA, solución para el comercio de emisiones, solución para el sistema de objetivos de gestión."
+    "message": "Plataforma de gestión de carbono para cumplir regulaciones climáticas, gestión de gases de efecto invernadero (GEI), consultoría de accion climatica, solución de ETS, CBAM, ESPR, CSDDD, CSRD. Soporte IFRS S1, S2, consultoría CDP, chatbot generativo de IA para neutralidad de carbono, CarbonBuddy, LCA, PCF, solución para el comercio de emisiones, reduccion de carbono."
   },
   "index.hero_header": {
     "message": "Solución de gestión de carbono para regulaciones climáticas"
@@ -303,34 +303,34 @@
     "message": "Solicitar consulta"
   },
   "solution.meta_title": {
-    "message": "Solución de gestión de carbono | Consultoría de informes CBAM | Solución para el comercio de emisiones | Huella de carbono de productos | LCA"
+    "message": "Solución de gestión de carbono | Consultoría de informes de emisiones de GEI | Solución para el comercio de emisiones | Huella de carbono de productos | LCA"
   },
   "solution.meta_description": {
-    "message": "Consultoría y redacción de informes CBAM. Cálculo y gestión de la huella de carbono de productos, LCA. Gestión de emisiones corporativas y de la cadena de suministro (Scope 3)."
+    "message": "Consultoría de CBAM. Cálculo y gestión de la huella de carbono de productos, LCA. Gestión de emisiones corporativas y de la cadena de suministro (Alcance 3)."
   },
   "solution.hero_header": {
     "message": "Gestión climática"
   },
   "solution.hero_tagline": {
-    "message": "Los recursos son finitos, pero el potencial es infinito."
+    "message": "Los recursos son limitados, pero el potencial es infinito."
   },
   "partnership.meta_title": {
-  "message": "Programa de Asociación de HanaLoop - Programa de socios, Programa de asociación para proveedores de servicios de carbono neutral"
+  "message": "Programa de Parnership de HanaLoop. Programa de socios para proveedores de servicios de carbono neutral"
   },
   "partnership.meta_description": {
-    "message": "Programa de asociación para proveedores de servicios de carbono neutral. El Programa de Socios de HanaLoop ofrece asociaciones basadas en la confianza mutua para crear sinergias."
+    "message": "Programa de partners (socios) de HanaLoop. El Programa de Socios de HanaLoop se basa en la confianza mutua para construir alianzas que generen sinergias reales, creando un mercado más sostenible."
   },
   "partnership.hero_header": {
-    "message": "Programa de Asociación de HanaLoop"
+    "message": "Programa de Partners (Socio) de HanaLoop"
   },
   "partnership.hero_tagline": {
     "message": "Ofrecemos un programa de asociación que genera sinergias basadas en la confianza mutua."
   },
   "platform.meta_title": {
-    "message": "Plataforma de neutralidad de carbono basada en datos Hana.eco, plataforma de sostenibilidad, solución de gestión de carbono para regulaciones climáticas"
+    "message": "Hana.eco: Plataforma de gestion de carbono basada en IA. Software SaaS de sostenibilidad, solución de gestión de carbono para regulaciones climáticas"
   },
   "platform.meta_description": {
-    "message": "Solución de gestión de carbono para regulaciones climáticas como CBAM. Flexible ante regulaciones, generación automática de informes CBAM, gestión sistemática de datos para mejorar la competitividad de carbono de las empresas."
+    "message": "Solución de gestión de carbono para regulaciones climáticas: IFRS, CBAM, ETS. Flexible ante regulaciones, generación automática de informes CBAM, gestión sistemática de datos para mejorar la competitividad de carbono de las empresas."
   },
   "platform.hero_header": {
     "message": "Plataforma de neutralidad de carbono basada en datos Hana.eco"
@@ -339,13 +339,13 @@
     "message": "Mejore su competitividad en carbono mediante la gestión sistemática de datos ambientales, emisiones de carbono y contaminantes atmosféricos."
   },
   "hana-ai.meta_title": {
-    "message": "Plataforma de gestión de carbono basada en IA Hana.eco"
+    "message": "Plataforma de gestion de carbono basada en IA"
   },
   "hana-ai.meta_description": {
     "message": "Hana.eco gestiona y predice con precisión las emisiones de carbono mediante análisis de datos basados en IA. Detección de anomalías, predicción de emisiones, soporte para el cumplimiento regulatorio: implemente la neutralidad de carbono de manera efectiva."
   },
   "hana-ai.hero_header": {
-    "message": "Plataforma de gestión de carbono basada en IA Hana.eco"
+    "message": "Plataforma de gestión de carbono basada en Inteligencia Artificial, Hana.eco"
   },
   "hana-ai.hero_tagline": {
     "message": "Hana.eco AI le apoya en la gestión de carbono de su empresa."
@@ -363,34 +363,34 @@
     "message": "Gestione de forma sistemática con la solución Scope 3 de Hana.eco."
   },
   "cbam.meta_title": {
-    "message": "Solución CBAM de HanaLoop"
+    "message": "Solución Carbon Border Adjustment Mechanism (CBAM) de HanaLoop"
   },
   "cbam.meta_description": {
-    "message": "HanaLoop apoya la respuesta eficiente de las empresas al CBAM mediante consultoría especializada y Hana.eco. La solución CBAM de Hana.eco automatiza datos complejos, simplificando la redacción de informes y el cumplimiento regulatorio."
+    "message": "HanaLoop impulsa una respuesta eficiente al CBAM, combinando consultoría especializada con la plataforma Hana.eco. Nuestra solución automatiza el manejo de datos complejos, facilitando la elaboración de informes y asegurando el cumplimiento normativo de manera sencilla y confiable."
   },
   "cbam.hero_header": {
     "message": "Solución CBAM Hana.eco"
   },
   "cbam.hero_tagline": {
-    "message": "HanaLoop apoya su respuesta eficiente al CBAM con consultoría especializada y Hana.eco."
+    "message": "Con consultoría especializada y nuestra plataforma Hana.eco, HanaLoop impulsa su respuesta eficiente al CBAM."
   },
   "recruit.meta_title": {
     "message": "Reclutamiento"
   },
   "recruit.meta_description": {
-    "message": "¡Le invitamos a unirse a un proyecto de impacto para la Tierra con pasión!"
+    "message": "¡Únase a un proyecto lleno de pasión que marca la diferencia para nuestro planeta!!"
   },
   "recruit.hero_header": {
     "message": "Reclutamiento"
   },
   "recruit.hero_tagline": {
-    "message": "¡Le invitamos a unirse a un proyecto de impacto para la Tierra con pasión!"
+    "message": "Le invitamos a unirse a un proyecto apasionante con impacto positivo para la Tierra!"
   },
   "pcf.meta_title": {
     "message": "Solución de gestión de huella de carbono de producto | Hana.eco"
   },
   "pcf.meta_description": {
-    "message": "Solución para el cálculo y gestión de la huella de carbono de producto (PCF). Cumple con estándares internacionales como ISO 14067 y PAS 2050, apoyando el desarrollo sostenible de productos."
+    "message": "Solución para el cálculo y gestión de la huella de carbono de producto (PCF). Cumple con estándares internacionales como ISO 14067, apoyando el desarrollo sostenible de productos."
   },
   "pcf.hero_header": {
     "message": "Gestión de huella de carbono de producto"

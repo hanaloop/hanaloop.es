@@ -7,11 +7,11 @@ export const hero = {
 }
 
 export const section_title = {
-    process: "Procedimiento de implementación de infraestructura CBAM",
+    process: "Procedimiento para la implementación de la solución CBAM",
     features: "Solución CBAM certificada por conformidad",
     articles: "Colección de insights de HanaLoop para entender CBAM",
     plan: "Plan CBAM de Hana.eco",
-    features_subtitle: "Primera empresa en Corea en obtener el informe de verificación de conformidad para el comercio de emisiones y CBAM de la UE por LRQA",
+    features_subtitle: "Primera empresa en Asia en obtener la verificación oficial de conformidad para comercio de emisiones y CBAM de la UE, otorgada por LRQA",
 }
 
 export const features_1 = [
@@ -64,7 +64,7 @@ export const features_2 = [
 
 export const features_3 = [
     {
-        title: 'Gestión de productos y sustancias precursoras (gestión de códigos CN)',
+        title: 'Gestión de productos y precursoras (gestión de códigos CN)',
         descriptions: [
             'Gestiona integralmente productos y sustancias precursoras, registrando y rastreando de manera sistemática los códigos CN requeridos por CBAM. Esto permite obtener datos básicos necesarios para análisis y reportes de emisiones por producto.'
         ]
@@ -180,7 +180,7 @@ export const management_process = [
         ]
     },
     {
-        title: '3. Instalación y vinculación de medidores',
+        title: '3. Instalación y conexión de medidores',
         descriptions: [
             "Personalización para recolección automática de datos de medición",
             "Discusión y provisión de conectores para usar datos de sistemas ERP, MES"

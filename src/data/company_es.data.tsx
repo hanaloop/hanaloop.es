@@ -4,14 +4,16 @@ import ReliableIcon from "../../static/svg/Reliable.svg";
 
 export const content = {
   meta_title: "HanaLoop",
-  meta_description: "Socio de sostenibilidad confiable y ágil",
+  meta_description: "HanaLoop: su aliado ágil y de confianza para la sostenibilidad",
   hero_title: "HanaLoop",
-  hero_tagline: "Socio de sostenibilidad confiable y ágil",
+  hero_tagline: "HanaLoop: su aliado ágil y de confianza para la sostenibilidad",
 
   hanaloop_title: "Creamos grandes cambios con una sola conexión",
-  hanaloop_body: `HanaLoop dio su primer paso para coexistir con el entorno natural. 
-                Construimos un ecosistema sostenible mediante tecnología de gestión de carbono neutral y transformación digital adaptada a las industrias y empresas.
-                Desarrollamos soluciones digitales para el medio ambiente y la industria, facilitando el acceso a la tecnología ambiental y acelerando la realización del net zero. HanaLoop crea un mayor impacto con una sola conexión, para que la vida de todas las personas sea sostenible a través de servicios tecnológicos digitales beneficiosos para las personas y la naturaleza.`,
+  hanaloop_body: `HanaLoop Co., Ltd. impulsa la transformación global hacia un futuro sostenible.
+Mediante un marco digital innovador, ofrecemos soluciones personalizadas y tecnologías avanzadas de gestión carbono neutral para industrias y empresas comprometidas con el desarrollo responsable.
+Nuestra misión es liderar la innovación digital que conecta personas y naturaleza, empoderando a individuos y organizaciones para contribuir activamente a la protección del planeta.
+En HanaLoop, somos su socio estratégico en sostenibilidad, generando un impacto duradero y promoviendo un estilo de vida sostenible para todos.
+HanaLoop: innovación digital al servicio de un planeta más saludable.`,
 
   vision_title: "Visión",
   vision_body: "La visión de HanaLoop es crear un mundo limpio y sostenible, realizando el ideal de Hongik Ingan.",

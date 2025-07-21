@@ -1,86 +1,86 @@
 import { PageSection } from "../libs/types";
 
 export const hero = {
-  title_1 : <h1>Gases de efecto invernadero generados por actividades empresariales</h1>,
-  title_2: "Basado en IA ",
-  title_3 : <h1 className="inline">¡gestión inteligente!</h1>,
+  title_1 : <h1>Gestione eficientemente su huella de carbono, mitigue riesgos y reduzca costos.</h1>,
+  title_2: "Plataforma de carbono ",
+  // title_3 : <h1 className="inline">¡gestión inteligente!</h1>,
   title_link : "Hanaeco",
-  subtitle_1 : "Hoy en día, la gestión sistemática del carbono es una ventaja competitiva clave para las empresas.",
-  subtitle_2 : "Cumpla rápidamente con las regulaciones climáticas cada vez más estrictas como el CBAM de la UE, IFRS ISSB S1·S2, regulación de baterías de la UE, CSDDD y las obligaciones de divulgación ESG, así como con los requisitos de CDP y GRI. Al mismo tiempo, reduzca costes energéticos y mitigue riesgos climáticos.",
-  button_1 : "Ver solución",
-  button_2 : "Contacto",
-  news : "Diagnóstico del informe CBAM",
+  subtitle_1 : "Prepararse es ser más competitivo.",
+  subtitle_2 : "Nuestra plataforma hana.eco le ayuda a simplificar y gestionar la complejidad de las normativas climáticas y de ESG, al tiempo que reduce sus costos energéticos.",
+  // news : "Diagnóstico del informe CBAM",
   news_link : "https://docs.google.com/forms/d/e/1FAIpQLSct04RcNKwwkGC1DKiqhXgzLG77tXjetV1NJL9prE4pJ-vpnw/viewform",
-  link_1: "https://docs.google.com/presentation/d/1fNDHGk5kAEI_JigpLZ5yKbHd9uBvoRg4d-S7Nb5YyYo/present",
+  button_1 : "Ver solución",
+  link_1: "https://docs.google.com/presentation/d/1ls5SeHrzYIVvFOO5HsMhSdKr-yGZf8BPmF6mqPgS9CY/present",
+  button_2 : "Solicitar info",
   link_2: "/demo_request",
 }
 
 export const carbon_buddy: PageSection = {
-  title : "Le ayudamos a gestionar el carbono de forma más intuitiva mediante tecnología IA",
+  title : "Nuestra plataforma con Inteligencia Artificial facilita el acceso a información precisa y sencilla sobre sus emisiones",
   items : [
     {
-      title : "Rápida comprensión y respuesta a regulaciones",
-      description : "Con IA generativa puede identificar y adaptarse rápidamente a las últimas regulaciones.",
+      title : "Comprensión rápida y adaptación a regulaciones",
+      description : "Con IA generativa, identifique y adáptese ágilmente a las últimas normativas climáticas y de sostenibilidad.",
     },
     {
       title : "Análisis de datos intuitivo",
-      description : "Gracias al análisis basado en deep learning, puede comprender y utilizar los datos de forma sencilla.",
+      description : "A través de deep learning, interprete y utilice sus datos con facilidad para una mejor toma de decisiones.",
     },
     {
-      title : "Creación sencilla de informes",
-      description : "Genere informes necesarios en tiempo real de manera fácil y rápida.",
+      title : "Creación facil de informes",
+      description : "Genere los informes que necesita en tiempo real, de forma sencilla y eficiente.",
     },
   ]
 }
 
 export const why_need: PageSection = {
-  title: "¿Mi empresa también necesita gestión de carbono?",
+  title: "¿Mi empresa también necesita gestionar carbono?",
   items: [{
-      title: "Si está bajo regulación climática global",
-      subtitle: "Es necesario para cumplir con regulaciones nacionales e internacionales cada vez más estrictas.",
+      title: "Si está sujeta a regulaciones climáticas globales",
+      subtitle: "Es imprescindible para cumplir con normativas nacionales e internacionales cada vez más exigentes.",
       imageUrl: "/images/platform/card-cbam_pic.jpeg",
       description: [
-          <b>Régimen de comercio de emisiones, sistema de gestión de objetivos</b>,
+          <b>Régimen de comercio de emisiones (ETS), o impuestos de carbon</b>,
           <b>CBAM de la UE, regulación de baterías, Ecodesign de la UE (ESPR)</b>,
           <b>Diligencia debida en la cadena de suministro (CSDDD)</b>
       ],
     },
     {
       title: "Si su cliente es líder en ESG y carbono neutral",
-      subtitle: "Necesario para mantener relaciones comerciales fluidas si el cliente gestiona a sus proveedores.",
+      subtitle: "Necesario para mantener relaciones comerciales sólidas cuando su cliente gestiona el desempeño de su cadena de suministro.",
       imageUrl: "/images/platform/card-standards_pic.jpeg",
       description: [
-          <b>Scope 1, Scope 2</b>,
-          <b>Scope 3 y datos de la cadena de valor</b>,
-          <b>Huella de carbono del producto</b>,
+          <b>Alcances 1, y 2</b>,
+          <b>Alcances 3 y datos de la cadena de valor</b>,
+          <b>Huella de carbono del producto (PCF)</b>,
       ],
     },
     {
-      title: "Si los inversores exigen divulgación de carbono",
-      subtitle: "Necesario para gestionar riesgos y cumplir con requisitos de divulgación relacionados con sostenibilidad.",
+      title: "Si sus inversores exigen divulgación de carbono",
+      subtitle: "Indispensable para gestionar riesgos financieros y cumplir requisitos de transparencia en sostenibilidad.",
       imageUrl: "/images/platform/card-scope3_pic.jpeg",
       description: [
-          <b>IFRS S1, S2</b>,
+          <b>Estándares IFRS S1, S2</b>,
           <b>CDP</b>,
-          <b>Informe de sostenibilidad, GRI</b>,
+          <b>Informes de sostenibilidad bajo GRI</b>,
       ],
     },
     {
-      title: "Si lidera en sostenibilidad y prácticas ecológicas",
-      subtitle: "Necesario para responder a los consumidores conscientes y al llamado urgente del planeta.",
+      title: "Si desea liderar en sostenibilidad y ser mas competitivo",
+      subtitle: "Clave para responder a consumidores conscientes y al llamado urgente por el planeta.",
       imageUrl: "/images/platform/card-products.jpeg",
       description: [
           <b>Divulgación transparente de impactos ambientales</b>,
-          <b>Divulgación de indicadores de sostenibilidad</b>,
-          <b>Informe de sostenibilidad</b>,
+          <b>Reporte de indicadores de sostenibilidad</b>,
+          <b>Informes de sostenibilidad corporativa y de huella de carbono del producto</b>,
       ],
     },
   ]
 };
 
 export const reliable: PageSection = {
-  title: "Hanaeco, reconocido por su conformidad, le respalda",
-  subtitle: "Primera empresa en Corea en obtener opinión de verificación de conformidad para el CBAM de la UE y el sistema coreano de comercio de emisiones, emitida por LRQA",
+  title: "Hana.eco, reconocido por su confiabilidad y cumplimiento normativo",
+  subtitle: "Somos la primera empresa en Asia en certificar la conformidad con el CBAM de la UE y el K-ETS, verificados por LRQA.",
   items: [{
       title: "Cumplimiento con CBAM (UE)",
       subtitle: "Carbon Border Adjustment Mechanism",
@@ -93,13 +93,13 @@ export const reliable: PageSection = {
       ],
     },
     {
-      title: "Cumplimiento con comercio de emisiones y gestión de objetivos",
+      title: "Cumplimiento con Comercio de Emisiones",
       subtitle: "Korea Emissions Trading System",
       imageUrl: "/images/platform/card-standards_pic.jpeg",
       description: [
-          <b>Gestión de datos verificados</b>,
-          <b>Gestión de registros de emisiones</b>,
-          <b>Establecimiento de objetivos y análisis de escenarios</b>,
+          <b>Gestión de emisiones auditables y verificables</b>,
+          <b>Establecimiento de objetivos climáticos y análisis de escenarios</b>,
+          <b>Informe por alcances, fuentes, tipos, regiones</b>
       ],
     },
     {
@@ -109,7 +109,7 @@ export const reliable: PageSection = {
       description: [
           <b>Reportes conforme a estándares requeridos</b>,
           <b>Gestión de riesgos</b>,
-          <b>Análisis de escenarios de emisiones</b>,
+          <b>Análisis de escenarios de emisiones y su impacto financiero</b>,
       ],
     },
     {
@@ -117,9 +117,9 @@ export const reliable: PageSection = {
       subtitle: "Datos ESG incluyendo la cadena de valor",
       imageUrl: "/images/platform/card-products.jpeg",
       description: [
-          <b>Gestión cualitativa de datos</b>,
-          <b>Gestión de proveedores y cadena de suministro</b>,
-          <b>Provisión de factores de emisión estándar para Scope 3</b>,
+          <b>Gestión cualitativa y cuantitativa de datos</b>,
+          <b>Gestión de proveedores y evaluación de la cadena de suministro</b>,
+          <b>Provisión de factores de emisión estándar para Alcance 3</b>,
       ],
     },
     {
@@ -128,7 +128,7 @@ export const reliable: PageSection = {
       imageUrl: "/images/platform/card-products.jpeg",
       description: [
           <b>Cálculo LCA en la categoría de calentamiento global</b>,
-          <b>Evaluación de emisiones incorporadas en procesos</b>,
+          <b>Evaluación de emisiones incorporadas en procesos y materiales</b>,
           <b>Gestión de emisiones incorporadas en materias primas</b>,
           <b>Análisis de eficiencia de costos</b>,
       ],
@@ -137,24 +137,24 @@ export const reliable: PageSection = {
 }
 
 export const journey: PageSection = {
-  title : <p>HanaLoop le acompaña paso a paso en su camino hacia la neutralidad de carbono</p>,
-  subtitle : <p>Las regulaciones ambientales y las demandas de divulgación son cada vez más estrictas. ¡No se preocupe! <br/> Nuestro equipo experto en transformación digital industrial y la red de especialistas ambientales de HanaLoop le ayudarán a integrar la sostenibilidad de forma adecuada a su situación.</p>,
+  title : <p>HanaLoop, su aliado en cada paso hacia la neutralidad de carbono.</p>,
+  subtitle : <p>Las regulaciones ambientales y las exigencias de divulgación en sostenibilidad son cada vez más estrictas. ¡Pero no se preocupe! Nuestro equipo experto en transformación digital industrial, junto con la red de especialistas ambientales de HanaLoop, le ayudará a integrar la sostenibilidad de forma adecuada y estratégica para su empresa.</p>,
   items : [
       {
         title: "IFRS S1, S2",
-        subtitle: "El ISSB, bajo la Fundación IFRS, estableció IFRS S1 (general) y S2 (clima) para regular la divulgación global de sostenibilidad. Las empresas deben establecer estrategias para gestionar riesgos y alcanzar objetivos de reducción según estos estándares.",
+        subtitle: "El ISSB, bajo la Fundación IFRS, ha establecido los estándares IFRS S1 (divulgación general) y S2 (divulgación climática) para regular la transparencia en sostenibilidad a nivel global. Las empresas deben desarrollar estrategias claras para gestionar riesgos y cumplir objetivos de reducción conforme a estos estándares.",
         link: "https://www.hanaloop.com/docs/x20_environment-general/2023-07-31-IFRS-ISSB-sustainability-disclosure-standards",
         imageUrl: "/images/directory_1.png",
       },
       {
         title: "CBAM",
-        subtitle: "La UE implementó el CBAM para prevenir la fuga de carbono y lograr la neutralidad en 2050. Con países como EE. UU., Reino Unido y Japón considerando sistemas similares, el análisis y reducción de emisiones se vuelve esencial para el comercio internacional.",
+        subtitle: "La UE ha implementado el CBAM para evitar la fuga de carbono y alcanzar la neutralidad climática en 2050. Con países como EE. UU., Reino Unido y Japón evaluando sistemas similares, medir y reducir emisiones se vuelve indispensable para mantener la competitividad en el comercio internacional.",
         link: "https://www.hanaloop.com/docs/x20_environment-general/2024-01-20-cbam-compliance",
         imageUrl: "/images/directory_2.png",
       },
       {
         title: "Scope 3",
-        subtitle: "La gestión de emisiones ahora abarca toda la cadena de valor, incluyendo proveedores y clientes. Para cumplir con ESG, PCAF, IFRS, CDP, CSDDD, calcular Scope 3 ya no es opcional sino imprescindible.",
+        subtitle: "La gestión de emisiones ya no se limita a la propia empresa: abarca toda la cadena de valor, incluyendo proveedores y clientes. Cumplir con ESG, PCAF, IFRS, CDP y CSDDD requiere calcular y gestionar el Scope 3, que ahora es un requisito imprescindible.",
         link: "https://brunch.co.kr/@hanaloop/3",
         imageUrl: "/images/directory_3.png",
       },
@@ -162,28 +162,28 @@ export const journey: PageSection = {
 }
 
 export const features: PageSection = {
-  title: "Gestione el carbono junto a Hanaeco",
+  title: "¿Por qué usar nuestra plataforma Hana.eco?",
   items: [{
       icon: "",
-      title: "Contabilidad de carbono",
+      title: "Contabilidad de carbono precisa y automatizada",
       description:
-        [<p>Convierte las emisiones y reducciones de GEI a carbono. <br/>Automatización de recopilación de datos, prevención de errores humanos y generación de informes para mayor comodidad del usuario.</p>],
+        [<p>Transforma las emisiones y reducciones de GEI en equivalentes de carbono. <br />Automatiza la recopilación de datos, previene errores humanos y genera informes con facilidad para cumplir requisitos regulatorios y de negocio.</p>],
     },
     {
       icon: "",
-      title: "Colaboración",
-      description: "Facilita la colaboración fluida entre equipos ambientales, ESG, consultores y auditores de verificación.",
+      title: "Colaboración eficiente",
+      description: "Facilita una colaboración fluida entre equipos ambientales, ESG, consultores y auditores de verificación, asegurando una gestión integrada y transparente.",
     },
     {
       icon: "",
-      title: "Estrategia",
+      title: "Estrategia basada en IA",
       description:
-        [<p>Visualiza emisiones y gestiona objetivos mediante IA.<br/> Recomienda estrategias de reducción y monitoriza el progreso basándose en análisis económico.</p>],
+        [<p>Visualiza emisiones y gestiona objetivos climáticos con el apoyo de la Inteligencia Artificial. <br/>Recibe recomendaciones estratégicas de reducción y monitorea el progreso con un enfoque económico y sostenible.</p>],
     },
     {
       icon: "",
-      title: "Gestión de la cadena de valor",
-      description: "Considera Scope 1, 2 y 3, incluyendo desde la producción de materias primas hasta distribución y disposición final.",
+      title: "Gestión integral de la cadena de valor",
+      description: "Gestiona emisiones en Alcance 1, 2 y 3, abarcando desde la producción de materias primas hasta la distribución y disposición final, para una visión completa de su impacto ambiental.",
     },
   ]
 };
@@ -353,11 +353,11 @@ export const partner = [
     imageUrl: "/images/partners/hiseoulbizassoc-logo.png",
     description: "협력 기관 | 기업 성장 지원",
     imgHeight: 'h-[40px]'
-  },
+  }
 ]
 
 export const customers: PageSection = {
-  title: "El socio digital HanaLoop impulsa el camino de su empresa hacia la neutralidad de carbono.",
+  title: "Clientes y partners que confían en nosotros para impulsar su transición sostenible",
   subtitle:"",
   items: [{
       title: "이마트",
@@ -455,7 +455,7 @@ export const customers: PageSection = {
 }
 
 export const request = {
-  title : "Comience una gestión de carbono sistemática con Hanaeco",
+  title : "Gestione su huella de carbono de manera sistemática y efectiva con Hana.eco",
   button_1 : "Ver solución",
   button_2 : "Contacto",
 }

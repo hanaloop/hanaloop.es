@@ -1,18 +1,18 @@
 import { DisplayItem, PageSection } from "../libs/types"
 
 export const content: PageSection = {
-  title: "Asociaciones",
+  title: "Programas Partnership",
   items: [{
       title: "Programa de Socios de Soluciones SaaS",
       description: <><b>Contenido -</b> &nbsp;
-        Un programa que permite a las empresas ofrecer la solución SaaS de Hana.eco a sus clientes y recibir comisiones por ventas.<br />
+        Programa que permite a las empresas ofrecer la solución SaaS de Hana.eco a sus clientes, obteniendo comisiones por cada venta realizada.<br />
         <b>Dirigido a -</b> &nbsp;
-        Proveedores de servicios de consultoría como consultoras de negocios y medio ambiente, firmas contables y legales.
+        Proveedores de servicios de consultoría, incluyendo consultoras de negocios y medio ambiente, así como firmas contables y legales.
       </>,
     }, {
       title: "Programa de Socios Tecnológicos",
       description: <><b>Contenido -</b> &nbsp;
-        Un programa que permite a las empresas ofrecer el sistema OnPrem de Hana.eco a sus clientes como una solución independiente o como parte de un paquete de soluciones.<br />
+        Programa que permite a las empresas ofrecer el sistema On-Premise de Hana.eco a sus clientes, ya sea como solución independiente o integrada dentro de un paquete más amplio de productos.<br />
         <b>Dirigido a -</b> &nbsp;
         Proveedores de soluciones que desean integrar Hana.eco en su suite de productos TI.
       </>,

@@ -44,7 +44,7 @@
     "description": "Navbar item with label Solution"
   },
   "item.label.Scope3": {
-    "message": "Scope3",
+    "message": "Alcance 3",
     "description": "Navbar item with label Scope3"
   },
   "item.label.CBAM": {
@@ -52,7 +52,7 @@
     "description": "Navbar item with label CBAM"
   },
   "item.label.Partnership": {
-    "message": "Asociación",
+    "message": "Partnership",
     "description": "Navbar item with label Partnership"
   },
   "item.label.Company": {

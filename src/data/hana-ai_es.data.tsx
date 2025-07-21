@@ -12,7 +12,7 @@ export const features_1 = [
       imageUrl: '/images/hana-ai/detection.png',
       descriptions: [
           {
-              subTitle: "Detección de valores atípicos en los datos",
+              subTitle: "Monitorización y detección de inconsistencias en datos",
               content: <span>Uno de los principios fundamentales de la contabilidad de carbono es la precisión. <br/>Durante la recopilación y gestión de grandes volúmenes de datos de actividades emisoras, pueden producirse valores atípicos por diversos factores, lo que puede comprometer la precisión. <br/> Hana.eco detecta estas anomalías y ayuda a mantener la exactitud de los datos de forma eficaz.</span>,
           },
       ]
@@ -32,7 +32,7 @@ export const features_1 = [
       ]
   },
   {
-      title: 'Carbon Buddy AI Assistant',
+      title: 'Carbon Buddy asistente IA ',
       imageUrl: '/images/hana-ai/carbonbuddy.png',
       descriptions: [
           {

@@ -1,7 +1,7 @@
 import { PageSection } from "../libs/types"
 
 export const intro: PageSection = { 
-  title: "¡Realice beneficios ambientales, económicos y sociales al mismo tiempo con soluciones digitales!",
+  title: "¡Logre beneficios ambientales, económicos y sociales al mismo tiempo con nuestras soluciones digitales!",
   items: [{
     title: "Transformación digital sostenible",
     subtitle: "Sustainable Digital Transformation",
@@ -15,20 +15,20 @@ export const intro: PageSection = {
 }
 
 export const benefits: PageSection = { 
-  title: "¡Si ves los datos, ves la estrategia de carbono neutral!",
+  title: "¡Ver los datos es ver la estrategia para alcanzar la carbono neutralidad!",
   items: [{
     title: "Integración de datos y análisis basado en IA generativa",
     description: [
-        'Reducción de la recopilación manual gracias a la recolección automática de datos',
-        'Búsqueda de regulaciones y generación de informes basada en IA generativa',
-        'Análisis del estado y las tendencias de emisiones a nivel corporativo',
-        'Seguridad reforzada mediante cifrado de almacenamiento y transmisión de datos'
+        'Simplifique y reduzca la complejidad de la recopilación manual de datos',
+        'Obtenga una visión completa del estado y las tendencias de emisiones en toda la empresa',
+        'Adáptese fácilmente a los cambios regulatorios',
+        'Seguro y escalable'
     ]
   },
   {
-    title: "Gestión de Scope 3 en la cadena de valor",
+    title: "Gestión de Alcance 3 en la cadena de valor",
     description:[
-      'Gestión de emisiones en la cadena de valor',
+      'Gestión integral de las emisiones en toda la cadena de valor',
       'Gestión de proveedores',
       'Soporte multilingüe'
     ]
