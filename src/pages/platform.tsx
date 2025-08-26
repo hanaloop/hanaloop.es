@@ -1,3 +1,4 @@
+import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Translate, {translate} from '@docusaurus/Translate';
 import Hero from '../components/hanaloop/Hero';
@@ -11,7 +12,7 @@ import SproutIcon from "../../static/svg/Sprout.svg";
 import HandshakeIcon from "../../static/svg/Handshake.svg"; 
 import { DisplayItem } from '../libs/types';
 
-export default function Home(): JSX.Element {
+export default function Home(): React.JSX.Element {
   const {siteConfig, i18n} = useDocusaurusContext();
 
   const data = require(`../data/platform_${i18n.currentLocale}.data`);
@@ -39,7 +40,7 @@ export default function Home(): JSX.Element {
         }
       />
 
-      <div className="w-screen flex justify-center bg-gray-50">
+      <div className="w-screen flex justify-center bg-gray-50 dark:bg-gray-900">
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, y: 60 }} 
@@ -59,7 +60,7 @@ export default function Home(): JSX.Element {
                   // const lines = item.description as string[];
                   return (
                     <div
-                      className="group rounded-xl hover:border-primary-700 mb-4 py-7 bg-white shadow-sm flex justify-center"
+                      className="group rounded-xl hover:border-primary-700 mb-4 py-7 bg-white dark:bg-gray-700 shadow-sm flex justify-center"
                       key={ndx}
                     >
                       <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[80%]">
@@ -84,7 +85,7 @@ export default function Home(): JSX.Element {
           </SectionBlock>
         </motion.div>
       </div> 
-
+    <div className='w-screen flex justify-center bg-white dark:bg-gray-800'>
       <SectionBlock title={data.content.section3_title} >
         <div className='w-full flex justify-center'>
           <div className='lg:w-[55%] w-[80%] items-center flex-wrap justify-center gap-10 flex flex-col'>
@@ -100,16 +101,16 @@ export default function Home(): JSX.Element {
                       transition: { duration: 1 },
                     }}
                   >
-                    <div className='w-full flex lg:flex-row flex-col gap-6  p-10 rounded-lg bg-gray-100 lg:items-start items-center'>
-                      <img src={useBaseUrl(`/images/standards/logo-0${index+1}.png`)} className="p-5 sm:w-[200px] sm:h-[200px] w-[185px] h-[185px] object-contain rounded-lg bg-white " alt="standard logo"/>
-                      <div className='w-full flex flex-wrap text-left gap-6 bg-white rounded-md p-4'>
+                    <div className='w-full flex lg:flex-row flex-col gap-6  p-10 rounded-lg bg-gray-100 dark:bg-gray-700 lg:items-start items-center'>
+                      <img src={useBaseUrl(`/images/standards/logo-0${index+1}.png`)} className="p-5 sm:w-[200px] sm:h-[200px] w-[185px] h-[185px] object-contain rounded-lg bg-white dark:bg-gray-600 " alt="standard logo"/>
+                      <div className='w-full flex flex-wrap text-left gap-6 bg-white dark:bg-gray-600 rounded-md p-4'>
                         {topic?.map(element=>
                           <div>
                             <h3 className='font-bold sm:text-xl text-lg'>{element.title}</h3>
                             <ul className='text-left'>
-                            {element.description?.map(d=>
-                              <li className='sm:text-base text-sm'>{d}</li>
-                            )}
+                            {Array.isArray(element.description) ? element.description.map((d, idx) =>
+                              <li key={idx} className='sm:text-base text-sm'>{d}</li>
+                            ) : null}
                             </ul>
                           </div>
                         )}
@@ -122,8 +123,8 @@ export default function Home(): JSX.Element {
             </div>
           </div>
       </SectionBlock>
-
-      <div className="w-screen flex justify-center bg-gray-50">
+      </div>        
+      <div className="w-screen flex justify-center bg-gray-50 dark:bg-gray-900">
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, y: 60 }} 
@@ -143,7 +144,7 @@ export default function Home(): JSX.Element {
                   // const lines = item.description as string[];
                   return (
                     <div
-                      className="group min-w-[400px] rounded-xl hover:border-primary-700 mb-4 py-7 bg-white shadow-sm flex justify-center"
+                      className="group min-w-[400px] rounded-xl hover:border-primary-700 mb-4 py-7 bg-white dark:bg-gray-700 shadow-sm flex justify-center"
                       key={ndx}
                     >
                       <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[80%]">
