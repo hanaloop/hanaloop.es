@@ -1,3 +1,4 @@
+import React from 'react';
 import {translate} from '@docusaurus/Translate';
 import SectionBlock from "../components/theme/SectionBlock";
 import Layout from '@theme/Layout';
@@ -19,7 +20,7 @@ const svgs = {
 };
 
 
-export default function Scope3(): JSX.Element {
+export default function Scope3(): React.JSX.Element {
   const {siteConfig, i18n} = useDocusaurusContext();
   const data = require(`../data/scope3_${i18n.currentLocale}.data`);
   const truncate = (str:string, limit_length: number) => {
@@ -61,7 +62,7 @@ export default function Scope3(): JSX.Element {
                               const SvgComponent = svgs[svgKey];
                               return (
                                 <div
-                                  className="group rounded-xl hover:border-primary-700 mb-4 py-8 bg-gray-100 shadow-sm flex justify-center items-start w-full"
+                                  className="group rounded-xl hover:border-primary-700 mb-4 py-8 bg-gray-100 dark:bg-gray-900 shadow-sm flex justify-center items-start w-full"
                                   key={ndx}
                                 >
                                   <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full sm:w-[80%] w-[90%]">
@@ -89,7 +90,7 @@ export default function Scope3(): JSX.Element {
                     </div>
                   </motion.div>
                 </SectionBlock>
-                <SectionBlock title={data.section_title.process} containerStyle='bg-gray-50'>
+                <SectionBlock title={data.section_title.process} containerStyle='bg-gray-50 dark:bg-gray-900'>
                     <motion.div
                         viewport={{ once: true }}
                         initial={{ opacity: 0, y: 60 }}
@@ -103,7 +104,7 @@ export default function Scope3(): JSX.Element {
                       <div className='grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 lg:w-[70%] w-[90%]'>
                         {
                           data.management_process.map((process, idx) => (
-                            <div className='w-full rounded-md p-2 flex flex-col bg-white px-4'>
+                            <div className='w-full rounded-md p-2 flex flex-col bg-white dark:bg-gray-700 px-4'>
                                 <span className='font-bold text-lg  min-h-[50px] break-keep flex items-center text-start'>{process.title}</span>
                                 <div className="h-[0.5px] w-full bg-blue-500 my-2"></div>
                                 <div className="xs:text-sm break-keep text-start flex flex-col justify-start mt-2">{
@@ -126,7 +127,7 @@ export default function Scope3(): JSX.Element {
                     ))
                   }
                 </SectionBlock>
-                <SectionBlock title={data.section_title.articles} containerStyle='bg-gray-50'>
+                <SectionBlock title={data.section_title.articles} containerStyle='bg-gray-50 dark:bg-gray-900'>
                     <motion.div
                         viewport={{ once: true }}
                         initial={{ opacity: 0, y: 60 }}
@@ -142,13 +143,13 @@ export default function Scope3(): JSX.Element {
                           {
                             data.articles.map((article, idx) => (
                               
-                                  <div className='xs:w-full w-[90%] rounded-md p-2 flex flex-col bg-white justify-between px-4'>
+                                  <div className='xs:w-full w-[90%] rounded-md p-2 flex flex-col bg-white dark:bg-gray-700 justify-between px-4'>
                                       <span className='font-bold h-[50px] break-keep flex items-center text-start'>{article.title}</span>
-                                      <div className="h-[0.5px] w-full bg-black my-2"></div>
+                                      <div className="h-[0.5px] w-full bg-black dark:bg-gray-400 my-2"></div>
                                       <div className="xs:text-sm break-keep text-start">{truncate(article.description, 100)}</div>
                                       <div className='w-full flex justify-end'>
                                           <Link to={article.link} aria-label={`Go to TEST posting`}>
-                                              <button aria-label={`Go to TEST posting`} className=' border-none w-[80px] h-[40px] rounded-md cursor-pointer hover:bg-blue-400 transition-all ease-linear duration-100 bg-gray-50'><ArrowIcon width={20} height={20}/></button>
+                                              <button aria-label={`Go to TEST posting`} className=' border-none w-[80px] h-[40px] rounded-md cursor-pointer hover:bg-blue-400 dark:hover:bg-blue-600 transition-all ease-linear duration-100 bg-gray-50 dark:bg-gray-700'><ArrowIcon width={20} height={20}/></button>
                                           </Link>
                                       </div>
                                   </div>
@@ -156,7 +157,7 @@ export default function Scope3(): JSX.Element {
                             ))                        
                           }
                         </div>
-                        <div className='py-8 px-6 bg-white  sm:w-[80%] w-[90%] flex items-center justify-center word-breaks rounded-sm'>
+                        <div className='py-8 px-6 bg-white dark:bg-gray-700 sm:w-[80%] w-[90%] flex items-center justify-center word-breaks rounded-sm'>
                           <span>(재)한국품질재단, 서울대학교 환경계획학과, 하나루프가 공동으로 수행한 <a className='border-b border-blue-400 font-bold' target="_blank" href="https://ecolibrary.me.go.kr/nier/#/search/detail/5921697?offset=1">「Scope 3 온실가스 배출량 산정 및 보고 가이드라인(v1.0)」</a>이 발간되었습니다.</span>
                         </div>
                       </div>
@@ -165,7 +166,7 @@ export default function Scope3(): JSX.Element {
             </div>
         </div>
 
-        <div className="w-full h-[300px] text-center bg-blue-50 flex flex-col gap-4 justify-center items-center">
+        <div className="w-full h-[300px] text-center bg-blue-50 dark:bg-gray-900 flex flex-col gap-4 justify-center items-center">
           <div className="flex flex-col sm:w-[80%] w-[95%] justify-center items-center">
             <span className="text-2xl md:text-3xl xl:text-4xl font-semibold  whitespace-normal break-keep">{data.request.title}</span>
             <div className="flex gap-3 justify-center my-8 xl:justify-start mb-12">
