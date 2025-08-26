@@ -1,6 +1,7 @@
 {/* ---
 keywords: ["파트너십 프로그램"]
 --- */}
+import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Translate, {translate} from '@docusaurus/Translate';
 import Hero from '../components/hanaloop/Hero';
@@ -9,13 +10,13 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { motion } from "framer-motion";
 
-export default function Home(): JSX.Element {
+export default function Home(): React.JSX.Element {
   const {siteConfig, i18n} = useDocusaurusContext();
 
   const data = require(`../data/partnership_${i18n.currentLocale}.data`);
 
   return (
-    <Layout
+    <Layout wrapperClassName='text-gray-700 dark:text-gray-100'
       title={`${siteConfig.title} | ${translate({message: "partnership.meta_title"})}`}
       description={translate({message: "partnership.meta_description"})}>
 
@@ -29,7 +30,7 @@ export default function Home(): JSX.Element {
         }
       />
 
-      <div className="w-screen flex justify-center bg-gray-50">
+      <div className="w-screen flex justify-center bg-gray-50 dark:bg-gray-900">
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, y: 60 }} 
@@ -46,7 +47,7 @@ export default function Home(): JSX.Element {
                   // const lines = item.description as string[];
                   return (
                     <div
-                      className="group w-full rounded-xl hover:border-primary-700 mb-4 py-5 bg-white shadow-sm flex justify-center"
+                      className="group w-full rounded-xl hover:border-primary-700 mb-4 py-5 bg-white dark:bg-gray-700 shadow-sm flex justify-center"
                       key={ndx}
                     >
                       <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[90%]">
