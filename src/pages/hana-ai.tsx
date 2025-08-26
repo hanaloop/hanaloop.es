@@ -1,3 +1,4 @@
+import React from 'react';
 import {translate} from '@docusaurus/Translate';
 import SectionBlock from "../components/theme/SectionBlock";
 import Layout from '@theme/Layout';
@@ -15,7 +16,7 @@ const svgs = {
 };
 
 
-export default function HanaAI(): JSX.Element {
+export default function HanaAI(): React.JSX.Element {
   const {siteConfig, i18n} = useDocusaurusContext();
   const data = require(`../data/hana-ai_${i18n.currentLocale}.data`);
 
@@ -54,7 +55,7 @@ export default function HanaAI(): JSX.Element {
                               const SvgComponent = svgs[svgKey];
                               return (
                                 <div
-                                  className="group rounded-xl hover:border-primary-700 mb-4 py-8 bg-gray-100 shadow-sm flex justify-center  md:w-[50%] w-full h-full"
+                                  className="group rounded-xl hover:border-primary-700 mb-4 py-8 bg-gray-100 dark:bg-gray-900 shadow-sm flex justify-center  md:w-[50%] w-full h-full"
                                   key={ndx}
                                 >
                                   <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full sm:w-[80%] w-[90%]">
@@ -62,7 +63,7 @@ export default function HanaAI(): JSX.Element {
                                       <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
                                       <h3 className="py-2 inline font-bold text-lg">{item.title}</h3>
                                     </div>
-                                    <div className="flex flex-col mr-1 items-baseline group-hover:text-primary-700 ">
+                                    <div className="flex flex-col mr-1 items-baseline group-hover:text-primary-700">
                                       {
                                         item.descriptions.map((description) => {
                                           return (
@@ -82,16 +83,16 @@ export default function HanaAI(): JSX.Element {
                     </div>
                   </motion.div>
                 </SectionBlock>
-                <SectionBlock title={'Hana.eco AI Features'} containerStyle='bg-gray-50'>
+                <SectionBlock title={'Hana.eco AI Features'} containerStyle='bg-gray-50 dark:bg-gray-900'>
                   {
                     data.features_1.map((feature, idx) => (
-                        <div key={idx}><CardMediaImage title={feature.title} descriptions={feature.descriptions} imageUrl={feature.imageUrl}/></div>
+                        <div key={idx}><CardMediaImage size="m" title={feature.title} descriptions={feature.descriptions} imageUrl={feature.imageUrl}/></div>
                     ))
                   }
               </SectionBlock>
             </div>
         </div>
-        <div className="w-full h-[300px] text-center bg-blue-50 flex flex-col gap-4 justify-center items-center">
+        <div className="w-full h-[300px] text-center bg-blue-50 dark:bg-gray-800 flex flex-col gap-4 justify-center items-center">
           <div className="flex flex-col sm:w-[80%] w-[95%] justify-center items-center">
             <span className="text-2xl md:text-3xl xl:text-4xl font-semibold  whitespace-normal break-keep">{data.request.title}</span>
             <div className="flex gap-3 justify-center my-8 xl:justify-start">
