@@ -1,3 +1,4 @@
+import React from 'react';
 import {translate} from '@docusaurus/Translate';
 import SectionBlock from "../components/theme/SectionBlock";
 import Layout from '@theme/Layout';
@@ -43,7 +44,7 @@ const section2_svgs = {
 
 
 
-export default function CBAM(): JSX.Element {
+export default function CBAM(): React.JSX.Element {
   const {siteConfig, i18n} = useDocusaurusContext();
   const data = require(`../data/cbam_${i18n.currentLocale}.data`);
   const truncate = (str:string, limit_length: number) => {
@@ -66,6 +67,7 @@ export default function CBAM(): JSX.Element {
       <main className="break-keep">
         <div className="w-full flex justify-center">
             <div className='w-screen'>
+              {/* HanaLoop CBAM 솔루션 */}
               <SectionBlock title={data.hero.second_title}>
                 <motion.div
                     viewport={{ once: true }}
@@ -85,7 +87,7 @@ export default function CBAM(): JSX.Element {
                               const SvgComponent = svgs[svgKey];
                               return (
                                 <div
-                                  className="group lg:flex-row flex-col-reverse rounded-md hover:border-primary-700 mb-4 bg-gray-100 shadow-sm flex justify-center items-start w-full h-full"
+                                  className="group lg:flex-row flex-col-reverse rounded-md hover:border-primary-700 mb-4 bg-gray-100 dark:bg-gray-900 shadow-sm flex justify-center items-start w-full h-full"
                                   key={ndx}
                                 >
                                   <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full w-full p-8">
@@ -116,7 +118,8 @@ export default function CBAM(): JSX.Element {
                     </div>
                   </motion.div>
                 </SectionBlock>
-                <SectionBlock title={data.section_title.process} containerStyle='bg-gray-50'>
+                {/* CBAM 인프라 도입 절차 */}
+                <SectionBlock title={data.section_title.process} containerStyle='bg-gray-50 dark:bg-gray-900'>
                     <motion.div
                         viewport={{ once: true }}
                         initial={{ opacity: 0, y: 60 }}
@@ -130,7 +133,7 @@ export default function CBAM(): JSX.Element {
                       <div className='grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 lg:w-[70%] w-[90%]'>
                         {
                           data.management_process.map((process, idx) => (
-                                <div className='w-full rounded-md p-2 flex flex-col bg-white px-4'>
+                                <div className='w-full rounded-md p-2 flex flex-col bg-white dark:bg-gray-800 px-4'>
                                     <span className='font-bold text-lg  h-[50px] break-keep flex items-center text-start'>{process.title}</span>
                                     <div className="h-[0.5px] w-full bg-blue-500 my-2"></div>
                                     <div className="xs:text-sm break-keep text-start flex flex-col justify-start mt-2">{
@@ -146,6 +149,7 @@ export default function CBAM(): JSX.Element {
                       </div>
                     </motion.div>
                 </SectionBlock>
+                {/* 적합성 인증받은 CBAM 솔루션 */}
                 <SectionBlock title={data.section_title.features} subtitle={data.section_title.features_subtitle}>
                 <motion.div
                       viewport={{ once: true }}
@@ -161,7 +165,7 @@ export default function CBAM(): JSX.Element {
                             <div className={`h-[450px] rounded-md bg-contain bg-center bg-no-repeat z-10`} style={{backgroundImage: `url(${useBaseUrl('/images/cbam-feature-1.png')})`}}></div>
                             <div className='flex w-full justify-center'>
                               <div className='sm:w-[70%] w-[90%] flex justify-center'>
-                                <div className="xl:grid xl:grid-cols-2 gap-10">
+                                <div className="xl:grid xl:grid-cols-2 gap-10 mt-10">
                                   {data.features_3.map((item, ndx) => {
                                     const svgKey = `section2_svg_${ndx + 1}`;
                                     const SvgComponent = section2_svgs[svgKey];
@@ -169,7 +173,7 @@ export default function CBAM(): JSX.Element {
                                     // const lines = item.description as string[];
                                     return (
                                       <div
-                                        className="group rounded-xl hover:border-primary-700 mb-4 py-7 bg-gray-50 shadow-sm flex justify-center"
+                                        className="group rounded-xl hover:border-primary-700 mb-4 py-7 bg-gray-50 dark:bg-gray-900 shadow-sm flex justify-center"
                                         key={ndx}
                                       >
                                         <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[80%]">
@@ -195,7 +199,8 @@ export default function CBAM(): JSX.Element {
                       </div>
                   </motion.div>
                 </SectionBlock>
-                <SectionBlock title={data.section_title.plan} containerStyle='bg-gray-50'>
+                {/* CBAM Plan */}
+                <SectionBlock title={data.section_title.plan} containerStyle='bg-gray-50 dark:bg-gray-900'>
                     <motion.div
                         viewport={{ once: true }}
                         initial={{ opacity: 0, y: 60 }}
@@ -210,7 +215,7 @@ export default function CBAM(): JSX.Element {
                         <div className='grid lg:gap-10 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4'>
                           {
                             data.plans.map((plan, idx) => (
-                                  <div className='lg:w-[400px] w-full h-[200px] rounded-md p-2 flex flex-col bg-white justify-between px-4'>
+                                  <div className='lg:w-[400px] w-full h-[200px] rounded-md p-2 flex flex-col bg-white dark:bg-gray-800 justify-between px-4'>
                                       <span className='font-bold text-lg h-[50px] break-keep flex items-center text-start'>{plan.title}</span>
                                       <div className={`h-[0.5px] w-full my-2 ${plan.color}`}></div>
                                       <div className="h-[100px] xs:text-sm break-keep text-start">{
@@ -227,6 +232,7 @@ export default function CBAM(): JSX.Element {
                       </div>
                     </motion.div>
                 </SectionBlock>
+                {/* 인사이트 모음 */}
                 <SectionBlock title={data.section_title.articles}>
                     <motion.div
                         viewport={{ once: true }}
@@ -241,14 +247,13 @@ export default function CBAM(): JSX.Element {
                       <div className=' grid lg:grid-cols-3 lg:gap-10 sm:grid-cols-2 grid-cols-1 gap-4 justify-items-center sm:w-[80%] w-[90%]'>
                       {
                         data.articles.map((article, idx) => (
-                          
-                              <div className='xs:w-full w-[90%] rounded-md p-2 flex flex-col bg-gray-50 justify-between px-4'>
+                              <div className='xs:w-full w-[90%] rounded-md p-2 flex flex-col bg-gray-50 dark:bg-gray-900 justify-between px-4'>
                                   <span className='font-bold h-[50px] break-keep flex items-center text-start'>{article.title}</span>
-                                  <div className="h-[0.5px] w-full bg-black my-2"></div>
+                                  <div className="h-[0.5px] w-full bg-black dark:bg-gray-400 my-2"></div>
                                   <div className="xs:text-sm break-keep text-start">{truncate(article.description, 100)}</div>
                                   <div className='w-full flex justify-end'>
                                       <Link to={article.link} aria-label={`Go to TEST posting`}>
-                                          <button aria-label={`Go to TEST posting`} className=' border-none w-[80px] h-[40px] rounded-md cursor-pointer hover:bg-blue-400 transition-all ease-linear duration-100 bg-white'><ArrowIcon width={20} height={20}/></button>
+                                          <button aria-label={`Go to TEST posting`} className=' border-none w-[80px] h-[40px] rounded-md cursor-pointer hover:bg-blue-400 dark:hover:bg-blue-600 transition-all ease-linear duration-100 bg-white dark:bg-gray-700'><ArrowIcon width={20} height={20}/></button>
                                       </Link>
                                   </div>
                               </div>
@@ -261,7 +266,7 @@ export default function CBAM(): JSX.Element {
             </div>
         </div>
 
-        <div className="w-full h-[300px] text-center bg-blue-50 flex flex-col gap-4 justify-center items-center">
+        <div className="w-full h-[300px] text-center bg-blue-50 dark:bg-gray-900 flex flex-col gap-4 justify-center items-center">
           <div className="flex flex-col sm:w-[80%] w-[95%] justify-center items-center">
             <span className="text-2xl md:text-3xl xl:text-4xl font-semibold  whitespace-normal break-keep">{data.request.title}</span>
             <div className="flex gap-3 justify-center my-8 xl:justify-start">
