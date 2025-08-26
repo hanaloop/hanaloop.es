@@ -1,3 +1,4 @@
+import React from 'react';
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import { translate } from "@docusaurus/Translate";
 import Hero from "../components/hanaloop/Hero";
@@ -9,7 +10,7 @@ import LinkedInIcon from "../../static/svg/LinkedIn.svg";
 import WebIcon from "../../static/svg/Web.svg";
 import Link from "@docusaurus/Link";
 
-export default function Home(): JSX.Element {
+export default function Home(): React.JSX.Element {
   
   const { siteConfig, i18n } = useDocusaurusContext();
 
@@ -28,7 +29,7 @@ export default function Home(): JSX.Element {
   };
 
   return (
-    <Layout
+    <Layout wrapperClassName='text-gray-700 dark:text-gray-100 bg-gray-50 dark:bg-gray-800'
       title={`${siteConfig.title} | ${data.content.meta_title}`}
       description={data.content.meta_tagline}
     >
@@ -59,7 +60,7 @@ export default function Home(): JSX.Element {
           containerStyle="flex justify-center"
         >
           <div className="w-full h-full flex justify-center items-center">
-            <div className="md:w-[70%] w-[90%] rounded-md bg-gray-50 flex md:flex-row items-center flex-col-reverse gap-10 p-10">
+            <div className="md:w-[70%] w-[90%] rounded-md bg-gray-50 dark:bg-gray-800 flex md:flex-row items-center flex-col-reverse gap-10 p-10">
               <div className="md:w-[80%] w-[90%] text-start">
                 {data.content.hanaloop_body}
               </div>
@@ -80,10 +81,10 @@ export default function Home(): JSX.Element {
       >
         <SectionBlock
           title={'Our Values'}
-          containerStyle="flex justify-center bg-gray-50"
+          containerStyle="flex justify-center bg-gray-50 dark:bg-gray-900"
         >
           <div className="w-full h-full flex justify-center items-center">
-            <div className="md:w-[90%] w-[90%] rounded-md flex bg-white items-center flex-col gap-10 p-10 justify-center">
+            <div className="md:w-[90%] w-[90%] rounded-md flex bg-white dark:bg-gray-700 items-center flex-col gap-10 p-10 justify-center">
               <div className="flex md:flex-row flex-col justify-between gap-10">
                 {
                     data.content.corevalues_body.map((item, i) => (
@@ -122,7 +123,7 @@ export default function Home(): JSX.Element {
               <div className="my-5 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
                 {Object.values(data.members).map((m: any) => (
                   <figure
-                    className="bg-gray-50 rounded-md my-4 p-10"
+                    className="bg-gray-50 dark:bg-gray-800 rounded-md my-4 p-10"
                     key={m.name}
                   >
                     <div className="w-auto flex justify-center">
