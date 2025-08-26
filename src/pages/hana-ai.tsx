@@ -33,7 +33,7 @@ export default function HanaAI(): React.JSX.Element {
           {href: '/demo_request', label: translate({message: "request_demo"})}
         }
       />
-      <main className="break-keep w-screen">
+      <main className="break-keep w-screen bg-gray-50 dark:bg-gray-800">
         <div className="w-full flex justify-center">
             <div className='w-screen'>
               <SectionBlock title={data.hero.second_title}>

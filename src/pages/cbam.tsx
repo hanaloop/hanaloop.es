@@ -65,7 +65,7 @@ export default function CBAM(): React.JSX.Element {
         }
       />
       <main className="break-keep">
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center dark:bg-gray-800 ">
             <div className='w-screen'>
               {/* HanaLoop CBAM 솔루션 */}
               <SectionBlock title={data.hero.second_title}>

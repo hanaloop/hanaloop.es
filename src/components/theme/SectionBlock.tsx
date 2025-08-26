@@ -7,7 +7,7 @@ type SectionBlockProp = {
 
 export default function SectionBlock({ title, containerStyle, children, subtitle }: SectionBlockProp) {
   return (
-    <div className={`text-center [word-break:keep-all] dark:bg-slate-800 ${containerStyle} lg:py-[100px] py-[50px] w-full`}>
+    <div className={`text-center [word-break:keep-all] ${containerStyle} lg:py-[100px] py-[50px] w-full`}>
       <div>
         {title && (
           <div className="w-full text-2xl sm:text-3xl xl:text-4xl font-bold flex items-center justify-center transition delay-150 md:mb-[50px] mb-[25px] px-14 md:w-full flex-col">

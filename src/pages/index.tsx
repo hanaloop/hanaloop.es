@@ -133,47 +133,19 @@ export default function Home(): JSX.Element {
               <div className="w-full justify-center flex">
                 <div className="text-center items-center w-full md:w-[75%] flex flex-col gap-3 justify-center">
                   {/* CUSTOMERS */}
-                  <Marquee
-                    pauseOnHover={true}
-                    gradient={true}
-                    gradientColor="rgb(248 251 253)"
-                    gradientWidth={200}
-                  >
-                    <div className="flex justify-center gap-3 flex-wrap h-[75px]">
-                      {data.customers.items.map((item) => (
-                        <span className="group flex justify-center" key={item.title}>
-                          <div className="flex justify-center items-center border border-gray-200 p-1 rounded-lg shadow-sm w-[150px] ">
-                            <Link href={item.sourceUrl!}>
-                              <a target="_blank">
-                                <img className={`${item.imgHeight} duration-200`} src={useBaseUrl(item.imageUrl!)} alt={item.title} />
-                              </a>
-                            </Link>
-                          </div>
-                        </span>
-                      ))}
-                    </div>
-                  </Marquee>
-                  <Marquee
-                    gradient={true}
-                    gradientColor="rgb(248 251 253)"
-                    gradientWidth={200}
-                    delay={1.5}
-                    pauseOnHover={true}
-                  >
-                    <div className="flex justify-center gap-3 flex-wrap h-[75px]">
-                      {data.partner.map((item) => (
-                        <span className="group flex justify-center" key={item.title}>
-                          <div className="flex justify-center items-center border border-gray-200 p-1 rounded-lg shadow-sm w-[150px]">
-                            <Link href={item.sourceUrl!}>
-                              <a target="_blank">
-                                <img className={`${item.imgHeight} duration-200`} src={useBaseUrl(item.imageUrl!)} alt={item.title} />
-                              </a>
-                            </Link>
-                          </div>
-                        </span>
-                      ))}
-                    </div>
-                  </Marquee>
+                  <div className="flex justify-center gap-3 flex-wrap h-[150px]">
+                    {data.customers.items.map((item) => (
+                      <span className="group flex justify-center" key={item.title}>
+                        <div className="flex justify-center items-center border border-gray-200 p-1 rounded-lg shadow-sm w-[150px] ">
+                          <Link href={item.sourceUrl!}>
+                            <a target="_blank">
+                              <img className={`${item.imgHeight} duration-200`} src={useBaseUrl(item.imageUrl!)} alt={item.title} />
+                            </a>
+                          </Link>
+                        </div>
+                      </span>
+                    ))}
+                  </div>
                   <div className="text-xs">{data.customers.subtitle}</div>
                 </div>
               </div>
@@ -181,50 +153,8 @@ export default function Home(): JSX.Element {
           </motion.div>
         </div>
 
-        {/* // 챗봇 */}
-        <motion.div
-          viewport={{ once: true }}
-          initial={{ opacity: 0, y: 60 }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: { duration: 1 },
-          }}
-        >
-          <div className="flex justify-center">
-            <SectionBlock title={data.carbon_buddy.title}>
-              <div className="flex justify-center">
-                      <div
-                        className="w-[85%] group rounded-xl hover:border-primary-700 mb-4 py-7 flex justify-between items-center"
-                      >
-                        <div className="mb-2 flex flex-col gap-5 justify-around sm:flex-row items-center text-left h-full w-full">
-                          <img className="h-[600px] duration-200" src="/images/chatbot_1.png" alt="carbon buddy" />
-                          <div className="flex flex-col gap-5">
-                            {
-                              data.carbon_buddy.items.map((item, ndx) => {
-                                const svgKey = `section2_svg_${ndx + 2}`;
-                                const SvgComponent = section2_svgs[svgKey];
-                                return (
-                                  <div className="border border-gray-200 p-7 rounded-lg flex gap-2 items-start flex-col"> 
-                                    <div className="w-6 rounded-md">{SvgComponent}</div>
-                                    <div className="flex flex-col items-start justify-center">
-                                      <span className="inline xl:text-xl text-lg font-bold">{item.title}</span>
-                                      <div>{item.description}</div>
-                                    </div>
-                                  </div>
-                              )})
-                            }
-                          </div>
-                        </div>
-                      </div>
-
-              </div>
-            </SectionBlock>
-          </div>
-        </motion.div>
-
         {/* 3. 우리 회사도 탄소관리 필요할까요? */}
-        <div className="w-screen flex justify-center bg-gray-50">
+        <div className="w-screen flex justify-center bg-gray-50 dark:bg-slate-800">
           <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, y: 60 }}
@@ -274,7 +204,7 @@ export default function Home(): JSX.Element {
         
         {/* 4. 하나에코가 지원합니다. */}
         
-        <div className="w-screen">
+        <div className="w-screen dark:bg-slate-800">
           <motion.div
             viewport={{ once: true }}
             initial={{ opacity: 0, y: 60 }}
@@ -334,7 +264,7 @@ export default function Home(): JSX.Element {
         {/* 5. 하나루프가 함께합니다. */}
           <SectionBlock title={""}>
             <div className="px-1">
-              <div className="w-full flex flex-col items-center justify-center bg-gray-50 py-[100px]">
+              <div className="w-full flex flex-col items-center justify-center bg-gray-50 dark:bg-slate-800 py-[100px]">
                 <motion.div
                   viewport={{ once: true }}
                   initial={{ opacity: 0, y: 60 }}
@@ -381,7 +311,7 @@ export default function Home(): JSX.Element {
         
 
         {/* 6. 하나에코와 함께하세요 */}
-        <div className="w-screen">
+        <div className="w-screen dark:bg-slate-800">
           <motion.div
               viewport={{ once: true }}
               initial={{ opacity: 0, y: 60 }}
@@ -393,7 +323,7 @@ export default function Home(): JSX.Element {
               className="w-full justify-center flex"
             >
             <SectionBlock title={data.features.title}>
-              <div className="px-10 w-full justify-center flex">
+              <div className="px-10 w-full justify-center flex ">
                 <div className="xl:grid xl:grid-cols-2 gap-16 md:w-[75%]">
                   {data.features.items.map((item, ndx) => {
                     const svgKey = `section5_svg_${ndx + 1}`;
@@ -420,7 +350,7 @@ export default function Home(): JSX.Element {
             </SectionBlock>
           </motion.div>
         </div>
-        <div className="w-full h-[300px] text-center bg-blue-50 flex flex-col gap-4 justify-center items-center">
+        <div className="w-full h-[300px] text-center bg-blue-50 flex flex-col gap-4 justify-center items-center dark:bg-slate-800">
           <div className="flex flex-col w-[80%] justify-center items-center">
             <span className="text-2xl md:text-3xl xl:text-4xl font-semibold  whitespace-normal break-keep">{data.request.title}</span>
             <div className="flex gap-3 justify-center my-8 xl:justify-start">
