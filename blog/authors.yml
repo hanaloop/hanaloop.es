@@ -46,6 +46,13 @@ hana:
   image_url: "/images/hanaloop-logo.png"
   title: 환경친구
 
+jylee:
+  type: system
+  name: 이지연
+  name_alt: Jiyeon Lee
+  image_url: "/images/hanaloop-logo.png"
+  title: 외부 파트너
+
 jcburrel:
   type: system
   name: Jorge G Conte B

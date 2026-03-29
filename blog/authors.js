@@ -38,6 +38,16 @@ export const authors = {
     "education": "University of Western Macedonia, Greece",
     "description": "Prior analyst at Aurora Energy Research (Germany), Vertis Environmental Finance (Hungary). Experienced energy economist with a passion for programming."
   },
+    "jylee": {
+    "name": "이지연",
+    "name_alt": "Jiyeon Lee",
+    "url": "https://www.linkedin.com/in/sae-ahn-4954795/",
+    "image_url": "/images/hanaloop-logo.png",
+    "title": "Consultant",
+    "tagline": "인간과 지구 간의 조화를 이루기 위해",
+    "education": "고려대 석사",
+    "description": "삼성, 경영 지도."
+  },
   "hana": {
     "type": "system",
     "name": "하나",
