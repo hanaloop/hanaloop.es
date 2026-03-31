@@ -118,14 +118,14 @@ export const members = {
     "education": "University of Western Macedonia, Greece",
     "description": "Prior analyst at Aurora Energy Research (Germany), Vertis Environmental Finance (Hungary). Experienced energy economist with a passion for programming.",
   },
-  "jdpark": {
-    "name": "Jeongdo Park",
-    "name_alt": "박정도",
-    "image_url": "/images/who-we-are/jdpark.jpg",
-    "title": "Developer",
-    "tagline": "Addressing climate issue one at a time",
-    "education": "Incheon University",
-    "description": "Calculate Scope3 and System develope",
+  "hikim": {
+    "name": "Hyeon-il Kim",
+    "name_alt": "김현일",
+    // "image_url": "/images/who-we-are/hikim.jpg",
+    "title": "Researcher",
+    "tagline": "Applying domain knowledge to climate crisis",
+    "education": "Yonsei University, B.S. in Architectural Engineering",
+    "description": "Carbon regulation and emission reduction technology research. Analysis of energy efficiency improvements and carbon emission reduction strategies for buildings.",
   },
 }
 

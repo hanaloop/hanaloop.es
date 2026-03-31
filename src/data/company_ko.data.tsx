@@ -125,14 +125,14 @@ export const members = {
     "education": "University of Western Macedonia, Greece",
     "description": "Prior analyst at Aurora Energy Research (Germany), Vertis Environmental Finance (Hungary). Experienced energy economist with a passion for programming.",
   },
-  "jdpark": {
-    "name": "박정도",
-    "name_alt": "Jeongdo Park",
-    "image_url": "/images/who-we-are/jdpark.jpg",
-    "title": "개발자",
+  "hikim": {
+    "name": "김현일",
+    "name_alt": "Hyeon-il Kim",
+    // "image_url": "/images/who-we-are/hikim.jpg",
+    "title": "연구원",
     "tagline": "기후 위기에 도메인 지식 적용",
-    "education": "인천대학교, 전자공학 학사",
-    "description": "Scope3 산정 및 시스템 개발",
+    "education": "연세대 건축공학 학사",
+    "description": "탄소 규제 및 감축 기술 연구. 건축물 에너지 효율화 및 탄소 배출 저감 방안 분석.",
   },
   // "hana": {
   //   "type": "system",
