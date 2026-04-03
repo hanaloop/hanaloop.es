@@ -2,21 +2,21 @@ import { motion } from "framer-motion";
 import CheckIcon from "../../../static/svg/Check.svg"
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
-const MediaText = ({title, descriptions}: {title: string, descriptions: {subTitle: string; content:string}[]}) => {
+const MediaText = ({title, descriptions}: {title: string, descriptions: {subTitle: string; content: React.ReactNode}[]}) => {
     return (
       <div className='flex flex-col items-start gap-4 xl:w-[50%]'>
         <h2 className='font-bold sm:text-xl text-lg'>{title}</h2>
         <div className='flex flex-col gap-4 items-start'>
           {
-            descriptions.map((description) => {
+            descriptions.map((description, index) => {
               return (
-                <>
+                <div key={`${description.subTitle}-${index}`} className='contents'>
                   <div className='flex items-center gap-3'>
                   <div className="w-3 rounded-md"><CheckIcon/></div>
                   <h3 className='sm:text-lg text-base font-semibold'>{description.subTitle}</h3>
                   </div>
                   <div className='text-start sm:text-base text-sm'>{description.content}</div>     
-                </>
+                </div>
               )
             })
           }
@@ -32,7 +32,7 @@ const MediaText = ({title, descriptions}: {title: string, descriptions: {subTitl
     )
   }
 
-  export const CardMediaImage = ({size="l", title, descriptions, imageUrl}: { size: "m" | 'l', title: string, descriptions: {subTitle: string; content:string}[], imageUrl: string}) => {
+  export const CardMediaImage = ({size="l", title, descriptions, imageUrl}: { size: "m" | 'l', title: string, descriptions: {subTitle: string; content: React.ReactNode}[], imageUrl: string}) => {
     const imgSize = size === "m" ? 'sm:h-[270px]' : 'sm:h-[300px]'
     return (
         <motion.div
@@ -53,4 +53,3 @@ const MediaText = ({title, descriptions}: {title: string, descriptions: {subTitl
         </motion.div>
     )
   }
-

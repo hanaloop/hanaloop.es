@@ -7,7 +7,7 @@ export const hero = {
   title_link : "Hanaeco",
   subtitle_1 : "Prepararse es ser más competitivo.",
   subtitle_2 : "Nuestra plataforma hana.eco le ayuda a simplificar y gestionar la complejidad de las normativas climáticas y de ESG, al tiempo que reduce sus costos energéticos.",
-  // news : "Diagnóstico del informe CBAM",
+  news : "Diagnóstico del informe CBAM",
   news_link : "https://docs.google.com/forms/d/e/1FAIpQLSct04RcNKwwkGC1DKiqhXgzLG77tXjetV1NJL9prE4pJ-vpnw/viewform",
   button_1 : "Ver solución",
   link_1: "https://docs.google.com/presentation/d/1ls5SeHrzYIVvFOO5HsMhSdKr-yGZf8BPmF6mqPgS9CY/present",
@@ -459,4 +459,3 @@ export const request = {
   button_1 : "Ver solución",
   button_2 : "Contacto",
 }
-

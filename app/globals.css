@@ -1,0 +1,234 @@
+@import "tailwindcss";
+@import "fumadocs-ui/css/neutral.css";
+@import "fumadocs-ui/css/preset.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  background: #fff;
+  color: #1f2937;
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+html.dark body {
+  background: #131922;
+  color: #f3f4f6;
+}
+
+svg {
+  display: inline;
+}
+
+article h1 {
+  @apply pt-5 text-4xl leading-relaxed font-extrabold text-gray-600;
+}
+
+article h2 {
+  @apply pt-4 text-3xl leading-relaxed font-bold text-gray-600;
+}
+
+article h3 {
+  @apply pt-4 text-2xl leading-relaxed text-gray-500;
+}
+
+article h4 {
+  @apply pt-3 text-lg leading-relaxed text-gray-500;
+}
+
+article p {
+  @apply my-3 leading-relaxed;
+}
+
+article ul {
+  @apply my-3 list-disc pl-8;
+}
+
+article ol {
+  @apply list-decimal pl-8;
+}
+
+article table {
+  @apply border-gray-600;
+}
+
+article th {
+  @apply border px-3 py-1;
+}
+
+article td {
+  @apply border px-3 py-1;
+}
+
+article blockquote {
+  @apply rounded-md border border-lime-600 px-4;
+}
+
+article a:hover {
+  @apply text-blue-700 underline;
+}
+
+.hanaloop-docs-layout {
+  --fd-sidebar-width: 298px;
+}
+
+.hanaloop-docs-layout [data-sidebar-placeholder] {
+  background: #fff;
+}
+
+.hanaloop-docs-layout [data-sidebar-panel] {
+  display: none;
+}
+
+.hanaloop-docs-layout .hanaloop-docs-sidebar {
+  background: #fff !important;
+  border-right: 1px solid #d1d5db !important;
+  color: #4b5563;
+}
+
+.hanaloop-docs-layout .hanaloop-docs-sidebar [class*="text-fd-muted-foreground"] {
+  color: #6b7280;
+}
+
+.hanaloop-docs-layout .hanaloop-docs-sidebar-title {
+  width: 100%;
+  border-radius: 0;
+  background: #f3f4f6;
+  color: #2f9e72;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 0.7rem 0.85rem;
+}
+
+.hanaloop-docs-layout #nd-sidebar > div:first-child {
+  gap: 0.75rem;
+  padding: 0.5rem 0.35rem 0.25rem;
+}
+
+.hanaloop-docs-layout #nd-sidebar > div:first-child > div:first-child {
+  display: none;
+}
+
+.hanaloop-docs-layout #nd-sidebar > div:first-child [type='button'] {
+  background: #fff;
+}
+
+.hanaloop-docs-layout #nd-sidebar a,
+.hanaloop-docs-layout #nd-sidebar button {
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.hanaloop-docs-layout #nd-sidebar a[data-active='true'],
+.hanaloop-docs-layout #nd-sidebar button[data-active='true'] {
+  background: #f3f4f6;
+  color: #2e8555;
+}
+
+.hanaloop-docs-layout #nd-sidebar [data-radix-collapsible-trigger] {
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.hanaloop-docs-layout #nd-sidebar a[data-active='true']::before,
+.hanaloop-docs-layout #nd-sidebar button[data-active='true']::before {
+  background: #2e8555;
+}
+
+
+.hanaloop-docs-layout #nd-sidebar [data-radix-collapsible-content] {
+  margin-left: 0;
+}
+
+.hanaloop-docs-layout #nd-page .prose > h1:first-child {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .hanaloop-docs-layout {
+    --fd-sidebar-width: 0px !important;
+    --fd-toc-width: 0px !important;
+    --fd-toc-popover-height: 0px !important;
+  }
+
+  .hanaloop-docs-layout header,
+  .hanaloop-docs-layout [data-toc-popover] {
+    display: none !important;
+  }
+
+  .hanaloop-docs-layout #nd-docs-layout {
+    grid-template:
+      "main" 1fr
+      / minmax(0, 1fr) !important;
+  }
+
+  .hanaloop-docs-layout #nd-docs-layout > * {
+    min-width: 0 !important;
+  }
+
+  .hanaloop-docs-layout [data-sidebar-placeholder],
+  .hanaloop-docs-layout #nd-sidebar,
+  .hanaloop-docs-layout [data-sidebar-panel],
+  .hanaloop-docs-layout #nd-sidebar-mobile,
+  .hanaloop-docs-layout #nd-toc,
+  .hanaloop-docs-layout [data-toc-popover],
+  .hanaloop-docs-layout [data-toc-popover-trigger],
+  .hanaloop-docs-layout [data-toc-popover-content] {
+    display: none !important;
+  }
+
+  .hanaloop-docs-layout #nd-page {
+    width: 100% !important;
+    max-width: none !important;
+    margin-inline: 0 !important;
+    padding-inline: 1rem !important;
+    padding-top: 1.5rem !important;
+  }
+
+  .hanaloop-docs-layout article h1 {
+    font-size: 2.125rem;
+    line-height: 1.2;
+  }
+
+  .hanaloop-docs-layout article h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .hanaloop-docs-layout article h3 {
+    font-size: 1.25rem;
+    line-height: 1.35;
+  }
+}
+
+@media (max-width: 1279px) {
+  .hanaloop-blog-archive,
+  .hanaloop-blog-post {
+    padding-inline: 1rem !important;
+  }
+
+  .hanaloop-blog-archive > div,
+  .hanaloop-blog-post > div {
+    display: block !important;
+  }
+
+  .hanaloop-blog-archive aside,
+  .hanaloop-blog-post aside:last-child {
+    display: none !important;
+  }
+
+  .hanaloop-blog-post article h1 {
+    font-size: 2.125rem;
+    line-height: 1.2;
+  }
+}

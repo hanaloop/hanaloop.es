@@ -7,6 +7,8 @@ export const hero = {
   title_link : "Hana.eco",
   subtitle_1 : "Take proactive control of your carbon emissions, reduce energy costs, mitigate risks, and bolster your resilience to climate change.",
   subtitle_2 : "Simplify compliance with EU CBAM, IFRS/ISSB, and ESG reporting requirements to stay competitive in a sustainable future.",
+  news : "Free CBAM Report Review",
+  news_link : "https://docs.google.com/forms/d/e/1FAIpQLSct04RcNKwwkGC1DKiqhXgzLG77tXjetV1NJL9prE4pJ-vpnw/viewform",
   button_1 : "Learn More",
   button_2 : "Contact Us",
   link_1: "https://docs.google.com/presentation/d/1tXsGFdsumpS7bB7SPkwSGpS4-9GcVWlGzMjRTCZRvNw",

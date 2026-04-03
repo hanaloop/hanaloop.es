@@ -1,4 +1,8 @@
+'use client';
+
 import useBaseUrl from "@docusaurus/useBaseUrl"
+import { usePathname } from "next/navigation";
+import { getLocaleFromPathname, toClientHref } from "@/lib/locales";
 
 export type BackgroundProps = {
   imageUrl?: string
@@ -18,6 +22,8 @@ export type HeroProps = {
 }
 
 export default function Hero({header, tagline, button, background}: HeroProps & {background: BackgroundProps}) {
+  const pathname = usePathname();
+  const locale = getLocaleFromPathname(pathname);
   
   let containerClass = background.imageUrl ? "bg-cover bg-center" :
     (background.solidColor ? `${background.solidColor} ` : 
@@ -36,7 +42,7 @@ export default function Hero({header, tagline, button, background}: HeroProps & 
             <h1 className="text-2xl md:text-3xl font-bold drop-shadow animation-fadeInUp">{header}</h1>
             <div className="text-lg md:text-xl drop-shadow animation-fadeInUp">{tagline}</div>
             {
-              button && <div className="flex justify-center md:justify-start text-base"><a href={button.href}><button className="px-6 py-2 rounded-md bg-blue-500 text-gray-200 font-bold hover:bg-blue-600 ">{button.label}</button></a></div>
+              button && <div className="flex justify-center md:justify-start text-base"><a href={toClientHref(locale, button.href)}><button className="px-6 py-2 rounded-md bg-blue-500 text-gray-200 font-bold hover:bg-blue-600 ">{button.label}</button></a></div>
             }
           </div>
         </div>

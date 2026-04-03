@@ -12,7 +12,7 @@ export type DisplayItem = {
   imageUrl?: string,
   title: string,
   subtitle?: string,
-  description?: React.ReactNode[] | string, // the description, can be either string or JSX
+  description?: React.ReactNode, // the description, can be either string or JSX
   expected?: string[], 
   source?: string // the source of the data
   sourceUrl?: string // the url of the source
