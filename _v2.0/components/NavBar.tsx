@@ -4,7 +4,7 @@ import Link from "next/link"
 import { useRouter } from "next/router";
 import { classNames } from "../libs/type.utils";
 import NavLink from "./NavLink";
-import Image from '../components/theme/Image';
+import Image from './theme/Image';
 import QuickSearch from "./QuickSearch"
 import SiteContext from "./SiteContext";
 

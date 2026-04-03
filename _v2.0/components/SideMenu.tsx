@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useContext } from "react";
 import MenuItem from "../libs/MenuItem"
 import SiteContext from "./SiteContext";
-import Image from '../components/theme/Image';
+import Image from './theme/Image';
 
 type SideMenuProps = {
     level?: number

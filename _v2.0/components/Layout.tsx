@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import SiteContext from './SiteContext';
 import NavBar from './NavBar';
-import Image from '../components/theme/Image';
+import Image from './theme/Image';
 import { useScrollPosition } from '../libs/hooks';
 
 type LayoutProps = {
