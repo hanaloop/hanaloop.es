@@ -95,7 +95,7 @@ export function HomeInsightSection({ locale: _locale }: HomeInsightSectionProps)
     return (
         <section className="px-4 pb-20 pt-16 text-[#131313] lg:px-6 lg:pb-28 lg:pt-20">
             <div className="mx-auto w-full max-w-[1920px]">
-                <ListTable heading="Insight LIST" items={mockBlogItems} viewMoreHref={withLocalePath(locale, '/blog')} viewMoreLabel="View more" />
+                <ListTable heading="Insight LIST" items={mockBlogItems} itemsPerPage={4} viewMoreHref={withLocalePath(locale, '/blog')} viewMoreLabel="View more" />
             </div>
         </section>
     );

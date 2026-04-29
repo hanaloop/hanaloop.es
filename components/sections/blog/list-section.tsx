@@ -99,7 +99,7 @@ export function BlogListSection({ locale }: BlogListSectionProps) {
         <section className="px-4 pb-20 pt-16 text-[#131313] lg:px-6 lg:pb-28 lg:pt-20">
             <div className="mx-auto w-full max-w-[1920px]">
                 <p className="text-center text-[18px] lg:text-[32px] font-semibold leading-[1.35]">{sectionText[locale]}</p>
-                <ListTable heading="Blog LIST" items={mockItems} />
+                <ListTable heading="Blog LIST" items={mockItems} itemsPerPage={10} />
             </div>
         </section>
     );
