@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getBlogMetadata, getBlogStaticParams, renderBlogRoute } from '@/components/blog-renderer';
+import { getBlogMetadata, getBlogStaticParams, renderBlogRoute } from '@/legacy/components/blog-renderer';
 import { defaultLocale, isLocale, locales } from '@/lib/locales';
 
 type Props = {

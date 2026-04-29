@@ -1,9 +1,12 @@
-import { getDefaultLocaleRouteMetadata, renderDefaultLocaleRoute } from '@/lib/default-locale-route';
+﻿import { notFound } from 'next/navigation';
+
+export const dynamicParams = false;
 
 export default function Page() {
-  return renderDefaultLocaleRoute('pcf');
+  notFound();
 }
 
-export function generateMetadata() {
-  return getDefaultLocaleRouteMetadata('pcf');
+export function generateStaticParams() {
+  return [];
 }
+

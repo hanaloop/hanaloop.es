@@ -1,12 +1,12 @@
-import koCode from '@/i18n/ko/code.json';
-import enCode from '@/i18n/en/code.json';
-import esCode from '@/i18n/es/code.json';
-import koNavbar from '@/i18n/ko/docusaurus-theme-classic/navbar.json';
-import enNavbar from '@/i18n/en/docusaurus-theme-classic/navbar.json';
-import esNavbar from '@/i18n/es/docusaurus-theme-classic/navbar.json';
-import koFooter from '@/i18n/ko/docusaurus-theme-classic/footer.json';
-import enFooter from '@/i18n/en/docusaurus-theme-classic/footer.json';
-import esFooter from '@/i18n/es/docusaurus-theme-classic/footer.json';
+import koCode from '@/legacy/i18n/ko/code.json';
+import enCode from '@/legacy/i18n/en/code.json';
+import esCode from '@/legacy/i18n/es/code.json';
+import koNavbar from '@/legacy/i18n/ko/docusaurus-theme-classic/navbar.json';
+import enNavbar from '@/legacy/i18n/en/docusaurus-theme-classic/navbar.json';
+import esNavbar from '@/legacy/i18n/es/docusaurus-theme-classic/navbar.json';
+import koFooter from '@/legacy/i18n/ko/docusaurus-theme-classic/footer.json';
+import enFooter from '@/legacy/i18n/en/docusaurus-theme-classic/footer.json';
+import esFooter from '@/legacy/i18n/es/docusaurus-theme-classic/footer.json';
 import type { AppLocale } from './locales';
 
 type MessageRecord = Record<string, { message?: string }>;

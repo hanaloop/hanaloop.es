@@ -17,15 +17,6 @@ const config = {
     unoptimized: true,
   },
   pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
-  webpack(webpackConfig) {
-    webpackConfig.module.rules.push({
-      test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
-      use: ['@svgr/webpack'],
-    });
-
-    return webpackConfig;
-  },
 };
 
 if (process.env.WEB_PATH_PREFIX) {

@@ -20,8 +20,8 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@docusaurus/*": ["./compat/docusaurus/*"],
-      "@theme/*": ["./compat/theme/*"],
+      "@docusaurus/*": ["./legacy/compat/docusaurus/*"],
+      "@theme/*": ["./legacy/compat/theme/*"],
       "@site/*": ["./*"],
       "collections/*": ["./.source/*"]
     }
@@ -34,5 +34,5 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "legacy"]
 }

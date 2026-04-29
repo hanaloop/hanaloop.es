@@ -19,10 +19,9 @@ export function isExternalHref(href: string) {
 export function isStaticAssetPath(href: string) {
   return (
     href.startsWith('/images/') ||
-    href.startsWith('/svg/') ||
+    href.startsWith('/icons/') ||
     href.startsWith('/files/') ||
     href.startsWith('/favicon') ||
-    href.startsWith('/img/') ||
     href === '/robots.txt' ||
     href === '/site.webmanifest'
   );

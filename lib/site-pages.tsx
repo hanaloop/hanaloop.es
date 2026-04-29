@@ -1,19 +1,19 @@
 import type { ComponentType } from 'react';
-import HomePage from '@/src/site-pages/index';
-import CbamPage from '@/src/site-pages/cbam';
-import CompanyPage from '@/src/site-pages/company';
-import HanaAiPage from '@/src/site-pages/hana-ai';
-import PartnershipPage from '@/src/site-pages/partnership';
-import PcfPage from '@/src/site-pages/pcf';
-import PlatformPage from '@/src/site-pages/platform';
-import RecruitPage from '@/src/site-pages/recruit';
-import Scope3Page from '@/src/site-pages/scope3';
-import SolutionPage from '@/src/site-pages/solution';
-import CompanyProfileRequestPage from '@/content/standalone-pages/company_profile_request.mdx';
-import CreditsPage from '@/content/standalone-pages/credits.mdx';
-import DemoRequestPage from '@/content/standalone-pages/demo_request.mdx';
-import PrivacyPage from '@/content/standalone-pages/privacy.mdx';
-import RecruitApplyPage from '@/content/standalone-pages/recruit_apply.md';
+import HomePage from '@/legacy/site-pages/index';
+import CbamPage from '@/legacy/site-pages/cbam';
+import CompanyPage from '@/legacy/site-pages/company';
+import HanaAiPage from '@/legacy/site-pages/hana-ai';
+import PartnershipPage from '@/legacy/site-pages/partnership';
+import PcfPage from '@/legacy/site-pages/pcf';
+import PlatformPage from '@/legacy/site-pages/platform';
+import RecruitPage from '@/legacy/site-pages/recruit';
+import Scope3Page from '@/legacy/site-pages/scope3';
+import SolutionPage from '@/legacy/site-pages/solution';
+import CompanyProfileRequestPage from '@/legacy/content/standalone-pages/company_profile_request.mdx';
+import CreditsPage from '@/legacy/content/standalone-pages/credits.mdx';
+import DemoRequestPage from '@/legacy/content/standalone-pages/demo_request.mdx';
+import PrivacyPage from '@/legacy/content/standalone-pages/privacy.mdx';
+import RecruitApplyPage from '@/legacy/content/standalone-pages/recruit_apply.md';
 
 const legacyPages = {
   cbam: CbamPage,

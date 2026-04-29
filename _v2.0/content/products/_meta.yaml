@@ -1,9 +1,0 @@
-# Borrowing the definition from [Accenture's blog](https://www.accenture.com/us-en/blogs/software-engineering-blog/whats-the-difference-between-a-project-and-a-product)
-# A product is a good, service, platform, application, system, etc., that is created, 
-# generally for sale, to meet customer and business needs.
-#
-# In IT departement, it is a service with well defined interface, usually API.
-# The Dev-Portal supports OpenAPI specification. Files with ending with `.openapi.yaml`
-# will be processed: copied to folder `/public/{path}/{file}.openapi.yaml`
-label: The Services
-image: https://cdn.pixabay.com/photo/2020/03/18/06/54/smartphone-4942918_1280.jpg

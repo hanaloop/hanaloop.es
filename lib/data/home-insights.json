@@ -1,0 +1,58 @@
+[
+  {
+    "id": "insight-001",
+    "title": "Carbon neutrality, not choice, but necessity",
+    "date": "2025-10-28",
+    "author": "HanaLoop",
+    "thumbnail": "/images/blog/2025/20250101-2024-2025.png",
+    "href": "/blog/2025/20250101-2024-2025"
+  },
+  {
+    "id": "insight-002",
+    "title": "What is COP27? Why is it important?",
+    "date": "2025-10-28",
+    "author": "HanaLoop",
+    "thumbnail": "/images/posting/environment-general/2022-11-07-cop27-01.jpeg",
+    "href": "/blog/2022/what-is-cop27"
+  },
+  {
+    "id": "insight-003",
+    "title": "CBAM certificate, how do I prepare it?",
+    "date": "2025-06-20",
+    "author": "HanaLoop",
+    "thumbnail": "/images/revamp/home-feature-bg-01.png",
+    "href": "/blog/2025/cbam-certificate-guide"
+  },
+  {
+    "id": "insight-004",
+    "title": "Carbon neutrality, not choice, but necessity",
+    "date": "2025-06-20",
+    "author": "HanaLoop",
+    "thumbnail": "/images/cbam-shipping.jpg",
+    "href": "/blog/2025/carbon-neutrality-necessity"
+  },
+  {
+    "id": "insight-005",
+    "title": "Understanding Scope 3 emissions in supply chains",
+    "date": "2025-05-15",
+    "author": "HanaLoop",
+    "thumbnail": "/images/scope3-feature-1.png",
+    "href": "/blog/2025/scope3-supply-chain"
+  },
+  {
+    "id": "insight-006",
+    "title": "How to build a practical net-zero roadmap",
+    "date": "2025-04-11",
+    "author": "HanaLoop",
+    "thumbnail": "/images/blog/2025/20250221-scope3-management.png",
+    "href": "/blog/2025/net-zero-roadmap"
+  },
+  {
+    "id": "insight-007",
+    "title": "From regulation to execution: ESG data operations",
+    "date": "2025-03-20",
+    "author": "HanaLoop",
+    "thumbnail": "/images/blog/2025/20250218-cbam-review.png",
+    "href": "/blog/2025/esg-data-operations"
+  }
+]

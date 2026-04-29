@@ -5,8 +5,8 @@
   "scripts": {
     "normalize:content": "node scripts/normalize-content.mjs",
     "prepare:content": "yarn normalize:content && yarn prepare:docs && fumadocs-mdx",
-    "dev": "yarn prepare:content && next dev --webpack",
-    "build": "yarn prepare:content && next build --webpack",
+    "dev": "yarn prepare:content && next dev --turbo",
+    "build": "yarn prepare:content && next build",
     "start": "serve out",
     "types:check": "yarn prepare:content && next typegen && tsc --noEmit",
     "postinstall": "yarn prepare:content",
@@ -35,6 +35,7 @@
     "remark-parse": "^11.0.0",
     "serve": "^14.2.6",
     "shiki": "^4.0.2",
+    "swiper": "^12.1.3",
     "tailwind-merge": "^3.5.0",
     "unified": "^11.0.5",
     "unist-util-visit": "^5.1.0",

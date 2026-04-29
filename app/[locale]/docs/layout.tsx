@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { notFound } from 'next/navigation';
-import { DocsLayoutShell } from '@/components/docs-renderer';
+import { DocsLayoutShell } from '@/legacy/components/docs-renderer';
 import { defaultLocale, isLocale } from '@/lib/locales';
 
 type Props = {

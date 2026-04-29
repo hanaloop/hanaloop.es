@@ -1,0 +1,106 @@
+[
+  {
+    "id": "faq-01",
+    "question": {
+      "ko": "하나에코 제품을 도입하고 진행까지 얼마나 걸릴까요?",
+      "en": "How long does it take to adopt hana.eco and go live?",
+      "es": "Cuanto tiempo toma adoptar hana.eco y ponerlo en marcha?"
+    },
+    "answer": {
+      "ko": "일반적으로 2~4주 내에 초기 도입이 가능합니다. 기업의 데이터 범위와 연동 범위에 따라 상세 일정이 확정됩니다.",
+      "en": "Initial adoption is typically possible within 2 to 4 weeks, depending on your data scope and integration requirements.",
+      "es": "La adopcion inicial suele completarse en 2 a 4 semanas, segun el alcance de datos e integraciones."
+    }
+  },
+  {
+    "id": "faq-02",
+    "question": {
+      "ko": "서비스를 신청할 때 어떤 정보를 준비해야 할까요?",
+      "en": "What information should we prepare before applying?",
+      "es": "Que informacion debemos preparar antes de solicitar el servicio?"
+    },
+    "answer": {
+      "ko": "사업장 기본 정보, 조직 구조, 제품 및 공급망 범위, 기존 배출 데이터가 있으면 빠르게 시작할 수 있습니다.",
+      "en": "Basic site information, organizational structure, product and supply-chain scope, and existing emissions data help you get started quickly.",
+      "es": "La informacion basica del sitio, estructura organizacional, alcance de producto/cadena y datos de emisiones existentes facilitan un inicio rapido."
+    }
+  },
+  {
+    "id": "faq-03",
+    "question": {
+      "ko": "무료로 먼저 서비스를 이용해 볼 수 있을까요?",
+      "en": "Can we try the service first?",
+      "es": "Podemos probar el servicio primero?"
+    },
+    "answer": {
+      "ko": "데모 환경과 상담 기반 체험이 가능합니다. 업종과 목적에 맞는 시나리오로 테스트를 지원합니다.",
+      "en": "A demo environment and guided trial are available. We support test scenarios tailored to your industry and goals.",
+      "es": "Ofrecemos entorno demo y prueba guiada, con escenarios adaptados a su industria y objetivos."
+    }
+  },
+  {
+    "id": "faq-04",
+    "question": {
+      "ko": "하나에코는 어떤 인증을 받았고, 믿을만 한가요?",
+      "en": "What certifications does hana.eco have, and can we trust it?",
+      "es": "Que certificaciones tiene hana.eco y es confiable?"
+    },
+    "answer": {
+      "ko": "로이드인증원(LRQA)으로부터 배출권거래제와 EU 탄소국경조정제도 적합성 국내 첫 검증의견서를 획득했습니다. 글로벌 규제 검증 기술과 환경 컨설팅, 에너지전환 파트너십을 바탕으로 기업 맞춤형 탄소관리 체계를 제공합니다.",
+      "en": "hana.eco obtained Korea's first LRQA verification statement for ETS and EU CBAM conformity. Based on globally validated technology and partner networks, we provide enterprise-tailored carbon management.",
+      "es": "hana.eco obtuvo la primera declaracion de verificacion LRQA en Corea para conformidad ETS y CBAM de la UE. Con tecnologia validada y red de socios, ofrecemos gestion de carbono adaptada a cada empresa."
+    }
+  },
+  {
+    "id": "faq-05",
+    "question": {
+      "ko": "하나에코는 어떤형태로 결과물이 도출되나요?",
+      "en": "In what format are the outputs delivered?",
+      "es": "En que formato se entregan los resultados?"
+    },
+    "answer": {
+      "ko": "대시보드, 표준 리포트, 검증 대응 문서 형태로 제공되며 필요 시 고객사 내부 양식에 맞춘 출력도 지원합니다.",
+      "en": "Outputs are delivered as dashboards, standard reports, and verification-ready documents, with support for your internal formats when needed.",
+      "es": "Los resultados se entregan en dashboards, reportes estandar y documentos para verificacion, con formatos internos bajo solicitud."
+    }
+  },
+  {
+    "id": "faq-06",
+    "question": {
+      "ko": "에너지 절감 효과가 있나요?",
+      "en": "Does it help with energy savings?",
+      "es": "Ayuda a reducir el consumo energetico?"
+    },
+    "answer": {
+      "ko": "배출량과 에너지 데이터를 통합 분석해 감축 우선순위를 제시하므로 운영 효율과 비용 절감에 도움을 줍니다.",
+      "en": "By analyzing emissions and energy data together, it highlights reduction priorities that improve operational efficiency and costs.",
+      "es": "Al analizar conjuntamente emisiones y energia, muestra prioridades de reduccion que mejoran eficiencia y costos."
+    }
+  },
+  {
+    "id": "faq-07",
+    "question": {
+      "ko": "규제가 복잡한거로 아는데 어떻게 대응할 수 있을까요?",
+      "en": "Regulations are complex. How can we respond effectively?",
+      "es": "Las regulaciones son complejas. Como podemos responder de forma efectiva?"
+    },
+    "answer": {
+      "ko": "규제 변경 모니터링, 데이터 검증, 보고서 자동화, 전문가 자문을 결합해 실무 대응 체계를 단계별로 구축합니다.",
+      "en": "We combine regulatory monitoring, data verification, report automation, and expert advisory to build a practical response framework step by step.",
+      "es": "Combinamos monitoreo normativo, verificacion de datos, automatizacion de reportes y asesoria experta para una respuesta operativa por etapas."
+    }
+  },
+  {
+    "id": "faq-08",
+    "question": {
+      "ko": "하나에코 제품 실행 후, 지원 및 대응은 어떻게 받을 수 있나요?",
+      "en": "What support do we get after implementation?",
+      "es": "Que soporte recibimos despues de la implementacion?"
+    },
+    "answer": {
+      "ko": "전담 CSM과 기술 지원 채널을 통해 정기 점검, 교육, 이슈 대응을 제공합니다. 필요 시 파트너 전문가와 연계 지원합니다.",
+      "en": "You receive regular reviews, training, and issue response through a dedicated CSM and technical support channels, with partner experts when required.",
+      "es": "Recibira revisiones, capacitacion y respuesta a incidentes mediante CSM dedicado y soporte tecnico, con expertos socios cuando sea necesario."
+    }
+  }
+]

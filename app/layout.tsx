@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-import { Provider } from '@/components/provider';
+import { Provider } from '@/legacy/components/provider';
 import { siteConfig } from '@/lib/site-config';
 import './globals.css';
 
@@ -55,7 +55,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-white text-gray-800">
+      <body className="min-h-full bg-white text-gray-800" suppressHydrationWarning>
         <Provider>{children}</Provider>
       </body>
     </html>

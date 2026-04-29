@@ -1,13 +1,12 @@
-import type { Metadata } from 'next';
-import { StaticRedirect } from '@/components/static-redirect';
+﻿import { notFound } from 'next/navigation';
 
-export const metadata: Metadata = {
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
+export const dynamicParams = false;
 
 export default function Page() {
-  return <StaticRedirect to="/hana-ai" />;
+  notFound();
 }
+
+export function generateStaticParams() {
+  return [];
+}
+

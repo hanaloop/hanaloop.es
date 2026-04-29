@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getDocsMetadata, getDocsStaticParams, renderDocsPage } from '@/components/docs-renderer';
+import { getDocsMetadata, getDocsStaticParams, renderDocsPage } from '@/legacy/components/docs-renderer';
 import { defaultLocale, isLocale, locales } from '@/lib/locales';
 
 type Props = {

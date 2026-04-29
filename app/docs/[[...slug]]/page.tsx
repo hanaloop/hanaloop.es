@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { getDocsMetadata, getDocsStaticParams, renderDocsPage } from '@/components/docs-renderer';
+import { getDocsMetadata, getDocsStaticParams, renderDocsPage } from '@/legacy/components/docs-renderer';
 
 type Props = {
   params: Promise<{

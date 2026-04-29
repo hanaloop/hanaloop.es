@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { StaticRedirect } from '@/components/static-redirect';
+import { StaticRedirect } from '@/legacy/components/static-redirect';
 
 export const metadata: Metadata = {
   robots: {

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { SiteShell } from '@/components/site-shell';
+import { SiteShell } from '@/components/layout/site-shell';
 import { getBlogByTag, getBlogTags } from '@/lib/blog-tags';
 import { buildBlogMobileContextualNav } from '@/lib/mobile-nav';
 import { siteConfig } from '@/lib/site-config';

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { DocsPage, DocsTitle, DocsDescription, DocsBody } from 'fumadocs-ui/layouts/docs/page';
-import { DocsBreadcrumb } from '@/components/docs-breadcrumb';
+import { DocsBreadcrumb } from '@/legacy/components/docs-breadcrumb';
 import { getDocsByTag, getDocsTags } from '@/lib/docs-tags';
 import { defaultLocale, isLocale, locales } from '@/lib/locales';
 import { siteConfig } from '@/lib/site-config';
