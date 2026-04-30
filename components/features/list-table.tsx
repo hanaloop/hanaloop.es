@@ -79,18 +79,25 @@ export function ListTable({ heading, items, itemsPerPage = 10, viewMoreHref, vie
 
             <div className="px-6 py-4 flex items-end justify-between gap-6">
                 <nav className="flex flex-wrap items-center gap-2 text-[16px] md:text-[20px] lg:text-[24px] leading-none text-[#131313]" aria-label="Blog list pagination">
+                    {currentPage > 1 && (
+                        <button type="button" className="cursor-pointer hover:underline" onClick={() => setCurrentPage(1)}>
+                            First
+                        </button>
+                    )}
                     {pagination.map((token, idx) =>
                         token === '...' ? (
                             <span key={`ellipsis-${idx}`}>...</span>
                         ) : (
-                            <button key={token} type="button" className={token === currentPage ? 'font-semibold' : 'font-normal'} onClick={() => setCurrentPage(token)} aria-current={token === currentPage ? 'page' : undefined}>
+                            <button key={token} type="button" className={token === currentPage ? 'font-semibold cursor-default' : 'font-normal cursor-pointer hover:underline'} onClick={token === currentPage ? undefined : () => setCurrentPage(token)} aria-current={token === currentPage ? 'page' : undefined}>
                                 {token}
                             </button>
                         ),
                     )}
-                    <button type="button" onClick={() => setCurrentPage(totalPages)} disabled={currentPage === totalPages}>
-                        Last
-                    </button>
+                    {currentPage < totalPages && (
+                        <button type="button" className="cursor-pointer hover:underline" onClick={() => setCurrentPage(totalPages)}>
+                            Last
+                        </button>
+                    )}
                 </nav>
                 {viewMoreHref && viewMoreLabel ? (
                     <Link href={viewMoreHref} className="inline-flex items-center gap-2 text-[24px] font-medium leading-none text-[#131313]">
