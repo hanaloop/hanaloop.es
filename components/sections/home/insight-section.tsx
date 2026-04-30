@@ -2,6 +2,17 @@
 import { withLocalePath } from '@/lib/locales';
 import { ListTable, type ListTableItem } from '@/components/features/list-table';
 
+type InsightCopy = {
+    heading: string;
+    viewMoreLabel: string;
+};
+
+const insightCopy: Record<AppLocale, InsightCopy> = {
+    ko: { heading: 'Insight LIST', viewMoreLabel: 'View more' },
+    en: { heading: 'Insight LIST', viewMoreLabel: 'View more' },
+    es: { heading: 'Insight LIST', viewMoreLabel: 'Ver más' },
+};
+
 type HomeInsightSectionProps = {
     locale: AppLocale;
 };
@@ -89,13 +100,13 @@ const mockBlogItems: ListTableItem[] = [
     },
 ];
 
-export function HomeInsightSection({ locale: _locale }: HomeInsightSectionProps) {
-    const locale = _locale;
+export function HomeInsightSection({ locale }: HomeInsightSectionProps) {
+    const copy = insightCopy[locale];
 
     return (
         <section className="px-4 pb-20 pt-16 text-[#131313] lg:px-6 lg:pb-28 lg:pt-20">
             <div className="mx-auto w-full max-w-[1920px]">
-                <ListTable heading="Insight LIST" items={mockBlogItems} itemsPerPage={4} viewMoreHref={withLocalePath(locale, '/blog')} viewMoreLabel="View more" />
+                <ListTable heading={copy.heading} items={mockBlogItems} itemsPerPage={4} viewMoreHref={withLocalePath(locale, '/blog')} viewMoreLabel={copy.viewMoreLabel} />
             </div>
         </section>
     );

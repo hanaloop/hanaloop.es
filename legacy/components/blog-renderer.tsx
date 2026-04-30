@@ -217,7 +217,7 @@ export function renderBlogRoute(locale: AppLocale, slug?: string[]) {
   if (!slug || slug.length === 0) {
     return (
       <SiteShell mobileContextualNav={mobileContextualNav}>
-        <BlogHeroSection />
+        <BlogHeroSection locale={locale} />
         <BlogListSection locale={locale} />
       </SiteShell>
     );

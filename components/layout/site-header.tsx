@@ -45,10 +45,11 @@ type SiteHeaderProps = {
 export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileContextualNav }: SiteHeaderProps) {
     const menus = buildMenus(locale);
     const [scrolled, setScrolled] = useState(false);
+    const [menuHovered, setMenuHovered] = useState(false);
     const normalizedPath = useMemo(() => stripBasePath(pathname ?? '/'), [pathname]);
     const pathSegments = useMemo(() => normalizedPath.split('/').filter(Boolean), [normalizedPath]);
     const isHome = pathSegments.length === 0 || (pathSegments.length === 1 && isLocale(pathSegments[0]));
-    const desktopSolid = scrolled;
+    const desktopSolid = scrolled || menuHovered;
     const mobileSolid = scrolled;
     const overlayBg = desktopSolid ? '#1c1c1e' : 'transparent';
     const mobileHeaderClassName = mobileSolid ? 'bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)]' : 'bg-transparent';
@@ -99,7 +100,7 @@ export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileConte
                 </div>
 
                 <div className="relative z-10 hidden items-center gap-3 text-white lg:flex">
-                    <nav className="hidden items-center gap-1 lg:flex">
+                    <nav className="hidden items-center gap-1 lg:flex" onMouseEnter={() => setMenuHovered(true)} onMouseLeave={() => setMenuHovered(false)}>
                         {menus.map((menu: MenuGroup) => (
                             <div key={menu.label} className="group relative">
                                 <button type="button" className="inline-flex items-center gap-2 rounded-md px-3 py-2 text-[14px] font-medium leading-none text-white transition">

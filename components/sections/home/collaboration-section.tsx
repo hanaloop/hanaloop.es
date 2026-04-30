@@ -20,9 +20,9 @@ type HomeCollaborationSectionProps = {
 type CollaborationItem = {
     id: string;
     title: string;
-    subtitle: string;
-    summary: string;
-    points: string[];
+    subtitle: Record<AppLocale, string>;
+    summary: Record<AppLocale, string>;
+    points: Record<AppLocale, string[]>;
     cardImage: string;
     logoImage: string;
 };
@@ -65,36 +65,52 @@ const collaborations: CollaborationItem[] = [
     {
         id: 'sama',
         title: 'SamA',
-        subtitle: '',
-        summary: '건설자재',
-        points: ['배출권거래제', '다수 사업장 75% 노력 감축'],
+        subtitle: { ko: '', en: '', es: '' },
+        summary: { ko: '건설자재', en: 'Construction Materials', es: 'Materiales de Construcción' },
+        points: {
+            ko: ['배출권거래제', '다수 사업장 75% 노력 감축'],
+            en: ['Emissions Trading Scheme', '75% effort reduction across multiple sites'],
+            es: ['Sistema de comercio de emisiones', 'Reducción del 75% en múltiples sitios'],
+        },
         cardImage: '/images/revamp/collaboration/sama_img.png',
         logoImage: '/images/revamp/collaboration/sama.png',
     },
     {
         id: 'daehoal',
         title: 'DAEHOAL',
-        subtitle: '',
-        summary: '비철산업',
-        points: ['배출권 거래제 대응', 'CBAM 대응'],
+        subtitle: { ko: '', en: '', es: '' },
+        summary: { ko: '비철산업', en: 'Non-ferrous Industry', es: 'Industria No Ferrosa' },
+        points: {
+            ko: ['배출권 거래제 대응', 'CBAM 대응'],
+            en: ['K-ETS compliance', 'CBAM compliance'],
+            es: ['Cumplimiento K-ETS', 'Cumplimiento CBAM'],
+        },
         cardImage: '/images/revamp/collaboration/daehoal_img.png',
         logoImage: '/images/revamp/collaboration/daehoal.png',
     },
     {
         id: 'samyang',
         title: 'SAMYANG',
-        subtitle: '',
-        summary: '금속산업',
-        points: ['CBAM대상, 비전문가도 쉽게', '수출 사업장 대응'],
+        subtitle: { ko: '', en: '', es: '' },
+        summary: { ko: '금속산업', en: 'Metal Industry', es: 'Industria Metalúrgica' },
+        points: {
+            ko: ['CBAM대상, 비전문가도 쉽게', '수출 사업장 대응'],
+            en: ['CBAM: easy for non-experts', 'Export site compliance'],
+            es: ['CBAM: fácil para no expertos', 'Cumplimiento en sitios de exportación'],
+        },
         cardImage: '/images/revamp/collaboration/samyang_img.png',
         logoImage: '/images/revamp/collaboration/samyang.png',
     },
     {
         id: 'doosan',
         title: 'DOOSAN',
-        subtitle: '두산에너빌리티',
-        summary: '재생에너지',
-        points: ['스코프3 관리, 더 완전한 지속 가능성', '보고와 CDP 개선'],
+        subtitle: { ko: '두산에너빌리티', en: 'Doosan Enerbility', es: 'Doosan Enerbility' },
+        summary: { ko: '재생에너지', en: 'Renewable Energy', es: 'Energía Renovable' },
+        points: {
+            ko: ['스코프3 관리, 더 완전한 지속 가능성', '보고와 CDP 개선'],
+            en: ['Scope 3 management for fuller sustainability', 'CDP reporting improvement'],
+            es: ['Gestión Scope 3 para mayor sostenibilidad', 'Mejora de informes CDP'],
+        },
         cardImage: '/images/revamp/collaboration/doosan_img.png',
         logoImage: '/images/revamp/collaboration/doosan.png',
     },
@@ -233,10 +249,10 @@ export function HomeCollaborationSection({ locale }: HomeCollaborationSectionPro
                                         <div className="collaboration-card-overlay" />
                                         <div className="collaboration-card-content">
                                             <Image src={slide.item.logoImage} alt={`${slide.item.title} logo`} width={110} height={34} className="collaboration-card-logo" />
-                                            <p className="collaboration-card-subtitle">{slide.item.subtitle}</p>
+                                            <p className="collaboration-card-subtitle">{slide.item.subtitle[locale]}</p>
                                             <div className="collaboration-card-copy">
-                                                <p className="collaboration-card-summary">{slide.item.summary}</p>
-                                                {slide.item.points.map((point) => (
+                                                <p className="collaboration-card-summary">{slide.item.summary[locale]}</p>
+                                                {slide.item.points[locale].map((point) => (
                                                     <p key={`${slide.fixedIndex}-${point}`} className="collaboration-card-point">
                                                         {point}
                                                     </p>

@@ -10,6 +10,7 @@ type HomeCtaSectionProps = {
 type CtaCopy = {
     eyebrow: string;
     heading: string;
+    mobileHeadingLines: [string, string, string];
     solutionLabel: string;
     contactLabel: string;
 };
@@ -18,18 +19,21 @@ const copy: Record<AppLocale, CtaCopy> = {
     ko: {
         eyebrow: '체계적인 탄소 관리, 하나에코와 함께하세요.',
         heading: 'Start Systematic Carbon Management with Hana Eco.',
+        mobileHeadingLines: ['Start Systematic', 'Carbon Management', 'with Hana Eco.'],
         solutionLabel: 'Solution Overview',
         contactLabel: 'Contact Us',
     },
     en: {
         eyebrow: 'Start systematic carbon management with Hana Eco.',
         heading: 'Start Systematic Carbon Management with Hana Eco.',
+        mobileHeadingLines: ['Start Systematic', 'Carbon Management', 'with Hana Eco.'],
         solutionLabel: 'Solution Overview',
         contactLabel: 'Contact Us',
     },
     es: {
-        eyebrow: 'Comienza la gestion sistematica de carbono con Hana Eco.',
+        eyebrow: 'Comienza la gestión sistemática de carbono con Hana Eco.',
         heading: 'Start Systematic Carbon Management with Hana Eco.',
+        mobileHeadingLines: ['Start Systematic', 'Carbon Management', 'with Hana Eco.'],
         solutionLabel: 'Solution Overview',
         contactLabel: 'Contact Us',
     },
@@ -59,9 +63,9 @@ export function HomeCtaSection({ locale }: HomeCtaSectionProps) {
                     className="mx-auto mt-5 font-medium leading-[1.06] tracking-[-0.03em] text-[#202124] [font-size:clamp(28px,12vw,72px)] lg:mt-0 lg:tracking-[-0.02em]"
                     style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 500, letterSpacing: '-0.25px' }}
                 >
-                    <span className="block lg:hidden">Start Systematic</span>
-                    <span className="block lg:hidden">Carbon Management</span>
-                    <span className="block lg:hidden">with Hana Eco.</span>
+                    {text.mobileHeadingLines.map((line) => (
+                        <span key={line} className="block lg:hidden">{line}</span>
+                    ))}
                     <span className="hidden lg:inline lg:text-[42px]">{text.heading}</span>
                 </h2>
 

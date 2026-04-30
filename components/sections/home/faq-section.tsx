@@ -73,7 +73,6 @@ export function HomeFaqSection({ locale }: HomeFaqSectionProps) {
                 <div className="mt-9 lg:mt-10" />
 
                 <div className="mt-0 lg:hidden">
-                    <article className="border-b border-[rgba(255,255,255,0.2)] px-11">tet</article>
                     {items.map((item) => {
                         const expanded = openMobile === item.id;
                         return <FaqRow key={item.id} question={item.question[locale]} answer={item.answer[locale]} expanded={expanded} onToggle={() => setOpenMobile(expanded ? null : item.id)} />;
@@ -82,15 +81,13 @@ export function HomeFaqSection({ locale }: HomeFaqSectionProps) {
 
                 <div className="mt-0 hidden grid-cols-2 gap-[50px] lg:grid">
                     <div>
-                        <article className="border-b border-[rgba(255,255,255,0.2)] px-11">tet</article>
-                        {leftItems.map((item) => {
+                            {leftItems.map((item) => {
                             const expanded = openDesktop === item.id;
                             return <FaqRow key={item.id} question={item.question[locale]} answer={item.answer[locale]} expanded={expanded} onToggle={() => setOpenDesktop(expanded ? null : item.id)} />;
                         })}
                     </div>
                     <div>
-                        <article className="border-b border-[rgba(255,255,255,0.2)] px-11">tet</article>
-                        {rightItems.map((item) => {
+                            {rightItems.map((item) => {
                             const expanded = openDesktop === item.id;
                             return <FaqRow key={item.id} question={item.question[locale]} answer={item.answer[locale]} expanded={expanded} onToggle={() => setOpenDesktop(expanded ? null : item.id)} />;
                         })}
