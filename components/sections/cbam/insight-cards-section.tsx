@@ -4,7 +4,6 @@ import type { CSSProperties } from 'react';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 import { RoundedArrowButton } from '@/components/ui/rounded-arrow-button';
-import rightIcon from '@/docs/figma/export/right.png';
 
 type CbamInsightCardsSectionProps = {
     locale: AppLocale;
@@ -149,7 +148,7 @@ export function CbamInsightCardsSection({ locale }: CbamInsightCardsSectionProps
                                 {item.body}
                             </p>
 
-                            <Image src={rightIcon} alt="" aria-hidden="true" className="absolute bottom-[24px] right-[16px] h-[20px] w-[10px] object-contain transition group-hover:translate-x-[1px]" />
+                            <Image src="/icons/revamp/right.png" alt="" aria-hidden="true" width={10} height={20} className="absolute bottom-[24px] right-[16px] h-[20px] w-[10px] object-contain transition group-hover:translate-x-[1px]" />
                         </Link>
                     ))}
                 </div>

@@ -1,13 +1,13 @@
 import { PlatformHero, type PlatformHeroCopy, type PlatformHeroRelatedLink } from '@/components/features/platform-hero';
 import type { AppLocale } from '@/lib/locales';
 
-type CbamHeroSectionProps = {
+type PcfHeroSectionProps = {
     locale: AppLocale;
 };
 
 const relatedLinks: PlatformHeroRelatedLink[] = [
-    { label: { ko: 'CBAM', en: 'CBAM', es: 'CBAM' }, href: '/cbam', current: true },
-    { label: { ko: '제품탄소발자국', en: 'PCF', es: 'PCF' }, href: '/pcf' },
+    { label: { ko: 'CBAM', en: 'CBAM', es: 'CBAM' }, href: '/cbam' },
+    { label: { ko: '제품탄소발자국', en: 'PCF', es: 'PCF' }, href: '/pcf', current: true },
     { label: { ko: 'Scope 3', en: 'Scope 3', es: 'Scope 3' }, href: '/scope3' },
     { label: { ko: 'Hana.eco AI', en: 'Hana.eco AI', es: 'Hana.eco AI' }, href: '/hana-ai' },
     { label: { ko: '탄소회계', en: 'Carbon Accounting', es: 'Contabilidad de Carbono' }, href: '/platform' },
@@ -32,12 +32,12 @@ const copy: Record<AppLocale, PlatformHeroCopy> = {
     },
 };
 
-export function CbamHeroSection({ locale }: CbamHeroSectionProps) {
+export function PcfHeroSection({ locale }: PcfHeroSectionProps) {
     return (
         <PlatformHero
             locale={locale}
-            ariaLabel="CBAM Hero"
-            backgroundImageUrl="/images/revamp/cbam-hero.png"
+            ariaLabel="PCF Hero"
+            backgroundImageUrl="/images/revamp/pcf-hero.png"
             copy={copy}
             relatedLinks={relatedLinks}
         />
