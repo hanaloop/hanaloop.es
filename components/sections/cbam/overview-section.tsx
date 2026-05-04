@@ -61,7 +61,7 @@ export function CbamOverviewSection({ locale }: CbamOverviewSectionProps) {
     const text = copy[locale];
 
     return (
-        <section className="bg-[#ebebeb] px-5 pb-14 pt-14 md:px-8 lg:px-0 lg:pb-[120px] lg:pt-[114px]" aria-label={text.sectionAriaLabel}>
+        <section className="px-5 pb-14 pt-14 md:px-8 lg:px-0 lg:pb-[120px] lg:pt-[114px]" aria-label={text.sectionAriaLabel}>
             <div className="mx-auto w-full max-w-[1440px] px-11">
                 <h2
                     className="text-black"
@@ -101,14 +101,14 @@ export function CbamOverviewSection({ locale }: CbamOverviewSectionProps) {
                         />
                     </div>
 
-                    <div className="mt-10 overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:mt-[8px] lg:w-[min(957px,49.84vw)] lg:shrink-0">
-                        <Image src="/images/revamp/cars.png" alt={text.imageAlt} width={957} height={707} className="h-auto w-full object-cover" sizes="(min-width: 1920px) 957px, (min-width: 1200px) 49.84vw, 100vw" />
+                    <div className="mt-10 overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:mt-[8px] lg:w-[min(957px,49.84vw,50vw)] lg:shrink-0">
+                        <Image src="/images/revamp/cars.png" alt={text.imageAlt} width={957} height={707} className="h-auto w-full object-cover" sizes="(min-width: 1920px) 957px, (min-width: 1200px) 49.84vw, (min-width: 1024px) 50vw, 100vw" />
                     </div>
                 </div>
             </div>
 
-            <div className="mt-10 hidden lg:mt-[88px] lg:flex lg:items-center lg:justify-between lg:gap-10 lg:pl-[calc((100vw-1440px)/2+44px)]">
-                <div className="pt-1 lg:max-w-[700px] lg:flex-1">
+            <div className="mt-18 hidden items-center justify-between gap-10 lg:flex xl:pl-[calc((100vw-1440px)/2)]">
+                <div className="pt-1 lg:max-w-[700px] lg:flex-1 pl-11">
                     <h3 className="text-[36px] font-bold leading-[1.35] tracking-[-0.25px] text-black">{text.whatTitle}</h3>
                     <p className="mt-6 text-[18px] font-medium leading-[1.65] tracking-[-0.25px] text-black">{text.whatBody}</p>
 
@@ -118,8 +118,8 @@ export function CbamOverviewSection({ locale }: CbamOverviewSectionProps) {
                     <RoundedArrowButton href={withLocalePath(locale, '/demo_request')} label={text.contactLabel} className="mt-16" />
                 </div>
 
-                <div className="overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:w-[957px] lg:shrink-0">
-                    <Image src="/images/revamp/cars.png" alt={text.imageAlt} width={957} height={707} className="h-auto w-full object-cover" sizes="957px" />
+                <div className="overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:w-[min(957px,50vw)] lg:shrink-0">
+                    <Image src="/images/revamp/cars.png" alt={text.imageAlt} width={957} height={707} className="h-auto w-full object-cover" sizes="(min-width: 1920px) 957px, (min-width: 1024px) 50vw, 100vw" />
                 </div>
             </div>
         </section>

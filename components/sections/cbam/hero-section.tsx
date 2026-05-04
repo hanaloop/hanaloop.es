@@ -11,7 +11,7 @@ const relatedLinks: PlatformHeroRelatedLink[] = [
     { label: { ko: 'Scope 3', en: 'Scope 3', es: 'Scope 3' }, href: '/scope3' },
     { label: { ko: 'Hana.eco AI', en: 'Hana.eco AI', es: 'Hana.eco AI' }, href: '/hana-ai' },
     { label: { ko: '탄소회계', en: 'Carbon Accounting', es: 'Contabilidad de Carbono' }, href: '/platform' },
-    { label: { ko: '기후경영', en: 'Climate Strategy', es: 'Estrategia Climatica' }, href: '/solution' },
+    { label: { ko: '기후 경영', en: 'Climate Strategy', es: 'Estrategia Climatica' }, href: '/solution' },
 ];
 
 const copy: Record<AppLocale, PlatformHeroCopy> = {

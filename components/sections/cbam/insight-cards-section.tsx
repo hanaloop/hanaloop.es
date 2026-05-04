@@ -123,7 +123,7 @@ export function CbamInsightCardsSection({ locale }: CbamInsightCardsSectionProps
 
     return (
         <section className="px-5 pb-16 pt-16 md:px-8 lg:px-0 lg:pb-[120px] lg:pt-[92px]" aria-label={text.sectionAriaLabel}>
-            <div className="mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-[80px]">
+            <div className="mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-11">
                 <h2 className="text-center text-black" style={HEADING_STYLE}>
                     {text.heading}
                 </h2>

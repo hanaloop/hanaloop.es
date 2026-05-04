@@ -1,6 +1,5 @@
-import Image from 'next/image';
-import type { CSSProperties } from 'react';
 import type { AppLocale } from '@/lib/locales';
+import { AlternatingImageProcessSection } from '@/components/features/alternating-image-process-section';
 
 type CbamCertifiedSectionProps = {
     locale: AppLocale;
@@ -17,41 +16,6 @@ type CertifiedCopy = {
         imageSrc: string;
         imageAlt: string;
     }>;
-};
-
-const TITLE_STYLE: CSSProperties = {
-    fontSize: 'clamp(34px, 2.5vw, 48px)',
-    fontWeight: 500,
-    letterSpacing: '-1px',
-    lineHeight: 1.2,
-};
-
-const SUBTITLE_STYLE: CSSProperties = {
-    fontSize: 'clamp(16px, 1.09375vw, 21px)',
-    fontWeight: 600,
-    letterSpacing: '0.5px',
-    lineHeight: 1.5,
-};
-
-const INDEX_STYLE: CSSProperties = {
-    fontSize: 'clamp(24px, 1.4583vw, 28px)',
-    fontWeight: 600,
-    letterSpacing: '-0.25px',
-    lineHeight: 1.35,
-};
-
-const CARD_TITLE_STYLE: CSSProperties = {
-    fontSize: 'clamp(28px, 1.875vw, 36px)',
-    fontWeight: 700,
-    letterSpacing: '-0.25px',
-    lineHeight: 1.35,
-};
-
-const CARD_BODY_STYLE: CSSProperties = {
-    fontSize: 'clamp(16px, 1.0417vw, 20px)',
-    fontWeight: 400,
-    letterSpacing: '-0.25px',
-    lineHeight: 1.6,
 };
 
 const koCopy: CertifiedCopy = {
@@ -100,44 +64,11 @@ export function CbamCertifiedSection({ locale }: CbamCertifiedSectionProps) {
     const text = copy[locale];
 
     return (
-        <section className="mt-10 md:py-20 lg:mt-30" aria-label={text.sectionAriaLabel}>
-            <div className="mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-[80px]">
-                <header>
-                    <h2 className="text-[#111111]" style={TITLE_STYLE}>
-                        {text.title}
-                    </h2>
-                    <p className="mt-4 text-[#444444]" style={SUBTITLE_STYLE}>
-                        {text.subtitle}
-                    </p>
-                </header>
-
-                <div className="mt-14 space-y-12 lg:mt-26 lg:space-y-24">
-                    {text.cards.map((card, index) => {
-                        const isImageLeft = index % 2 === 0;
-                        return (
-                            <article key={card.index} className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[1fr_1fr] lg:gap-[80px]">
-                                <div className={isImageLeft ? 'lg:px-11 order-2 lg:order-2' : 'lg:px-11 order-2 lg:order-1'}>
-                                    <p className="text-[#111111]" style={INDEX_STYLE}>
-                                        {card.index}
-                                    </p>
-                                    <h3 className="mt-1 text-[#111111]" style={CARD_TITLE_STYLE}>
-                                        {card.title}
-                                    </h3>
-                                    <p className="mt-4 text-[#555555]" style={CARD_BODY_STYLE}>
-                                        {card.description}
-                                    </p>
-                                </div>
-
-                                <div className={isImageLeft ? 'order-1 lg:order-1' : 'order-1 lg:order-2'}>
-                                    <div className="relative overflow-hidden rounded-[24px]">
-                                        <Image src={card.imageSrc} alt={card.imageAlt} width={700} height={280} className="h-auto w-full" sizes="(min-width: 1920px) 700px, (min-width: 1024px) calc((100vw - 240px) / 2), 100vw" />
-                                    </div>
-                                </div>
-                            </article>
-                        );
-                    })}
-                </div>
-            </div>
-        </section>
+        <AlternatingImageProcessSection
+            ariaLabel={text.sectionAriaLabel}
+            title={text.title}
+            subtitle={text.subtitle}
+            cards={text.cards}
+        />
     );
 }
