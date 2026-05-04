@@ -2,7 +2,6 @@
   "pages": [
     "intro",
     "glossary",
-    "src",
     "x20_environment-general",
     "x30_platform",
     "x40_engineering"

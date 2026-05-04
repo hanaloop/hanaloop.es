@@ -3,7 +3,14 @@ import type { AppLocale } from './locales';
 type MessageRecord = Record<string, { message?: string }>;
 
 const bundles: Record<AppLocale, { code: MessageRecord; navbar: MessageRecord; footer: MessageRecord }> = {
-  ko: { code: {}, navbar: {}, footer: {} },
+  ko: {
+    code: {},
+    navbar: {
+      'item.label.CarbonAccounting': { message: '탄소회계' },
+      'item.label.ClimateManagement': { message: '기후 경영' },
+    },
+    footer: {},
+  },
   en: { code: {}, navbar: {}, footer: {} },
   es: { code: {}, navbar: {}, footer: {} },
 };
