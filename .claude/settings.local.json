@@ -38,7 +38,10 @@
       "Bash(powershell -command ' *)",
       "Bash(python *)",
       "Bash(python3 -c \"from PIL import Image; print\\('ok'\\)\")",
-      "Bash(git mv *)"
+      "Bash(git mv *)",
+      "Bash(npm install *)",
+      "Bash(yarn *)",
+      "Bash(npm show *)"
     ]
   }
 }
