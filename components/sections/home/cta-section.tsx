@@ -43,7 +43,7 @@ function CtaButton({ href, label, locale }: { href: string; label: string; local
     return (
         <Link
             href={withLocalePath(locale, href)}
-            className="inline-flex h-[50px] w-full items-center justify-center gap-4 rounded-full px-6 text-[16px] font-medium leading-none text-white transition hover:opacity-90 lg:h-[50px] lg:w-auto lg:min-w-[170px] lg:px-8 lg:text-[16px]"
+            className="inline-flex h-[50px] w-full items-center justify-center gap-4 rounded-full px-6 text-[16px] font-medium leading-none text-white transition hover:opacity-90 lg:w-auto lg:min-w-[170px] lg:px-8"
             style={{ background: 'linear-gradient(90deg, #1FBD7D 0%, #0194FF 100%)' }}
         >
             <span>{label}</span>

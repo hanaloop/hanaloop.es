@@ -167,7 +167,7 @@ export function Scope3MainFeaturesSection({ locale }: Scope3MainFeaturesSectionP
                                         <p style={{  fontSize: 'clamp(20px, calc(16.23px + 0.79vw), 24px)', fontWeight: 500, letterSpacing: '-1px', lineHeight: 1.42 }}>
                                             {detail.lead}
                                         </p>
-                                        <p className="mt-3 text-[#4C4C4C]" style={{ fontSize: 'clamp(16px, calc(14.12px + 0.39vw), 18px)', fontWeight: 500, letterSpacing: '0.5px', lineHeight: 1.58 }}>
+                                        <p className="mt-3 text-[var(--color-text-subtle)]" style={{ fontSize: 'clamp(16px, calc(14.12px + 0.39vw), 18px)', fontWeight: 500, letterSpacing: '0.5px', lineHeight: 1.58 }}>
                                             {detail.body}
                                         </p>
                                     </div>

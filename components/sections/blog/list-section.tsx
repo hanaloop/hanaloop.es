@@ -96,7 +96,7 @@ const sectionText: Record<AppLocale, string> = {
 
 export function BlogListSection({ locale }: BlogListSectionProps) {
     return (
-        <section className="px-4 pb-20 pt-16 text-[#131313] lg:px-6 lg:pb-28 lg:pt-20">
+        <section className="px-4 pb-20 pt-16 text-[var(--color-text-default)] lg:px-6 lg:pb-28 lg:pt-20">
             <div className="mx-auto w-full max-w-[1920px]">
                 <p className="text-center text-[18px] lg:text-[32px] font-semibold leading-[1.35]">{sectionText[locale]}</p>
                 <ListTable heading="Blog LIST" items={mockItems} itemsPerPage={10} />

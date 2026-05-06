@@ -66,7 +66,7 @@ export function HanaAiOverviewSection({ locale }: HanaAiOverviewSectionProps) {
                     {text.heading}
                 </h2>
                 <p
-                    className="mt-5 max-w-[900px] text-[#4c4c4c]"
+                    className="mt-5 max-w-[900px] text-[var(--color-text-subtle)]"
                     style={{
                         fontSize: 'clamp(16px, calc(13.81px + 0.46vw), 21px)',
                         fontWeight: 600,
@@ -82,12 +82,12 @@ export function HanaAiOverviewSection({ locale }: HanaAiOverviewSectionProps) {
                 <div className="mt-16 grid gap-16 lg:mt-[84px] lg:grid-cols-2 lg:gap-12">
                     <article className="max-w-[590px]">
                         <h4 className="text-[30px] font-medium leading-[1.35] tracking-[-0.25px] text-black lg:text-[36px]">{text.leftTitle}</h4>
-                        <p className="mt-6 text-[17px] font-normal leading-[1.9] tracking-[-0.25px] text-[#4c4c4c] lg:text-[18px]">{text.leftBody}</p>
+                        <p className="mt-6 text-[17px] font-normal leading-[1.9] tracking-[-0.25px] text-[var(--color-text-subtle)] lg:text-[18px]">{text.leftBody}</p>
                     </article>
 
                     <article className="max-w-[590px] lg:mt-[304px] lg:justify-self-end">
                         <h4 className="text-[30px] font-medium leading-[1.35] tracking-[-0.25px] text-black lg:text-[36px]">{text.rightTitle}</h4>
-                        <p className="mt-6 text-[17px] font-normal leading-[1.9] tracking-[-0.25px] text-[#4c4c4c] lg:text-[18px]">{text.rightBody}</p>
+                        <p className="mt-6 text-[17px] font-normal leading-[1.9] tracking-[-0.25px] text-[var(--color-text-subtle)] lg:text-[18px]">{text.rightBody}</p>
                     </article>
                 </div>
             </div>

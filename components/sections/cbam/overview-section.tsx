@@ -75,7 +75,7 @@ export function CbamOverviewSection({ locale }: CbamOverviewSectionProps) {
                     {text.heading}
                 </h2>
                 <p
-                    className="mt-5 text-[#4c4c4c]"
+                    className="mt-5 text-[var(--color-text-subtle)]"
                     style={{
                         fontSize: 'clamp(16px, calc(13.81px + 0.46vw), 21px)',
                         fontWeight: 600,

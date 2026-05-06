@@ -56,13 +56,13 @@ export function ListTable({ heading, items, itemsPerPage = 10, viewMoreHref, vie
     return (
         <div className="mt-10 border-t border-[#bdbdbd] max-w-[1440px] mx-auto px-11">
             <div className="border-b border-[#d0d0d0] px-6 py-4">
-                <h3 className="text-[16px] md:text-[24px] lg:text-[32px] font-medium leading-none text-[#131313]">{heading}</h3>
+                <h3 className="text-[16px] md:text-[24px] lg:text-[32px] font-medium leading-none text-[var(--color-text-default)]">{heading}</h3>
             </div>
 
             {currentItems.map((item) => (
                 <article key={item.id} className="grid grid-cols-[1fr_auto] items-center gap-6 border-b border-[#d0d0d0] px-6 py-4">
                     <div className="min-w-0">
-                        <h4 className="truncate text-[12px] md:text-[18px] lg:text-[24px] font-medium leading-[1.3] text-[#131313]">
+                        <h4 className="truncate text-[12px] md:text-[18px] lg:text-[24px] font-medium leading-[1.3] text-[var(--color-text-default)]">
                             <Link href={item.href} className="hover:underline">
                                 {item.title}
                             </Link>
@@ -78,7 +78,7 @@ export function ListTable({ heading, items, itemsPerPage = 10, viewMoreHref, vie
             ))}
 
             <div className="px-6 py-4 flex items-end justify-between gap-6">
-                <nav className="flex flex-wrap items-center gap-2 text-[16px] md:text-[20px] lg:text-[24px] leading-none text-[#131313]" aria-label="Blog list pagination">
+                <nav className="flex flex-wrap items-center gap-2 text-[16px] md:text-[20px] lg:text-[24px] leading-none text-[var(--color-text-default)]" aria-label="Blog list pagination">
                     {currentPage > 1 && (
                         <button type="button" className="cursor-pointer hover:underline" onClick={() => setCurrentPage(1)}>
                             First
@@ -100,7 +100,7 @@ export function ListTable({ heading, items, itemsPerPage = 10, viewMoreHref, vie
                     )}
                 </nav>
                 {viewMoreHref && viewMoreLabel ? (
-                    <Link href={viewMoreHref} className="inline-flex items-center gap-2 text-[24px] font-medium leading-none text-[#131313]">
+                    <Link href={viewMoreHref} className="inline-flex items-center gap-2 text-[24px] font-medium leading-none text-[var(--color-text-default)]">
                         <span>{viewMoreLabel}</span>
                         <Image src="/icons/revamp/ic-arrow-right-black.png" alt="" width={27} height={27} className="h-[27px] w-[27px]" />
                     </Link>

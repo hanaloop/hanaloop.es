@@ -71,7 +71,7 @@ export function AlternatingImageProcessSection({ ariaLabel, title, subtitle, car
 
                         return (
                             <article key={card.index} className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[1fr_1fr] lg:gap-[80px]">
-                                <div className={isImageLeft ? 'order-2 lg:order-2 lg:px-11' : 'order-2 lg:order-1 lg:px-11'}>
+                                <div className={isImageLeft ? 'order-2 lg:px-11' : 'order-2 lg:order-1 lg:px-11'}>
                                     <p className="text" style={INDEX_STYLE}>
                                         {card.index}
                                     </p>
@@ -92,7 +92,7 @@ export function AlternatingImageProcessSection({ ariaLabel, title, subtitle, car
                                     )}
                                 </div>
 
-                                <div className={isImageLeft ? 'order-1 lg:order-1' : 'order-1 lg:order-2'}>
+                                <div className={isImageLeft ? 'order-1' : 'order-1 lg:order-2'}>
                                     <div className="relative overflow-hidden rounded-[24px]">
                                         <Image src={card.imageSrc} alt={card.imageAlt} width={700} height={280} className="h-auto w-full" sizes="(min-width: 1920px) 700px, (min-width: 1024px) calc((100vw - 240px) / 2), 100vw" />
                                     </div>

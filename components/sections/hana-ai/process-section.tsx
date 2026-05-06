@@ -192,7 +192,7 @@ export function HanaAiProcessSection({ locale }: HanaAiProcessSectionProps) {
                                         {item.badge}
                                     </span>
                                     <h3 className="mt-5 text-[30px] font-bold leading-[1.35] tracking-[-0.25px] text-black lg:text-[36px]">{item.title}</h3>
-                                    <div className="mt-6 space-y-1 text-[17px] font-normal leading-[1.9] tracking-[-0.25px] text-[#4c4c4c] lg:text-[20px]">
+                                    <div className="mt-6 space-y-1 text-[17px] font-normal leading-[1.9] tracking-[-0.25px] text-[var(--color-text-subtle)] lg:text-[20px]">
                                         {(Array.isArray(item.body) ? item.body : [item.body])
                                             .flatMap((block) => splitByPeriod(block))
                                             .map((line) => (
@@ -202,7 +202,7 @@ export function HanaAiProcessSection({ locale }: HanaAiProcessSectionProps) {
 
                                     {item.extraTitle ? <h4 className="mt-10 text-[30px] font-bold leading-[1.35] tracking-[-0.25px] text-black lg:mt-[72px] lg:text-[36px]">{item.extraTitle}</h4> : null}
                                     {item.extraBody ? (
-                                        <div className="mt-6 space-y-1 text-[17px] font-normal leading-[1.9] tracking-[-0.25px] text-[#4c4c4c] lg:text-[20px]">
+                                        <div className="mt-6 space-y-1 text-[17px] font-normal leading-[1.9] tracking-[-0.25px] text-[var(--color-text-subtle)] lg:text-[20px]">
                                             {item.extraBody
                                                 .flatMap((block) => splitByPeriod(block))
                                                 .map((line) => (
