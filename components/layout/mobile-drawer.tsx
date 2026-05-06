@@ -17,6 +17,12 @@ const ICON = {
   chevronDown: '/icons/revamp/ic-chevron-down.png',
 } as const;
 
+const copy: Record<AppLocale, { closeOverlay: string; closeMenu: string; hanaEco: string; copyright: string }> = {
+  ko: { closeOverlay: 'Close mobile menu overlay', closeMenu: 'Close menu', hanaEco: 'Hana.eco', copyright: 'HanaLoop, all rights reserved.' },
+  en: { closeOverlay: 'Close mobile menu overlay', closeMenu: 'Close menu', hanaEco: 'Hana.eco', copyright: 'HanaLoop, all rights reserved.' },
+  es: { closeOverlay: 'Cerrar capa del menu movil', closeMenu: 'Cerrar menu', hanaEco: 'Hana.eco', copyright: 'HanaLoop, all rights reserved.' },
+};
+
 type MobileDrawerProps = {
   locale: AppLocale;
   groups: MenuGroup[];
@@ -26,19 +32,20 @@ type MobileDrawerProps = {
 export function MobileDrawer({ locale, groups, toggleId = 'mobile-menu-toggle' }: MobileDrawerProps) {
   const currentYear = new Date().getFullYear();
   const [openGroup, setOpenGroup] = useState<number | null>(0);
+  const text = copy[locale];
 
   return (
     <div className="mobile-menu-layer fixed inset-0 z-[60] lg:hidden">
-      <label htmlFor={toggleId} className="mobile-menu-overlay absolute inset-0 cursor-pointer bg-black/24" aria-label="Close mobile menu overlay" />
+      <label htmlFor={toggleId} className="mobile-menu-overlay absolute inset-0 cursor-pointer bg-black/24" aria-label={text.closeOverlay} />
 
       <aside id="mobile-menu-drawer" className="mobile-menu-panel absolute inset-y-0 right-0 flex h-full w-full flex-col overflow-y-auto bg-[var(--color-mobile-dark-bg)] text-white">
-        <div className="flex h-full flex-col pt-[28px] pb-[52px] px-[37px]">
+        <div className="flex h-full flex-col px-[37px] pb-[52px] pt-[28px]">
           <div className="flex items-center justify-between">
             <Link href={withLocalePath(locale, '/')} className="inline-flex items-center">
               <Image src={ICON.logoDrawer} alt="HanaLoop" width={130} height={19} className="h-[19px] w-auto" />
             </Link>
 
-            <label htmlFor={toggleId} className="inline-flex h-6 w-6 cursor-pointer items-center justify-center" aria-label="Close menu">
+            <label htmlFor={toggleId} className="inline-flex h-6 w-6 cursor-pointer items-center justify-center" aria-label={text.closeMenu}>
               <Image src={ICON.close} alt="" width={24} height={24} aria-hidden="true" className="h-6 w-6" />
             </label>
           </div>
@@ -74,7 +81,7 @@ export function MobileDrawer({ locale, groups, toggleId = 'mobile-menu-toggle' }
                   </ul>
                 </li>
               ))}
-              <li style={{ paddingTop: '34px', paddingBottom: '34px' }}>
+              <li style={{ paddingBottom: '34px', paddingTop: '34px' }}>
                 <a
                   href="https://www.hana.eco"
                   target="_blank"
@@ -82,7 +89,7 @@ export function MobileDrawer({ locale, groups, toggleId = 'mobile-menu-toggle' }
                   className="inline-flex items-center gap-3 text-white"
                   style={{ fontSize: '24px', fontWeight: 500, lineHeight: 1, letterSpacing: '-0.54px' }}
                 >
-                  <span>Hana. eco</span>
+                  <span>{text.hanaEco}</span>
                   <Image src={ICON.external} alt="" width={24} height={24} aria-hidden="true" className="h-6 w-6 brightness-0 invert" />
                 </a>
               </li>
@@ -93,7 +100,7 @@ export function MobileDrawer({ locale, groups, toggleId = 'mobile-menu-toggle' }
             <ContactCtaButton
               locale={locale}
               className="justify-center gap-3 px-0 text-[16px] font-medium leading-none"
-              style={{ width: '240px', height: '56px' }}
+              style={{ height: '56px', width: '240px' }}
               iconSrc="/icons/revamp/ic-arrow-up-right.png"
               iconWidth={24}
               iconHeight={24}
@@ -110,7 +117,7 @@ export function MobileDrawer({ locale, groups, toggleId = 'mobile-menu-toggle' }
             </div>
 
             <p className="text-[14px] leading-none tracking-[-0.28px] text-white/45" style={{ marginTop: '18px' }}>
-              © {currentYear} HanaLoop, all rights reserved.
+              (c) {currentYear} {text.copyright}
             </p>
           </div>
         </div>

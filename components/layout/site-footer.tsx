@@ -20,18 +20,69 @@ const ICON = {
 
 const bodyText = 'text-[16px] leading-none font-normal text-white';
 
-const mobilePrimaryLinks: Record<AppLocale, { platform: string; insight: string; about: string }> = {
-    ko: { platform: 'Our Platform', insight: 'Insight & Blog', about: 'About Us' },
-    en: { platform: 'Our Platform', insight: 'Insight & Blog', about: 'About Us' },
-    es: { platform: 'Our Platform', insight: 'Insight & Blog', about: 'Nosotros' },
+const copy: Record<
+    AppLocale,
+    {
+        mobilePrimary: { platform: string; insight: string; about: string };
+        hanaEco: string;
+        email: string;
+        phone: string;
+        copyright: string;
+        insightTitle: string;
+        insight: string;
+        contactTitle: string;
+        address: string;
+        privacy: string;
+        terms: string;
+    }
+> = {
+    ko: {
+        mobilePrimary: { platform: 'Platform', insight: 'Insight & Blog', about: 'About Us' },
+        hanaEco: 'Hana.eco',
+        email: 'Email',
+        phone: 'Phone',
+        copyright: `(c) ${CURRENT_YEAR} HANALOOP, all rights reserved.`,
+        insightTitle: 'Insight & Blog',
+        insight: 'Insight',
+        contactTitle: 'Contact',
+        address: '서울특별시 관악구 봉천로 545, 서울창업센터 관악 4층',
+        privacy: 'Privacy policy',
+        terms: 'Terms and conditions',
+    },
+    en: {
+        mobilePrimary: { platform: 'Our Platform', insight: 'Insight & Blog', about: 'About Us' },
+        hanaEco: 'Hana.eco',
+        email: 'Email',
+        phone: 'Phone',
+        copyright: `(c) ${CURRENT_YEAR} HANALOOP, all rights reserved.`,
+        insightTitle: 'Insight & Blog',
+        insight: 'Insight',
+        contactTitle: 'Contact',
+        address: '4F, Seoul Startup Center Gwanak, 545 Bongcheon-ro, Gwanak-gu, Seoul',
+        privacy: 'Privacy policy',
+        terms: 'Terms and conditions',
+    },
+    es: {
+        mobilePrimary: { platform: 'Nuestra Plataforma', insight: 'Insights y Blog', about: 'Sobre Nosotros' },
+        hanaEco: 'Hana.eco',
+        email: 'Correo',
+        phone: 'Telefono',
+        copyright: `(c) ${CURRENT_YEAR} HANALOOP, all rights reserved.`,
+        insightTitle: 'Insights y Blog',
+        insight: 'Insights',
+        contactTitle: 'Contacto',
+        address: '4F, Seoul Startup Center Gwanak, 545 Bongcheon-ro, Gwanak-gu, Seul',
+        privacy: 'Politica de privacidad',
+        terms: 'Terminos y condiciones',
+    },
 };
 
 export function SiteFooter({ locale }: { locale: AppLocale }) {
-    const mobileLinks = mobilePrimaryLinks[locale];
+    const text = copy[locale];
 
     return (
         <footer className="bg-[var(--color-mobile-dark-bg)] text-white lg:bg-[var(--color-footer-bg)]">
-            <div className="mx-auto min-h-[760px] px-6 pt-[44px] pb-10 lg:hidden">
+            <div className="mx-auto min-h-[760px] px-6 pb-10 pt-[44px] lg:hidden">
                 <div className="flex h-full min-h-[676px] flex-col">
                     <div>
                         <div className="flex items-center justify-between gap-2 sm:gap-4">
@@ -51,22 +102,22 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
                         <ul className="mt-[44px] space-y-[28px]">
                             <li>
                                 <Link href={withLocalePath(locale, '/platform')} className={bodyText}>
-                                    {mobileLinks.platform}
+                                    {text.mobilePrimary.platform}
                                 </Link>
                             </li>
                             <li>
                                 <Link href={withLocalePath(locale, '/docs/intro')} className={bodyText}>
-                                    {mobileLinks.insight}
+                                    {text.mobilePrimary.insight}
                                 </Link>
                             </li>
                             <li>
                                 <Link href={withLocalePath(locale, '/company')} className={bodyText}>
-                                    {mobileLinks.about}
+                                    {text.mobilePrimary.about}
                                 </Link>
                             </li>
                             <li>
                                 <a href="https://www.hana.eco" target="_blank" rel="noreferrer" className="inline-flex items-center gap-[10px] text-[16px] leading-none font-semibold text-white">
-                                    <span>Hana eco</span>
+                                    <span>{text.hanaEco}</span>
                                     <Image src={ICON.link} alt="" width={24} height={24} aria-hidden="true" className="h-6 w-6 brightness-0 invert" />
                                 </a>
                             </li>
@@ -85,32 +136,32 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
 
                         <div className="mt-[34px] space-y-2">
                             <p className={bodyText}>
-                                Email :{' '}
+                                {text.email} :{' '}
                                 <a href="mailto:info@hanaloop.com" className="transition hover:text-white/80">
                                     info@hanaloop.com
                                 </a>
                             </p>
                             <p className={bodyText}>
-                                Phone :{' '}
+                                {text.phone} :{' '}
                                 <a href="tel:+82050713379251" className="transition hover:text-white/80">
                                     +82 0507-1337-9251
                                 </a>
                             </p>
                         </div>
 
-                        <p className="mt-[26px] text-[14px] leading-none font-normal text-white/45">© {CURRENT_YEAR} HANALOOP, all rights reserved.</p>
+                        <p className="mt-[26px] text-[14px] leading-none font-normal text-white/45">{text.copyright}</p>
                     </div>
                 </div>
             </div>
 
-            <div className="mx-auto hidden max-w-[1440px] lg:block lg:min-h-[520px] lg:px-[64px] lg:pt-[98px] lg:pb-[46px]">
+            <div className="mx-auto hidden max-w-[1440px] lg:block lg:min-h-[520px] lg:px-[64px] lg:pb-[46px] lg:pt-[98px]">
                 <div className="grid grid-cols-[260px_260px_1fr] items-start gap-x-[48px] desktop:grid-cols-[300px_320px_1fr] desktop:gap-x-[76px]">
                     <div>
-                        <p className="mb-[30px] text-[30px] leading-none font-medium text-white">Insight &amp; Blog</p>
+                        <p className="mb-[30px] text-[30px] leading-none font-medium text-white">{text.insightTitle}</p>
                         <ul className="space-y-[18px]">
                             <li>
                                 <Link href={withLocalePath(locale, '/docs/intro')} className={`${bodyText} transition hover:text-white/80`}>
-                                    Insight
+                                    {text.insight}
                                 </Link>
                             </li>
                             {insightLinks.map((item) => (
@@ -125,16 +176,16 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
                     </div>
 
                     <div>
-                        <p className="mb-[30px] text-[30px] leading-none font-medium text-white">Contact</p>
+                        <p className="mb-[30px] text-[30px] leading-none font-medium text-white">{text.contactTitle}</p>
                         <ul className="space-y-[26px]">
                             <li className={bodyText}>
-                                Email:{' '}
+                                {text.email}:{' '}
                                 <a href="mailto:info@hanaloop.com" className="transition hover:text-white/80">
                                     info@hanaloop.com
                                 </a>
                             </li>
                             <li className={bodyText}>
-                                Phone:{' '}
+                                {text.phone}:{' '}
                                 <a href="tel:+82050713379251" className="transition hover:text-white/80">
                                     +82 0507-1337-9251
                                 </a>
@@ -158,15 +209,15 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
                 </div>
 
                 <div className="mt-16 flex flex-col gap-8 lg:mt-[148px] lg:grid lg:grid-cols-[1fr_auto] lg:items-end">
-                    <p className={bodyText}>서울특별시 관악구 봉천로 545, 서울창업센터 관악 4층</p>
+                    <p className={bodyText}>{text.address}</p>
                     <div className="flex flex-col items-start gap-[18px] lg:items-end">
                         <Link href={withLocalePath(locale, '/privacy')} className={`${bodyText} transition hover:text-white/80`}>
-                            Privacy policy
+                            {text.privacy}
                         </Link>
                         <Link href={withLocalePath(locale, '/credits')} className={`${bodyText} transition hover:text-white/80`}>
-                            Terms and conditions
+                            {text.terms}
                         </Link>
-                        <p className={bodyText}>© {CURRENT_YEAR} HANALOOP, all rights reserved.</p>
+                        <p className={bodyText}>{text.copyright}</p>
                     </div>
                 </div>
             </div>

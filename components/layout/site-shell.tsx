@@ -8,21 +8,21 @@ import { SiteHeader } from './site-header';
 import { SiteFooter } from './site-footer';
 
 type SiteShellProps = {
-  children?: ReactNode;
-  wrapperClassName?: string;
-  mobileContextualNav?: MobileContextualNav;
-  headerDark?: boolean;
+    children?: ReactNode;
+    wrapperClassName?: string;
+    mobileContextualNav?: MobileContextualNav;
+    headerDark?: boolean;
 };
 
 export function SiteShell({ children, wrapperClassName, mobileContextualNav, headerDark }: SiteShellProps) {
-  const pathname = usePathname();
-  const locale = getLocaleFromPathname(pathname);
+    const pathname = usePathname();
+    const locale = getLocaleFromPathname(pathname);
 
-  return (
-    <div className={`min-h-screen bg-white text-[var(--color-text-default)] ${wrapperClassName ?? ''}`}>
-      <SiteHeader locale={locale} pathname={pathname ?? '/'} mobileContextualNav={mobileContextualNav} initialDark={headerDark} />
-      <main>{children}</main>
-      <SiteFooter locale={locale} />
-    </div>
-  );
+    return (
+        <div className={`min-h-screen text-[var(--color-text-default)] bg-[#F0EBF8] ${wrapperClassName ?? ''}`}>
+            <SiteHeader locale={locale} pathname={pathname ?? '/'} mobileContextualNav={mobileContextualNav} initialDark={headerDark} />
+            <main>{children}</main>
+            <SiteFooter locale={locale} />
+        </div>
+    );
 }

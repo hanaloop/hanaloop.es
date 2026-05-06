@@ -19,6 +19,12 @@ const ICON = {
     menuDark: '/icons/revamp/ic-menu-dark.png',
 } as const;
 
+const headerCopy: Record<AppLocale, { openMenu: string; hanaEco: string }> = {
+    ko: { openMenu: '메뉴 열기', hanaEco: 'Hana.eco' },
+    en: { openMenu: 'Open menu', hanaEco: 'Hana.eco' },
+    es: { openMenu: 'Abrir menu', hanaEco: 'Hana.eco' },
+};
+
 function NavDropdownItem({ item, locale }: { item: MenuItem; locale: AppLocale }) {
     if (item.external) {
         return (
@@ -44,6 +50,7 @@ type SiteHeaderProps = {
 };
 
 export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileContextualNav, initialDark }: SiteHeaderProps) {
+    const text = headerCopy[locale];
     const menus = buildMenus(locale);
     const [scrolled, setScrolled] = useState(false);
     const [menuHovered, setMenuHovered] = useState(false);
@@ -75,7 +82,7 @@ export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileConte
                         <Image src={mobileSolid ? ICON.logoDark : ICON.logoLight} alt="HanaLoop" width={143} height={19} style={{ height: '19px', width: 'auto' }} priority={isHome} />
                     </Link>
 
-                    <label htmlFor="mobile-menu-toggle" className="relative z-10 inline-flex h-[56px] cursor-pointer items-center justify-center" aria-label="Open menu">
+                    <label htmlFor="mobile-menu-toggle" className="relative z-10 inline-flex h-[56px] cursor-pointer items-center justify-center" aria-label={text.openMenu}>
                         <span className="inline-flex h-10 w-10 items-center justify-center">
                             <Image src={mobileSolid ? ICON.menuDark : ICON.menuLight} alt="" width={40} height={40} aria-hidden="true" className="h-10 w-10" />
                         </span>
@@ -120,7 +127,7 @@ export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileConte
                             </div>
                         ))}
                         <a href="https://www.hana.eco" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md px-3 py-2 text-[14px] font-medium leading-none text-white transition">
-                            <span>Hana. eco</span>
+                            <span>{text.hanaEco}</span>
                             <Image src={ICON.link} alt="" width={8} height={8} aria-hidden="true" className="h-2 w-2" />
                         </a>
                     </nav>

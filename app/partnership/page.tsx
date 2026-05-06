@@ -8,9 +8,9 @@ export const dynamicParams = false;
 export default function Page() {
   return (
     <SiteShell>
-      <PartnershipHeroSection />
-      <PartnershipConsultationApplicationSection />
-      <PartnershipContactApplicationSection />
+      <PartnershipHeroSection locale="ko" />
+      <PartnershipConsultationApplicationSection locale="ko" />
+      <PartnershipContactApplicationSection locale="ko" />
     </SiteShell>
   );
 }

@@ -1,23 +1,65 @@
-export function PartnershipConsultationApplicationSection() {
+import type { AppLocale } from '@/lib/locales';
+
+type PartnershipConsultationApplicationSectionProps = {
+    locale: AppLocale;
+};
+
+type ConsultationCopy = {
+    heading: string;
+    descriptionLines: string[];
+};
+
+const copy: Record<AppLocale, ConsultationCopy> = {
+    ko: {
+        heading: 'Hana.eco Solution\nConsultation Application',
+        descriptionLines: [
+            '기업 현황에 맞춘 상담을 도와드립니다.',
+            '상담 요청시 기업/기관명과 요청하시는 분을 소개해 주세요.',
+            '빠른 시일 내에 연락 드리겠습니다.',
+            '',
+            '감사합니다.',
+        ],
+    },
+    en: {
+        heading: 'Hana.eco Solution\nConsultation Application',
+        descriptionLines: [
+            'We provide consultations tailored to your business situation.',
+            'When requesting a consultation, please include your organization name and contact person.',
+            'We will get back to you as soon as possible.',
+            '',
+            'Thank you.',
+        ],
+    },
+    es: {
+        heading: 'Solicitud de Consultoria\nHana.eco Solution',
+        descriptionLines: [
+            'Ofrecemos consultoria adaptada a la situacion de su empresa.',
+            'Al solicitar una consulta, incluya el nombre de su organizacion y la persona de contacto.',
+            'Nos pondremos en contacto con usted a la brevedad.',
+            '',
+            'Gracias.',
+        ],
+    },
+};
+
+export function PartnershipConsultationApplicationSection({ locale }: PartnershipConsultationApplicationSectionProps) {
+    const text = copy[locale];
+
     return (
         <section aria-label="Hana.eco Solution Consultation Application">
             <div className="mx-auto w-full max-w-[1440px] px-6 pt-16 sm:pt-20 lg:px-11 lg:pt-[78px]">
-                <h2 className="text-[40px] font-medium leading-[1.04] tracking-[-1px] text-[#1FBD7D] sm:text-[52px] lg:text-[64px]">
-                    Hana.eco Solution
-                    <br />
-                    Consultation Application
+                <h2 className="whitespace-pre-line text-[40px] font-medium leading-[1.04] tracking-[-1px] text-[#1FBD7D] sm:text-[52px] lg:text-[64px]">
+                    {text.heading}
                 </h2>
 
                 <div className="mt-10 grid grid-cols-1 gap-10 lg:mt-[54px] lg:grid-cols-[1fr_auto] lg:items-end">
                     <p className="text-[16px] font-medium leading-[1.6] tracking-[-0.02em] text-[#1FBD7D] lg:text-[18px]">
-                        기업 현황에 맞추어 상담부터 해드립니다.
-                        <br />
-                        상담 신청하시는 기업/기관과 신청하시는 분을 소개해주세요.
-                        <br />
-                        빠른 시일 내에 연락 드리겠습니다.
-                        <br />
-                        <br />
-                        감사합니다.
+                        {text.descriptionLines.map((line, index) => (
+                            <span key={`${line}-${index}`}>
+                                {line}
+                                <br />
+                            </span>
+                        ))}
                     </p>
 
                     <div className="text-left lg:text-right">
