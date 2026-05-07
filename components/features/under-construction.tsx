@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { SiteShell } from '@/components/layout/site-shell';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 
@@ -32,34 +31,32 @@ export function UnderConstruction({ locale = 'ko' }: UnderConstructionProps) {
   const text = copy[locale];
 
   return (
-    <SiteShell headerDark>
-      <section className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-center px-5 py-24 text-center md:px-8 lg:min-h-[calc(100vh-96px)] lg:px-16">
-        <p
-          className="text-[13px] font-semibold uppercase tracking-[0.12em] text-[#1FBD7D]"
-          style={{ fontFamily: 'TT Fors Trial, sans-serif' }}
-        >
-          {text.eyebrow}
-        </p>
-        <h1
-          className="mt-5 text-[32px] font-medium leading-[1.15] tracking-[-0.03em] text-[#131313] md:text-[48px] lg:text-[56px]"
-          style={{ fontFamily: 'TT Fors Trial, sans-serif' }}
-        >
-          {text.heading}
-        </h1>
-        <p
-          className="mt-5 max-w-[480px] whitespace-pre-line text-[15px] leading-[1.7] text-[#646464] md:text-[16px]"
-          style={{ fontFamily: 'Pretendard, sans-serif' }}
-        >
-          {text.description}
-        </p>
-        <Link
-          href={withLocalePath(locale, '/')}
-          className="mt-10 inline-flex h-[50px] items-center gap-2 rounded-full px-8 text-[15px] font-medium text-white transition hover:opacity-90"
-          style={{ background: 'linear-gradient(90deg, #1FBD7D 0%, #0194FF 100%)' }}
-        >
-          {text.cta}
-        </Link>
-      </section>
-    </SiteShell>
+    <section className="flex min-h-screen flex-col items-center justify-center px-5 py-24 text-center md:px-8 lg:px-16">
+      <p
+        className="text-[13px] font-semibold uppercase tracking-[0.12em] text-[#1FBD7D]"
+        style={{ fontFamily: 'TT Fors Trial, sans-serif' }}
+      >
+        {text.eyebrow}
+      </p>
+      <h1
+        className="mt-5 text-[32px] font-medium leading-[1.15] tracking-[-0.03em] text-[#131313] md:text-[48px] lg:text-[56px]"
+        style={{ fontFamily: 'TT Fors Trial, sans-serif' }}
+      >
+        {text.heading}
+      </h1>
+      <p
+        className="mt-5 max-w-[480px] whitespace-pre-line text-[15px] leading-[1.7] text-[#646464] md:text-[16px]"
+        style={{ fontFamily: 'Pretendard, sans-serif' }}
+      >
+        {text.description}
+      </p>
+      <Link
+        href={withLocalePath(locale, '/')}
+        className="mt-10 inline-flex h-[50px] items-center gap-2 rounded-full px-8 text-[15px] font-medium text-white transition hover:opacity-90"
+        style={{ background: 'linear-gradient(90deg, #1FBD7D 0%, #0194FF 100%)' }}
+      >
+        {text.cta}
+      </Link>
+    </section>
   );
 }

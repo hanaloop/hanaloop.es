@@ -1,6 +1,15 @@
+import { notFound } from 'next/navigation';
 import { SiteShell } from '@/components/layout/site-shell';
+import { isLocale, locales } from '@/lib/locales';
 
-export default function Page() {
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export default async function Page({ params }: Props) {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+
   return (
     <SiteShell>
       <div className="flex justify-center py-10">
@@ -12,9 +21,13 @@ export default function Page() {
           marginHeight={0}
           marginWidth={0}
         >
-          Loading…
+          Loading...
         </iframe>
       </div>
     </SiteShell>
   );
+}
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
 }
