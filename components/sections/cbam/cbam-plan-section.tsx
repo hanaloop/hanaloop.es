@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import type { CSSProperties } from 'react';
 import type { AppLocale } from '@/lib/locales';
 
@@ -126,16 +125,7 @@ export function CbamPlanSection({ locale }: CbamPlanSectionProps) {
                 </div>
 
                 <div className="mt-12 overflow-hidden rounded-[20px] lg:mt-[58px]">
-                    <Image
-                        src="/site/cbam/plan-bg.png"
-                        alt={text.imageAlt}
-                        width={1280}
-                        height={720}
-                        className="h-auto w-full"
-                        style={{ height: 'auto' }}
-                        sizes="(min-width: 1920px) 1280px, (min-width: 1440px) calc(100vw - 160px), 100vw"
-                        priority
-                    />
+                    <img src="/site/cbam/plan-bg.png" alt={text.imageAlt} className="h-auto w-full" loading="eager" />
                 </div>
             </div>
         </section>

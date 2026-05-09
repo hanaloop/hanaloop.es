@@ -237,7 +237,7 @@
         "badge": "Detección de Anomalías",
         "title": "Detección de Valores Atípicos",
         "body": ["La precisión es uno de los principios clave en la contabilidad de carbono.", "Durante la recopilación y gestión masiva de datos de emisiones, pueden surgir anomalías por diversos factores y afectar la fiabilidad.", "Hana.eco detecta estas anomalías para mantener eficazmente la precisión de los datos."],
-        "bgSrc": "/images/revamp/hana-ai/1-bg.png",
+        "bgSrc": "/site/hana-ai/1-bg.png",
         "bgAlt": "Fondo de la función de detección de anomalías"
       },
       {
@@ -246,7 +246,7 @@
         "body": "Hoy, el carbono representa valor económico directo. En ETS, CBAM y otros marcos, predecir con precisión las emisiones ayuda a maximizar ingresos y reducir costos.",
         "extraTitle": "Análisis del Impacto de Reducción con Predicción",
         "extraBody": ["Hana.eco usa IA para predecir emisiones y analizar el impacto de reducción según cambios operativos, apoyando decisiones estratégicas."],
-        "bgSrc": "/images/revamp/hana-ai/2-bg.png",
+        "bgSrc": "/site/hana-ai/2-bg.png",
         "bgAlt": "Fondo de la función de predicción"
       },
       {
@@ -255,7 +255,7 @@
         "body": ["Una gestión de carbono efectiva requiere integrar conocimiento experto y estrategia empresarial.", "Así se pueden definir estrategias óptimas y responder rápidamente a regulaciones cambiantes."],
         "extraTitle": "Comprensión Regulatoria Rápida y Clara",
         "extraBody": ["Hana.eco aprovecha IA generativa y NLP para que incluso no especialistas comprendan regulaciones complejas y respondan con eficiencia."],
-        "bgSrc": "/images/revamp/hana-ai/3-bg.png",
+        "bgSrc": "/site/hana-ai/3-bg.png",
         "bgAlt": "Fondo de la función de asistente Carbon Buddy AI"
       }
     ]
@@ -318,28 +318,28 @@
         "index": "01.",
         "title": "Evaluación de Capacidades de Alcance 3",
         "description": ["Análisis de capacidades internas", "Definición de categorías de Alcance 3 gestionables", "Establecimiento del alcance de categorías de emisiones"],
-        "imageSrc": "/images/revamp/scope3/overview-1.png",
+        "imageSrc": "/site/scope3/overview-1.png",
         "imageAlt": "Imagen de evaluación de capacidades de Alcance 3"
       },
       {
         "index": "02.",
         "title": "Cálculo de Emisiones de Alcance 3",
         "description": ["Recopilación de datos hasta el cálculo", "Verificación de los resultados del cálculo", "Construcción de un proceso de cálculo de emisiones personalizado"],
-        "imageSrc": "/images/revamp/scope3/overview-2.png",
+        "imageSrc": "/site/scope3/overview-2.png",
         "imageAlt": "Imagen de cálculo de emisiones de Alcance 3"
       },
       {
         "index": "03.",
         "title": "Análisis Preliminar de Emisiones y Riesgos de Alcance 3",
         "description": ["Análisis de la intensidad de emisiones y principales fuentes de Alcance 3", "Evaluación de la contribución de emisiones por categoría", "Análisis preliminar de riesgos basado en datos de la cadena de suministro"],
-        "imageSrc": "/images/revamp/scope3/overview-3.png",
+        "imageSrc": "/site/scope3/overview-3.png",
         "imageAlt": "Imagen de análisis preliminar de emisiones y riesgos de Alcance 3"
       },
       {
         "index": "04.",
         "title": "Estrategia de Respuesta Regulatoria y Gestión de Riesgos",
         "description": ["Planes de respuesta a los requisitos de clientes y partes interesadas", "Aplicación de estándares globales de reporte como IFRS y CDP", "Estrategias de gestión de riesgos"],
-        "imageSrc": "/images/revamp/scope3/overview-4.png",
+        "imageSrc": "/site/scope3/overview-4.png",
         "imageAlt": "Imagen de estrategia de respuesta regulatoria y gestión de riesgos"
       }
     ]
@@ -489,28 +489,28 @@
         "index": "01.",
         "title": "Gestión de Productos y Precursores (Gestión de Códigos CN)",
         "description": "Gestione productos y precursores de forma integrada, y registre y rastree sistemáticamente los códigos CN requeridos para los bienes regulados por CBAM. Esto le permite obtener fácilmente los datos fundamentales necesarios para el análisis y reporte de emisiones de carbono por producto.",
-        "imageSrc": "/images/revamp/cbam/certified-1.png",
+        "imageSrc": "/site/cbam/certified-1.png",
         "imageAlt": "Visualización de gestión de productos y precursores"
       },
       {
         "index": "02.",
         "title": "Configuración de Instalaciones y Gestión de Procesos",
         "description": "Configure y gestione la información de cada instalación de fabricación y el flujo del proceso de producción. Esto desempeña un papel clave en mejorar la precisión de los datos de emisiones y los cálculos de emisiones por proceso requeridos para los informes CBAM.",
-        "imageSrc": "/images/revamp/cbam/certified-2.png",
+        "imageSrc": "/site/cbam/certified-2.png",
         "imageAlt": "Visualización de configuración de instalaciones y gestión de procesos"
       },
       {
         "index": "03.",
         "title": "Cálculo y Análisis de Emisiones Incorporadas",
         "description": "Calcule las emisiones directas e indirectas generadas durante la fabricación del producto por unidad de producto. Los resultados le permiten analizar la intensidad de carbono, los factores de alta emisión y las áreas de mejora por producto, útiles tanto para el cumplimiento normativo como para desarrollar estrategias de reducción de carbono.",
-        "imageSrc": "/images/revamp/cbam/certified-3.png",
+        "imageSrc": "/site/cbam/certified-3.png",
         "imageAlt": "Visualización del cálculo y análisis de emisiones incorporadas"
       },
       {
         "index": "04.",
         "title": "Generación de Informes CBAM",
         "description": "Genere automáticamente informes conformes con las regulaciones CBAM basándose en datos de actividad e información de emisiones recopilados. Apoye eficientemente a los exportadores europeos en el cumplimiento de sus obligaciones de reporte CBAM, sin interpretación normativa compleja ni esfuerzo manual.",
-        "imageSrc": "/images/revamp/cbam/certified-4.png",
+        "imageSrc": "/site/cbam/certified-4.png",
         "imageAlt": "Visualización de generación de informes CBAM"
       }
     ]

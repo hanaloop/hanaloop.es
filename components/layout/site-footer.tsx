@@ -33,7 +33,7 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
                     <div>
                         <div className="flex items-center justify-between gap-2 sm:gap-4">
                             <Link href={withLocalePath(locale, '/')} className="inline-flex items-center">
-                                <Image src={ICON.logo} alt="HanaLoop" width={136} height={24} />
+                                <img src={ICON.logo} alt="HanaLoop" width={136} height={24} className="h-auto w-[136px]" />
                             </Link>
                             <ContactCtaButton
                                 locale={locale}
@@ -141,7 +141,7 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
 
                     <div className="flex flex-col items-end gap-[40px]">
                         <Link href={withLocalePath(locale, '/')} className="inline-flex items-center">
-                            <Image src={ICON.logo} alt="HanaLoop" width={224} height={40} />
+                            <img src={ICON.logo} alt="HanaLoop" width={224} height={40} className="h-auto w-[224px]" />
                         </Link>
                         <ContactCtaButton
                             locale={locale}

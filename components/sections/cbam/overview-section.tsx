@@ -35,13 +35,12 @@ export async function CbamOverviewSection() {
                 </p>
 
                 <div className="mt-10 lg:hidden">
-                    <div className="mt-10 overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:mt-[8px] lg:w-[min(957px,49.84vw,50vw)] lg:shrink-0">
+                    <div className="relative mt-10 aspect-[957/707] overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:mt-[8px] lg:w-[min(957px,49.84vw,50vw)] lg:shrink-0">
                         <Image
                             src="/site/cbam/overview-cars.png"
                             alt={t('imageAlt')}
-                            width={957}
-                            height={707}
-                            className="h-auto w-full object-cover"
+                            fill
+                            className="object-cover"
                             sizes="(min-width: 1920px) 957px, (min-width: 1200px) 49.84vw, (min-width: 1024px) 50vw, 100vw"
                         />
                     </div>
@@ -69,8 +68,8 @@ export async function CbamOverviewSection() {
                     <RoundedArrowButton href={withLocalePath(locale, '/partnership')} label={t('contactLabel')} className="mt-16" />
                 </div>
 
-                <div className="overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:w-[min(957px,50vw)] lg:shrink-0">
-                    <Image src="/site/cbam/overview-cars.png" alt={t('imageAlt')} width={957} height={707} className="h-auto w-full object-cover" sizes="(min-width: 1920px) 957px, (min-width: 1024px) 50vw, 100vw" />
+                <div className="relative aspect-[957/707] overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:w-[min(957px,50vw)] lg:shrink-0">
+                    <Image src="/site/cbam/overview-cars.png" alt={t('imageAlt')} fill className="object-cover" sizes="(min-width: 1920px) 957px, (min-width: 1024px) 50vw, 100vw" />
                 </div>
             </div>
         </section>

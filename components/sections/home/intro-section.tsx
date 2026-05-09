@@ -68,7 +68,7 @@ export async function HomeIntroSection() {
                         className="absolute right-0 xl:bottom-30 2xl:bottom-12 hidden h-[128px] w-[128px] flex-col items-center justify-center rounded-full text-white xl:flex"
                         style={{ background: 'linear-gradient(149deg, #59c98a 0%, #3cb2ea 100%)' }}
                     >
-                        <Image src="/site/icons/home-intro-arrow.png" alt="" aria-hidden="true" width={34} height={10} className="mb-2 h-auto w-[34px]" style={{ height: 'auto' }} />
+                        <Image src="/site/icons/home-intro-arrow.png" alt="" aria-hidden="true" width={34} height={10} className="mb-2 h-auto w-[34px]" style={{ width: 'auto', height: 'auto' }} />
                         <span className="text-center text-[21px] font-medium leading-[1.05]">
                             {t('contactLabel')
                                 .split(' ')

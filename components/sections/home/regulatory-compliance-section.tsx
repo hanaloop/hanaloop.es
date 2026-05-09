@@ -77,7 +77,7 @@ export function HomeRegulatoryComplianceSection() {
                             {cards.map((card, index) => (
                                 <article
                                     key={`${card.title}-${index}`}
-                                    className="group min-h-[290px] rounded-2xl border border-white/20 bg-[rgba(255,255,255,0.56)] p-[22px_22px_18px] text-[#eaf1f7] backdrop-blur-[8px] transition-colors duration-200 hover:bg-[rgba(238,241,246,0.74)] hover:text-[#23252b]"
+                                    className="group min-h-[290px] rounded-2xl border border-white/20 bg-[rgba(255,255,255,0.4)] p-[22px_22px_18px] text-[#eaf1f7] backdrop-blur-[8px] transition-colors duration-200 hover:bg-[rgba(238,241,246,0.6)] hover:text-[#23252b]"
                                 >
                                     <h3 className="text-[24px] font-semibold leading-[1.34] tracking-[0.5px]">{card.title}</h3>
                                     <p className="mt-2 min-h-[82px] text-[18px] font-semibold leading-[1.45] tracking-[0.5px] opacity-90">{card.subtitle}</p>

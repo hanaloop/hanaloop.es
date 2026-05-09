@@ -70,12 +70,10 @@ export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileConte
         <>
             <input id="mobile-menu-toggle" type="checkbox" className="mobile-menu-toggle sr-only lg:hidden" />
 
-            <header
-                className={`fixed inset-x-0 top-0 z-50 h-[56px] overflow-hidden transition-all duration-300 lg:hidden ${mobileHeaderClassName}`}
-            >
+            <header className={`fixed inset-x-0 top-0 z-50 h-[56px] overflow-hidden transition-all duration-300 lg:hidden ${mobileHeaderClassName}`}>
                 <div className="mx-auto flex h-[56px] w-full items-center justify-between px-6">
                     <Link href={withLocalePath(locale, '/')} className="relative z-10 inline-flex h-[56px] items-center">
-                        <Image src={mobileSolid ? ICON.logoDark : ICON.logoLight} alt="HanaLoop" width={143} height={19} priority={isHome} />
+                        <img src={mobileSolid ? ICON.logoDark : ICON.logoLight} alt="HanaLoop" width={143} height={19} className="h-auto w-[143px]" />
                     </Link>
 
                     <label htmlFor="mobile-menu-toggle" className="relative z-10 inline-flex h-[56px] cursor-pointer items-center justify-center" aria-label={t('openMenu')}>
@@ -100,7 +98,7 @@ export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileConte
             >
                 <div className="flex items-center gap-5">
                     <Link href={withLocalePath(locale, '/')} className="relative z-10 flex items-center">
-                        <Image src={ICON.logoLight} alt="HanaLoop" width={168} height={20} className="brightness-0 invert" />
+                        <img src={ICON.logoLight} alt="HanaLoop" width={168} height={20} className="h-auto w-[168px] brightness-0 invert" />
                     </Link>
                 </div>
 

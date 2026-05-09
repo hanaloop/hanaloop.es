@@ -237,7 +237,7 @@
         "badge": "Anomaly Detection",
         "title": "Data Anomaly Detection",
         "body": ["Accuracy is one of the core principles in carbon accounting.", "As massive emissions activity data is collected and managed, anomalies can occur due to many factors and reduce data reliability.", "Hana.eco detects these anomalies to effectively preserve data accuracy."],
-        "bgSrc": "/images/revamp/hana-ai/1-bg.png",
+        "bgSrc": "/site/hana-ai/1-bg.png",
         "bgAlt": "Background for data anomaly detection feature"
       },
       {
@@ -246,7 +246,7 @@
         "body": "Today, carbon directly represents financial value. In ETS, CBAM, and other regimes, accurate emissions forecasting helps companies maximize profits and reduce costs.",
         "extraTitle": "Reduction Impact Analysis via Emissions Forecasting",
         "extraBody": ["Hana.eco uses AI to forecast emissions and analyze reduction effects from operational changes, supporting strategic business decisions."],
-        "bgSrc": "/images/revamp/hana-ai/2-bg.png",
+        "bgSrc": "/site/hana-ai/2-bg.png",
         "bgAlt": "Background for forecasting feature"
       },
       {
@@ -255,7 +255,7 @@
         "body": ["Effective carbon management requires close linkage between domain knowledge and business strategy.", "This enables optimal strategy planning and fast response to evolving regulations."],
         "extraTitle": "Fast and Easy Regulatory Understanding",
         "extraBody": ["Hana.eco leverages generative AI and NLP so even non-experts can understand complex regulations and respond efficiently."],
-        "bgSrc": "/images/revamp/hana-ai/3-bg.png",
+        "bgSrc": "/site/hana-ai/3-bg.png",
         "bgAlt": "Background for Carbon Buddy AI assistant feature"
       }
     ]
@@ -318,28 +318,28 @@
         "index": "01.",
         "title": "Scope 3 Capability Assessment",
         "description": ["Internal capability analysis", "Defining manageable Scope 3 categories", "Establishing emission category scope"],
-        "imageSrc": "/images/revamp/scope3/overview-1.png",
+        "imageSrc": "/site/scope3/overview-1.png",
         "imageAlt": "Scope 3 capability assessment image"
       },
       {
         "index": "02.",
         "title": "Scope 3 Emission Calculation",
         "description": ["Data collection through calculation", "Verification of calculation results", "Building a company-tailored Scope 3 emission calculation process"],
-        "imageSrc": "/images/revamp/scope3/overview-2.png",
+        "imageSrc": "/site/scope3/overview-2.png",
         "imageAlt": "Scope 3 emission calculation image"
       },
       {
         "index": "03.",
         "title": "Scope 3 Emission & Risk Preliminary Analysis",
         "description": ["Analysis of Scope 3 emission intensity and key sources", "Assessment of emission contribution by category", "Preliminary risk analysis based on supply chain data"],
-        "imageSrc": "/images/revamp/scope3/overview-3.png",
+        "imageSrc": "/site/scope3/overview-3.png",
         "imageAlt": "Scope 3 emission and risk preliminary analysis image"
       },
       {
         "index": "04.",
         "title": "Regulatory Response Strategy & Risk Management",
         "description": ["Response plans for customer and stakeholder requirements", "Application of global reporting standards such as IFRS and CDP", "Risk management strategies"],
-        "imageSrc": "/images/revamp/scope3/overview-4.png",
+        "imageSrc": "/site/scope3/overview-4.png",
         "imageAlt": "Regulatory response strategy and risk management image"
       }
     ]
@@ -489,28 +489,28 @@
         "index": "01.",
         "title": "Product & Precursor Management (CN Code Management)",
         "description": "Manage products and precursors in an integrated manner, and systematically register and track the CN codes required for CBAM-regulated goods. This enables you to easily obtain the foundational data needed for carbon emission analysis and reporting by product.",
-        "imageSrc": "/images/revamp/cbam/certified-1.png",
+        "imageSrc": "/site/cbam/certified-1.png",
         "imageAlt": "Product and precursor management visualization"
       },
       {
         "index": "02.",
         "title": "Installation Setup & Process Management",
         "description": "Configure and manage information for each manufacturing facility and the production process flow. This plays a key role in improving the accuracy of emission data and process-level emission calculations required for CBAM reports.",
-        "imageSrc": "/images/revamp/cbam/certified-2.png",
+        "imageSrc": "/site/cbam/certified-2.png",
         "imageAlt": "Installation setup and process management visualization"
       },
       {
         "index": "03.",
         "title": "Embedded Emissions Calculation & Analysis",
         "description": "Calculate direct and indirect emissions generated during product manufacturing on a per-product basis. The results allow you to analyze carbon intensity, high-emission factors, and areas for improvement by product — useful not only for regulatory compliance but also for developing carbon reduction strategies.",
-        "imageSrc": "/images/revamp/cbam/certified-3.png",
+        "imageSrc": "/site/cbam/certified-3.png",
         "imageAlt": "Embedded emissions calculation and analysis visualization"
       },
       {
         "index": "04.",
         "title": "CBAM Report Generation",
         "description": "Automatically generate reports compliant with CBAM regulations based on collected activity data and emission information. Efficiently support European exporters in meeting their CBAM reporting obligations — without complex regulatory interpretation or manual effort.",
-        "imageSrc": "/images/revamp/cbam/certified-4.png",
+        "imageSrc": "/site/cbam/certified-4.png",
         "imageAlt": "CBAM report generation visualization"
       }
     ]

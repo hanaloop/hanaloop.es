@@ -10,6 +10,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 const config = {
   output: isProduction ? 'export' : undefined,
   reactStrictMode: true,
+  allowedDevOrigins: ['192.168.0.32'],
   trailingSlash: true,
   outputFileTracingRoot: path.resolve(process.cwd()),
   env: {

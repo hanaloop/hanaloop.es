@@ -24,7 +24,7 @@ export async function PartnershipContactApplicationSection() {
             <div className="mx-auto w-full max-w-[1440px] px-6 pb-24 pt-14 lg:px-11 lg:pb-80 lg:pt-20">
                 <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_551px] lg:gap-[78px]">
                     <div>
-                        <Image src="/site/partnership/logo.png" alt="HanaLoop logo" width={180} height={30} className="h-[30px] w-auto" style={{ width: 'auto' }} />
+                        <img src="/site/partnership/logo.png" alt="HanaLoop logo" width={180} height={30} className="h-[30px] w-auto" />
 
                         <h2 className={`mt-9 text-[28px] font-medium leading-[1.24] tracking-[-0.02em] ${gradientTextClassName}`}>{t('slogan')}</h2>
 
@@ -39,7 +39,7 @@ export async function PartnershipContactApplicationSection() {
 
                         <Link href={withLocalePath(locale, '/company_profile_request')} className={`mt-28 inline-flex flex-col text-[21px] font-medium leading-[1.25] tracking-[-0.02em] ${gradientTextClassName}`}>
                             <span>{t('companyIntroLink')}</span>
-                            <Image src="/site/partnership/line.png" alt="" width={420} height={18} className="h-auto w-[420px]" style={{ marginTop: '-10px', height: 'auto' }} />
+                            <img src="/site/partnership/line.png" alt="" width={420} height={18} className="h-auto w-[420px]" style={{ marginTop: '-10px' }} />
                         </Link>
 
                         <p className={`mt-11 text-[18px] font-normal leading-[1.52] tracking-[-0.02em] ${gradientTextClassName}`}>
@@ -80,7 +80,7 @@ export async function PartnershipContactApplicationSection() {
 
                             <button type="submit" className="inline-flex items-center gap-3 text-[24px] font-medium leading-none tracking-normal">
                                 <span className={gradientTextClassName}>{t('submit')}</span>
-                                <Image src="/site/partnership/right.png" alt="" width={27} height={18} className="h-auto w-[27px]" style={{ height: 'auto' }} />
+                                <img src="/site/partnership/right.png" alt="" width={27} height={18} className="h-auto w-[27px]" />
                             </button>
                         </div>
                     </form>
