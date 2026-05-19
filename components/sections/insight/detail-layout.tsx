@@ -52,7 +52,7 @@ function CbamSupportBanner() {
                     하나루프 X (주)로엔컨설팅과 함께하는 정부지원사업
                 </p>
                 <Link
-                    href=""
+                    href="/partnership"
                     className="mx-auto mt-6 inline-flex w-full max-w-[320px] items-center justify-center whitespace-nowrap rounded-full px-6 text-center text-white bg-gradient-brand"
                     style={{ height: clampFont(50, 58), fontWeight: 600, fontSize: clampFont(16, 18), letterSpacing: '-0.02em' }}
                 >

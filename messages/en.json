@@ -1456,7 +1456,7 @@
     },
     "CasesDetail": {
         "sectionAriaLabel": "Case study detail",
-        "defaultContactLabel": "Contact us",
+        "defaultContactLabel": "Contact Us",
         "items": [
             {
                 "id": 1,
@@ -1465,7 +1465,7 @@
                 "companyName": "Doosan Enerbility",
                 "eyebrow": "Case study",
                 "title": "Doosan Enerbility × HanaLoop — Building a Supply Chain Carbon Management System",
-                "contactLabel": "Contact us",
+                "contactLabel": "Contact Us",
                 "summary": [
                     {
                         "label": "Challenge",
@@ -1515,7 +1515,7 @@
                 "companyName": "Byucksan",
                 "eyebrow": "Case study",
                 "title": "Byucksan × HanaLoop — Carbon Management for Emissions Trading Compliance",
-                "contactLabel": "Contact us",
+                "contactLabel": "Contact Us",
                 "summary": [
                     {
                         "label": "Challenge",
@@ -1559,7 +1559,7 @@
                 "companyName": "DAEHO AL",
                 "eyebrow": "Case study",
                 "title": "DAEHO AL × HanaLoop — Building CBAM Carbon Calculation Infrastructure",
-                "contactLabel": "Contact us",
+                "contactLabel": "Contact Us",
                 "summary": [
                     {
                         "label": "Challenge",
@@ -1602,7 +1602,7 @@
                 "companyName": "Apollo Industrial",
                 "eyebrow": "Case study",
                 "title": "Apollo Industrial × HanaLoop — Enterprise Carbon Inventory and ESG Management System",
-                "contactLabel": "Contact us",
+                "contactLabel": "Contact Us",
                 "summary": [
                     {
                         "label": "Challenge",
@@ -1645,7 +1645,7 @@
                 "companyName": "Kowell",
                 "eyebrow": "Case study",
                 "title": "Kowell × HanaLoop — Enterprise ESG Data Integration and CBAM Infrastructure",
-                "contactLabel": "Contact us",
+                "contactLabel": "Contact Us",
                 "summary": [
                     {
                         "label": "Challenge",
@@ -1688,7 +1688,7 @@
                 "companyName": "Korea Institute of Origin Information",
                 "eyebrow": "Case study",
                 "title": "Korea Institute of Origin Information × HanaLoop x OpusM — FTA-PASS EU CBAM Management System",
-                "contactLabel": "Contact us",
+                "contactLabel": "Contact Us",
                 "summary": [
                     {
                         "label": "Challenge",
@@ -1731,7 +1731,7 @@
                 "companyName": "Taihan Fiber Optics (TFO Networks)",
                 "eyebrow": "Case study",
                 "title": "Taihan Fiber Optics (TFO Networks) × HanaLoop — Digital MRV and Carbon Cost Forecasting for CBAM",
-                "contactLabel": "Contact us",
+                "contactLabel": "Contact Us",
                 "summary": [
                     {
                         "label": "Challenge",
@@ -1775,7 +1775,7 @@
                 "eyebrow": "Case study",
                 "title": "emart × HanaLoop API Management Modernization",
                 "subtitle": "HanaLoop consulting designed the path from diagnosis to validation",
-                "contactLabel": "Contact us",
+                "contactLabel": "Contact Us",
                 "summary": [
                     {
                         "label": "Challenge",
