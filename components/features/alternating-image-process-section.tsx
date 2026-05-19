@@ -16,7 +16,7 @@ type AlternatingImageProcessSectionProps = {
     className?: string;
 };
 
-export function AlternatingImageProcessSection({ ariaLabel, title, subtitle, cards, className = 'mt-10 md:py-20 lg:mt-30' }: AlternatingImageProcessSectionProps) {
+export function AlternatingImageProcessSection({ ariaLabel, title, subtitle, cards, className = 'pt-10 md:py-20 lg:pt-30' }: AlternatingImageProcessSectionProps) {
     return (
         <section className={className} aria-label={ariaLabel}>
             <div className="mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-11">

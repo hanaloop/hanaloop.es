@@ -8,24 +8,11 @@
     },
     "HomeIntro": {
         "eyebrowDesktop": "One platform for all your carbon management needs",
-        "eyebrowMobileLines": [
-            "One platform for all your carbon management needs"
-        ],
-        "titleDesktopLines": [
-            "HanaLoop, Your Digital Partner for Carbon Neutrality,",
-            "Empowers Your Sustainability Journey."
-        ],
-        "titleMobileLines": [
-            "HanaLoop, Your Digital Partner",
-            "for Carbon Neutrality, Empowers",
-            "Your Sustainability Journey."
-        ],
+        "eyebrowMobileLines": ["One platform for all your carbon management needs"],
+        "titleDesktopLines": ["HanaLoop, Your Digital Partner for Carbon Neutrality,", "Empowers Your Sustainability Journey."],
+        "titleMobileLines": ["HanaLoop, Your Digital Partner", "for Carbon Neutrality, Empowers", "Your Sustainability Journey."],
         "descriptionDesktop": "Explore HanaLoop's wide range of automated regulatory compliance solutions, including CBAM solutions, PCF/LCA carbon footprint management, and integrated Scope 1, 2, and 3 solutions.",
-        "descriptionMobileLines": [
-            "Explore HanaLoop's automated compliance solutions:",
-            "CBAM, PCF/LCA carbon footprint management,",
-            "and integrated Scope 1, 2, and 3 solutions."
-        ],
+        "descriptionMobileLines": ["Explore HanaLoop's automated compliance solutions:", "CBAM, PCF/LCA carbon footprint management,", "and integrated Scope 1, 2, and 3 solutions."],
         "contactLabel": "Contact Us",
         "cards": [
             {
@@ -63,43 +50,29 @@
     },
     "HomeCollaboration": {
         "badge": "Our Partners",
-        "titleLines": [
-            "Start carbon management with a trusted, proven partner."
-        ],
+        "titleLines": ["Start carbon management with a trusted, proven partner."],
         "description": "Manufacturers in metals, automotive, heavy industry, and chemicals\nare moving beyond compliance to drive sustainability with HanaLoop.",
         "viewMore": "View more collaboration",
         "collaborations": [
             {
                 "subtitle": "",
                 "summary": "Construction Materials",
-                "points": [
-                    "Emissions Trading Scheme",
-                    "75% effort reduction across multiple sites"
-                ]
+                "points": ["Emissions Trading Scheme", "75% effort reduction across multiple sites"]
             },
             {
                 "subtitle": "",
                 "summary": "Non-ferrous Industry",
-                "points": [
-                    "K-ETS compliance",
-                    "CBAM compliance"
-                ]
+                "points": ["K-ETS compliance", "CBAM compliance"]
             },
             {
                 "subtitle": "",
                 "summary": "Metal Industry",
-                "points": [
-                    "CBAM: easy for non-experts",
-                    "Export site compliance"
-                ]
+                "points": ["CBAM: easy for non-experts", "Export site compliance"]
             },
             {
                 "subtitle": "Doosan Enerbility",
                 "summary": "Renewable Energy",
-                "points": [
-                    "Scope 3 management for fuller sustainability",
-                    "CDP reporting improvement"
-                ]
+                "points": ["Scope 3 management for fuller sustainability", "CDP reporting improvement"]
             }
         ]
     },
@@ -111,79 +84,49 @@
         "eyebrow": "First verification statement in Korea from LRQA for Emissions Trading Scheme and EU CBAM compliance",
         "heading": "International Standards-Ready Solution: Hana.eco",
         "reasonEyebrow": "Why should you choose HanaLoop?",
-        "reasonHeading": [
-            "Why HanaLoop?"
-        ],
+        "reasonHeading": ["Why HanaLoop?"],
         "cards": [
             {
                 "title": "EU Carbon Border Adjustment Mechanism (CBAM) Compliance",
                 "subtitle": "Carbon Border Adjustment Mechanism",
-                "items": [
-                    "Product management",
-                    "Raw material supply management",
-                    "CBAM report export",
-                    "Emission factor support",
-                    "CBAM certificate cost reduction simulation"
-                ]
+                "items": ["Product management", "Raw material supply management", "CBAM report export", "Emission factor support", "CBAM certificate cost reduction simulation"]
             },
             {
                 "title": "Emissions Trading Scheme & Target Management Compliance",
                 "subtitle": "Korea Emissions Trading System",
-                "items": [
-                    "Verification-grade data management",
-                    "Allowance ledger management",
-                    "Emissions target setting and reporting",
-                    "Emissions scenario analysis"
-                ]
+                "items": ["Verification-grade data management", "Allowance ledger management", "Emissions target setting and reporting", "Emissions scenario analysis"]
             },
             {
                 "title": "IFRS(TCFD) / CDP / GRI Compliance",
                 "subtitle": "Climate Normatives, Frameworks And Standards",
-                "items": [
-                    "Reporting required by standard disclosures",
-                    "Risk management",
-                    "Emissions scenario analysis"
-                ]
+                "items": ["Reporting required by standard disclosures", "Risk management", "Emissions scenario analysis"]
             },
             {
                 "title": "SBTi Scope 3 & ESG Management",
                 "subtitle": "ESG Data Including the Value Chain",
-                "items": [
-                    "Supplier and supply chain management",
-                    "Industry-standard emission factors for Scope 3"
-                ]
+                "items": ["Supplier and supply chain management", "Industry-standard emission factors for Scope 3"]
             },
             {
                 "title": "Product Carbon Footprint (PCF) Management",
                 "subtitle": "Product Carbon Footprint",
-                "items": [
-                    "LCA calculation for global warming category",
-                    "Embedded emissions from manufacturing processes",
-                    "Raw material embedded emissions management"
-                ]
+                "items": ["LCA calculation for global warming category", "Embedded emissions from manufacturing processes", "Raw material embedded emissions management"]
             }
         ],
         "reasons": [
             {
                 "title": "Verified, Tailored Solutions",
                 "body": "LRQA certified, global regulatory compliance, environmental consulting partnerships.",
-                "desktopLines": [
-                    "LRQA certified, global regulatory compliance, environmental consulting partnerships."
-                ]
+                "desktopLines": ["LRQA certified, global regulatory compliance, environmental consulting partnerships."]
             },
             {
                 "title": "From Data to Reporting and Reduction",
                 "body": "Scope 1·2·3, CBAM, PCF, LCA, and supply chain — all in one with Hana.eco.",
-                "desktopLines": [
-                    "Scope 1·2·3, CBAM, PCF, LCA, and supply chain — all in one with Hana.eco."
-                ]
+                "desktopLines": ["Scope 1·2·3, CBAM, PCF, LCA, and supply chain — all in one with Hana.eco."]
             },
             {
                 "title": "Flexible Plans for Your Business",
                 "body": "Choose a flexible plan based on your needs — from site-level to product-level carbon management.",
-                "desktopLines": [
-                    "Choose a flexible plan based on your needs — from site-level to product-level carbon management."
-                ]
+                "desktopLines": ["Choose a flexible plan based on your needs — from site-level to product-level carbon management."]
             }
         ]
     },
@@ -194,11 +137,7 @@
     "HomeCta": {
         "eyebrow": "",
         "heading": "Start your carbon management journey with Hana.eco today.",
-        "mobileHeadingLines": [
-            "Start your carbon",
-            "management journey",
-            "with Hana.eco today."
-        ],
+        "mobileHeadingLines": ["Start your carbon", "management journey", "with Hana.eco today."],
         "demoLabel": "Request a Free Demo",
         "solutionLabel": "Download Solution Overview",
         "contactLabel": "Contact Us"
@@ -246,44 +185,20 @@
         "saasPlans": [
             {
                 "title": "STANDARD",
-                "items": [
-                    "Up to 5 sites",
-                    "Scope 1, 2",
-                    "Corporate emissions reports",
-                    "Excel import/export"
-                ]
+                "items": ["Up to 5 sites", "Scope 1, 2", "Corporate emissions reports", "Excel import/export"]
             },
             {
                 "title": "ENTERPRISE",
-                "items": [
-                    "Up to 20 sites",
-                    "Scope 1, 2, 3",
-                    "Corporate emissions report",
-                    "Integration with KEPCO",
-                    "Chatbot",
-                    "Cradle-to-gate PCF"
-                ]
+                "items": ["Up to 20 sites", "Scope 1, 2, 3", "Corporate emissions report", "Integration with KEPCO", "Chatbot", "Cradle-to-gate PCF"]
             },
             {
                 "title": "SUPPLY CHAIN",
-                "items": [
-                    "Unlimited sites",
-                    "Scope 1, 2, 3",
-                    "Supply chain emission management",
-                    "Corporate emissions report",
-                    "Integration with KEPCO",
-                    "Chatbot",
-                    "Cradle-to-gate PCF"
-                ]
+                "items": ["Unlimited sites", "Scope 1, 2, 3", "Supply chain emission management", "Corporate emissions report", "Integration with KEPCO", "Chatbot", "Cradle-to-gate PCF"]
             }
         ],
         "onPremPlan": {
             "title": "ECO INTEGRATION",
-            "items": [
-                "All features in Supply chain",
-                "Datapipe: Connectors & APIs",
-                "Session integration"
-            ]
+            "items": ["All features in Supply chain", "Datapipe: Connectors & APIs", "Session integration"]
         }
     },
     "OverviewSolutionMatrix": {
@@ -318,27 +233,19 @@
         "steps": [
             {
                 "heading": "1. Current-state analysis and consulting",
-                "items": [
-                    "Set boundaries by objective, define data monitoring points, collect data, and diagnose inventory completeness"
-                ]
+                "items": ["Set boundaries by objective, define data monitoring points, collect data, and diagnose inventory completeness"]
             },
             {
                 "heading": "2. Platform setup",
-                "items": [
-                    "Normalize data, onboard historical data, and define operating processes"
-                ]
+                "items": ["Normalize data, onboard historical data, and define operating processes"]
             },
             {
                 "heading": "3. Meter installation and integration",
-                "items": [
-                    "ERP/MES connectors, automated meter collection, and customization"
-                ]
+                "items": ["ERP/MES connectors, automated meter collection, and customization"]
             },
             {
                 "heading": "4. Transition and training",
-                "items": [
-                    "Provide manuals, train practitioners, and embed operations"
-                ]
+                "items": ["Provide manuals, train practitioners, and embed operations"]
             }
         ]
     },
@@ -463,36 +370,19 @@
         "steps": [
             {
                 "heading": "1. Assessment and Consulting",
-                "items": [
-                    "Define product boundaries",
-                    "Review monitoring points",
-                    "Assess collection status and process gaps",
-                    "Analyze inventory completeness and accuracy"
-                ]
+                "items": ["Define product boundaries", "Review monitoring points", "Assess collection status and process gaps", "Analyze inventory completeness and accuracy"]
             },
             {
                 "heading": "2. Platform Setup",
-                "items": [
-                    "Collect required data",
-                    "Configure emission sources by process",
-                    "Normalize required data",
-                    "Enter historical data",
-                    "Define operating process"
-                ]
+                "items": ["Collect required data", "Configure emission sources by process", "Normalize required data", "Enter historical data", "Define operating process"]
             },
             {
                 "heading": "3. Meter Installation and Integration",
-                "items": [
-                    "Customize automated metering collection",
-                    "Discuss ERP/MES usage and provide connectors"
-                ]
+                "items": ["Customize automated metering collection", "Discuss ERP/MES usage and provide connectors"]
             },
             {
                 "heading": "4. Transition",
-                "items": [
-                    "Provide user manuals",
-                    "Train operators to internalize the process"
-                ]
+                "items": ["Provide user manuals", "Train operators to internalize the process"]
             }
         ]
     },
@@ -575,23 +465,16 @@
                 "title": "Cost Reduction and Profit Optimization",
                 "body": "Today, carbon directly represents financial value. In ETS, CBAM, and other regimes, accurate emissions forecasting helps companies maximize profits and reduce costs.",
                 "extraTitle": "Reduction Impact Analysis via Emissions Forecasting",
-                "extraBody": [
-                    "Hana.eco uses AI to forecast emissions and analyze reduction effects from operational changes, supporting strategic business decisions."
-                ],
+                "extraBody": ["Hana.eco uses AI to forecast emissions and analyze reduction effects from operational changes, supporting strategic business decisions."],
                 "bgSrc": "/site/hana-ai/2-bg.png",
                 "bgAlt": "Background for forecasting feature"
             },
             {
                 "badge": "Carbon Buddy AI Assistant",
                 "title": "Climate Regulation Response Through Carbon Management",
-                "body": [
-                    "Effective carbon management requires close linkage between domain knowledge and business strategy.",
-                    "This enables optimal strategy planning and fast response to evolving regulations."
-                ],
+                "body": ["Effective carbon management requires close linkage between domain knowledge and business strategy.", "This enables optimal strategy planning and fast response to evolving regulations."],
                 "extraTitle": "Fast and Easy Regulatory Understanding",
-                "extraBody": [
-                    "Hana.eco leverages generative AI and NLP so even non-experts can understand complex regulations and respond efficiently."
-                ],
+                "extraBody": ["Hana.eco leverages generative AI and NLP so even non-experts can understand complex regulations and respond efficiently."],
                 "bgSrc": "/site/hana-ai/3-bg.png",
                 "bgAlt": "Background for Carbon Buddy AI assistant feature"
             }
@@ -728,11 +611,7 @@
             },
             {
                 "title": "Value Chain Scope 3 Management",
-                "bullets": [
-                    "Value chain emission management",
-                    "Supplier management",
-                    "Multilingual support"
-                ]
+                "bullets": ["Value chain emission management", "Supplier management", "Multilingual support"]
             },
             {
                 "title": "Product LCA Support",
@@ -745,11 +624,7 @@
             },
             {
                 "title": "OpenAPI - Platform",
-                "bullets": [
-                    "Reduce time to build extended solutions",
-                    "Enable new business model creation",
-                    "Foster a low-carbon ecosystem"
-                ]
+                "bullets": ["Reduce time to build extended solutions", "Enable new business model creation", "Foster a low-carbon ecosystem"]
             }
         ],
         "imageAlt": "Forest background image"
@@ -826,10 +701,7 @@
         "address": "4F, 545, Bongcheon-ro, Gwanak-gu, Seoul, Republic of Korea",
         "contactPrefix": "CONTACT :",
         "companyIntroLink": "Download a company introduction",
-        "localAddressLines": [
-            "4F, Seoul Startup Center Gwanak,",
-            "545 Bongcheon-ro, Gwanak-gu, Seoul (08789)"
-        ],
+        "localAddressLines": ["4F, Seoul Startup Center Gwanak,", "545 Bongcheon-ro, Gwanak-gu, Seoul (08789)"],
         "formLabel": "Company / Organization Name",
         "placeholders": {
             "name": "Requester name (Department / Role)",
@@ -937,24 +809,15 @@
         "cards": [
             {
                 "title": "Standard",
-                "items": [
-                    "For steel and aluminum companies requiring CBAM compliance",
-                    "Carbon management for single or multiple plants and product carbon footprint management by CBAM standards"
-                ]
+                "items": ["For steel and aluminum companies requiring CBAM compliance", "Carbon management for single or multiple plants and product carbon footprint management by CBAM standards"]
             },
             {
                 "title": "Supply Chain - LITE",
-                "items": [
-                    "For distribution centers requiring CBAM compliance",
-                    "Collect, track, and manage embedded emissions data from multiple suppliers"
-                ]
+                "items": ["For distribution centers requiring CBAM compliance", "Collect, track, and manage embedded emissions data from multiple suppliers"]
             },
             {
                 "title": "Supply Chain - ENTERPRISE",
-                "items": [
-                    "CBAM compliance with dozens of suppliers",
-                    "LITE features plus Standard features"
-                ]
+                "items": ["CBAM compliance with dozens of suppliers", "LITE features plus Standard features"]
             }
         ]
     },
@@ -980,19 +843,11 @@
         "items": [
             {
                 "title": "Diverse learning programs to grow individuals and strengthen team capability",
-                "descriptions": [
-                    "- Support for seminars, forums, and training participation",
-                    "- Support for purchasing work-related books"
-                ]
+                "descriptions": ["- Support for seminars, forums, and training participation", "- Support for purchasing work-related books"]
             },
             {
                 "title": "Welfare benefits that support recharge and work-life balance",
-                "descriptions": [
-                    "- One paid half-day off every month",
-                    "- Remote work available depending on role and productivity",
-                    "- Health checkup support",
-                    "- Stock options for members with 3+ years of service"
-                ]
+                "descriptions": ["- One paid half-day off every month", "- Remote work available depending on role and productivity", "- Health checkup support", "- Stock options for members with 3+ years of service"]
             }
         ]
     },
@@ -1064,10 +919,7 @@
                 "quota": "1 position",
                 "dueDate": "Open until filled",
                 "jobDescription": {
-                    "responsibilities": [
-                        "Develop frontend/backend features for the platform and participate in product development ceremonies",
-                        "Work with the Product Manager and CTO to continuously improve the product"
-                    ],
+                    "responsibilities": ["Develop frontend/backend features for the platform and participate in product development ceremonies", "Work with the Product Manager and CTO to continuously improve the product"],
                     "requirements": [
                         "Degree in computer science or 2+ years of web application development experience",
                         "Fast learner with a hands-on mindset",
@@ -1076,12 +928,8 @@
                     ]
                 },
                 "condition": {
-                    "employmentType": [
-                        "3-month contract, then conversion to full-time"
-                    ],
-                    "location": [
-                        "Seoul, HanaLoop"
-                    ],
+                    "employmentType": ["3-month contract, then conversion to full-time"],
+                    "location": ["Seoul, HanaLoop"],
                     "preferred": [
                         "Experience communicating in foreign languages and working with frameworks",
                         "Strong communication skills and team-player mindset",
@@ -1091,17 +939,9 @@
                         "Experience with cloud deployment and platform operations"
                     ]
                 },
-                "stack": [
-                    "TypeScript, Python",
-                    "Nextjs, Nestjs",
-                    "React",
-                    "Postgres, Redis, Elasticsearch"
-                ],
+                "stack": ["TypeScript, Python", "Nextjs, Nestjs", "React", "Postgres, Redis, Elasticsearch"],
                 "process": {
-                    "howToApply": [
-                        "Please send your resume and career summary to the email below.",
-                        "joinus@hanaloop.com"
-                    ],
+                    "howToApply": ["Please send your resume and career summary to the email below.", "joinus@hanaloop.com"],
                     "steps": [
                         "Resume screening & coding test > 1st interview > personality assessment & 2nd interview > medical checkup > offer",
                         "The process may change depending on schedule and circumstances.",
@@ -1118,36 +958,18 @@
                 "quota": "0 position",
                 "dueDate": "Open until filled",
                 "jobDescription": {
-                    "responsibilities": [
-                        "Detailed JD is shared when entry openings are available."
-                    ],
-                    "requirements": [
-                        "Solid fundamentals and problem-solving capability"
-                    ]
+                    "responsibilities": ["Detailed JD is shared when entry openings are available."],
+                    "requirements": ["Solid fundamentals and problem-solving capability"]
                 },
                 "condition": {
-                    "employmentType": [
-                        "Full-time (probation may apply)"
-                    ],
-                    "location": [
-                        "Seoul, HanaLoop"
-                    ],
-                    "preferred": [
-                        "Collaboration experience and strong growth mindset"
-                    ]
+                    "employmentType": ["Full-time (probation may apply)"],
+                    "location": ["Seoul, HanaLoop"],
+                    "preferred": ["Collaboration experience and strong growth mindset"]
                 },
-                "stack": [
-                    "TypeScript",
-                    "React"
-                ],
+                "stack": ["TypeScript", "React"],
                 "process": {
-                    "howToApply": [
-                        "Please send your resume to the email below.",
-                        "joinus@hanaloop.com"
-                    ],
-                    "steps": [
-                        "Resume screening > interview > offer discussion > onboarding"
-                    ]
+                    "howToApply": ["Please send your resume to the email below.", "joinus@hanaloop.com"],
+                    "steps": ["Resume screening > interview > offer discussion > onboarding"]
                 }
             }
         ]
@@ -1189,8 +1011,6 @@
                 "id": "case-cswind",
                 "logoSrc": "/site/cases/ci-3.png",
                 "logoAlt": "CSWIND logo",
-                "href": "/partnership",
-                "hasDetail": false,
                 "ctaLabel": "Learn more",
                 "companyName": "CSWIND",
                 "industryLabel": "Renewable energy / wind tower mid-sized company",
@@ -1282,7 +1102,7 @@
                 "logoAlt": "emart logo",
                 "href": "/partnership",
                 "ctaLabel": "Learn more",
-                "companyName": "emart",
+                "companyName": "Emart",
                 "industryLabel": "Retail enterprise",
                 "challengeLabel": "Challenge",
                 "challengeText": "Efficient data visualization for API integration with internal systems such as eMoney",
@@ -1311,9 +1131,7 @@
             },
             {
                 "title": "Article 2 (Processing and Retention Period)",
-                "paragraphs": [
-                    "HanaLoop processes and retains personal information within the retention/use period required by law or agreed by the data subject at the time of collection."
-                ],
+                "paragraphs": ["HanaLoop processes and retains personal information within the retention/use period required by law or agreed by the data subject at the time of collection."],
                 "bullets": [
                     "1. Website membership registration/management: until account withdrawal (except where investigation is ongoing or claims/debts remain)",
                     "2. Goods/service provision: until supply and payment settlement are completed",
@@ -1323,21 +1141,13 @@
             },
             {
                 "title": "Article 3 (Provision to Third Parties)",
-                "paragraphs": [
-                    "HanaLoop provides personal information to third parties only where permitted under Articles 17 and 18 of the Personal Information Protection Act, including data subject consent or specific legal grounds."
-                ],
-                "bullets": [
-                    "Example transfer items: name, date of birth, phone number, address"
-                ]
+                "paragraphs": ["HanaLoop provides personal information to third parties only where permitted under Articles 17 and 18 of the Personal Information Protection Act, including data subject consent or specific legal grounds."],
+                "bullets": ["Example transfer items: name, date of birth, phone number, address"]
             },
             {
                 "title": "Article 4 (Outsourcing of Processing)",
-                "paragraphs": [
-                    "HanaLoop may outsource personal information processing tasks for smooth business operations."
-                ],
-                "bullets": [
-                    "Identity verification service: Auth0.com"
-                ]
+                "paragraphs": ["HanaLoop may outsource personal information processing tasks for smooth business operations."],
+                "bullets": ["Identity verification service: Auth0.com"]
             },
             {
                 "title": "Article 5 (Rights of Data Subjects and Legal Representatives)",
@@ -1360,27 +1170,16 @@
             },
             {
                 "title": "Article 7 (Destruction Procedure and Method)",
-                "paragraphs": [
-                    "HanaLoop destroys personal information without delay when the processing purpose is achieved, unless retention is required by other laws."
-                ],
-                "bullets": [
-                    "Electronic records: irreversibly deleted using technical methods",
-                    "Paper records: shredded or incinerated"
-                ]
+                "paragraphs": ["HanaLoop destroys personal information without delay when the processing purpose is achieved, unless retention is required by other laws."],
+                "bullets": ["Electronic records: irreversibly deleted using technical methods", "Paper records: shredded or incinerated"]
             },
             {
                 "title": "Article 8 (Security Measures)",
-                "bullets": [
-                    "Administrative: internal management plan and regular employee training",
-                    "Technical: access control, encryption of unique identifiers, security software",
-                    "Physical: access control to server/data storage rooms"
-                ]
+                "bullets": ["Administrative: internal management plan and regular employee training", "Technical: access control, encryption of unique identifiers, security software", "Physical: access control to server/data storage rooms"]
             },
             {
                 "title": "Article 9 (Automatic Collection Devices and Refusal)",
-                "paragraphs": [
-                    "HanaLoop uses cookies to provide personalized services."
-                ],
+                "paragraphs": ["HanaLoop uses cookies to provide personalized services."],
                 "bullets": [
                     "Purpose: analyze visit/usage patterns, popular searches, and secure access status for optimized information",
                     "Users can allow/block cookies in browser settings (Internet Explorer, Edge, Chrome).",
@@ -1389,30 +1188,17 @@
             },
             {
                 "title": "Article 10 (Chief Privacy Officer)",
-                "paragraphs": [
-                    "HanaLoop designates the following person responsible for personal information protection and grievance handling."
-                ],
-                "bullets": [
-                    "Name: Hyeyeon Kim",
-                    "Title: CEO",
-                    "Contact: info@hanaloop.com"
-                ]
+                "paragraphs": ["HanaLoop designates the following person responsible for personal information protection and grievance handling."],
+                "bullets": ["Name: Hyeyeon Kim", "Title: CEO", "Contact: info@hanaloop.com"]
             },
             {
                 "title": "Article 12 (Domestic Representative)",
-                "paragraphs": [
-                    "HanaLoop has designated a domestic representative under Article 39-11 of the Personal Information Protection Act."
-                ],
-                "bullets": [
-                    "Name: Hyeyeon Kim",
-                    "Email: info@hanaloop.com"
-                ]
+                "paragraphs": ["HanaLoop has designated a domestic representative under Article 39-11 of the Personal Information Protection Act."],
+                "bullets": ["Name: Hyeyeon Kim", "Email: info@hanaloop.com"]
             },
             {
                 "title": "Article 13 (Criteria for Additional Use/Provision)",
-                "paragraphs": [
-                    "When determining whether personal information can be additionally used/provided without consent under applicable law, HanaLoop considers:"
-                ],
+                "paragraphs": ["When determining whether personal information can be additionally used/provided without consent under applicable law, HanaLoop considers:"],
                 "bullets": [
                     "Relevance to original collection purpose",
                     "Predictability based on collection circumstances/practice",
@@ -1422,20 +1208,12 @@
             },
             {
                 "title": "Article 14 (Request for Access)",
-                "paragraphs": [
-                    "Data subjects may request access to personal information under Article 35 of the Personal Information Protection Act through the department below."
-                ],
-                "bullets": [
-                    "Department: Development Support Division",
-                    "Officer: Hyeyeon Kim",
-                    "Contact: info@hanaloop.com"
-                ]
+                "paragraphs": ["Data subjects may request access to personal information under Article 35 of the Personal Information Protection Act through the department below."],
+                "bullets": ["Department: Development Support Division", "Officer: Hyeyeon Kim", "Contact: info@hanaloop.com"]
             },
             {
                 "title": "Article 15 (Remedies for Infringement of Rights)",
-                "paragraphs": [
-                    "Data subjects may seek dispute resolution or consultation through the following organizations."
-                ],
+                "paragraphs": ["Data subjects may seek dispute resolution or consultation through the following organizations."],
                 "bullets": [
                     "Personal Information Infringement Report Center (KISA): privacy.kisa.or.kr / 118",
                     "Personal Information Dispute Mediation Committee: www.kopico.go.kr / 1833-6972",
@@ -1446,11 +1224,7 @@
             },
             {
                 "title": "Article 16 (Changes to this Policy)",
-                "bullets": [
-                    "Effective date: September 1, 2022",
-                    "Version: v0.8",
-                    "Revision date: September 1, 2022"
-                ]
+                "bullets": ["Effective date: September 1, 2022", "Version: v0.8", "Revision date: September 1, 2022"]
             }
         ]
     },
@@ -1490,9 +1264,7 @@
                     },
                     {
                         "title": "Implementation — Designing the Data Flow",
-                        "paragraphs": [
-                            "HanaLoop approached the project as carbon data infrastructure for the full supply chain, not as a simple software delivery."
-                        ],
+                        "paragraphs": ["HanaLoop approached the project as carbon data infrastructure for the full supply chain, not as a simple software delivery."],
                         "bullets": [
                             "Designed supplier data input, evidence management, and automated CBAM notification flows.",
                             "Mapped supplier data to products and connected it with process data for SEE calculation.",
@@ -1502,9 +1274,7 @@
                     },
                     {
                         "title": "Results",
-                        "paragraphs": [
-                            "Doosan expanded from Scope 1 and 2 management to supplier-inclusive Scope 3, removed spreadsheet-based manual work, and secured both operating efficiency and data reliability."
-                        ]
+                        "paragraphs": ["Doosan expanded from Scope 1 and 2 management to supplier-inclusive Scope 3, removed spreadsheet-based manual work, and secured both operating efficiency and data reliability."]
                     }
                 ]
             },
@@ -1540,15 +1310,11 @@
                     },
                     {
                         "title": "HanaLoop Approach",
-                        "paragraphs": [
-                            "HanaLoop designed a structure that integrates site activity data and emissions data through Hana.eco Standard, moving from report-centered response to forecastable operations."
-                        ]
+                        "paragraphs": ["HanaLoop designed a structure that integrates site activity data and emissions data through Hana.eco Standard, moving from report-centered response to forecastable operations."]
                     },
                     {
                         "title": "Results",
-                        "paragraphs": [
-                            "Byucksan standardized dispersed emissions data and reduced repetitive manual work, enabling emissions trading reports and reduction planning to use the same data foundation."
-                        ]
+                        "paragraphs": ["Byucksan standardized dispersed emissions data and reduced repetitive manual work, enabling emissions trading reports and reduction planning to use the same data foundation."]
                     }
                 ]
             },
@@ -1583,15 +1349,11 @@
                     },
                     {
                         "title": "Implementation Approach",
-                        "paragraphs": [
-                            "HanaLoop built a Hana.eco-based product-level calculation system, designed field metering infrastructure, and supported LRQA pre-verification documentation and response preparation."
-                        ]
+                        "paragraphs": ["HanaLoop built a Hana.eco-based product-level calculation system, designed field metering infrastructure, and supported LRQA pre-verification documentation and response preparation."]
                     },
                     {
                         "title": "Results",
-                        "paragraphs": [
-                            "DAEHO AL gained company-wide CBAM operating processes and confirmed the reliability of its EU market response data through pre-verification."
-                        ]
+                        "paragraphs": ["DAEHO AL gained company-wide CBAM operating processes and confirmed the reliability of its EU market response data through pre-verification."]
                     }
                 ]
             },
@@ -1632,9 +1394,7 @@
                     },
                     {
                         "title": "Expected Outcomes",
-                        "paragraphs": [
-                            "Apollo is building the foundation to continuously secure reliable carbon data, respond to EcoVadis assessments, and meet global customer supply chain ESG requirements."
-                        ]
+                        "paragraphs": ["Apollo is building the foundation to continuously secure reliable carbon data, respond to EcoVadis assessments, and meet global customer supply chain ESG requirements."]
                     }
                 ]
             },
@@ -1663,9 +1423,7 @@
                 "sections": [
                     {
                         "title": "Project Background",
-                        "paragraphs": [
-                            "Kowell manufactures automotive parts and steel wire. Steel-based products are directly subject to EU CBAM, making carbon calculation and reporting essential for continued EU supply."
-                        ]
+                        "paragraphs": ["Kowell manufactures automotive parts and steel wire. Steel-based products are directly subject to EU CBAM, making carbon calculation and reporting essential for continued EU supply."]
                     },
                     {
                         "title": "Implementation Approach",
@@ -1675,9 +1433,7 @@
                     },
                     {
                         "title": "Results",
-                        "paragraphs": [
-                            "Kowell established measured-data infrastructure and enterprise ESG data integration, securing regulation-ready data and an internal operating foundation through practitioner training."
-                        ]
+                        "paragraphs": ["Kowell established measured-data infrastructure and enterprise ESG data integration, securing regulation-ready data and an internal operating foundation through practitioner training."]
                     }
                 ]
             },
@@ -1718,9 +1474,7 @@
                     },
                     {
                         "title": "Results",
-                        "paragraphs": [
-                            "FTA-PASS expanded from origin management to CBAM carbon management, allowing companies to access regulatory response infrastructure without building separate systems."
-                        ]
+                        "paragraphs": ["FTA-PASS expanded from origin management to CBAM carbon management, allowing companies to access regulatory response infrastructure without building separate systems."]
                     }
                 ]
             },
@@ -1761,9 +1515,7 @@
                     },
                     {
                         "title": "Results",
-                        "paragraphs": [
-                            "Taihan can now calculate product-level emissions from measured data and respond consistently to customer requests. Pre-verification also confirmed the reliability of its EU market response data."
-                        ]
+                        "paragraphs": ["Taihan can now calculate product-level emissions from measured data and respond consistently to customer requests. Pre-verification also confirmed the reliability of its EU market response data."]
                     }
                 ]
             },
@@ -1771,7 +1523,7 @@
                 "id": 9,
                 "logoSrc": "/site/cases/ci-9.png",
                 "logoAlt": "emart logo",
-                "companyName": "emart",
+                "companyName": "Emart",
                 "eyebrow": "Case study",
                 "title": "emart × HanaLoop API Management Modernization",
                 "subtitle": "HanaLoop consulting designed the path from diagnosis to validation",
@@ -1800,9 +1552,7 @@
                     },
                     {
                         "title": "HanaLoop Approach",
-                        "paragraphs": [
-                            "HanaLoop designed a three-stage engagement in which each deliverable became the input for the next stage, applying Agile Scrum with customer demo and review cycles to reduce delivery risk."
-                        ]
+                        "paragraphs": ["HanaLoop designed a three-stage engagement in which each deliverable became the input for the next stage, applying Agile Scrum with customer demo and review cycles to reduce delivery risk."]
                     },
                     {
                         "title": "Phase 1 — API Diagnosis",
@@ -1812,9 +1562,7 @@
                     },
                     {
                         "title": "Phase 2 — API Documentation Repository",
-                        "paragraphs": [
-                            "HanaLoop defined eMoney API endpoints in OpenAPI format and built a documentation repository with SCM-linked automation so documentation could stay updated as APIs changed."
-                        ]
+                        "paragraphs": ["HanaLoop defined eMoney API endpoints in OpenAPI format and built a documentation repository with SCM-linked automation so documentation could stay updated as APIs changed."]
                     },
                     {
                         "title": "Phase 3 — API Gateway PoC",

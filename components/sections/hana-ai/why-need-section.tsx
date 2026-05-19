@@ -11,7 +11,7 @@ export async function HanaAiWhyNeedSection() {
     const cards = t.raw('cards') as OverviewCard[];
 
     return (
-        <section className="pt-14 md:pt-20 lg:pt-[116px]" aria-label={t('sectionAriaLabel')}>
+        <section className="pt-10 md:pt-20 lg:pt-30" aria-label={t('sectionAriaLabel')}>
             <div className="mx-auto w-full max-w-[1440px] px-5 md:px-8 lg:px-11">
                 <h2 className="text-black font-bold [font-size:clamp(28px,calc(16.94px+2.99vw),60px)] tracking-[-1px]">{t('heading')}</h2>
                 <p className="mt-5 font-semibold text-[#4c4c4c] [font-size:clamp(16px,calc(13.23px+0.75vw),24px)] tracking-[-0.5px]">{t('subheading')}</p>

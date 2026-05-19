@@ -74,13 +74,21 @@ function resolveAuthorName(locale, id) {
   return String(author.name_alt ?? author.name ?? 'HanaLoop');
 }
 
+function extractBodyImageSrc(content) {
+  const match = content.match(/imageSrc=["']([^"']+)["']/);
+  if (match) return match[1];
+  const mdMatch = content.match(/!\[.*?\]\(([^)]+)\)/);
+  if (mdMatch) return mdMatch[1];
+  return null;
+}
+
 function buildLocaleList(locale) {
   const localeBlogDir = path.join(process.cwd(), 'content', locale, 'blog');
   const files = walkMarkdownFiles(localeBlogDir);
 
   const parsed = files.map((filePath) => {
     const raw = fs.readFileSync(filePath, 'utf8');
-    const { data } = matter(raw);
+    const { data, content } = matter(raw);
     const relativePath = path.relative(localeBlogDir, filePath).replaceAll('\\', '/');
     const slug = relativePath.replace(/\.(md|mdx)$/i, '');
 
@@ -89,6 +97,7 @@ function buildLocaleList(locale) {
       ext: path.extname(filePath).toLowerCase(),
       slug,
       meta: data ?? {},
+      bodyImageSrc: extractBodyImageSrc(content),
     };
   });
 
@@ -124,7 +133,7 @@ function buildLocaleList(locale) {
       title: String(entry.meta.title ?? ''),
       dateText: getDateText(entry.meta.date ?? entry.meta.publishedAt, locale),
       author: resolveAuthorName(locale, String(authorId ?? '')),
-      thumbnail: String(entry.meta.image ?? FALLBACK_THUMBNAIL),
+      thumbnail: String(entry.meta.image ?? entry.bodyImageSrc ?? FALLBACK_THUMBNAIL),
       href,
     };
   });

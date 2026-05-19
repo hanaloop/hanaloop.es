@@ -6,19 +6,33 @@ type EditionPlan = {
 };
 
 function DesktopPlanRow({ plan }: { plan: EditionPlan }) {
-    const columnClassName = plan.items.length <= 4 ? 'md:grid-cols-2' : 'md:grid-cols-3';
+    const columnCount = plan.items.length === 4 ? 2 : 3;
+    const baseSize = Math.floor(plan.items.length / columnCount);
+    const remainder = plan.items.length % columnCount;
+    const columns: string[][] = [];
+    let cursor = 0;
+
+    for (let index = 0; index < columnCount; index += 1) {
+        const currentColumnSize = baseSize + (index < remainder ? 1 : 0);
+        columns.push(plan.items.slice(cursor, cursor + currentColumnSize));
+        cursor += currentColumnSize;
+    }
 
     return (
         <article className="grid min-h-[108px] grid-cols-[150px_1fr] items-center rounded-[12px] bg-[#EAF9F3] px-9 py-7 gap-x-2">
             <h3 className="[font-size:clamp(20px,20px,20px)] font-semibold leading-[1.2] tracking-[-0.3px] text-[#1FBD7D]">{plan.title}</h3>
-            <ul className={`grid ${columnClassName} gap-x-9 gap-y-3 text-[#4C4C4C]`}>
-                {plan.items.map((item) => (
-                    <li key={`${plan.title}-${item}`} className="flex items-start gap-2 [font-size:clamp(16px,calc(15.31px+0.187vw),18px)] font-normal leading-[1.25] tracking-[-0.3px]">
-                        <span aria-hidden="true" className="mt-[0.55em] h-[3px] w-[3px] shrink-0 rounded-full bg-[#4C4C4C]" />
-                        <span>{item}</span>
-                    </li>
+            <div className={`grid gap-x-9 text-[#4C4C4C] ${columnCount === 2 ? 'grid-cols-2' : 'grid-cols-3'}`}>
+                {columns.map((columnItems, columnIndex) => (
+                    <ul key={`${plan.title}-column-${columnIndex}`} className="space-y-3">
+                        {columnItems.map((item) => (
+                            <li key={`${plan.title}-${item}`} className="flex items-start gap-2 [font-size:clamp(16px,calc(15.31px+0.187vw),18px)] font-normal leading-[1.25] tracking-[-0.3px]">
+                                <span aria-hidden="true" className="mt-[0.55em] h-[3px] w-[3px] shrink-0 rounded-full bg-[#4C4C4C]" />
+                                <span>{item}</span>
+                            </li>
+                        ))}
+                    </ul>
                 ))}
-            </ul>
+            </div>
         </article>
     );
 }
@@ -46,11 +60,11 @@ export async function OverviewEcoEditionSection() {
     const onPremPlan = t.raw('onPremPlan') as EditionPlan;
 
     return (
-        <section className="px-5 pb-16 pt-3 md:px-8 md:pb-20 md:pt-0 lg:px-0 lg:pb-[82px]" aria-label={t('sectionAriaLabel')}>
-            <div className="mx-auto w-full max-w-[1440px]">
+        <section className="px-5 pb-16 pt-3 md:px-8 md:pb-20 lg:px-0 lg:pb-[82px]" aria-label={t('sectionAriaLabel')}>
+            <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-11">
                 <h2 className="hidden text-center [font-size:clamp(24px,calc(15.70px+2.243vw),48px)] font-semibold leading-[1.2] tracking-[-0.1px] text-black lg:block">{t('heading')}</h2>
 
-                <div className="mx-auto mt-12 hidden w-full max-w-[1090px] grid-cols-[250px_1fr] lg:gap-x-[64px] gap-y-10 lg:grid">
+                <div className="mx-auto mt-12 hidden w-full grid-cols-[280px_1fr] lg:gap-x-[64px] gap-y-10 lg:grid">
                     <h3 className="pt-2 [font-size:clamp(20px,calc(17.23px+0.748vw),28px)] font-semibold leading-[1.2] tracking-[-0.3px] text-black">{t('saasEdition')}</h3>
                     <div className="space-y-4">
                         {saasPlans.map((plan) => (

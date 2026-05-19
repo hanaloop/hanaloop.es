@@ -1,13 +1,15 @@
+import type { CSSProperties } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getTranslations, getLocale } from 'next-intl/server';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 
-function CtaButton({ href, label, locale }: { href: string; label: string; locale: AppLocale }) {
+function CtaButton({ href, label, locale, style }: { href: string; label: string; locale: AppLocale; style?: CSSProperties }) {
     return (
         <Link
             href={withLocalePath(locale, href)}
+            style={style}
             className="bg-gradient-brand inline-flex h-[48px] w-full items-center justify-center gap-2 rounded-full [font-size:clamp(12px,calc(10.62px+0.37vw),16px)] font-medium leading-none text-white transition hover:opacity-90 lg:min-w-[170px] lg:w-auto lg:gap-4 lg:px-8"
         >
             <span>{label}</span>
@@ -45,7 +47,7 @@ export async function CtaSection({ isHome = false }: { isHome?: boolean }) {
                             <CtaButton href="https://docs.google.com/presentation/d/1fNDHGk5kAEI_JigpLZ5yKbHd9uBvoRg4d-S7Nb5YyYo/present?slide=id.p" label={t('solutionLabel')} locale={locale} />
                         </>
                     ) : (
-                        <CtaButton href="/partnership" label={t('contactLabel')} locale={locale} />
+                        <CtaButton href="/partnership" label={t('contactLabel')} locale={locale} style={{ width: 'clamp(176px, calc(140.04px + 9.72vw), 280px)' }} />
                     )}
                 </div>
             </div>

@@ -13,8 +13,8 @@ export async function PcfWhyNeededSection() {
     const t = await getTranslations('PcfWhyNeeded');
 
     return (
-        <section className="px-5 pb-20 pt-8 md:px-8 lg:px-11 lg:pb-[132px] lg:pt-[46px]" aria-label={t('title')}>
-            <div className="mx-auto w-full max-w-[1440px]">
+        <section className="pt-10 md:pt-20 lg:pt-30" aria-label={t('title')}>
+            <div className="mx-auto w-full max-w-[1440px] px-5 md:px-8 lg:px-11">
                 <h2 className="text-black font-bold [font-size:clamp(24px,calc(15.70px+2.24vw),48px)] tracking-[-1px]">{t('title')}</h2>
 
                 <div className="mt-10 grid grid-cols-1 gap-10 lg:mt-[68px] lg:gap-12 min-[1440px]:grid-cols-[1fr_724px] min-[1440px]:gap-[56px]">

@@ -63,13 +63,21 @@ function withLocalePath(locale, href) {
   return `/${locale}${href}`;
 }
 
+function extractBodyImageSrc(content) {
+  const match = content.match(/imageSrc=["']([^"']+)["']/);
+  if (match) return match[1];
+  const mdMatch = content.match(/!\[.*?\]\(([^)]+)\)/);
+  if (mdMatch) return mdMatch[1];
+  return null;
+}
+
 function buildLocaleList(locale) {
   const docsRoot = path.join(process.cwd(), 'content', locale, 'docs');
   const files = walkMarkdownFiles(docsRoot);
 
   const parsed = files.map((filePath) => {
     const raw = fs.readFileSync(filePath, 'utf8');
-    const { data } = matter(raw);
+    const { data, content } = matter(raw);
     const relativePath = path.relative(docsRoot, filePath).replaceAll('\\', '/');
     const slug = relativePath.replace(/\.(md|mdx)$/i, '');
 
@@ -78,6 +86,7 @@ function buildLocaleList(locale) {
       ext: path.extname(filePath).toLowerCase(),
       slug,
       meta: data ?? {},
+      bodyImageSrc: extractBodyImageSrc(content),
     };
   });
 
@@ -109,7 +118,7 @@ function buildLocaleList(locale) {
       title: String(entry.meta.title ?? ''),
       dateText: getDateText(entry.meta.date ?? entry.meta.publishedAt, locale),
       author: 'HanaLoop',
-      thumbnail: String(entry.meta.image ?? FALLBACK_THUMBNAIL),
+      thumbnail: String(entry.meta.image ?? entry.bodyImageSrc ?? FALLBACK_THUMBNAIL),
       href,
     };
   });

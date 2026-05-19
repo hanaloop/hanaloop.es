@@ -12,10 +12,10 @@ export async function OverviewCbamPlanSection() {
 
     return (
         <section className="px-4 pb-14 pt-10 md:px-8 lg:px-0 lg:pb-[74px] lg:pt-[80px]" aria-label={t('sectionAriaLabel')}>
-            <div className="mx-auto w-full max-w-[1440px]">
+            <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-11">
                 <h2 className="text-center [font-size:clamp(24px,calc(15.70px+2.24vw),48px)] font-semibold leading-[1.2] tracking-[-0.1px] text-black my-8">{t('heading')}</h2>
 
-                <div className="mx-auto mt-6 grid w-full max-w-[1050px] grid-cols-1 gap-3 md:mt-12 md:grid-cols-3 md:gap-10 lg:mt-[56px] lg:gap-[78px]">
+                <div className="mx-auto mt-6 grid w-full grid-cols-1 gap-3 md:mt-12 md:grid-cols-3 md:gap-10 lg:mt-[56px] lg:gap-[78px]">
                     {cards.map((card) => (
                         <article key={card.title} className="rounded-[8px] bg-[linear-gradient(105deg,rgba(31,189,125,0.08)_0%,rgba(1,148,255,0.10)_100%)] px-5 py-5 md:rounded-none md:bg-none md:p-0">
                             <h3 className="inline-flex min-h-[30px] items-center rounded-full border border-[#1FBD7D] px-5 py-2 [font-size:clamp(20px,calc(18.62px+0.37vw),24px)] font-bold leading-[1.2] tracking-[-0.3px] text-[#1FBD7D] md:min-h-0 md:border-0 md:px-0 md:text-black">
