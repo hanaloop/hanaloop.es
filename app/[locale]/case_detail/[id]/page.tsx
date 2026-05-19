@@ -4,17 +4,17 @@ import { CaseDetailContentSection } from '@/components/sections/case-detail/cont
 import { CasesHeroSection } from '@/components/sections/cases/hero-section';
 import { CtaSection } from '@/components/sections/home/cta-section';
 import { isLocale, locales } from '@/lib/locales';
+import koMessages from '@/messages/ko.json';
 
-type Props = { params: Promise<{ locale: string }> };
-type SearchParams = { id?: string | string[] };
+type Props = { params: Promise<{ locale: string; id: string }> };
 
-export default async function Page({ params, searchParams }: Props & { searchParams: Promise<SearchParams> }) {
-    const { locale } = await params;
+const caseIds = (koMessages.CasesDetail.items as { id: number }[]).map((item) => item.id);
+
+export default async function Page({ params }: Props) {
+    const { locale, id } = await params;
     if (!isLocale(locale)) notFound();
-    const { id } = await searchParams;
-    const rawId = Array.isArray(id) ? id[0] : id;
-    const caseId = Number(rawId);
-    if (!Number.isInteger(caseId) || caseId < 1) notFound();
+    const caseId = Number(id);
+    if (!caseIds.includes(caseId)) notFound();
 
     return (
         <SiteShell>
@@ -26,5 +26,5 @@ export default async function Page({ params, searchParams }: Props & { searchPar
 }
 
 export function generateStaticParams() {
-    return locales.map((locale) => ({ locale }));
+    return locales.flatMap((locale) => caseIds.map((id) => ({ locale, id: String(id) })));
 }

@@ -52,12 +52,12 @@ export function PlatformHero({ ariaLabel, backgroundImageUrl, mobileBackgroundIm
                     <h1 className="[font-size:clamp(28px,calc(15.55px+3.36vw),64px)] font-semibold leading-none tracking-[-0.02em]">{heading}</h1>
                     <p className="[font-size:clamp(14px,calc(12.62px+0.37vw),18px)] mt-8 lg:mt-4 font-medium leading-[1.45] text-white/95 px-6 lg:px-11">{description}</p>
 
-                    <nav className="gradient-border mt-12 hidden h-[52px] items-center rounded-full bg-white/12 px-8 backdrop-blur-[8px] lg:flex" aria-label={navAriaLabel}>
+                    <nav className="gradient-border mt-12 hidden min-h-[52px] py-1 items-center rounded-full bg-white/12 px-8 backdrop-blur-[8px] lg:flex" aria-label={navAriaLabel}>
                         {relatedLinks.map((item, index) => (
                             <div key={item.href} className="flex items-center">
                                 {item.current ? (
                                     <span
-                                        className="inline-flex h-8 min-w-0 items-center justify-center rounded-full border border-white/35 px-5 [font-size:clamp(14px,calc(12.62px+0.37vw),18px))] font-semibold tracking-[-0.25px] text-white"
+                                        className="inline-flex min-h-8 min-w-0 items-center justify-center rounded-full border border-white/35 px-5 [font-size:clamp(14px,calc(12.62px+0.37vw),18px))] font-semibold tracking-[-0.25px] text-white"
                                         aria-current="page"
                                     >
                                         {item.label}

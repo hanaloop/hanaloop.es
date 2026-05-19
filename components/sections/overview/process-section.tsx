@@ -52,8 +52,8 @@ export async function OverviewProcessSection() {
                         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-9">
                             {steps.map((step) => (
                                 <div key={step.heading}>
-                                    <p className="text-white font-medium tracking-[-0.25px] [font-size:clamp(16px,calc(13.23px+0.75vw),24px)]">{step.heading}</p>
-                                    <div className="hidden w-full lg:flex lg:items-end">
+                                    <p className="pe-6 text-white font-medium tracking-[-0.25px] [font-size:clamp(16px,calc(13.23px+0.75vw),24px)]">{step.heading}</p>
+                                    <div className="hidden w-full lg:flex lg:items-end mt-[-12px]">
                                         <span className="block h-px flex-1 bg-white/80" />
                                         <span
                                             className="relative block h-[22px] w-[22px] shrink-0 border-b border-white/80"

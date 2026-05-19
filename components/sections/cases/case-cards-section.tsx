@@ -43,7 +43,7 @@ export async function CaseCardsSection() {
                                     </span>
                                 ) : (
                                     <Link
-                                        href={withLocalePath(locale, `/case_detail?id=${index + 1}`)}
+                                        href={withLocalePath(locale, `/case_detail/${index + 1}`)}
                                         className="order-2 mt-auto inline-flex h-[48px] w-full items-center justify-between rounded-full bg-black px-[22px] text-white md:order-none md:mt-0 md:w-[182px] md:px-[26px]"
                                     >
                                         <span className="[font-size:clamp(14px,calc(14px+(18-14)*((100vw-370px)/1070)),18px)] font-bold tracking-[-0.3px]">{item.ctaLabel}</span>
