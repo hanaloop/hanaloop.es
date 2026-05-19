@@ -20,10 +20,10 @@ const ICON = {
     menuDark: '/site/icons/ic-menu-dark.png',
 } as const;
 
-function NavDropdownItem({ item, locale }: { item: MenuItem; locale: AppLocale }) {
+function NavDropdownItem({ item, locale, onClose }: { item: MenuItem; locale: AppLocale; onClose?: () => void }) {
     if (item.external) {
         return (
-            <a href={item.href} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 rounded-md px-3 py-2 text-sm text-white/80 hover:bg-white/10 hover:text-white">
+            <a href={item.href} target="_blank" rel="noreferrer" onClick={onClose} className="flex items-center gap-1.5 rounded-md px-3 py-2 text-sm text-white/80 hover:bg-white/10 hover:text-white">
                 {item.label}
                 <Image src={ICON.link} alt="" width={13} height={13} aria-hidden="true" className="h-3 w-3 shrink-0" />
             </a>
@@ -31,7 +31,7 @@ function NavDropdownItem({ item, locale }: { item: MenuItem; locale: AppLocale }
     }
 
     return (
-        <Link href={withLocalePath(locale, item.href)} className="block rounded-md px-3 py-2 text-sm text-white/80 hover:bg-white/10 hover:text-white">
+        <Link href={withLocalePath(locale, item.href)} onClick={onClose} className="block rounded-md px-3 py-2 text-sm text-white/80 hover:bg-white/10 hover:text-white">
             {item.label}
         </Link>
     );
@@ -49,8 +49,9 @@ export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileConte
     const tNav = useTranslations('Nav');
     const menus = useMemo(() => buildMenus(locale, tNav), [locale, tNav]);
     const [scrolled, setScrolled] = useState(false);
-    const [menuHovered, setMenuHovered] = useState(false);
+    const [openMenu, setOpenMenu] = useState<string | null>(null);
     const [localeMenuOpen, setLocaleMenuOpen] = useState(false);
+    const menuHovered = openMenu !== null;
     const normalizedPath = useMemo(() => stripBasePath(pathname ?? '/'), [pathname]);
     const pathSegments = useMemo(() => normalizedPath.split('/').filter(Boolean), [normalizedPath]);
     const isHome = pathSegments.length === 0 || (pathSegments.length === 1 && isLocale(pathSegments[0]));
@@ -103,19 +104,24 @@ export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileConte
                 </div>
 
                 <div className="relative z-10 hidden items-center gap-3 text-white lg:flex">
-                    <nav className="hidden items-center gap-1 lg:flex" onMouseEnter={() => setMenuHovered(true)} onMouseLeave={() => setMenuHovered(false)}>
+                    <nav className="hidden items-center gap-1 lg:flex">
                         {menus.map((menu: MenuGroup) => (
-                            <div key={menu.label} className="group relative">
+                            <div
+                                key={menu.label}
+                                className="relative"
+                                onMouseEnter={() => setOpenMenu(menu.label)}
+                                onMouseLeave={() => setOpenMenu(null)}
+                            >
                                 <button type="button" className="inline-flex items-center gap-2 rounded-md px-3 py-2 text-[14px] font-medium leading-none text-white transition">
                                     <span>{menu.label}</span>
                                     <Image src={ICON.chevronDown} alt="" width={16} height={16} aria-hidden="true" className="h-4 w-4" />
                                 </button>
                                 <div
-                                    className="gradient-border invisible absolute left-0 top-full z-50 mt-2 min-w-52 rounded-xl p-1.5 opacity-0 shadow-2xl transition-all duration-500 group-hover:visible group-hover:opacity-100"
+                                    className={`gradient-border absolute left-0 top-full z-50 mt-2 min-w-52 rounded-xl p-1.5 shadow-2xl transition-all duration-500 ${openMenu === menu.label ? 'visible opacity-100' : 'invisible opacity-0'}`}
                                     style={{ backgroundColor: overlayBg, backdropFilter: 'blur(13px)', WebkitBackdropFilter: 'blur(13px)' }}
                                 >
                                     {menu.items.map((item: MenuItem) => (
-                                        <NavDropdownItem key={item.label} item={item} locale={locale} />
+                                        <NavDropdownItem key={item.label} item={item} locale={locale} onClose={() => setOpenMenu(null)} />
                                     ))}
                                 </div>
                             </div>

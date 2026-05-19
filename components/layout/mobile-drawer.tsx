@@ -29,6 +29,11 @@ export function MobileDrawer({ locale, groups, toggleId = 'mobile-menu-toggle' }
   const currentYear = new Date().getFullYear();
   const [openGroup, setOpenGroup] = useState<number | null>(0);
 
+  const closeDrawer = () => {
+    const toggle = document.getElementById(toggleId) as HTMLInputElement | null;
+    if (toggle) toggle.checked = false;
+  };
+
   return (
     <div className="mobile-menu-layer fixed inset-0 z-[60] lg:hidden">
       <label htmlFor={toggleId} className="mobile-menu-overlay absolute inset-0 cursor-pointer bg-black/24" aria-label={t('closeOverlay')} />
@@ -36,7 +41,7 @@ export function MobileDrawer({ locale, groups, toggleId = 'mobile-menu-toggle' }
       <aside id="mobile-menu-drawer" className="mobile-menu-panel absolute inset-y-0 right-0 flex h-full w-full flex-col overflow-y-auto bg-[var(--color-mobile-dark-bg)] text-white">
         <div className="flex h-full flex-col px-[37px] pb-[52px] pt-[28px]">
           <div className="flex items-center justify-between">
-            <Link href={withLocalePath(locale, '/')} className="inline-flex items-center">
+            <Link href={withLocalePath(locale, '/')} onClick={closeDrawer} className="inline-flex items-center">
               <Image src={ICON.logoDrawer} alt="HanaLoop" width={130} height={19} className="h-[19px] w-auto" />
             </Link>
 
@@ -68,7 +73,7 @@ export function MobileDrawer({ locale, groups, toggleId = 'mobile-menu-toggle' }
                   <ul className={`overflow-hidden transition-all duration-200 ${openGroup === index ? 'mt-6 max-h-[520px]' : 'max-h-0'}`}>
                     {group.items.map((item) => (
                       <li key={item.label} className="pt-4 first:pt-0">
-                        <Link href={withLocalePath(locale, item.href)} className="text-white/85" style={{ fontSize: '18px', fontWeight: 400, lineHeight: 1.1, letterSpacing: '-0.2px' }}>
+                        <Link href={withLocalePath(locale, item.href)} onClick={closeDrawer} className="text-white/85" style={{ fontSize: '18px', fontWeight: 400, lineHeight: 1.1, letterSpacing: '-0.2px' }}>
                           {item.label}
                         </Link>
                       </li>
