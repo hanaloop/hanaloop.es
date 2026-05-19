@@ -42,6 +42,13 @@ const termsKo_: GlossaryTerm[] = [
     source: '탄소중립 녹색성장위원회',
     sourceUrl: 'https://www.2050cnc.go.kr/base/contents/view?contentsNo=9&menuLevel=2&menuNo=11',
   },
+  {
+    title: "제품 탄소발자국 (Product Carbon Footprint, PCF)",
+    description: "제품의 수명 주기 동안 발생하는 온실가스 배출 및 제거를 의미하며, 원자재 채취, 생산, 운송, 사용 단계 및 폐기 처리 과정을 포함합니다",
+    source: "GHG Protocol Product Life Cycle Standard",
+    sourceUrl: "https://ghgprotocol.org/sites/default/files/standards/Product-Life-Cycle-Accounting-Reporting-Standard_041613.pdf"
+  },
+  
 ];
 
 const termsEn_: GlossaryTerm[] = [
