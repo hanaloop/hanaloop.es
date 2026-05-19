@@ -11,7 +11,7 @@ export async function HomeInsightSection() {
     const locale = (await getLocale()) as AppLocale;
     const items = getInsightListItems(locale);
     const topItems = items.slice(0, 4);
-    const insightHref = withLocalePath(locale, '/insight');
+    const insightHref = withLocalePath(locale, '/docs');
     const emptyState =
         locale === 'ko'
             ? {

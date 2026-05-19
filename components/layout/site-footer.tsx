@@ -52,7 +52,7 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
                                 </Link>
                             </li>
                             <li>
-                                <Link href={withLocalePath(locale, '/insight')} className={bodyText}>
+                                <Link href={withLocalePath(locale, '/docs')} className={bodyText}>
                                     {t('mobilePrimary.insight')}
                                 </Link>
                             </li>
@@ -106,7 +106,7 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
                         <p className="mb-[30px] text-[30px] leading-none font-medium text-white">{t('insightTitle')}</p>
                         <ul className="space-y-[18px]">
                             <li>
-                                <Link href={withLocalePath(locale, '/insight')} className={`${bodyText} transition hover:text-white/80`}>
+                                <Link href={withLocalePath(locale, '/docs')} className={`${bodyText} transition hover:text-white/80`}>
                                     {t('insight')}
                                 </Link>
                             </li>

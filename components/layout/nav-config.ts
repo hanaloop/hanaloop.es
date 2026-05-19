@@ -28,7 +28,7 @@ export function buildMenus(locale: AppLocale, t: (key: string) => string): MenuG
         {
             label: t('insight'),
             items: [
-                { label: t('items.Insight'), href: '/insight' },
+                { label: t('items.Insight'), href: '/docs' },
                 { label: t('items.Blog'), href: '/blog' },
             ],
         },

@@ -1,5 +1,5 @@
 ﻿import type { ComponentType } from 'react';
-import { InsightDetailLayout } from '@/components/sections/insight/detail-layout';
+import { InsightDetailLayout } from '@/components/sections/docs/detail-layout';
 import { buildInsightNavTree } from '@/lib/insight-navigation';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
@@ -43,7 +43,7 @@ export async function InsightListSection({ locale, selectedSlug }: InsightListSe
 
   if (!slug.length) {
     return (
-      <InsightDetailLayout navTree={navTree} currentPath="" title="" dateText="" toc={[]} backHref={withLocalePath(locale, '/insight')} showBackLink={false} labels={labels}>
+      <InsightDetailLayout navTree={navTree} currentPath="" title="" dateText="" toc={[]} backHref={withLocalePath(locale, '/docs')} showBackLink={false} labels={labels}>
         <div />
       </InsightDetailLayout>
     );
@@ -62,7 +62,7 @@ export async function InsightListSection({ locale, selectedSlug }: InsightListSe
     body: ComponentType;
   };
   const MDX = pageData.body;
-  const currentPath = withLocalePath(locale, `/insight/${slug.join('/')}`);
+  const currentPath = withLocalePath(locale, `/docs/${slug.join('/')}`);
   const toc = mapToc(pageData.toc);
 
   return (
@@ -73,7 +73,7 @@ export async function InsightListSection({ locale, selectedSlug }: InsightListSe
       dateText={formatDate(pageData.date ?? pageData.publishedAt, locale)}
       image={typeof pageData.image === 'string' ? pageData.image : undefined}
       toc={toc}
-      backHref={withLocalePath(locale, '/insight')}
+      backHref={withLocalePath(locale, '/docs')}
       showBackLink={false}
       labels={labels}
     >

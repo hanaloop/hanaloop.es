@@ -112,7 +112,7 @@ function buildLocaleList(locale) {
   });
 
   return normalized.map((entry, index) => {
-    const href = withLocalePath(locale, `/insight/${entry.slug}`);
+    const href = withLocalePath(locale, `/docs/${entry.slug}`);
     return {
       id: `insight-${index}-${entry.slug.replaceAll('/', '-')}`,
       title: String(entry.meta.title ?? ''),

@@ -9,7 +9,7 @@ export async function InsightHeroSection({ locale }: { locale: AppLocale }) {
 
     return (
         <section className="relative h-[300px] overflow-hidden md:h-[400px] lg:h-[480px] xl:h-[480px] 2xl:h-[480px]" aria-label="HanaLoop Insight Hero">
-            <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/site/insight/hero-bg.png')" }} />
+            <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/site/docs/hero-bg.png')" }} />
 
             <div className="relative mx-auto flex h-full w-full max-w-[1440px] flex-col items-center justify-center px-4 text-white">
                 <h1 className="text-center [font-size:clamp(28px,calc(15.55px+3.36vw),64px)] font-semibold leading-none">{t('heading')}</h1>

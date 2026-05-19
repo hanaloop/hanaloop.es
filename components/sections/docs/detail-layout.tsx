@@ -105,7 +105,7 @@ function NavItem({ node, level, currentPath, openByLevel, setOpenAtLevel, closeD
                         style={{ fontSize: sizeByLevel, fontWeight: weightByLevel, letterSpacing: '-0.02em', color: colorByLevel }}
                     >
                         <span>{node.title}</span>
-                        {hasChildren ? <img src={isOpen ? '/site/insight/color_arrow.png' : '/site/insight/arrow.png'} alt="" className={`transition ${isOpen ? '' : 'rotate-180'}`} aria-hidden /> : null}
+                        {hasChildren ? <img src={isOpen ? '/site/docs/color_arrow.png' : '/site/docs/arrow.png'} alt="" className={`transition ${isOpen ? '' : 'rotate-180'}`} aria-hidden /> : null}
                     </button>
                 )}
             </div>

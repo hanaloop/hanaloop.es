@@ -64,7 +64,7 @@ function buildTreeNode(locale: AppLocale, docsRoot: string, relDir: string, key:
   return {
     id: nodeId,
     title,
-    href: withLocalePath(locale, `/insight/${nextRelDir}`),
+    href: withLocalePath(locale, `/docs/${nextRelDir}`),
   };
 }
 
