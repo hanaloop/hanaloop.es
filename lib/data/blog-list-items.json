@@ -1,7 +1,23 @@
 {
   "ko": [
     {
-      "id": "blog-0-2025-20251230-cbam-definitive-period",
+      "id": "blog-0-2026-20260422-CBAM-cost-simulation-consulting",
+      "title": "[안내] 2026년 CBAM 확정기 대비, '탄소 비용 시뮬레이션' 및 전략 컨설팅 제안",
+      "dateText": "2026년 4월 21일",
+      "author": "Hana",
+      "thumbnail": "/site/home/hero-bg-main.png",
+      "href": "/blog/2026/20260422-CBAM-cost-simulation-consulting"
+    },
+    {
+      "id": "blog-1-2026-20260331-cbam-definitive-period-review-session",
+      "title": "EU CBAM 확정기 점검 단독 세션",
+      "dateText": "2026년 3월 31일",
+      "author": "Hana",
+      "thumbnail": "/images/posting/environment-general/2022-12-14-cbam.jpg",
+      "href": "/blog/2026/20260331-cbam-definitive-period-review-session"
+    },
+    {
+      "id": "blog-2-2025-20251230-cbam-definitive-period",
       "title": "확정 체제를 위한 법적 토대 완성: CBAM 개정 규정",
       "dateText": "2025년 12월 30일",
       "author": "Jiyeon Lee",
@@ -9,7 +25,7 @@
       "href": "/blog/2025/20251230-cbam-definitive-period"
     },
     {
-      "id": "blog-1-2025-20251113-webinar-listo-para-competir-sostenibilidad",
+      "id": "blog-3-2025-20251113-webinar-listo-para-competir-sostenibilidad",
       "title": "웨비나: 탄소 중립 시대, 당신은 경쟁할 준비가 되었습니까?",
       "dateText": "2025년 10월 7일",
       "author": "Young-Suk Ahn Park",
@@ -17,7 +33,7 @@
       "href": "/blog/2025/20251113-webinar-listo-para-competir-sostenibilidad"
     },
     {
-      "id": "blog-2-2025-20250708-climate-regulations-overview",
+      "id": "blog-4-2025-20250708-climate-regulations-overview",
       "title": "비철금속 산업의 글로벌 기후규제 현황과 이슈",
       "dateText": "2025년 7월 7일",
       "author": "Hyeyeon Kim",
@@ -25,7 +41,7 @@
       "href": "/blog/2025/20250708-climate-regulations-overview"
     },
     {
-      "id": "blog-3-2025-20250405-cbam-support-program",
+      "id": "blog-5-2025-20250405-cbam-support-program",
       "title": "[참여기업 모집] 정부지원 중소기업 CBAM 대응 인프라 구축(2025)",
       "dateText": "2025년 4월 5일",
       "author": "Hana",
@@ -33,7 +49,7 @@
       "href": "/blog/2025/20250405-cbam-support-program"
     },
     {
-      "id": "blog-4-2025-20250221-scope3-management",
+      "id": "blog-6-2025-20250221-scope3-management",
       "title": "기업의 탄소관리: Scope3 배출량 산정 및 전략 수립",
       "dateText": "2025년 2월 21일",
       "author": "Hana",
@@ -41,7 +57,7 @@
       "href": "/blog/2025/20250221-scope3-management"
     },
     {
-      "id": "blog-5-2025-20250219-clean-air-expo",
+      "id": "blog-7-2025-20250219-clean-air-expo",
       "title": "하나루프, ‘기후공기환경산업전’에서 탄소 감축 및 공급망 탄소 경영 솔루션 소개",
       "dateText": "2025년 2월 19일",
       "author": "Hana",
@@ -49,7 +65,7 @@
       "href": "/blog/2025/20250219-clean-air-expo"
     },
     {
-      "id": "blog-6-2025-20250218-cbam-review",
+      "id": "blog-8-2025-20250218-cbam-review",
       "title": "CBAM 보고서, 하나루프가 도와드립니다!",
       "dateText": "2025년 2월 18일",
       "author": "Hana",
@@ -57,7 +73,7 @@
       "href": "/blog/2025/20250218-cbam-review"
     },
     {
-      "id": "blog-7-2025-20250123-scope3-public-hearing",
+      "id": "blog-9-2025-20250123-scope3-public-hearing",
       "title": "「Scope 3 온실가스 배출량 산정 및 보고 가이드라인」 공청회",
       "dateText": "2025년 1월 23일",
       "author": "Hana",
@@ -65,7 +81,7 @@
       "href": "/blog/2025/20250123-scope3-public-hearing"
     },
     {
-      "id": "blog-8-2025-20250101-2024-2025-climate-perspectives",
+      "id": "blog-10-2025-20250101-2024-2025-climate-perspectives",
       "title": "2024에서 2025로: 환경적 변화와 전망",
       "dateText": "2025년 1월 1일",
       "author": "Young-Suk Ahn Park",
@@ -73,7 +89,7 @@
       "href": "/blog/2025/20250101-2024-2025-climate-perspectives"
     },
     {
-      "id": "blog-9-2024-20241104-peace-with-nature",
+      "id": "blog-11-2024-20241104-peace-with-nature",
       "title": "자연과의 화해",
       "dateText": "2024년 11월 4일",
       "author": "Hana",
@@ -81,7 +97,7 @@
       "href": "/blog/2024/20241104-peace-with-nature"
     },
     {
-      "id": "blog-10-2024-20241008-esg-eco-expo-meeting",
+      "id": "blog-12-2024-20241008-esg-eco-expo-meeting",
       "title": "기후규제와 공시의무 준비에 어려움 있었다면, 대한민국 ESG친환경대전에서 하나루프팀을 만나보세요.",
       "dateText": "2024년 10월 8일",
       "author": "Hana",
@@ -89,7 +105,7 @@
       "href": "/blog/2024/20241008-esg-eco-expo-meeting"
     },
     {
-      "id": "blog-11-2024-20241004-esg-eco-expo",
+      "id": "blog-13-2024-20241004-esg-eco-expo",
       "title": "하나루프 ‘대한민국 ESG 친환경대전’서 탄소중립 플랫폼 ‘하나에코’로 기업의 기후규제 대응 지원",
       "dateText": "2024년 10월 4일",
       "author": "Hana",
@@ -97,7 +113,7 @@
       "href": "/blog/2024/20241004-esg-eco-expo"
     },
     {
-      "id": "blog-12-2024-20240909-net-zero-expo",
+      "id": "blog-14-2024-20240909-net-zero-expo",
       "title": "탄소관리 솔루션 하나루프, 2024 탄소중립 엑스포서 넷제로 생태계 구축 선도",
       "dateText": "2024년 9월 9일",
       "author": "Young-Suk Ahn Park",
@@ -105,7 +121,7 @@
       "href": "/blog/2024/20240909-net-zero-expo"
     },
     {
-      "id": "blog-13-2024-20240724-netzero2050",
+      "id": "blog-15-2024-20240724-netzero2050",
       "title": "넷제로 '제1회 기후테크 네트워크 모임' 탄소관리 기술 동향 발표",
       "dateText": "2024년 7월 24일",
       "author": "Young-Suk Ahn Park",
@@ -113,7 +129,7 @@
       "href": "/blog/2024/20240724-netzero2050"
     },
     {
-      "id": "blog-14-2024-20240724-beautyIndustry-sustainability",
+      "id": "blog-16-2024-20240724-beautyIndustry-sustainability",
       "title": "아름다운 지구, 아름다운 제품, 아름다운 사람. 뷰티산업에서 지속가능성",
       "dateText": "2024년 7월 24일",
       "author": "Young-Suk Ahn Park",
@@ -121,7 +137,7 @@
       "href": "/blog/2024/20240724-beautyIndustry-sustainability"
     },
     {
-      "id": "blog-15-2024-20240427-kahneman",
+      "id": "blog-17-2024-20240427-kahneman",
       "title": "선택: 삶과 세계를 만들어가다",
       "dateText": "2024년 4월 27일",
       "author": "Young-Suk Ahn Park",
@@ -129,7 +145,7 @@
       "href": "/blog/2024/20240427-kahneman"
     },
     {
-      "id": "blog-16-2024-20240328-hwikcirclelayer-partnership",
+      "id": "blog-18-2024-20240328-hwikcirclelayer-partnership",
       "title": "휙페이 X 하나루프 협력, 탄소회계기술로 탄소저감량 측정과 분석 알고리즘을 개발합니다",
       "dateText": "2024년 3월 28일",
       "author": "Hana",
@@ -137,7 +153,7 @@
       "href": "/blog/2024/20240328-hwikcirclelayer-partnership"
     },
     {
-      "id": "blog-17-2024-20240328-CBAM-update",
+      "id": "blog-19-2024-20240328-CBAM-update",
       "title": "EU 탄소국경조정제도(CBAM) 2차 보고 전 확인사항",
       "dateText": "2024년 3월 28일",
       "author": "Hana",
@@ -145,7 +161,7 @@
       "href": "/blog/2024/20240328-CBAM-update"
     },
     {
-      "id": "blog-18-2024-20240307-sec-climate-disclosure",
+      "id": "blog-20-2024-20240307-sec-climate-disclosure",
       "title": "스코프3 제외된 미국 증권거래위원회(SEC)의 기후공시 규정 발표",
       "dateText": "2024년 3월 7일",
       "author": "Young-Suk Ahn Park",
@@ -153,7 +169,7 @@
       "href": "/blog/2024/20240307-sec-climate-disclosure"
     },
     {
-      "id": "blog-19-2023-20231231-2023-year-in-review",
+      "id": "blog-21-2023-20231231-2023-year-in-review",
       "title": "하나루프와 돌아보는 2023년 ",
       "dateText": "2023년 12월 31일",
       "author": "Young-Suk Ahn Park",
@@ -161,7 +177,7 @@
       "href": "/blog/2023/20231231-2023-year-in-review"
     },
     {
-      "id": "blog-20-2023-20231218-cop28-outcomes",
+      "id": "blog-22-2023-20231218-cop28-outcomes",
       "title": "COP 28 주요 결과",
       "dateText": "2023년 12월 18일",
       "author": "Young-Suk Ahn Park",
@@ -169,7 +185,7 @@
       "href": "/blog/2023/20231218-cop28-outcomes"
     },
     {
-      "id": "blog-21-2023-20231102-cbam-assessment_program",
+      "id": "blog-23-2023-20231102-cbam-assessment_program",
       "title": "하나루프 2023 EU CBAM 대응 탄소다배출산업 기업 대상 온실가스 관리 현황 진단 및 관리 체계 구축 지원",
       "dateText": "2023년 11월 2일",
       "author": "Hana",
@@ -177,7 +193,7 @@
       "href": "/blog/2023/20231102-cbam-assessment_program"
     },
     {
-      "id": "blog-22-2023-20231014-esgexpo-hanaloop",
+      "id": "blog-24-2023-20231014-esgexpo-hanaloop",
       "title": "탄소관리 소셜벤처 하나루프, 2023 대한민국 ESG 친환경대전 참여",
       "dateText": "2023년 10월 14일",
       "author": "Hana",
@@ -185,7 +201,7 @@
       "href": "/blog/2023/20231014-esgexpo-hanaloop"
     },
     {
-      "id": "blog-23-2023-20230831-climateregulation-seminar",
+      "id": "blog-25-2023-20230831-climateregulation-seminar",
       "title": "하나루프, 기후규제 대응 역량 강화 세미나 성료",
       "dateText": "2023년 8월 31일",
       "author": "Hana",
@@ -193,7 +209,7 @@
       "href": "/blog/2023/20230831-climateregulation-seminar"
     },
     {
-      "id": "blog-24-2023-20230813-climateregulation-seminar",
+      "id": "blog-26-2023-20230813-climateregulation-seminar",
       "title": "08월 13일 기후규제대응 역량 강화세미나",
       "dateText": "2023년 8월 13일",
       "author": "Hana",
@@ -201,7 +217,7 @@
       "href": "/blog/2023/20230813-climateregulation-seminar"
     },
     {
-      "id": "blog-25-2023-20230802-netzero2030-partnership",
+      "id": "blog-27-2023-20230802-netzero2030-partnership",
       "title": "하나루프, 넷제로 2050 기후재단과 손잡아",
       "dateText": "2023년 8월 2일",
       "author": "Hana",
@@ -209,7 +225,7 @@
       "href": "/blog/2023/20230802-netzero2030-partnership"
     },
     {
-      "id": "blog-26-2023-20230607-kt-socialchallenge",
+      "id": "blog-28-2023-20230607-kt-socialchallenge",
       "title": "하나루프 KT의 따뜻한 기술 더하기 챌린지 선정",
       "dateText": "2023년 6월 7일",
       "author": "Hana",
@@ -217,7 +233,7 @@
       "href": "/blog/2023/20230607-kt-socialchallenge"
     },
     {
-      "id": "blog-27-2023-20230509-hanconsulting-partnership",
+      "id": "blog-29-2023-20230509-hanconsulting-partnership",
       "title": "(주)한컨설팅그룹과 '탄소중립 토탈 솔루션 사업 협약' 체결",
       "dateText": "2023년 6월 7일",
       "author": "Hana",
@@ -225,7 +241,7 @@
       "href": "/blog/2023/20230509-hanconsulting-partnership"
     },
     {
-      "id": "blog-28-2023-20230403-byucksan",
+      "id": "blog-30-2023-20230403-byucksan",
       "title": "하나루프, 벽산에 탄소관리 솔루션 '하나에코' 도입",
       "dateText": "2023년 4월 3일",
       "author": "Young-Suk Ahn Park",
