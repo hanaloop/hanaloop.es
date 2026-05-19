@@ -56,12 +56,13 @@ export function PlatformHero({ ariaLabel, backgroundImageUrl, mobileBackgroundIm
                         {relatedLinks.map((item, index) => (
                             <div key={item.href} className="flex items-center">
                                 {item.current ? (
-                                    <span
+                                    <Link
+                                        href={withLocalePath(locale, item.href)}
                                         className="inline-flex min-h-8 min-w-0 items-center justify-center rounded-full border border-white/35 px-5 [font-size:clamp(14px,calc(12.62px+0.37vw),18px))] font-semibold tracking-[-0.25px] text-white"
                                         aria-current="page"
                                     >
                                         {item.label}
-                                    </span>
+                                    </Link>
                                 ) : (
                                     <Link href={withLocalePath(locale, item.href)} className="inline-flex h-8 items-center [font-size:clamp(14px,calc(12.62px+0.37vw),18px))] tracking-[-0.25px] text-white/95 transition hover:text-white">
                                         {item.label}
@@ -78,12 +79,13 @@ export function PlatformHero({ ariaLabel, backgroundImageUrl, mobileBackgroundIm
                                 <div key={item.href} className="relative flex min-h-10 items-center justify-center px-4">
                                     {index % mobileColumns !== 0 ? <span aria-hidden="true" className="absolute -left-3 top-1/2 h-7 -translate-y-1/2 border-l border-white/55" /> : null}
                                     {item.current ? (
-                                        <span
+                                        <Link
+                                            href={withLocalePath(locale, item.href)}
                                             className="inline-flex h-9 min-w-max max-w-full items-center justify-center rounded-full border border-white/40 px-5 text-center text-[16px] font-semibold leading-none tracking-[-0.25px] text-white whitespace-nowrap"
                                             aria-current="page"
                                         >
                                             {item.label}
-                                        </span>
+                                        </Link>
                                     ) : (
                                         <Link
                                             href={withLocalePath(locale, item.href)}
