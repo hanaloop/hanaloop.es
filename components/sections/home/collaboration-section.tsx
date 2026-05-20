@@ -122,13 +122,13 @@ export function HomeCollaborationSection() {
     return (
         <section className="home-collaboration-section px-5 pb-12 pt-10 md:px-8 md:pb-16 md:pt-16 lg:px-[64px] lg:pb-20 lg:pt-18 overflow-hidden">
             <div className="mx-auto w-full max-w-[1440px]">
-                <div className="px-11 mx-auto text-center">
+                <div className="mx-auto text-center">
                     <div className="mb-5 flex justify-center lg:hidden">
                         <span className="home-collaboration-badge">{t('badge')}</span>
                     </div>
                     <h2 className="mx-auto font-medium leading-[1.14] tracking-[-0.02em] text-black [font-size:clamp(22px,calc(13.01px+2.43vw),48px)] lg:mx-0">
                         {(t.raw('titleLines') as string[]).map((line: string) => (
-                            <span key={line} className="block whitespace-nowrap">
+                            <span key={line} className="block">
                                 {line}
                             </span>
                         ))}
