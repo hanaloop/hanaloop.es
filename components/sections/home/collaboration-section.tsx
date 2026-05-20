@@ -36,22 +36,10 @@ type LoopSlide = {
     fixedIndex: number;
 };
 
-const partnerLogos = [
-    { id: 'slot-01-samyang', name: 'SAMYANG', logo: '/site/home/collaboration/samyang.png' },
-    { id: 'slot-02', name: 'Partner 2', logo: '/site/home/collaboration/partner-logos/2.png' },
-    { id: 'slot-03-doosan', name: 'DOOSAN', logo: '/site/home/collaboration/doosan.png' },
-    { id: 'slot-04', name: 'Partner 4', logo: '/site/home/collaboration/partner-logos/4.png' },
-    { id: 'slot-05', name: 'Partner 5', logo: '/site/home/collaboration/partner-logos/5.png' },
-    { id: 'slot-06', name: 'Partner 6', logo: '/site/home/collaboration/partner-logos/6.png' },
-    { id: 'slot-07-daehoal', name: 'DAEHOAL', logo: '/site/home/collaboration/daehoal.png' },
-    { id: 'slot-08', name: 'Partner 8', logo: '/site/home/collaboration/partner-logos/8.png' },
-    { id: 'slot-09', name: 'Partner 9', logo: '/site/home/collaboration/partner-logos/9.png' },
-    { id: 'slot-10-sama', name: 'SamA', logo: '/site/home/collaboration/sama.png' },
-    { id: 'slot-11', name: 'Partner 11', logo: '/site/home/collaboration/partner-logos/11.png' },
-    { id: 'slot-12', name: 'Partner 12', logo: '/site/home/collaboration/partner-logos/12.png' },
-    { id: 'slot-13', name: 'Partner 13', logo: '/site/home/collaboration/partner-logos/13.png' },
-    { id: 'slot-14', name: 'Partner 14', logo: '/site/home/collaboration/partner-logos/14.png' },
-    { id: 'slot-15', name: 'Partner 15', logo: '/site/home/collaboration/partner-logos/15.png' },
+const partnerLogoRows = [
+    { src: '/site/home/collaboration/partner-logos/cis-1.png', width: 1225, height: 57 },
+    { src: '/site/home/collaboration/partner-logos/cis-2.png', width: 1167, height: 57 },
+    { src: '/site/home/collaboration/partner-logos/cis-3.png', width: 1192, height: 57 },
 ] as const;
 
 const staticCollaborations = [
@@ -82,6 +70,7 @@ export function HomeCollaborationSection() {
     }));
 
     const cardSwiperRef = useRef<SwiperType | null>(null);
+    const partnerLogoRowsRef = useRef<HTMLDivElement | null>(null);
     const [viewportMode, setViewportMode] = useState<'mobile' | 'lg' | 'desktop'>('desktop');
 
     const desktopSlides = useMemo(() => makeSlides(collaborations, [0, 1, 2, 3, 0, 1, 2]), [collaborations]);
@@ -118,6 +107,47 @@ export function HomeCollaborationSection() {
     useEffect(() => {
         cardSwiperRef.current?.slideTo(centerIndex);
     }, [centerIndex]);
+
+    useEffect(() => {
+        const el = partnerLogoRowsRef.current;
+        if (!el) return;
+
+        let isDown = false;
+        let startX = 0;
+        let scrollLeft = 0;
+
+        const onMouseDown = (e: MouseEvent) => {
+            isDown = true;
+            el.style.cursor = 'grabbing';
+            startX = e.pageX - el.offsetLeft;
+            scrollLeft = el.scrollLeft;
+        };
+        const onMouseUp = () => {
+            isDown = false;
+            el.style.cursor = 'grab';
+        };
+        const onMouseLeave = () => {
+            isDown = false;
+            el.style.cursor = 'grab';
+        };
+        const onMouseMove = (e: MouseEvent) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - el.offsetLeft;
+            el.scrollLeft = scrollLeft - (x - startX) * 1.5;
+        };
+
+        el.addEventListener('mousedown', onMouseDown);
+        el.addEventListener('mouseup', onMouseUp);
+        el.addEventListener('mouseleave', onMouseLeave);
+        el.addEventListener('mousemove', onMouseMove);
+        return () => {
+            el.removeEventListener('mousedown', onMouseDown);
+            el.removeEventListener('mouseup', onMouseUp);
+            el.removeEventListener('mouseleave', onMouseLeave);
+            el.removeEventListener('mousemove', onMouseMove);
+        };
+    }, []);
 
     return (
         <section className="home-collaboration-section px-5 pb-12 pt-10 md:px-8 md:pb-16 md:pt-16 lg:px-[64px] lg:pb-20 lg:pt-18 overflow-hidden">
@@ -188,10 +218,10 @@ export function HomeCollaborationSection() {
                     </div>
                 </div>
                 <div className="mt-12 lg:mt-16">
-                    <div className="partner-logo-grid">
-                        {partnerLogos.map((logo) => (
-                            <div key={logo.id} className="partner-logo-item">
-                                <Image src={logo.logo} alt={logo.name} width={240} height={72} sizes="(max-width: 1023px) 140px, (max-width: 1440px) 12vw, 180px" className="partner-logo-image" />
+                    <div className="partner-logo-rows" ref={partnerLogoRowsRef} style={{ cursor: 'grab' }}>
+                        {partnerLogoRows.map((row, i) => (
+                            <div key={i} className="partner-logo-row">
+                                <Image src={row.src} alt={`파트너 로고 ${i + 1}번째 줄`} width={row.width} height={row.height} className="partner-logo-row-image" sizes="(max-width: 1023px) 100vw, 1440px" draggable={false} />
                             </div>
                         ))}
                     </div>

@@ -140,57 +140,47 @@
     width: 56px;
 }
 
-.partner-logo-grid {
+.partner-logo-rows {
     -webkit-overflow-scrolling: touch;
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
-    gap: 12px;
+    gap: 72px;
     overflow-x: auto;
-    padding-inline: 4px;
     scrollbar-width: none;
+    width: 100%;
 }
 
-.partner-logo-grid::-webkit-scrollbar {
+.partner-logo-rows::-webkit-scrollbar {
     display: none;
 }
 
-.partner-logo-item {
-    align-items: center;
-    display: flex;
+.partner-logo-row {
     flex: 0 0 auto;
-    justify-content: center;
-    min-width: 130px;
-    padding: 10px 8px;
+    width: 82vw;
 }
 
-.partner-logo-image {
-    height: clamp(18px, calc(14.54px + 0.93vw), 28px);
+.partner-logo-row-image {
+    -webkit-user-drag: none;
+    height: auto;
     object-fit: contain;
+    pointer-events: none;
+    user-select: none;
     width: 100%;
-    max-width: clamp(96px, calc(66.96px + 7.85vw), 180px);
 }
 
 @media (min-width: 1024px) {
-    .partner-logo-grid {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: clamp(18px, calc(-50.92px + 6.73vw), 46px) clamp(20px, calc(-58.77px + 7.69vw), 52px);
-        justify-items: center;
-        max-width: 1440px;
+    .partner-logo-rows {
+        flex-direction: column;
+        gap: clamp(16px, 2vw, 28px);
         margin-inline: auto;
+        max-width: 1440px;
         overflow: hidden;
-        padding-inline: 0;
     }
 
-    .partner-logo-item {
-        min-width: 0;
-        padding: 0;
+    .partner-logo-row {
+        flex: none;
         width: 100%;
-    }
-
-    .partner-logo-image {
-        height: clamp(24px, calc(-15.38px + 3.85vw), 40px);
-        max-width: clamp(150px, 12.2vw, 1800px);
     }
 }
 

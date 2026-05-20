@@ -75,9 +75,6 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
                             <a href="https://www.linkedin.com/company/hanaloop" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                                 <Image src={ICON.linkedin} alt="" width={24} height={22} aria-hidden="true" className="h-[22px] w-6" />
                             </a>
-                            <a href="https://twitter.com/hanaloop" target="_blank" rel="noreferrer" aria-label="X (Twitter)">
-                                <Image src={ICON.x} alt="" width={22} height={22} aria-hidden="true" className="h-[22px] w-[22px]" />
-                            </a>
                         </div>
 
                         <div className="mt-[34px] space-y-2">
