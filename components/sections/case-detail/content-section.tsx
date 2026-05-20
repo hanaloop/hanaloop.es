@@ -35,13 +35,47 @@ export async function CaseDetailContentSection({ caseId }: { caseId: number }) {
     const t = await getTranslations('CasesDetail');
     const locale = (await getLocale()) as AppLocale;
     const items = t.raw('items') as CaseDetailItem[];
-    const item = items.find((caseItem) => caseItem.id === caseId);
+    const currentCaseIndex = items.findIndex((caseItem) => caseItem.id === caseId);
+    const item = currentCaseIndex >= 0 ? items[currentCaseIndex] : undefined;
 
     if (!item) notFound();
 
+    const previousItem = items[(currentCaseIndex - 1 + items.length) % items.length];
+    const nextItem = items[(currentCaseIndex + 1) % items.length];
+    const navigationLabels = {
+        ko: { previous: '이전 사례 보기', next: '다음 사례 보기' },
+        en: { previous: 'View previous case', next: 'View next case' },
+        es: { previous: 'Ver caso anterior', next: 'Ver siguiente caso' },
+    } satisfies Record<AppLocale, { previous: string; next: string }>;
+
     return (
-        <section className="mx-auto w-full max-w-[1440px] px-4 py-16 md:px-8 md:py-24 lg:px-11 lg:py-[120px]" aria-label={t('sectionAriaLabel')}>
+        <section className="mx-auto w-full max-w-[1440px] px-4 pb-16 md:px-8 md:pb-24 lg:px-11 lg:pb-50" aria-label={t('sectionAriaLabel')}>
             <div className="mx-auto">
+                <div className="flex items-center justify-between py-10 md:py-20 lg:py-30">
+                    <Link
+                        href={withLocalePath(locale, `/case_detail/${previousItem.id}`)}
+                        aria-label={navigationLabels[locale].previous}
+                        className="inline-flex h-[clamp(42px,calc(42px+14*((100vw-370px)/1070)),56px)] w-[clamp(42px,calc(42px+14*((100vw-370px)/1070)),56px)] items-center justify-center rounded-full bg-[#EDEDED] transition-colors hover:bg-[#e2e2e2]"
+                    >
+                        <Image
+                            src="/site/icons/page_arrow.png"
+                            alt=""
+                            aria-hidden="true"
+                            width={24}
+                            height={24}
+                            className="h-[clamp(18px,calc(18px+6*((100vw-370px)/1070)),24px)] w-[clamp(18px,calc(18px+6*((100vw-370px)/1070)),24px)] rotate-180"
+                        />
+                    </Link>
+
+                    <Link
+                        href={withLocalePath(locale, `/case_detail/${nextItem.id}`)}
+                        aria-label={navigationLabels[locale].next}
+                        className="inline-flex h-[clamp(42px,calc(42px+14*((100vw-370px)/1070)),56px)] w-[clamp(42px,calc(42px+14*((100vw-370px)/1070)),56px)] items-center justify-center rounded-full bg-[#EDEDED] transition-colors hover:bg-[#e2e2e2]"
+                    >
+                        <Image src="/site/icons/page_arrow.png" alt="" aria-hidden="true" width={24} height={24} className="h-[clamp(18px,calc(18px+6*((100vw-370px)/1070)),24px)] w-[clamp(18px,calc(18px+6*((100vw-370px)/1070)),24px)]" />
+                    </Link>
+                </div>
+
                 <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
                     {!item.hideHeaderAssets ? (
                         <>

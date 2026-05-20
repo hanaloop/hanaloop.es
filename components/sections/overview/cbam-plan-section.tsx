@@ -27,8 +27,8 @@ export async function OverviewCbamPlanSection() {
                     ))}
                 </div>
 
-                <div className="relative mx-auto mt-[58px] h-[clamp(150px,calc(84.21px+17.76vw),340px)] w-full max-w-[1050px] overflow-hidden rounded-[8px] md:mt-[70px] md:rounded-[14px]">
-                    <Image src="/site/overview/feature-bg.png" alt={t('imageAlt')} fill className="object-cover" sizes="(min-width: 1200px) 1050px, calc(100vw - 32px)" priority />
+                <div className="relative mx-auto mt-[58px] h-[clamp(150px,calc(84.21px+17.76vw),340px)] w-full max-w-[1440px] overflow-hidden rounded-[8px] md:mt-[70px] md:rounded-[14px]">
+                    <Image src="/site/overview/feature-bg.png" alt={t('imageAlt')} fill className="object-cover" sizes="(min-width: 1200px) 1440px, calc(100vw - 32px)" priority />
                     <div className="absolute inset-0 flex items-center justify-center bg-[#00000066] lg:hidden">
                         <p className="text-center text-[24px] font-semibold leading-[1.2] tracking-[-0.3px] text-white">{t('imageLabel')}</p>
                     </div>
