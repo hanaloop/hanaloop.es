@@ -104,7 +104,7 @@ export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileConte
                 </div>
 
                 <div className="relative z-10 hidden items-center gap-3 text-white lg:flex">
-                    <nav className="hidden items-center gap-1 lg:flex">
+                    <nav className="hidden items-center gap-1 lg:flex" aria-label={t('primaryNavigation')}>
                         {menus.map((menu: MenuGroup) => (
                             <div
                                 key={menu.label}

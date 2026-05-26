@@ -1,6 +1,8 @@
+import type { Metadata } from 'next';
 import { UnderConstruction } from '@/components/features/under-construction';
 import { notFound } from 'next/navigation';
 import { isLocale, locales } from '@/lib/locales';
+import { getStaticPageMetadata } from '@/lib/seo';
 
 const slugs = ['company', 'partnership', 'privacy', 'credits', 'docs'];
 
@@ -16,4 +18,11 @@ export default async function Page({ params }: Props) {
 
 export function generateStaticParams() {
     return locales.flatMap((locale) => slugs.map((slug) => ({ locale, slug })));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { locale, slug } = await params;
+    if (!isLocale(locale)) notFound();
+
+    return getStaticPageMetadata(locale, 'credits', `/${slug}`, { noindex: true });
 }

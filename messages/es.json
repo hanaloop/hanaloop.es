@@ -714,6 +714,7 @@
     },
     "SiteHeader": {
         "openMenu": "Abrir menú",
+        "primaryNavigation": "Navegación principal",
         "hanaEco": "Hana.eco"
     },
     "MobileDrawer": {
@@ -755,6 +756,10 @@
             "HanaecoAI": "Hana.eco AI",
             "Cases": "Casos de Éxito",
             "Insight": "Insight",
+            "CBAMGuides": "Guías CBAM",
+            "EURegulations": "Regulaciones de la UE",
+            "GlobalRegulations": "Regulaciones globales",
+            "Scope3Guides": "Guías Scope 3",
             "Blog": "Blog",
             "Partnership": "Partnership",
             "Company": "Company"
@@ -1620,5 +1625,99 @@
                 ]
             }
         ]
+    },
+    "Seo": {
+        "site": {
+            "defaultTitle": "HanaLoop | Gestión de carbono y cumplimiento climático con IA",
+            "description": "HanaLoop ayuda a fabricantes y exportadores a gestionar contabilidad de carbono, EU CBAM, PCF/LCA, emisiones Scope 1-3 y reportes climáticos con Hana.eco.",
+            "imageAlt": "Plataforma de gestión de carbono Hana.eco de HanaLoop",
+            "keywords": ["plataforma de gestión de carbono", "software EU CBAM", "huella de carbono del producto", "emisiones Scope 3", "cumplimiento climático", "Hana.eco"]
+        },
+        "ui": {
+            "breadcrumbHome": "Inicio",
+            "backToBlog": "Volver al blog"
+        },
+        "pages": {
+            "home": {
+                "title": "Plataforma de gestión de carbono y cumplimiento climático con IA",
+                "description": "Gestione EU CBAM, K-ETS, ISSB S1/S2, CSDDD, PCF/LCA y emisiones Scope 1-3 en Hana.eco, la plataforma de carbono de HanaLoop.",
+                "keywords": ["gestión de carbono con IA", "cumplimiento CBAM", "software de contabilidad de carbono", "Hana.eco"]
+            },
+            "overview": {
+                "title": "Servicios de gestión de carbono para cumplimiento regulatorio",
+                "description": "Compare soluciones de HanaLoop para contabilidad de carbono, CBAM, huella de carbono del producto, PCF de cadena de suministro y cumplimiento climático con IA.",
+                "keywords": ["servicios de gestión de carbono", "plataforma de cumplimiento climático", "estrategia de reducción de carbono"]
+            },
+            "platform": {
+                "title": "Plataforma de contabilidad de carbono para Scope 1, 2 y 3",
+                "description": "Centralice datos de emisiones, automatice flujos de contabilidad de carbono y prepare reportes climáticos con Hana.eco.",
+                "keywords": ["plataforma de contabilidad de carbono", "Scope 1 Scope 2 Scope 3", "software de emisiones"]
+            },
+            "cbam": {
+                "title": "Software y consultoría para cumplimiento EU CBAM",
+                "description": "Calcule emisiones incorporadas, prepare reportes CBAM, gestione datos de proveedores y reduzca riesgos de exportación con Hana.eco CBAM.",
+                "keywords": ["EU CBAM", "reporte CBAM", "emisiones incorporadas", "software CBAM"]
+            },
+            "pcf": {
+                "title": "Solución PCF/LCA de huella de carbono del producto",
+                "description": "Calcule huellas de carbono de producto según ISO 14067 y GHG Protocol, e identifique oportunidades de reducción por producto.",
+                "keywords": ["huella de carbono del producto", "software PCF", "solución LCA", "ISO 14067"]
+            },
+            "supply": {
+                "title": "Gestión de PCF de cadena de suministro y datos Scope 3",
+                "description": "Recopile datos de carbono de proveedores, mejore la precisión Scope 3 y gestione emisiones de la cadena de valor por productos y plantas.",
+                "keywords": ["PCF cadena de suministro", "datos Scope 3", "emisiones de proveedores", "carbono de cadena de valor"]
+            },
+            "hanaAi": {
+                "title": "Hana.eco AI para datos de carbono y regulaciones climáticas",
+                "description": "Use IA para interpretar regulaciones climáticas, analizar datos de carbono y acelerar reportes para equipos de sostenibilidad.",
+                "keywords": ["gestión de carbono con IA", "IA regulación climática", "análisis de datos de carbono"]
+            },
+            "cases": {
+                "title": "Casos de gestión de carbono",
+                "description": "Explore historias de clientes de HanaLoop en CBAM, gestión de carbono de cadena de suministro, PCF, datos ESG e integración API.",
+                "keywords": ["casos de gestión de carbono", "caso CBAM", "caso datos ESG"]
+            },
+            "partnership": {
+                "title": "Alianzas con HanaLoop",
+                "description": "Trabaje con HanaLoop en gestión de carbono, cumplimiento climático, CBAM, PCF/LCA y transformación sostenible empresarial.",
+                "keywords": ["socio de sostenibilidad", "consultoría de carbono", "consultoría de cumplimiento climático"]
+            },
+            "company": {
+                "title": "Acerca de HanaLoop",
+                "description": "Conozca HanaLoop, una empresa de tecnología climática que desarrolla Hana.eco para gestión de carbono y cumplimiento regulatorio.",
+                "keywords": ["empresa HanaLoop", "empresa climate tech", "equipo de gestión de carbono"]
+            },
+            "blog": {
+                "title": "Blog de HanaLoop",
+                "description": "Lea novedades de HanaLoop, análisis regulatorio climático, noticias CBAM, eventos de sostenibilidad y perspectivas de gestión de carbono.",
+                "keywords": ["blog HanaLoop", "noticias regulación climática", "actualizaciones CBAM"]
+            },
+            "docs": {
+                "title": "Insights de regulación climática y gestión de carbono",
+                "description": "Explore artículos de HanaLoop sobre CBAM, regulaciones de la UE, Scope 3, CDP, TCFD, PCAF y divulgación climática global.",
+                "keywords": ["insight regulación climática", "guía CBAM", "guía Scope 3", "regulación UE"]
+            },
+            "privacy": {
+                "title": "Política de privacidad",
+                "description": "Revise la política de privacidad de HanaLoop sobre recopilación, tratamiento, conservación de datos personales y derechos del usuario.",
+                "keywords": ["política de privacidad HanaLoop"]
+            },
+            "demoRequest": {
+                "title": "Solicitar demo de Hana.eco",
+                "description": "Solicite una demo para ver cómo Hana.eco apoya contabilidad de carbono, CBAM, PCF/LCA y gestión Scope 3.",
+                "keywords": ["demo Hana.eco", "demo gestión de carbono"]
+            },
+            "companyProfileRequest": {
+                "title": "Solicitar perfil corporativo de HanaLoop",
+                "description": "Solicite materiales de HanaLoop para alianzas, compras y evaluación de soluciones de cumplimiento climático.",
+                "keywords": ["perfil corporativo HanaLoop", "propuesta de gestión de carbono"]
+            },
+            "credits": {
+                "title": "Créditos",
+                "description": "Créditos y avisos de recursos del sitio web de HanaLoop.",
+                "keywords": ["créditos HanaLoop"]
+            }
+        }
     }
 }

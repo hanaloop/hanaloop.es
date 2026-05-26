@@ -1,6 +1,8 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { SiteShell } from '@/components/layout/site-shell';
 import { isLocale, locales } from '@/lib/locales';
+import { getStaticPageMetadata } from '@/lib/seo';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -26,4 +28,11 @@ export default async function Page({ params }: Props) {
 
 export function generateStaticParams() {
     return locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { locale } = await params;
+    if (!isLocale(locale)) notFound();
+
+    return getStaticPageMetadata(locale, 'companyProfileRequest', '/company_profile_request', { noindex: true });
 }

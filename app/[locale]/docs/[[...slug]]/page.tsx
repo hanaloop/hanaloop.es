@@ -6,7 +6,7 @@ import { InsightHeroSection } from '@/components/sections/docs/hero-section';
 import { InsightListSection } from '@/components/sections/docs/list-section';
 import { getInsightPostSlugs } from '@/lib/insight-content';
 import { isLocale, locales, withLocalePath } from '@/lib/locales';
-import { getLanguageAlternates } from '@/lib/site-config';
+import { createSeoMetadata, getStaticPageMetadata } from '@/lib/seo';
 import { getDocsSource } from '@/lib/source';
 
 type Props = {
@@ -44,11 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (!isLocale(locale)) notFound();
 
     if (!slug || slug.length === 0) {
-        return {
-            title: 'HanaLoop Insight',
-            description: 'HanaLoop insight and research updates.',
-            alternates: getLanguageAlternates(locale, '/docs'),
-        };
+        return getStaticPageMetadata(locale, 'docs', '/docs/intro');
     }
 
     const page = getDocsSource(locale).getPage(slug);
@@ -58,14 +54,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const title = String(data.title ?? 'HanaLoop Insight');
     const description = String(data.description ?? data.summary ?? title);
 
-    return {
+    return createSeoMetadata({
         title,
         description,
-        alternates: getLanguageAlternates(locale, `/docs/${slug.join('/')}`),
-        openGraph: {
-            title,
-            description,
-            images: data.image ? [data.image] : undefined,
-        },
-    };
+        locale,
+        pathname: `/docs/${slug.join('/')}`,
+        image: data.image,
+        type: 'article',
+    });
 }

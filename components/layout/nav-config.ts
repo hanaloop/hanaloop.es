@@ -29,6 +29,10 @@ export function buildMenus(locale: AppLocale, t: (key: string) => string): MenuG
             label: t('insight'),
             items: [
                 { label: t('items.Insight'), href: '/docs/intro' },
+                { label: t('items.CBAMGuides'), href: '/docs/x20_environment-general/CBAM/2026-02-01-CBAM-implementing-regulations-definitive-period' },
+                { label: t('items.EURegulations'), href: '/docs/x20_environment-general/EU-regulations/2025-02-27-EU-omnibus-CSRD-CSDDD-CBAM-taxonomy' },
+                { label: t('items.GlobalRegulations'), href: '/docs/x20_environment-general/global-regulations/2025-07-08-CCA-SB253' },
+                { label: t('items.Scope3Guides'), href: '/docs/x20_environment-general/Scope 3/2024-09-18-scope3-reporting-stages' },
                 { label: t('items.Blog'), href: '/blog' },
             ],
         },

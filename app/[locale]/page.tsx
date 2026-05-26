@@ -10,7 +10,7 @@ import { HomeFaqSection } from '@/components/sections/home/faq-section';
 import { CtaSection } from '@/components/sections/home/cta-section';
 import { HomeRegulatoryComplianceSection } from '@/components/sections/home/regulatory-compliance-section';
 import { isLocale, locales } from '@/lib/locales';
-import { getHomeMetadataText, siteConfig, getLanguageAlternates } from '@/lib/site-config';
+import { getStaticPageMetadata } from '@/lib/seo';
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -44,13 +44,5 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
 
-  const meta = getHomeMetadataText();
-  const title = `${siteConfig.title} | ${meta.title}`;
-  return {
-    title,
-    description: meta.description,
-    alternates: getLanguageAlternates(locale, '/'),
-    openGraph: { title, description: meta.description, images: [siteConfig.image] },
-    twitter: { title, description: meta.description, images: [siteConfig.image] },
-  };
+  return getStaticPageMetadata(locale, 'home', '/');
 }

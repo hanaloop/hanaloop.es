@@ -698,6 +698,7 @@
     },
     "SiteHeader": {
         "openMenu": "메뉴 열기",
+        "primaryNavigation": "주요 탐색",
         "hanaEco": "Hana.eco"
     },
     "MobileDrawer": {
@@ -739,6 +740,10 @@
             "HanaecoAI": "Hana.eco AI",
             "Cases": "고객사례",
             "Insight": "Insight",
+            "CBAMGuides": "CBAM 규제 가이드",
+            "EURegulations": "EU 규제 동향",
+            "GlobalRegulations": "글로벌 규제 동향",
+            "Scope3Guides": "Scope 3 가이드",
             "Blog": "Blog",
             "Partnership": "Partnership",
             "Company": "Company"
@@ -1865,5 +1870,99 @@
                 ]
             }
         ]
+    },
+    "Seo": {
+        "site": {
+            "defaultTitle": "HanaLoop | AI 탄소경영 및 기후 규제 대응",
+            "description": "하나루프는 Hana.eco로 탄소회계, EU CBAM, PCF/LCA, Scope 1·2·3 배출량, 기후 공시 대응 업무를 통합 관리하도록 돕습니다.",
+            "imageAlt": "하나루프 Hana.eco 탄소경영 플랫폼",
+            "keywords": ["탄소경영 플랫폼", "EU CBAM 솔루션", "제품탄소발자국", "Scope 3 배출량", "기후 규제 대응", "Hana.eco"]
+        },
+        "ui": {
+            "breadcrumbHome": "홈",
+            "backToBlog": "블로그로 돌아가기"
+        },
+        "pages": {
+            "home": {
+                "title": "AI 탄소경영 및 기후 규제 대응 플랫폼",
+                "description": "Hana.eco에서 EU CBAM, K-ETS, ISSB S1/S2, CSDDD, PCF/LCA, Scope 1·2·3 배출량을 통합 관리하세요.",
+                "keywords": ["AI 탄소경영", "CBAM 대응", "탄소회계 솔루션", "Hana.eco"]
+            },
+            "overview": {
+                "title": "기후 규제 대응을 위한 탄소경영 서비스",
+                "description": "탄소회계, CBAM, 제품탄소발자국, 공급망 PCF, AI 기반 기후 규제 대응까지 하나루프 솔루션을 비교해보세요.",
+                "keywords": ["탄소경영 서비스", "기후 규제 대응 플랫폼", "탄소 감축 전략"]
+            },
+            "platform": {
+                "title": "Scope 1·2·3 탄소회계 플랫폼",
+                "description": "배출 데이터를 통합하고 탄소회계 업무를 자동화하며 Hana.eco로 기후 보고서를 준비하세요.",
+                "keywords": ["탄소회계 플랫폼", "Scope 1 Scope 2 Scope 3", "배출량 관리 솔루션"]
+            },
+            "cbam": {
+                "title": "EU CBAM 대응 솔루션 및 컨설팅",
+                "description": "Hana.eco CBAM으로 내재배출량을 산정하고 CBAM 보고서, 공급망 데이터, EU 수출 규제 리스크를 관리하세요.",
+                "keywords": ["EU CBAM", "CBAM 보고서", "내재배출량", "CBAM 솔루션"]
+            },
+            "pcf": {
+                "title": "제품탄소발자국 PCF/LCA 솔루션",
+                "description": "ISO 14067과 GHG Protocol 기준으로 제품탄소발자국을 산정하고 제품 단위 감축 기회를 찾으세요.",
+                "keywords": ["제품탄소발자국", "PCF 솔루션", "LCA 솔루션", "ISO 14067"]
+            },
+            "supply": {
+                "title": "공급망 PCF 및 Scope 3 데이터 관리",
+                "description": "협력사 탄소 데이터를 수집하고 Scope 3 산정 정확도를 높이며 제품과 사업장 전반의 가치사슬 배출량을 관리하세요.",
+                "keywords": ["공급망 PCF", "Scope 3 데이터", "협력사 배출량", "가치사슬 탄소"]
+            },
+            "hanaAi": {
+                "title": "탄소 데이터와 기후 규제를 위한 Hana.eco AI",
+                "description": "AI로 기후 규제를 해석하고 탄소 데이터를 분석하며 탄소경영 실무자의 보고서 작성 속도를 높이세요.",
+                "keywords": ["AI 탄소경영", "기후 규제 AI", "탄소 데이터 분석"]
+            },
+            "cases": {
+                "title": "탄소경영 고객사례",
+                "description": "CBAM, 공급망 탄소관리, 제품탄소발자국, ESG 데이터, API 통합 영역의 하나루프 고객사례를 확인하세요.",
+                "keywords": ["탄소경영 사례", "CBAM 사례", "ESG 데이터 사례"]
+            },
+            "partnership": {
+                "title": "하나루프 파트너십",
+                "description": "탄소경영, 기후 규제 대응, CBAM, PCF/LCA, 기업 지속가능성 전환을 하나루프와 함께 추진하세요.",
+                "keywords": ["지속가능성 파트너", "탄소경영 컨설팅", "기후 규제 컨설팅"]
+            },
+            "company": {
+                "title": "하나루프 소개",
+                "description": "기업 탄소경영과 규제 대응을 위한 Hana.eco를 만드는 기후기술 기업 하나루프를 소개합니다.",
+                "keywords": ["하나루프 회사", "기후기술 기업", "탄소경영 팀"]
+            },
+            "blog": {
+                "title": "하나루프 블로그",
+                "description": "하나루프 소식, 기후 규제 해설, CBAM 뉴스, 지속가능성 행사, 탄소경영 관점을 확인하세요.",
+                "keywords": ["하나루프 블로그", "기후 규제 뉴스", "CBAM 업데이트"]
+            },
+            "docs": {
+                "title": "기후 규제 및 탄소경영 인사이트",
+                "description": "CBAM, EU 규제, Scope 3, CDP, TCFD, PCAF, 글로벌 기후 공시 요구사항에 대한 하나루프 인사이트를 둘러보세요.",
+                "keywords": ["기후 규제 인사이트", "CBAM 가이드", "Scope 3 가이드", "EU 규제"]
+            },
+            "privacy": {
+                "title": "개인정보처리방침",
+                "description": "하나루프의 개인정보 수집, 처리, 보관, 이용자 권리에 대한 개인정보처리방침을 확인하세요.",
+                "keywords": ["하나루프 개인정보처리방침"]
+            },
+            "demoRequest": {
+                "title": "Hana.eco 데모 신청",
+                "description": "Hana.eco가 탄소회계, CBAM, PCF/LCA, Scope 3 관리를 어떻게 지원하는지 데모로 확인하세요.",
+                "keywords": ["Hana.eco 데모", "탄소경영 데모"]
+            },
+            "companyProfileRequest": {
+                "title": "하나루프 회사소개서 요청",
+                "description": "파트너십, 구매 검토, 기후 규제 대응 솔루션 검토를 위한 하나루프 회사자료를 요청하세요.",
+                "keywords": ["하나루프 회사소개서", "탄소경영 제안서"]
+            },
+            "credits": {
+                "title": "크레딧",
+                "description": "하나루프 웹사이트 리소스의 크레딧과 고지를 확인하세요.",
+                "keywords": ["하나루프 크레딧"]
+            }
+        }
     }
 }

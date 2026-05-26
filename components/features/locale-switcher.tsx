@@ -101,6 +101,8 @@ export function LocaleSwitcher({ locale, pathname, dropdownBackgroundColor, onOp
                             <Link
                                 key={item}
                                 href={href}
+                                hrefLang={item}
+                                lang={item}
                                 onClick={(e) => {
                                     e.preventDefault();
                                     document.cookie = `NEXT_LOCALE=${item}; path=/; max-age=31536000; samesite=lax`;

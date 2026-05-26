@@ -8,6 +8,7 @@ export type BlogPostContent = {
   title: string;
   description: string;
   dateText: string;
+  dateIso?: string;
   image?: string;
   content: string;
 };
@@ -37,6 +38,13 @@ function getDateText(value: unknown, locale: AppLocale): string {
   if (Number.isNaN(date.getTime())) return '';
   const dateLocale = locale === 'ko' ? 'ko-KR' : locale === 'es' ? 'es-ES' : 'en-US';
   return date.toLocaleDateString(dateLocale, { year: 'numeric', month: 'short', day: 'numeric' });
+}
+
+function getDateIso(value: unknown): string | undefined {
+  if (!value) return undefined;
+  const date = new Date(String(value));
+  if (Number.isNaN(date.getTime())) return undefined;
+  return date.toISOString();
 }
 
 function stripMdxImports(content: string): string {
@@ -89,6 +97,7 @@ export function getBlogPostContent(locale: AppLocale, slug: string[]): BlogPostC
     title: String(parsed.data.title ?? ''),
     description: String(parsed.data.description ?? parsed.data.summary ?? ''),
     dateText: getDateText(parsed.data.date ?? parsed.data.publishedAt, locale),
+    dateIso: getDateIso(parsed.data.date ?? parsed.data.publishedAt),
     image: parsed.data.image ? String(parsed.data.image) : undefined,
     content: stripMdxImports(parsed.content),
   };

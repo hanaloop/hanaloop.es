@@ -1,7 +1,9 @@
-﻿import { notFound } from 'next/navigation';
+﻿import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { SiteShell } from '@/components/layout/site-shell';
 import { isLocale, locales } from '@/lib/locales';
+import { getStaticPageMetadata } from '@/lib/seo';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -34,7 +36,7 @@ export default async function Page({ params }: Props) {
 
   return (
     <SiteShell headerDark>
-      <main className="mx-auto w-full max-w-[1040px] px-6 pb-24 pt-28 text-[#111827] lg:px-10 lg:pb-32 lg:pt-40">
+      <article className="mx-auto w-full max-w-[1040px] px-6 pb-24 pt-28 text-[#111827] lg:px-10 lg:pb-32 lg:pt-40">
         <header className="mb-12 border-b border-black/10 pb-8 lg:mb-14 lg:pb-10">
           <h1 className="text-3xl font-semibold tracking-[-0.02em] lg:text-5xl">{content.title}</h1>
           <p className="mt-5 whitespace-pre-line text-sm leading-7 text-[#4B5563] lg:text-base">{content.intro}</p>
@@ -63,11 +65,18 @@ export default async function Page({ params }: Props) {
             </section>
           ))}
         </div>
-      </main>
+      </article>
     </SiteShell>
   );
 }
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+
+  return getStaticPageMetadata(locale, 'privacy', '/privacy');
 }

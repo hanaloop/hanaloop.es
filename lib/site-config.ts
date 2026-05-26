@@ -4,7 +4,7 @@ export const siteConfig = {
   title: 'HanaLoop',
   tagline: 'Carbon Management and Climate Compliance Platform',
   url: 'https://www.hanaloop.com',
-  image: '/images/hanaloop-social-card_ko.jpg',
+  image: '/site/home/hero-bg-main.png',
 };
 
 function normalizePathname(pathname: string) {
@@ -12,8 +12,13 @@ function normalizePathname(pathname: string) {
   return pathname.startsWith('/') ? pathname : `/${pathname}`;
 }
 
+function withTrailingSlash(pathname: string) {
+  if (pathname === '/') return pathname;
+  return pathname.endsWith('/') ? pathname : `${pathname}/`;
+}
+
 export function getCanonicalUrl(locale: AppLocale, pathname = '/') {
-  const localizedPath = withLocalePath(locale, normalizePathname(pathname));
+  const localizedPath = withTrailingSlash(withLocalePath(locale, normalizePathname(pathname)));
   return new URL(localizedPath, siteConfig.url).toString();
 }
 
@@ -24,12 +29,5 @@ export function getLanguageAlternates(locale: AppLocale, pathname = '/') {
       ...Object.fromEntries(locales.map((locale) => [locale, getCanonicalUrl(locale, pathname)])),
       'x-default': getCanonicalUrl(defaultLocale, pathname),
     },
-  };
-}
-
-export function getHomeMetadataText() {
-  return {
-    title: siteConfig.title,
-    description: siteConfig.tagline,
   };
 }
