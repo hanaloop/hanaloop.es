@@ -12,13 +12,15 @@ cache:
 
 pages:
   stage: deploy
-  variables:
-    WEB_PATH_PREFIX: "/branding/hanaloop.com"
+  # variables:
+    # Only needed when running on a subpath, e.g. https://example.com/branding/hanaloop.com
+    # WEB_PATH_PREFIX: "/branding/hanaloop.com"
   script:
     - corepack enable
     - yarn install --immutable
     - yarn build
-    - mv out public
+    - rm -rf ./public
+    - mv ./out ./public
 
   artifacts:
     paths:
