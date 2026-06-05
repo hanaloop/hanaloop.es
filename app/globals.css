@@ -1,0 +1,165 @@
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/preset.css';
+
+@source "../components/**/*.{ts,tsx}";
+@source "../app/**/*.{ts,tsx}";
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/fonts/PretendardVariable.woff2') format('woff2-variations');
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Fors Trial';
+    src: url('/fonts/TTForsTrial-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Fors Trial';
+    src: url('/fonts/TTForsTrial-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Fors Trial';
+    src: url('/fonts/TTForsTrial-DemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Fors Trial';
+    src: url('/fonts/TTForsTrial-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/InterVariable.woff2') format('woff2');
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+:root {
+    --color-text-strong: #000000;
+    --color-text-default: #131313;
+    --color-text-muted: #646464;
+    --color-text-subtle: #4c4c4c;
+    --color-text-inverse: #ffffff;
+    --font-inter: 'Inter', sans-serif;
+    --color-footer-bg: #222222;
+    --color-mobile-dark-bg: #1c1c1e;
+    --gradient-badge: linear-gradient(106.7deg, rgba(31, 189, 125, 0.7) 26.33%, rgba(1, 148, 255, 0.7) 75.4%);
+    --gradient-brand: linear-gradient(90deg, #1fbd7d 0%, #0194ff 100%);
+    --color-text-eyebrow: #464b53;
+    --color-metric-value: #17191f;
+    --color-metric-label: #666666;
+    --color-text-note: #888888;
+    --color-hero-bg: #020812;
+    --color-border: #b8b8b8;
+    --color-mission-text: #38414d;
+    --color-text-body: #707070;
+    --color-brand-green: #1fbd7d;
+}
+
+@theme {
+    --breakpoint-desktop: 75rem; /* 1200px */
+}
+
+@theme inline {
+    --font-sans: 'TT Fors Trial', 'Pretendard', var(--font-geist-sans), sans-serif;
+    --font-mono: var(--font-geist-mono);
+}
+
+html {
+    scroll-behavior: smooth;
+    word-break: keep-all;
+}
+
+body {
+    min-height: 100%;
+    background: #fff;
+    color: var(--color-text-default);
+    font-family: 'TT Fors Trial', 'Pretendard', sans-serif;
+}
+
+.mobile-menu-toggle {
+    position: fixed;
+}
+
+#mobile-menu-toggle ~ .mobile-menu-layer {
+    pointer-events: none;
+}
+
+#mobile-menu-toggle:checked ~ .mobile-menu-layer {
+    pointer-events: auto;
+}
+
+.mobile-menu-overlay {
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+
+.mobile-menu-panel {
+    transform: translateX(100%);
+    transition: transform 300ms ease;
+}
+
+#mobile-menu-toggle:checked ~ .mobile-menu-layer .mobile-menu-overlay {
+    opacity: 1;
+}
+
+#mobile-menu-toggle:checked ~ .mobile-menu-layer .mobile-menu-panel {
+    transform: translateX(0);
+}
+
+svg {
+    display: inline;
+}
+
+@utility text-gradient-brand {
+    background: var(--gradient-brand);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+@utility bg-gradient-brand {
+    background: var(--gradient-brand);
+}
+
+@layer components {
+    .gradient-border::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 1px;
+        background: radial-gradient(ellipse 80% 100% at 50% 50%, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+        -webkit-mask:
+            linear-gradient(white, white) content-box,
+            linear-gradient(white, white);
+        -webkit-mask-composite: xor;
+        mask:
+            linear-gradient(white, white) content-box,
+            linear-gradient(white, white);
+        mask-composite: exclude;
+        pointer-events: none;
+    }
+}
+
+.prose {
+    font-size: 1.2rem;
+}
+
+.prose a {
+    text-decoration: none;
+}

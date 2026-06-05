@@ -1,29 +1,62 @@
-name: Publish to GitHub Pages
+name: Deploy GitHub Pages
 
 on:
-  [push]
+  push:
+    branches:
+      - published
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  build_deploy:
-    runs-on: ubuntu-18.04
+  build:
+    name: Build static site
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v5
         with:
-          node-version: '14.17.x'
-      
-      - run: yarn install
-      - name: Build Next.js SSG
+          node-version: 20
+          cache: yarn
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Install dependencies
+        run: yarn install 
+
+      - name: Build
         run: yarn build
-        env:
-          REPO_URL: https://github.com/creasoft-dev/next-dev-portal
-          WEB_PATH_PREFIX: /next-dev-portal/
-          WEB_ROOT_URL: https://creasoft-dev.github.io/
-      
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        # env:
+        #   WEB_PATH_PREFIX: /${{ github.event.repository.name }}
+
+      - name: Disable Jekyll
+        run: touch out/.nojekyll
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./out
+          path: out
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
