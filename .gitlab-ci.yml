@@ -12,6 +12,8 @@ cache:
 
 pages:
   stage: deploy
+  variables:
+    WEB_PATH_PREFIX: "/branding/hanaloop.com"
   script:
     - corepack enable
     - yarn install --immutable
