@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { InsightHeading, InsightNavNode } from '@/lib/insight-navigation';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
@@ -147,6 +147,10 @@ export function InsightDetailLayout({ locale, navTree, currentPath, title, toc, 
     const [openByLevel, setOpenByLevel] = useState<Record<number, string | null>>(() => toOpenByLevel(ancestors));
     const [leftDrawerOpen, setLeftDrawerOpen] = useState(false);
     const [rightDrawerOpen, setRightDrawerOpen] = useState(false);
+
+    useEffect(() => {
+        setOpenByLevel(toOpenByLevel(ancestors));
+    }, [ancestors]);
 
     const setOpenAtLevel = (level: number, id: string | null) => {
         setOpenByLevel((prev) => {

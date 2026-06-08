@@ -35,6 +35,14 @@ function cleanLabel(raw: string): string {
   return raw.replace(/^x\d+_/, '').replaceAll('-', ' ').trim();
 }
 
+function encodePathSegments(value: string): string {
+  return value
+    .split('/')
+    .filter(Boolean)
+    .map((segment) => encodeURIComponent(segment))
+    .join('/');
+}
+
 type MetaShape = {
   title?: string;
   pages?: string[];
@@ -64,7 +72,7 @@ function buildTreeNode(locale: AppLocale, docsRoot: string, relDir: string, key:
   return {
     id: nodeId,
     title,
-    href: withLocalePath(locale, `/docs/${nextRelDir}`),
+    href: withLocalePath(locale, `/docs/${encodePathSegments(nextRelDir)}`),
   };
 }
 
