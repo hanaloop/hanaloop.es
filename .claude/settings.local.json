@@ -68,7 +68,9 @@
       "Bash(python3 -c \"import json; json.load\\(open\\('messages/es.json'\\)\\); print\\('es.json valid'\\)\")",
       "Bash(python3 -c \"import json; json.load\\(open\\('messages/en.json'\\)\\); print\\('en.json valid'\\)\")",
       "Bash(python3 -c \"import json; json.load\\(open\\('messages/ko.json'\\)\\); print\\('ko.json valid'\\)\")",
-      "PowerShell(git *)"
+      "PowerShell(git *)",
+      "Bash(Get-Content \"C:\\\\Users\\\\logae\\\\OneDrive\\\\문서\\\\dev_projects\\\\hanaloop.com\\\\.source\\\\source.config.mjs\")",
+      "Bash(Test-Path *)"
     ]
   }
 }

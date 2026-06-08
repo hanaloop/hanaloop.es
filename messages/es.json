@@ -277,7 +277,15 @@
     "CasesOverview": {
         "sectionAriaLabel": "Resultados Comprobados, Casos Reales de Implementación",
         "heading": "Resultados Comprobados, Casos Reales de Implementación",
-        "subheading": "Explore los resultados tangibles de gestión de carbono de las empresas que se asociaron con HanaLoop, organizados por sector industrial."
+        "subheading": "Explore los resultados tangibles de gestión de carbono de las empresas que se asociaron con HanaLoop, organizados por sector industrial.",
+        "filters": {
+            "all": "Todos",
+            "scope-123": "Contabilidad de Carbono Scope 1, 2, 3",
+            "cbam": "CBAM",
+            "pcf-lca": "PCF/LCA",
+            "supply-chain-pcf": "PCF de la cadena de suministro",
+            "hana-eco-ai": "Hana.eco AI"
+        }
     },
     "PlatformHero": {
         "heading": "Carbon management platform",
@@ -856,7 +864,7 @@
             },
             {
                 "title": "Bienestar para recargar energía y mantener una vida equilibrada",
-                "descriptions": ["- Medio día libre pagado cada mes", "- Trabajo remoto según el tipo de trabajo y la productividad", "- Apoyo para chequeos de salud", "- Stock options para miembros con más de 3 años en la empresa"]
+                "descriptions": ["- Medio día libre pagado cada mes", "- Trabajo remoto según el tipo de trabajo y la productividad", "- Apoyo para chequeos de salud"]
             }
         ]
     },
@@ -999,7 +1007,8 @@
                 "solutionLabel": "Solución",
                 "solutionText": "Implementación de Hana.eco CBAM, integración ERP y reportes automáticos",
                 "resultLabel": "Resultado",
-                "resultText": "87% menos tiempo de preparación | Verificación LRQA aprobada | XX% menos costo anual de carbono"
+                "resultText": "87% menos tiempo de preparación | Verificación LRQA aprobada | XX% menos costo anual de carbono",
+                "categories": ["scope-123", "cbam", "pcf-lca", "supply-chain-pcf"]
             },
             {
                 "id": "case-byucksan",
@@ -1014,7 +1023,8 @@
                 "solutionLabel": "Solución",
                 "solutionText": "Consultoría de Hana.eco",
                 "resultLabel": "Resultado",
-                "resultText": "Más de 87% menos tiempo de trabajo y nuevas oportunidades de suministro en el exterior"
+                "resultText": "Más de 87% menos tiempo de trabajo y nuevas oportunidades de suministro en el exterior",
+                "categories": ["scope-123"]
             },
             {
                 "id": "case-cswind",
@@ -1028,7 +1038,8 @@
                 "solutionLabel": "Solución",
                 "solutionText": "Consultoría Hana.eco CBAM y análisis de datos por planta",
                 "resultLabel": "Resultado",
-                "resultText": "Gobernanza corporativa estandarizada y sistema de respuesta para clientes internacionales"
+                "resultText": "Gobernanza corporativa estandarizada y sistema de respuesta para clientes internacionales",
+                "categories": ["cbam"]
             },
             {
                 "id": "case-daehoal",
@@ -1043,7 +1054,8 @@
                 "solutionLabel": "Solución",
                 "solutionText": "Consultoría Hana.eco CBAM con apoyo estructurado para comprensión y respuesta",
                 "resultLabel": "Resultado",
-                "resultText": "Gobernanza y procesos corporativos establecidos, con sistema de respuesta a clientes"
+                "resultText": "Gobernanza y procesos corporativos establecidos, con sistema de respuesta a clientes",
+                "categories": ["scope-123", "cbam"]
             },
             {
                 "id": "case-apollo",
@@ -1058,7 +1070,8 @@
                 "solutionLabel": "Solución",
                 "solutionText": "Consultoría Hana.eco: métodos de cálculo Scope 1, 2 y 3 y planes de reducción",
                 "resultLabel": "Resultado",
-                "resultText": "Procesos corporativos de gestión de carbono y cálculo de factores de emisión"
+                "resultText": "Procesos corporativos de gestión de carbono y cálculo de factores de emisión",
+                "categories": ["scope-123"]
             },
             {
                 "id": "case-kowell",
@@ -1073,7 +1086,8 @@
                 "solutionLabel": "Solución",
                 "solutionText": "Adopción de Hana.eco CBAM & LCA SaaS",
                 "resultLabel": "Resultado",
-                "resultText": "Datos por producto y por planta integrados en procesos corporativos de gestión de carbono"
+                "resultText": "Datos por producto y por planta integrados en procesos corporativos de gestión de carbono",
+                "categories": ["cbam"]
             },
             {
                 "id": "case-origin-customs",
@@ -1088,7 +1102,8 @@
                 "solutionLabel": "Solución",
                 "solutionText": "Integración de API Hana.eco CBAM",
                 "resultLabel": "Resultado",
-                "resultText": "Infraestructura para fortalecer la capacidad regulatoria de pymes FTA"
+                "resultText": "Infraestructura para fortalecer la capacidad regulatoria de pymes FTA",
+                "categories": ["cbam"]
             },
             {
                 "id": "case-taihan",
@@ -1103,7 +1118,8 @@
                 "solutionLabel": "Solución",
                 "solutionText": "Hana.eco CBAM, MRV digital y respuesta preliminar a CBAM",
                 "resultLabel": "Resultado",
-                "resultText": "Mejor gestión de datos de emisiones, confianza del cliente y control de riesgos de negocio"
+                "resultText": "Mejor gestión de datos de emisiones, confianza del cliente y control de riesgos de negocio",
+                "categories": ["cbam"]
             },
             {
                 "id": "case-emart",
@@ -1118,7 +1134,24 @@
                 "solutionLabel": "Solución",
                 "solutionText": "Integración API, gobernanza de datos basada en OpenAPI y PoC de API Gateway en dos semanas con Agile Scrum",
                 "resultLabel": "Resultado",
-                "resultText": "Base para operación y expansión APIM, análisis multi-vendor automatizado y estándares de construcción API en entorno Gateway"
+                "resultText": "Base para operación y expansión APIM, análisis multi-vendor automatizado y estándares de construcción API en entorno Gateway",
+                "categories": []
+            },
+            {
+                "id": "case-gggc",
+                "logoSrc": "/site/cases/ci-10.png",
+                "logoAlt": "Logo de la Agencia de Medio Ambiente y Energía de Gyeonggi",
+                "href": "/partnership",
+                "ctaLabel": "Ver más detalles",
+                "companyName": "Agencia de Medio Ambiente y Energía de Gyeonggi",
+                "industryLabel": "Institución pública",
+                "challengeLabel": "Desafío",
+                "challengeText": "Se necesitaba un sistema conversacional capaz de responder con precisión, las 24 horas, preguntas complejas sobre políticas de carbono neutral y RE100",
+                "solutionLabel": "Solución",
+                "solutionText": "Se construyó 'Tanjung-i', un chatbot de IA generativa para carbono neutral entrenado con datos de políticas de Gyeonggi, junto con su estructura de operación y gestión",
+                "resultLabel": "Resultado",
+                "resultText": "Se lanzó el primer chatbot generativo de carbono neutral del sector público, mejorando el acceso ciudadano y reduciendo la carga del personal",
+                "categories": ["hana-eco-ai"]
             }
         ]
     },
@@ -1625,6 +1658,88 @@
                     {
                         "title": "Fase 3 — PoC de API Gateway",
                         "paragraphs": ["HanaLoop instaló el API Gateway seleccionado, construyó test client y mock server, y validó integración eMoney incluyendo routing, caching y rate limiting para demostrar viabilidad productiva."]
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "logoSrc": "/site/cases/ci-10.png",
+                "logoAlt": "Logo de la Agencia de Medio Ambiente y Energía de Gyeonggi",
+                "companyName": "Agencia de Medio Ambiente y Energía de Gyeonggi",
+                "eyebrow": "Caso de cliente",
+                "title": "Agencia de Medio Ambiente y Energía de Gyeonggi - implementación de 'Tanjung-i', chatbot generativo de IA para carbono neutral",
+                "summary": [
+                    {
+                        "label": "Desafío",
+                        "text": "La Agencia de Medio Ambiente y Energía de Gyeonggi gestiona diversos programas de carbono neutral y RE100, pero su modelo tradicional centrado en el personal tenía límites para responder consultas ciudadanas con precisión las 24 horas y aumentar la participación."
+                    },
+                    {
+                        "label": "Solución",
+                        "text": "HanaLoop desarrolló Tanjung-i, un chatbot de IA generativa especializado en el dominio de carbono neutral, capaz de responder con precisión sobre la base de datos de políticas de la provincia de Gyeonggi y de operar 24 horas al día, 365 días al año."
+                    },
+                    {
+                        "label": "Resultado",
+                        "text": "La agencia lanzó el primer servicio de chatbot generativo de IA para carbono neutral en el sector público, mejorando la accesibilidad y la participación en políticas, reduciendo la carga del personal y asegurando una operación sostenible."
+                    }
+                ],
+                "sections": [
+                    {
+                        "title": "Contexto del proyecto",
+                        "paragraphs": [
+                            "La Agencia de Medio Ambiente y Energía de Gyeonggi es una institución pública que apoya políticas y programas relacionados con carbono neutral y Gyeonggi RE100. Opera iniciativas como plataformas de recompensas por reducción de carbono, programas de transición energética y proyectos de autosuficiencia eléctrica, pero los ciudadanos seguían teniendo dificultades para comprender y acceder fácilmente a información compleja de políticas.",
+                            "Las consultas se concentraban en horario laboral y el modelo de atención basado solo en responsables humanos tenía limitaciones estructurales para responder durante todo el año. Las FAQ y páginas informativas existentes tampoco podían ofrecer orientación precisa para cada situación individual."
+                        ]
+                    },
+                    {
+                        "title": "Por qué HanaLoop",
+                        "paragraphs": [
+                            "La agencia decidió introducir de forma pionera la IA generativa en un servicio público de carbono neutral. Eligió a HanaLoop porque combinaba experiencia especializada en gestión de carbono con capacidad real para construir servicios digitales del sector público."
+                        ]
+                    },
+                    {
+                        "title": "Diseño de una IA generativa especializada en carbono neutral",
+                        "paragraphs": [
+                            "HanaLoop abordó el proyecto no como una simple adopción de chatbot, sino como un proceso de diseño de servicio digital orientado a mejorar la accesibilidad de las políticas y la participación ciudadana.",
+                            "El principio central de diseño fue ir más allá de respuestas mecánicas y ofrecer una experiencia de conversación cercana a la interacción humana. Al mismo tiempo, el sistema se estructuró para minimizar distorsiones factuales mediante aprendizaje preciso de datos de políticas de carbono neutral y Gyeonggi RE100."
+                        ]
+                    },
+                    {
+                        "title": "Aprendizaje de políticas y respuesta a consultas",
+                        "paragraphs": [
+                            "Se priorizó el aprendizaje de programas clave como el proyecto de expansión de transición energética y el proyecto de autosuficiencia eléctrica para 100.000 hogares, de modo que el chatbot pudiera responder de inmediato a las consultas ciudadanas. Luego el alcance se amplió para cubrir la atención del servicio Climate Action Opportunity Income APP."
+                        ]
+                    },
+                    {
+                        "title": "Seguridad y operación sostenible",
+                        "paragraphs": [
+                            "Debido a la naturaleza del servicio público, se aplicaron estrictas medidas de protección de datos personales y seguridad de políticas. También se implementó una función para guiar a los ciudadanos hacia el responsable correcto y hacia rutas confiables de información cuando fuera necesario.",
+                            "Además, HanaLoop construyó un sistema de gestión que permite a la propia institución actualizar materiales de aprendizaje y etiquetas. Esto hizo posible una estructura autosuficiente para mantener el servicio a lo largo del tiempo conforme cambian las políticas."
+                        ]
+                    },
+                    {
+                        "title": "Resultados",
+                        "paragraphs": [
+                            "Tanjung-i se convirtió en el primer chatbot de IA generativa del sector público orientado al apoyo de carbono neutral y comenzó a ofrecer atención ciudadana 24/7 a través del sitio web de la agencia. Al proporcionar una experiencia conversacional más natural, mejoró el acceso a las políticas y la participación, al mismo tiempo que redujo de forma tangible la carga repetitiva del personal.",
+                            "Este caso se ha convertido en un modelo líder de transformación digital para servicios públicos de carbono neutral al combinar la especialización de dominio de HanaLoop con tecnología de IA generativa."
+                        ],
+                        "resultRows": [
+                            {
+                                "area": "Innovación del servicio público",
+                                "achievement": "Lanzamiento del primer chatbot generativo de IA para carbono neutral en el sector público y consolidación de un caso pionero de transformación digital"
+                            },
+                            {
+                                "area": "Eficiencia en la atención",
+                                "achievement": "Construcción de un sistema automático 24/7 que redujo de forma real la carga repetitiva del personal"
+                            },
+                            {
+                                "area": "Accesibilidad de políticas",
+                                "achievement": "Automatización de la orientación sobre políticas de carbono neutral y RE100, elevando comprensión y participación ciudadana"
+                            },
+                            {
+                                "area": "Autonomía operativa",
+                                "achievement": "Actualización directa de materiales de aprendizaje por parte del personal y establecimiento de una operación sostenible propia"
+                            }
+                        ]
                     }
                 ]
             }

@@ -51,7 +51,7 @@ export async function CaseDetailContentSection({ caseId }: { caseId: number }) {
     return (
         <section className="mx-auto w-full max-w-[1440px] px-4 pb-16 md:px-8 md:pb-24 lg:px-11 lg:pb-50" aria-label={t('sectionAriaLabel')}>
             <div className="mx-auto">
-                <div className="flex items-center justify-between py-10 md:py-20 lg:py-30">
+                <div className="flex items-center justify-between py-8 md:py-20 lg:py-14">
                     <Link
                         href={withLocalePath(locale, `/case_detail/${previousItem.id}`)}
                         aria-label={navigationLabels[locale].previous}
@@ -88,7 +88,7 @@ export async function CaseDetailContentSection({ caseId }: { caseId: number }) {
                     ) : null}
                 </div>
 
-                <div className={item.hideHeaderAssets ? 'mt-2 md:mt-4' : 'mt-12 md:mt-20 lg:mt-28'}>
+                <div className={item.hideHeaderAssets ? 'mt-2 md:mt-4' : 'mt-10 md:mt-12 lg:mt-14'}>
                     {!item.hideHeaderAssets ? <p className="[font-size:clamp(26px,calc(26px+(36-26)*((100vw-370px)/1070)),36px)] font-bold tracking-[-0.3px] text-[#222]">{item.companyName}</p> : null}
                     <p
                         className={

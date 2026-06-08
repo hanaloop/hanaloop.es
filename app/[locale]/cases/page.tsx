@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation';
 import { SiteShell } from '@/components/layout/site-shell';
 import { CasesHeroSection } from '@/components/sections/cases/hero-section';
 import { CtaSection } from '@/components/sections/home/cta-section';
-import { CasesOverviewSection } from '@/components/sections/cases/overview-section';
 import { CaseCardsSection } from '@/components/sections/cases/case-cards-section';
 import { isLocale, locales } from '@/lib/locales';
 import { getStaticPageMetadata } from '@/lib/seo';
@@ -16,7 +15,6 @@ export default async function Page({ params }: Props) {
     return (
         <SiteShell>
             <CasesHeroSection />
-            <CasesOverviewSection />
             <CaseCardsSection />
             <CtaSection />
         </SiteShell>

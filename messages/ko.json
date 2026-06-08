@@ -197,13 +197,16 @@
                 "items": ["무제한 사업장", "Scope 1, 2, 3", "공급망 배출량 관리", "기업 배출량 리포트", "KEPCO 연동", "챗봇", "Cradle-to-gate PCF"]
             }
         ],
-        "onPremPlans": [{
-            "title": "ECO INTEGRATION",
-            "items": ["ENTERPRISE의 모든 기능", "Datapipe: 커넥터 & API", "세션 연동"]
-        }, {
-            "title": "SUPPLIER INTEGRATION",
-            "items": ["SUPPLY CHAIN의 모든 기능", "Datapipe: 커넥터 & API", "세션 연동"]
-        }]
+        "onPremPlans": [
+            {
+                "title": "ECO INTEGRATION",
+                "items": ["ENTERPRISE의 모든 기능", "Datapipe: 커넥터 & API", "세션 연동"]
+            },
+            {
+                "title": "SUPPLIER INTEGRATION",
+                "items": ["SUPPLY CHAIN의 모든 기능", "Datapipe: 커넥터 & API", "세션 연동"]
+            }
+        ]
     },
     "OverviewSolutionMatrix": {
         "sectionAriaLabel": "솔루션 선택 매트릭스",
@@ -277,7 +280,15 @@
     "CasesOverview": {
         "sectionAriaLabel": "검증된 성과, 실제 도입 사례",
         "heading": "검증된 성과, 실제 도입 사례",
-        "subheading": "하나루프와 함께한 기업들의 실질적 탄소경영 성과를 업종별로 확인하세요."
+        "subheading": "하나루프와 함께한 기업들의 실질적 탄소경영 성과를 업종별로 확인하세요.",
+        "filters": {
+            "all": "전체",
+            "scope-123": "탄소회계 Scope 1, 2, 3",
+            "cbam": "CBAM",
+            "pcf-lca": "PCF/LCA",
+            "supply-chain-pcf": "공급망 PCF",
+            "hana-eco-ai": "Hana.eco AI"
+        }
     },
     "PlatformHero": {
         "heading": "Carbon management platform",
@@ -840,7 +851,7 @@
             },
             {
                 "title": "일상의 재충전, 균형잡힌 삶이 있는 복지제도",
-                "descriptions": ["- 매월 유급 반차 제공", "- 업무 성격, 효율과 능력에 따라 원격업무 가능", "- 건강검진 지원", "- 3년 이상 함께하는 멤버에게 스톡옵션 지급"]
+                "descriptions": ["- 매월 유급 반차 제공", "- 업무 성격, 효율과 능력에 따라 원격업무 가능", "- 건강검진 지원"]
             }
         ]
     },
@@ -970,7 +981,7 @@
                 "logoSrc": "/site/cases/ci-1.png",
                 "logoAlt": "두산에너빌리티 로고",
                 "href": "/partnership",
-                "ctaLabel": "더 자세히 보기",
+                "ctaLabel": "더 자세히 보러가기",
                 "companyName": "두산에너빌리티",
                 "industryLabel": "에너지 / 플랜트 대기업",
                 "challengeLabel": "도전과제",
@@ -978,14 +989,15 @@
                 "solutionLabel": "솔루션",
                 "solutionText": "Hana.eco CBAM 솔루션 도입, ERP 연동, 자동 보고서 설정",
                 "resultLabel": "성과",
-                "resultText": "협력사와 저탄소 생태계 형성. CBAM 준수"
+                "resultText": "협력사와 저탄소 생태계 형성. CBAM 준수",
+                "categories": ["scope-123", "cbam", "pcf-lca", "supply-chain-pcf"]
             },
             {
                 "id": "case-byucksan",
                 "logoSrc": "/site/cases/ci-2.png",
                 "logoAlt": "벽산 로고",
                 "href": "/partnership",
-                "ctaLabel": "더 자세히 보기",
+                "ctaLabel": "더 자세히 보러가기",
                 "companyName": "벽산",
                 "industryLabel": "화학·건축자재 중견기업",
                 "challengeLabel": "도전과제",
@@ -993,13 +1005,14 @@
                 "solutionLabel": "솔루션",
                 "solutionText": "Hana.eco 컨설팅",
                 "resultLabel": "성과",
-                "resultText": "87% 이상 업무시간 절감, 신규 해외 납품처 확보"
+                "resultText": "87% 이상 업무시간 절감, 신규 해외 납품처 확보",
+                "categories": ["scope-123"]
             },
             {
                 "id": "case-cswind",
                 "logoSrc": "/site/cases/ci-3.png",
                 "logoAlt": "CSWIND 로고",
-                "ctaLabel": "더 자세히 보기",
+                "ctaLabel": "더 자세히 보러가기",
                 "companyName": "CSWIND",
                 "industryLabel": "신재생에너지/풍력타워 중견기업",
                 "challengeLabel": "도전과제",
@@ -1007,14 +1020,15 @@
                 "solutionLabel": "솔루션",
                 "solutionText": "Hana.eco CBAM 컨설팅, 사업장 데이터 분석",
                 "resultLabel": "성과",
-                "resultText": "전사 거버넌스의 표준화, 해외 고객사 대응 체계 구축"
+                "resultText": "전사 거버넌스의 표준화, 해외 고객사 대응 체계 구축",
+                "categories": ["cbam"]
             },
             {
                 "id": "case-daehoal",
                 "logoSrc": "/site/cases/ci-4.png",
                 "logoAlt": "대호에이엘 로고",
                 "href": "/partnership",
-                "ctaLabel": "더 자세히 보기",
+                "ctaLabel": "더 자세히 보러가기",
                 "companyName": "대호에이엘",
                 "industryLabel": "알루미늄/비철금속 중소기업",
                 "challengeLabel": "도전과제",
@@ -1022,14 +1036,15 @@
                 "solutionLabel": "솔루션",
                 "solutionText": "Hana.eco CBAM 컨설팅, 체계적 이해와 대응 컨설팅",
                 "resultLabel": "성과",
-                "resultText": "전사 거버넌스와 프로세스 확립, 고객사 대응 체계 구축"
+                "resultText": "전사 거버넌스와 프로세스 확립, 고객사 대응 체계 구축",
+                "categories": ["scope-123", "cbam"]
             },
             {
                 "id": "case-apollo",
                 "logoSrc": "/site/cases/ci-5.png",
                 "logoAlt": "아폴로산업 로고",
                 "href": "/partnership",
-                "ctaLabel": "더 자세히 보기",
+                "ctaLabel": "더 자세히 보러가기",
                 "companyName": "아폴로산업",
                 "industryLabel": "플라스틱 중소기업",
                 "challengeLabel": "도전과제",
@@ -1037,14 +1052,15 @@
                 "solutionLabel": "솔루션",
                 "solutionText": "Hana.eco 컨설팅: Scope 1, 2, 3 산정법, 감축안",
                 "resultLabel": "성과",
-                "resultText": "전사 탄소관리 프로세스 구축, 배출계수 산정"
+                "resultText": "전사 탄소관리 프로세스 구축, 배출계수 산정",
+                "categories": ["scope-123"]
             },
             {
                 "id": "case-kowell",
                 "logoSrc": "/site/cases/ci-6.png",
                 "logoAlt": "코웰 로고",
                 "href": "/partnership",
-                "ctaLabel": "더 자세히 보기",
+                "ctaLabel": "더 자세히 보러가기",
                 "companyName": "코웰",
                 "industryLabel": "자동차 부품/정밀 중소기업",
                 "challengeLabel": "도전과제",
@@ -1052,14 +1068,15 @@
                 "solutionLabel": "솔루션",
                 "solutionText": "Hana.eco CBAM & LCA SaaS 도입",
                 "resultLabel": "성과",
-                "resultText": "기업 전반의 제품별 정보, 사업장 단위 데이터를 전사 탄소관리 프로세스로 통합"
+                "resultText": "기업 전반의 제품별 정보, 사업장 단위 데이터를 전사 탄소관리 프로세스로 통합",
+                "categories": ["cbam"]
             },
             {
                 "id": "case-origin-customs",
                 "logoSrc": "/site/cases/ci-7.png",
                 "logoAlt": "관세청 로고",
                 "href": "/partnership",
-                "ctaLabel": "더 자세히 보기",
+                "ctaLabel": "더 자세히 보러가기",
                 "companyName": "원산지정보원(관세청)",
                 "industryLabel": "공공기관",
                 "challengeLabel": "도전과제",
@@ -1067,14 +1084,15 @@
                 "solutionLabel": "솔루션",
                 "solutionText": "Hana.eco CBAM API 연동",
                 "resultLabel": "성과",
-                "resultText": "FTA 중소기업의 규제 대응력 강화 인프라 구축"
+                "resultText": "FTA 중소기업의 규제 대응력 강화 인프라 구축",
+                "categories": ["cbam"]
             },
             {
                 "id": "case-taihan",
                 "logoSrc": "/site/cases/ci-8.png",
                 "logoAlt": "대한광통신 로고",
                 "href": "/partnership",
-                "ctaLabel": "더 자세히 보기",
+                "ctaLabel": "더 자세히 보러가기",
                 "companyName": "대한광통신(티에프오네트웍스)",
                 "industryLabel": "광케이블·광섬유 중견기업",
                 "challengeLabel": "도전과제",
@@ -1082,14 +1100,15 @@
                 "solutionLabel": "솔루션",
                 "solutionText": "Hana.eco CBAM, 디지털 MRV, 예비 CBAM",
                 "resultLabel": "성과",
-                "resultText": "탄소배출 데이터 관리 역량 제고와 고객 신뢰, 사업리스크 완화"
+                "resultText": "탄소배출 데이터 관리 역량 제고와 고객 신뢰, 사업리스크 완화",
+                "categories": ["cbam"]
             },
             {
                 "id": "case-emart",
                 "logoSrc": "/site/cases/ci-9.png",
                 "logoAlt": "이마트 로고",
                 "href": "/partnership",
-                "ctaLabel": "더 자세히 보기",
+                "ctaLabel": "더 자세히 보러가기",
                 "companyName": "이마트",
                 "industryLabel": "유통 대기업",
                 "challengeLabel": "도전과제",
@@ -1097,7 +1116,24 @@
                 "solutionLabel": "솔루션",
                 "solutionText": "API 연계, OpenAPI 기반 데이터 거버넌스 구축, API Gateway PoC를 Agile Scrum 방식으로 2주 수행",
                 "resultLabel": "성과",
-                "resultText": "APIM 운영/확산 기반 확보, 멀티벤더 분석 자동화, Gateway 기반 환경 표준화 및 자사 API 구축 표준 기틀 마련"
+                "resultText": "APIM 운영/확산 기반 확보, 멀티벤더 분석 자동화, Gateway 기반 환경 표준화 및 자사 API 구축 표준 기틀 마련",
+                "categories": []
+            },
+            {
+                "id": "case-gggc",
+                "logoSrc": "/site/cases/ci-10.png",
+                "logoAlt": "경기환경에너지진흥원 로고",
+                "href": "/partnership",
+                "ctaLabel": "더 자세히 보러가기",
+                "companyName": "경기환경에너지진흥원",
+                "industryLabel": "공공기관",
+                "challengeLabel": "도전과제",
+                "challengeText": "복잡한 탄소중립·RE100 정책 문의를 24시간 정확하게 안내할 대화형 민원 대응 체계 필요",
+                "solutionLabel": "솔루션",
+                "solutionText": "경기도 정책 데이터를 학습한 탄소중립 생성형 AI 챗봇 '탄중이'와 운영·관리 체계를 함께 구축",
+                "resultLabel": "성과",
+                "resultText": "공공분야 최초 탄소중립 생성형 AI 챗봇 출시, 도민 접근성과 참여도 향상, 담당자 대응 부담 경감",
+                "categories": ["hana-eco-ai"]
             }
         ]
     },
@@ -1214,7 +1250,7 @@
                 "logoAlt": "두산에너빌리티 로고",
                 "companyName": "두산에너빌리티",
                 "eyebrow": "고객사례",
-                "title": "두산에너빌리티 × 하나루프 — 공급망 탄소관리 체계 구축",
+                "title": "두산에너빌리티 — 공급망 탄소관리 체계 구축",
                 "contactLabel": "Contact Us",
                 "summary": [
                     {
@@ -1289,7 +1325,7 @@
                 "logoAlt": "벽산 로고",
                 "companyName": "벽산",
                 "eyebrow": "고객사례",
-                "title": "벽산 × 하나루프 — 배출권거래제 대응 탄소관리 체계 구축",
+                "title": "벽산 — 배출권거래제 대응 탄소관리 체계 구축",
                 "contactLabel": "Contact Us",
                 "summary": [
                     {
@@ -1352,7 +1388,7 @@
                 "logoAlt": "씨에스윈드 로고",
                 "companyName": "씨에스윈드",
                 "eyebrow": "고객사례",
-                "title": "CSWind × 하나루프 — 해외 법인 CBAM 대응 체계 구축",
+                "title": "CSWind — 해외 법인 CBAM 대응 체계 구축",
                 "contactLabel": "Contact Us",
                 "summary": [
                     {
@@ -1425,7 +1461,7 @@
                 "logoAlt": "대호에이엘 로고",
                 "companyName": "대호에이엘",
                 "eyebrow": "고객사례",
-                "title": "대호에이엘 × 하나루프 — CBAM 대응 탄소배출량 산정 인프라 구축",
+                "title": "대호에이엘 — CBAM 대응 탄소배출량 산정 인프라 구축",
                 "contactLabel": "Contact Us",
                 "summary": [
                     {
@@ -1496,7 +1532,7 @@
                 "logoAlt": "아폴로산업 로고",
                 "companyName": "아폴로산업",
                 "eyebrow": "고객사례",
-                "title": "아폴로산업 × 하나루프 — 전사 탄소 인벤토리 구축 및 ESG 경영 체계화",
+                "title": "아폴로산업 — 전사 탄소 인벤토리 구축 및 ESG 경영 체계화",
                 "contactLabel": "Contact Us",
                 "summary": [
                     {
@@ -1565,7 +1601,7 @@
                 "logoAlt": "코웰 로고",
                 "companyName": "코웰",
                 "eyebrow": "고객사례",
-                "title": "코웰 × 하나루프 — 전사 ESG 데이터 통합 및 CBAM 대응 인프라 구축",
+                "title": "코웰 — 전사 ESG 데이터 통합 및 CBAM 대응 인프라 구축",
                 "contactLabel": "Contact Us",
                 "summary": [
                     {
@@ -1648,7 +1684,7 @@
                 "logoAlt": "관세청 로고",
                 "companyName": "원산지정보원",
                 "eyebrow": "고객사례",
-                "title": "한국원산지정보원 × 하나루프 x 오퍼스엠 — FTA-PASS EU CBAM 관리시스템 구축",
+                "title": "한국원산지정보원 x 오퍼스엠 — FTA-PASS EU CBAM 관리시스템 구축",
                 "contactLabel": "Contact Us",
                 "summary": [
                     {
@@ -1711,7 +1747,7 @@
                 "logoAlt": "대한광통신 로고",
                 "companyName": "대한광통신(티에프오네트웍스)",
                 "eyebrow": "고객사례",
-                "title": "대한광통신(티에프오네트웍스) × 하나루프 — CBAM 대응 디지털 MRV 및 탄소비용 예측 체계 구축",
+                "title": "대한광통신(티에프오네트웍스) — CBAM 대응 디지털 MRV 및 탄소비용 예측 체계 구축",
                 "contactLabel": "Contact Us",
                 "summary": [
                     {
@@ -1794,7 +1830,7 @@
                 "logoAlt": "이마트 로고",
                 "companyName": "이마트",
                 "eyebrow": "고객사례",
-                "title": "이마트 × 하나루프 API 관리 체계 현대화",
+                "title": "이마트 API 관리 체계 현대화",
                 "summary": [
                     {
                         "label": "도전",
@@ -1868,6 +1904,89 @@
                             {
                                 "area": "전략 자산",
                                 "achievement": "엔터프라이즈 통합 패턴 가이드, REST 디자인 가이드, 프로덕션 전환 로드맵 등 중장기 실행 자산 일체 이관"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "logoSrc": "/site/cases/ci-10.png",
+                "logoAlt": "경기환경에너지진흥원 로고",
+                "companyName": "경기환경에너지진흥원",
+                "eyebrow": "고객사례",
+                "title": "경기환경에너지진흥원 — 탄소중립 생성형 AI 챗봇 '탄중이' 구축",
+                "summary": [
+                    {
+                        "label": "도전",
+                        "text": "다양한 탄소중립·RE100 정책 사업을 운영하는 경기환경에너지진흥원은 복잡한 정책 내용에 대한 도민의 24시간 문의 대응과 참여도 제고가 필요했으나, 담당자 중심의 기존 대응 방식만으로는 한계가 있었습니다."
+                    },
+                    {
+                        "label": "솔루션",
+                        "text": "하나루프는 탄소중립 도메인에 특화된 생성형 AI 챗봇 탄중이를 개발하여, 경기도 정책 데이터 기반의 정확한 민원 대응과 365일 24시간 서비스 운영이 가능한 체계를 구축했습니다."
+                    },
+                    {
+                        "label": "성과",
+                        "text": "공공분야 최초 탄소중립 생성형 AI 챗봇 서비스를 출시하여 도민의 정책 접근성과 참여도를 높이는 동시에, 담당자의 민원 대응 부담을 줄이고 지속 가능한 자체 운영 체계를 갖추게 되었습니다."
+                    }
+                ],
+                "sections": [
+                    {
+                        "title": "프로젝트 배경 — 왜 경기환경에너지진흥원은 하나루프를 선택했는가",
+                        "paragraphs": [
+                            "경기환경에너지진흥원은 경기도의 탄소중립·경기RE100 관련 정책과 사업을 지원하는 공공기관입니다. 탄소감축 리워드 플랫폼, 에너지 전환 지원 사업, 전력자립 프로젝트 등 다양한 정책 사업을 운영하고 있으나, 도민들이 복잡한 정책 내용을 쉽게 이해하고 접근하는 데는 한계가 있었습니다.",
+                            "정책 문의는 업무 시간에 집중되었고, 담당자를 통한 대응만으로는 365일 24시간 도민 민원을 처리하는 데 구조적인 어려움이 있었습니다. 기존 FAQ나 안내 페이지만으로는 개별 상황에 맞는 정확한 안내가 어려웠고, 도민의 정책 참여도를 높이기 위해서는 보다 직관적이고 대화형 접근 방식이 필요했습니다.",
+                            "경기환경에너지진흥원은 생성형 AI 기술을 공공 탄소중립 서비스에 선도적으로 도입하기로 결정했습니다. 탄소경영 도메인에 특화된 AI 기술과 공공 서비스 구축 역량을 동시에 보유한 하나루프를 파트너로 선택한 배경입니다."
+                        ]
+                    },
+                    {
+                        "title": "구축 과정 — 탄소중립 도메인에 특화된 생성형 AI를 설계하다",
+                        "paragraphs": ["하나루프는 이 프로젝트를 단순한 챗봇 도입이 아니라, 경기도 탄소중립 정책의 접근성과 도민 참여도를 높이는 디지털 서비스 설계 과정으로 접근했습니다."]
+                    },
+                    {
+                        "title": "탄소중립 도메인 특화 AI 설계",
+                        "paragraphs": [
+                            "기존 일반 AI 챗봇의 기계적인 답변 방식에서 벗어나 실제 사람과 유사한 대화 경험을 제공하는 것을 핵심 설계 원칙으로 삼았습니다. 동시에 생성형 AI에서 발생할 수 있는 사실 왜곡을 최소화하기 위해, 경기도 탄소중립·경기RE100 정책 데이터를 정밀하게 학습시키고 답변 정확도를 높이는 구조로 설계했습니다."
+                        ]
+                    },
+                    {
+                        "title": "주요 정책 사업 학습 및 민원 대응 체계 구축",
+                        "paragraphs": [
+                            "에너지 전환 확대 조성 사업, 전력자립 10만 가구 프로젝트 등 주요 지원 사업을 우선 학습시켜 도민 민원에 즉각 대응할 수 있는 체계를 갖췄습니다. 경기도민 탄소감축 리워드 플랫폼 '기후행동 기회소득 APP' 출시에 맞춰 해당 서비스의 민원 대응까지 지원 범위를 확장했습니다."
+                        ]
+                    },
+                    {
+                        "title": "개인정보 보호 및 정책 보안 체계 적용",
+                        "paragraphs": ["공공 서비스 특성에 맞게 개인정보 보호와 정책 보안을 철저히 적용했습니다. 정책 담당자를 정확히 안내하는 기능을 구현하여, 도민이 필요한 정보를 신뢰할 수 있는 경로로 얻을 수 있도록 설계했습니다."]
+                    },
+                    {
+                        "title": "운영 편의성 기반의 지속 가능한 서비스 구조",
+                        "paragraphs": [
+                            "챗봇 제공 기관이 학습 자료를 쉽게 업데이트하고 태깅할 수 있는 관리 체계를 함께 구축했습니다. 정책 변화에 따라 담당자가 직접 콘텐츠를 갱신할 수 있어, 하나루프 없이도 서비스를 지속적으로 운영할 수 있는 자생적 구조를 설계한 것이 핵심입니다."
+                        ]
+                    },
+                    {
+                        "title": "성과",
+                        "paragraphs": [
+                            "탄중이는 공공분야 최초의 탄소중립 지원 생성형 AI 챗봇으로, 경기환경에너지진흥원 홈페이지를 통해 365일 24시간 도민 민원 대응 서비스를 시작했습니다. 기계적인 답변을 넘어 실제 대화에 가까운 경험을 제공함으로써 도민의 정책 접근성과 참여도를 높였으며, 담당자의 반복적인 민원 응대 부담을 실질적으로 줄였습니다.",
+                            "하나루프의 탄소중립 도메인 전문성과 생성형 AI 기술이 결합된 이번 사례는 공공 탄소중립 서비스의 디지털 전환 방향을 제시하는 선도적인 모델이 되었습니다."
+                        ],
+                        "resultRows": [
+                            {
+                                "area": "공공 서비스 혁신",
+                                "achievement": "공공분야 최초 탄소중립 생성형 AI 챗봇 출시, 선도적 디지털 전환 사례 확립"
+                            },
+                            {
+                                "area": "민원 대응 효율화",
+                                "achievement": "365일 24시간 자동 민원 대응 체계 구축, 담당자 반복 업무 부담 실질적 절감"
+                            },
+                            {
+                                "area": "정책 접근성 향상",
+                                "achievement": "도민 대상 탄소중립·RE100 정책 안내 자동화, 정책 참여도 및 이해도 제고"
+                            },
+                            {
+                                "area": "운영 자생력 확보",
+                                "achievement": "담당자 직접 학습 자료 업데이트 가능, 지속 가능한 자체 운영 체계 마련"
                             }
                         ]
                     }
