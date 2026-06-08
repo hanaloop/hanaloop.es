@@ -16,21 +16,20 @@ type Props = {
     }>;
 };
 
-export const dynamicParams = false;
-
 export default async function Page({ params }: Props) {
     const { locale, slug } = await params;
     if (!isLocale(locale)) notFound();
     setRequestLocale(locale);
     if (!slug || slug.length === 0) redirect(withLocalePath(locale, '/docs/intro'));
 
-    const page = getDocsSource(locale).getPage(slug);
+    const normalizedSlug = slug.map((s) => encodeURI(decodeURIComponent(s)));
+    const page = getDocsSource(locale).getPage(normalizedSlug);
     if (!page) notFound();
 
     return (
         <SiteShell>
             <InsightHeroSection locale={locale} />
-            <InsightListSection locale={locale} selectedSlug={slug} />
+            <InsightListSection locale={locale} selectedSlug={normalizedSlug} />
         </SiteShell>
     );
 }
@@ -47,7 +46,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return getStaticPageMetadata(locale, 'docs', '/docs/intro');
     }
 
-    const page = getDocsSource(locale).getPage(slug);
+    const normalizedSlug = slug.map((s) => encodeURI(decodeURIComponent(s)));
+    const page = getDocsSource(locale).getPage(normalizedSlug);
     if (!page) notFound();
 
     const data = page.data as { title?: string; description?: string; summary?: string; image?: string };
@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title,
         description,
         locale,
-        pathname: `/docs/${slug.join('/')}`,
+        pathname: `/docs/${normalizedSlug.join('/')}`,
         image: data.image,
         type: 'article',
     });
