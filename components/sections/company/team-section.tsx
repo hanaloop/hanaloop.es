@@ -60,7 +60,7 @@ export function CompanyTeamSection() {
                         </Swiper>
                     </div>
 
-                    <div className="mx-auto hidden max-w-[1180px] grid-cols-2 gap-5 lg:grid xl:gap-6">
+                    <div className="mx-auto hidden max-w-[1180px] grid-cols-3 gap-5 lg:grid xl:gap-6">
                         {members.map((member) => (
                             <TeamMemberCard key={member.name} member={member} />
                         ))}

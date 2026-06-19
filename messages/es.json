@@ -874,13 +874,13 @@
             {
                 "name": "김혜연 Hyeyeon Kim",
                 "role": "CEO / co-founder",
-                "bio": "Graduada en Física por Ewha Womans University y en Procesamiento de Imagen y Video por Korea University, lidera la estrategia de carbono neutral y las plataformas digitales de gestión de carbono de HanaLoop. Cuenta con experiencia en Samsung Electronics y consultoría IT.",
+                "bio": "Graduada de la maestría en Korea University y licenciada en Ewha Womans University, cuenta con experiencia en Samsung y en consultoría IT. Actualmente lidera HanaLoop, proporcionando soluciones de sostenibilidad para la industria.",
                 "imageSrc": "/site/company/team-1.jpg"
             },
             {
                 "name": "안영석 Young-Suk Ahn Park",
                 "role": "CTO / co-founder",
-                "bio": "Con una maestría en Ingeniería de Software de Carnegie Mellon University y formación en Ciencias de la Computación en Korea University, tiene más de 20 años de experiencia como arquitecto de software en empresas globales como Walt Disney, Pearson y Wayfair. Lidera el desarrollo de plataformas SaaS y MRV digitales de HanaLoop.",
+                "bio": "Con una maestría de Carnegie Mellon University y una licenciatura de Korea University, cuenta con más de 20 años de experiencia como arquitecto de software en empresas globales como Walt Disney, Pearson y Wayfair. Actualmente lidera el desarrollo de la plataforma digital de gestión de carbono.",
                 "imageSrc": "/site/company/team-2.jpg"
             },
             {
@@ -888,6 +888,24 @@
                 "role": "General Counsel",
                 "bio": "Graduada de Tulane University Law School y abogada licenciada en Nueva York, ha trabajado en asuntos legales internacionales y compliance para Samsung Electronics, LG Electronics y Microsoft Korea. En HanaLoop asesora sobre CBAM y regulaciones climáticas globales.",
                 "imageSrc": "/site/company/team-3.jpg"
+            },
+            {
+                "name": "Manuel Jesus de Lama",
+                "role": "Consultor Principal - España/Latam",
+                "bio": "Graduado con una maestría en Derecho Ambiental por la Universidad de Alicante, es abogado y experto en sostenibilidad. Ha liderado diversas estrategias gubernamentales en Perú y actualmente encabeza la estrategia ambiental en Europa.",
+                "imageSrc": "/site/company/avatar-default.svg"
+            },
+            {
+                "name": "Jorge Gabriel Conte Burrell",
+                "role": "Consultor Principal - Centroamerica",
+                "bio": "Con mas de 35 años de amplia experiencia en gestión ambiental, es un destacado autor de libros y artículos sobre temas ambientales y gestor de proyectos de adopción de sostenibilidad en el ámbito corporativo y comunidades",
+                "imageSrc": "/site/company/avatar-default.svg"
+            },
+            {
+                "name": "Hugo Ahn",
+                "role": "Account Manager de Soluciones en Europa",
+                "bio": "Destacado ingeniero con sólidas habilidades interpersonales y experiencia en la adopción de tecnologías de IA para resolver problemas específicos del negocio. Se especializa en el desarrollo de iniciativas que integran tecnología y sostenibilidad.",
+                "imageSrc": "/site/company/avatar-default.svg"
             },
             {
                 "name": "이평휘 PyoungHwe Lee",
